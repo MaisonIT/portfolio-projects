@@ -51,7 +51,9 @@ body {
 }
 a,
 button {
-	transition: color 0.3s;
+	transition:
+		color 0.3s,
+		transform 0.3s;
 }
 main {
 	flex-grow: 1;
@@ -513,7 +515,9 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: end;
+		align-items: center;
 		column-gap: toRem(143);
+		row-gap: toRem(15);
 		@media (max-width: toEm(768)) {
 			flex-direction: column;
 			text-align: center;
@@ -524,13 +528,18 @@ main {
 		position: relative;
 		inset-inline-start: 100%;
 		transition: inset-inline-start 1.8s;
+		display: flex;
+		justify-content: center;
+		gap: toRem(10);
 		.loaded & {
 			inset-inline-start: 0;
 		}
-		text-align: center;
 		a {
 			padding: toRem(10);
 			border-radius: toRem(5);
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 	&__facebook {
@@ -804,6 +813,7 @@ main {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: toRem(15);
 	}
 }
 .dev {
