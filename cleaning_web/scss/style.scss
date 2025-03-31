@@ -26,6 +26,11 @@ html {
 #reference {
 	scroll-margin-top: toRem(60);
 }
+#services {
+	@media (max-width: toEm(768)) {
+		scroll-margin-top: toRem(60);
+	}
+}
 body {
 	font-family: "Roboto", sans-serif;
 	color: var(--main-color-text);
@@ -134,7 +139,7 @@ main {
 					block-size: toEm(60);
 					inline-size: 100%;
 					position: fixed;
-					inset-inline-start: 0%;
+					inset-inline-start: 0;
 					inset-block-start: 0;
 					transition: inset-inline-start 0.6s;
 					background-color: var(--bg-color2);
@@ -149,7 +154,8 @@ main {
 			@media (max-width: toEm(840)) {
 				flex-direction: column;
 				align-items: flex-end;
-				row-gap: toRem(15);
+				row-gap: toRem(25);
+				font-size: toRem(22);
 			}
 		}
 		// .menu__item

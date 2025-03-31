@@ -14,6 +14,7 @@ function documentActions(e) {
 	if (targetElement.closest(`.icon-menu`)) {
 		html.classList.toggle(`menu-open`)
 	}
+	targetElement.closest('.menu__link') && html.classList.contains('menu-open') ? html.classList.remove('menu-open') : null
 }
 document.querySelectorAll(`.items-skills__item`).forEach((item, index) => {
 	item.style.transitionDelay = `${index * 0.5}s`
