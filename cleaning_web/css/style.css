@@ -16,6 +16,10 @@ html {
   scroll-margin-top: 3.75rem;
 }
 
+#reference {
+  scroll-margin-top: 3.75rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color-text);
