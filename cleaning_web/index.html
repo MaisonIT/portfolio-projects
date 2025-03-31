@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="cs">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Domovské stránce</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/logo.webp" alt="Logo">
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#start" class="menu__link">Úvod</a></li>
+							<li class="menu__item"><a href="#services" class="menu__link">Moje služby</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link">O mně</a></li>
+							<li class="menu__item"><a href="#reference" class="menu__link">Reference</a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link">Kontakt</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__contact">
+					<a href="tel:+420773533943" class="header__call social social--none -icon-call">+420 773 533 943</a>
+					<button type="button" class="header__item icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<div id="start" class="hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__image">
+							<img src="img/hero/main-image.webp" alt="Main image">
+						</div>
+						<section class="hero__items">
+							<h1 class="hero__title">Úklid, který vám
+								vykouzlí úsměv!</h1>
+							<p class="hero__label">Čistota - svěžest - pořádek</p>
+						</section>
+					</div>
+				</div>
+			</div>
+			<section id="services" class="services">
+				<div class="services__container">
+					<div class="services__header titles">
+						<h2 class="titles__title">My Vám uklidíme</h2>
+						<p class="titles__about">Nabízíme úklidové služby na míru – od domácností po kanceláře. Ať už jde o
+							pravidelný úklid nebo
+							speciální služby, postaráme se, aby každý prostor byl dokonale čistý a svěží.</p>
+					</div>
+					<div class="services__items items-services">
+						<div class="items-services__body">
+							<section class="items-services__item">
+								<h2 class="items-services__title">Úklid domácností</h2>
+								<p class="items-services__about">Zajistíme kompletní úklid vašeho domova, od vysávání a vytírání
+									po mytí oken a úklid
+									kuchyně. Váš byt či dům bude vždy zářit čistotou a svěžestí, abyste si mohli užívat pohodlí
+									bez starostí.</p>
+							</section>
+							<section class="items-services__item">
+								<h2 class="items-services__title">Úklid kanceláří</h2>
+								<p class="items-services__about">Postaráme se o pravidelný a důkladný úklid kancelářských
+									prostor, který zajistí příjemné a
+									hygienické pracovní prostředí pro vaše zaměstnance i návštěvníky. Čisté kanceláře
+									znamenají větší produktivitu a lepší dojem na klienty.</p>
+							</section>
+							<section class="items-services__item">
+								<h2 class="items-services__title">Speciální úklidové služby</h2>
+								<p class="items-services__about">Nabízíme specializované úklidové služby, jako je úklid po
+									stavebních pracích, čištění koberců
+									a čalounění, nebo dezinfekce prostor. Zaměřujeme se na důkladnou péči o všechny typy
+									prostorů, abyste měli jistotu, že vše bude perfektně čisté.</p>
+							</section>
+						</div>
+						<div class="items-services__image">
+							<img src="img/uklid/main-image.webp" alt="Cleaner Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-contacts">
+				<div class="main-contacts__container">
+					<div class="main-contacts__body">
+						<div class="main-contacts__header">
+							<h2 class="main-contacts__title">Kontaktujte nás</h2>
+							<p class="main-contacts__work-data">Po-Pá: <time datetime="07:00">7:00</time> - <time
+									datetime="20:00">20:00</time>,
+								So-Ne: <time datetime="10:00">10:00</time> - <time datetime="18:00">18:00</time></p>
+						</div>
+						<div class="main-contacts__socials">
+							<a href="tel:+420773533943" class="main-contacts__call social -icon-call">+420 773 533
+								943</a>
+							<a href="mailto:d.petrishov@seznam.cz"
+								class="main-contacts__mail social -icon-mail">d.petrishov@seznam.cz</a>
+						</div>
+					</div>
+					<div class="main-contacts__network">
+						<a href="#" class="main-contacts__facebook -icon-facebook"></a>
+						<a href="#" class="main-contacts__insta -icon-insta"></a>
+						<a href="#" class="main-contacts__whatsap -icon-watsap"></a>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__image">
+							<img src="img/o_nas/onas.webp" alt="About Me Image">
+						</div>
+						<div class="about__item titles">
+							<h2 id="about" class="titles__title ">Pár slov o mně</h2>
+							<p class="titles__about titles__about--small">Naše skupina vznikla z nadšení pro čistotu a pořádek.
+								Jsme malý tým s
+								vášní pro
+								důkladný úklid a s cílem poskytovat služby, na které se lidé mohou spolehnout.
+								Postupem času jsme se rozrostli, získali jsme nové zkušenosti a rozšířili naše služby,
+								abychom vyhověli potřebám stále většího počtu klientů.</p>
+							<p class="titles__about titles__about--small">Naše hodnoty – pečlivost, profesionalita a láska k
+								detailu. Každý úklid
+								pro nás
+								znamená nový závazek k perfektnímu výsledku. Stále nás baví dělat prostředí kolem
+								nás krásnějším a čistším, a díky tomu se naši klienti mohou spolehnout na dokonalou
+								péči o své domovy i pracovní prostory.</p>
+						</div>
+					</div>
+					<div class="about__work titles">
+						<h2 class="titles__title">Provádíme následující práce:</h2>
+						<ul class="titles__lists">
+							<li class="titles__list">Mytí oken</li>
+							<li class="titles__list">Čištění sedacích souprav, koberců</li>
+							<li class="titles__list">Mytí a voskování podlahy</li>
+						</ul>
+					</div>
+					<div class="about__price titles">
+						<h2 class="titles__title">Ceník</h2>
+						<p class="titles__about">Cenovou nabídku rádi zpracujeme na základě konkretního zadání.</p>
+					</div>
+				</div>
+			</section>
+			<section class="skills">
+				<div class="skills__container">
+					<div class="skills__body">
+						<div class="skills__header titles">
+							<h2 class="titles__title">Naše přednosti</h2>
+							<p class="titles__about">Naše firma se vyznačuje nejen vysokou kvalitou úklidových služeb, ale také
+								osobním
+								přístupem a spolehlivostí. Zde jsou klíčové výhody, které nabízíme:</p>
+						</div>
+						<ul class="skills__items items-skills">
+							<li class="items-skills__item">
+								<h3 class="items-skills__title">Důkladnost</h3>
+								<p class="items-skills__about">Naše úklidové služby jsou
+									prováděny s maximální pečlivostí,
+									abychom zajistili, že každý detail
+									bude dokonale čistý a bezchybně
+									upravený.</p>
+							</li>
+							<li class="items-skills__item">
+								<h3 class="items-skills__title">Flexibilita</h3>
+								<p class="items-skills__about">Přizpůsobíme se vašim časovým
+									potřebám a specifickým
+									požadavkům, abychom zajistili, že
+									úklid bude probíhat v době, která
+									vám nejlépe vyhovuje.</p>
+							</li>
+							<li class="items-skills__item">
+								<h3 class="items-skills__title">Profesionální tým</h3>
+								<p class="items-skills__about">Náš tým je složen z odborníků s
+									dlouholetými zkušenostmi v oboru,
+									kteří používají moderní techniku a
+									osvědčené postupy pro dosažení
+									nejlepších výsledků.</p>
+							</li>
+							<li class="items-skills__item">
+								<h3 class="items-skills__title">Spolehlivost</h3>
+								<p class="items-skills__about">Můžete se na nás spolehnout, že
+									úklid bude vždy proveden včas a v
+									souladu s dohodnutými standardy,
+									což vám přinese klid a jistotu.</p>
+							</li>
+							<li class="items-skills__item">
+								<h3 class="items-skills__title">Ekologické postupy</h3>
+								<p class="items-skills__about">Používáme šetrné a ekologické
+									čisticí prostředky, které jsou nejen
+									efektivní, ale také bezpečné pro
+									vaše zdraví a životní prostředí.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="reference" class="reference">
+				<div class="reference__container">
+					<div class="reference__header titles">
+						<h2 class="titles__title">Co o nás říkají klienti</h2>
+					</div>
+					<div class="reference__items">
+						<div class="reference__item">
+							<figure>
+								<figcaption class="reference__name">Kateřina M.</figcaption>
+								<blockquote>
+									<p class="reference__text">Absolutní spokojenost. Vše včas a bez zbytečných
+										problémů. Oceňuji osobní přístup, časovou flexibilitu,
+										vysokou kvalitu, zájem o zpětnou vazbu.</p>
+								</blockquote>
+							</figure>
+						</div>
+						<div class="reference__item">
+							<figure>
+								<figcaption class="reference__name">Petr H.</figcaption>
+								<blockquote>
+									<p class="reference__text">Oceňuji odbornost a přátelský přístup, který je mi velmi
+										sympatický. Skvělý poměr cena/výkon nám umožňuje
+										využívat služby intenzivněji a přitom držet náklady pod
+										kontrolou.</p>
+								</blockquote>
+							</figure>
+						</div>
+						<div class="reference__item">
+							<figure>
+								<figcaption class="reference__name">Marek K.</figcaption>
+								<blockquote>
+									<p class="reference__text">Skvělé znalosti, hluboký vhled do problematiky a
+										zkušenosti z praxe jsou ten pravý mix, který jsme dlouho
+										hledali. Když už se někdy vyskytnou nedorozumění, zažili
+										jsme vždy skvělý přístup a ochotu najít rychlé funkční
+										řešení.</p>
+								</blockquote>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<section id="contact" class="footer__contacts contacts">
+						<div class="contacts__header">
+							<h2 class="contacts__title">Kontaktujte nás</h2>
+							<p class="contacts__about">OSVČ Dmytro Petrušov IČO ###</p>
+							<address class="contacts__adress">
+								<p>Pod Horkou 292/9, 679 04 Adamov 1</p>
+							</address>
+						</div>
+						<div class="contacts__contact">
+							<a href="tel:+420773533943" class="contacts__call social -icon-call">+420 773 533
+								943</a>
+							<a href="mailto:d.petrishov@seznam.cz"
+								class="contacts__mail social -icon-mail">d.petrishov@seznam.cz</a>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div class="dev">
+				<p class="dev__text">Navrhl a vyvinul:</p>
+				<a class="dev__mail" href="mailto:frontdev.m@gmail.com">frontdev.m@gmail.com</a>
+			</div>
+		</footer>
+	</div>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
