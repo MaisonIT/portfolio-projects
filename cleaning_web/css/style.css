@@ -374,8 +374,6 @@ main {
 .services__container {
   -webkit-padding-before: 2.1875rem;
           padding-block-start: 2.1875rem;
-  -webkit-padding-after: 3.75rem;
-          padding-block-end: 3.75rem;
 }
 @media (min-width: 48em) {
   .services__container {
@@ -511,6 +509,7 @@ main {
           margin-inline-end: 0.625rem;
   border-radius: 50%;
   background-color: var(--border-color);
+  vertical-align: middle;
 }
 .loaded .titles__list {
   inset-inline-start: 0;
@@ -595,117 +594,6 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1.25rem;
-}
-
-.main-contacts__body {
-  position: relative;
-  inset-inline-start: 100%;
-  -webkit-transition: inset-inline-start 1.2s;
-  transition: inset-inline-start 1.2s;
-  background-color: var(--bg-color2);
-  border-radius: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 0.9375rem;
-  padding-block: 3.25rem;
-  padding-inline: 4.375rem;
-  -webkit-margin-after: 2.75rem;
-          margin-block-end: 2.75rem;
-}
-.loaded .main-contacts__body {
-  inset-inline-start: 0;
-}
-@media (max-width: 48em) {
-  .main-contacts__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    -webkit-margin-after: 0.75rem;
-            margin-block-end: 0.75rem;
-  }
-}
-@media (max-width: 76.875em) {
-  .main-contacts__body {
-    margin-inline: -1.875rem;
-    -webkit-margin-after: 1.375rem;
-            margin-block-end: 1.375rem;
-  }
-}
-.main-contacts__title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 1.3;
-  -webkit-margin-after: 1.375rem;
-          margin-block-end: 1.375rem;
-}
-.main-contacts__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 8.9375rem;
-     -moz-column-gap: 8.9375rem;
-          column-gap: 8.9375rem;
-  row-gap: 0.9375rem;
-}
-@media (max-width: 48em) {
-  .main-contacts__socials {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-}
-.main-contacts__network {
-  position: relative;
-  inset-inline-start: 100%;
-  -webkit-transition: inset-inline-start 1.8s;
-  transition: inset-inline-start 1.8s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 0.625rem;
-}
-.loaded .main-contacts__network {
-  inset-inline-start: 0;
-}
-.main-contacts__network a {
-  padding: 0.625rem;
-  border-radius: 0.3125rem;
-}
-.main-contacts__network a:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.main-contacts__facebook {
-  background-color: var(--facebook-color);
-}
-.main-contacts__insta {
-  background-color: var(--insta-color);
-}
-.main-contacts__whatsap {
-  background-color: var(--whatsap-color);
 }
 
 .about {
@@ -1075,6 +963,42 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.9375rem;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+.contacts__network {
+  position: relative;
+  inset-inline-start: 100%;
+  -webkit-transition: inset-inline-start 1.8s;
+  transition: inset-inline-start 1.8s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.625rem;
+}
+.loaded .contacts__network {
+  inset-inline-start: 0;
+}
+.contacts__network a {
+  padding: 0.625rem;
+  border-radius: 0.3125rem;
+}
+.contacts__network a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.contacts__facebook {
+  background-color: var(--facebook-color);
+}
+.contacts__insta {
+  background-color: var(--insta-color);
+}
+.contacts__whatsap {
+  background-color: var(--whatsap-color);
 }
 
 .dev {
