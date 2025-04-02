@@ -20,5 +20,5 @@ document.querySelectorAll(`.items-skills__item`).forEach((item, index) => {
 	item.style.transitionDelay = `${index * 0.5}s`
 })
 document.querySelectorAll(`.reference__item`).forEach((item, index) => {
-	item.style.transitionDelay = `${index * 0.5}s`
+	item.style.transitionDelay = `${index * 0.2}s`
 })

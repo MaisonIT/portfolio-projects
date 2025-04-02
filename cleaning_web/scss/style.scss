@@ -397,14 +397,28 @@ main {
 			}
 		}
 	}
+	// .titles__lists
+	&__lists {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		gap: toRem(20);
+		max-width: toRem(1000);
+		margin-inline: auto;
+	}
 	// .titles__list
 	&__list {
-		&:not(:last-child) {
-			margin-block-end: toRem(10);
-		}
 		position: relative;
 		inset-inline-start: 100%;
 		transition: inset-inline-start 2s;
+		&::before {
+			content: "";
+			inline-size: toRem(10);
+			block-size: toRem(10);
+			margin-inline-end: toRem(10);
+			border-radius: 50%;
+			background-color: var(--border-color);
+		}
 		.loaded & {
 			inset-inline-start: 0;
 		}
@@ -605,13 +619,31 @@ main {
 	}
 	// .about__work
 	&__work {
-		text-align: center;
+		// text-align: center;
 		border-radius: toRem(20);
 		margin-block-end: toRem(30);
 		padding-block: toRem(20);
-		max-width: toRem(600);
+		padding-inline: toRem(30);
+		// max-width: toRem(600);
 		margin-inline: auto;
-		background-color: var(--call-color);
+		position: relative;
+		background: url("../img/hero/main-image.webp") 0 0 / cover no-repeat;
+		&::before {
+			content: "";
+			position: absolute;
+			inset-inline-start: 0;
+			inset-block-start: 0;
+			inline-size: 100%;
+			block-size: 100%;
+			border-radius: toRem(20);
+			background-color: var(--call-color);
+			opacity: 0.8;
+		}
+		.titles {
+			&__title {
+				text-align: center;
+			}
+		}
 	}
 }
 //=====================================================================
@@ -735,16 +767,18 @@ main {
 	}
 	// .reference__items
 	&__items {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(min(toRem(500), 100%), 1fr));
+		color: var(--dev-color);
+		display: flex;
+		flex-direction: column;
 		justify-items: center;
-		justify-content: space-between;
+		align-items: center;
 		gap: toRem(15);
+		margin-block-end: toRem(30);
 	}
 	// .reference__item
 	&__item {
 		line-height: 1.5;
-		max-width: toRem(296);
+		max-width: toRem(400);
 		position: relative;
 		inset-inline-start: 100%;
 		transition: inset-inline-start 1.2s;
@@ -760,6 +794,17 @@ main {
 	// .reference__text
 	&__text {
 		color: var(--dev-color);
+	}
+	// .reference__subtitle
+	&__subtitle {
+		color: var(--dev-color);
+		text-align: center;
+		@media (min-width: toEm(768)) {
+			font-size: toRem(35);
+		}
+		@media (min-width: toEm(1230)) {
+			font-size: toRem(45);
+		}
 	}
 }
 //=====================================================================
