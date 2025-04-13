@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері -->
+	<title>Healthy food</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo">
+						<a href="index.html" class="logo -icon-logo"><span>Healthy switcher</span></a>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#chef-menu" class="menu__link">Menu</a></li>
+								<li class="menu__item"><a href="#recipes" class="menu__link">Recipes</a></li>
+								<li class="menu__item"><a href="#chefs" class="menu__link">Chefs</a></li>
+								<li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
+							</ul>
+						</nav>
+					</div>
+					<button type="button" class="header__item icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__items">
+						<div class="hero__head">
+							<h1 class="hero__title">Your <span>favourite food</span><br>
+								delivered <span>hot & fresh</span></h1>
+							<p class="hero__about">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping &
+								marinating, so you can cook a fresh homemade dinner in just 15 minutes.</p>
+						</div>
+						<div class="hero__order button">
+							<a class="button__link" href="tel:+38 (063)833 24 15">Order Now</a>
+						</div>
+					</div>
+					<div class="hero__contacts items">
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<mask id="mask0_8_17" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M10.5 0C4.97746 0 0.459015 4.5 0.459015 10C0.459015 15.5 4.97746 20 10.5 20C16.0225 20 20.541 15.5 20.541 10C20.541 4.5 16.0225 0 10.5 0ZM14.7172 14.2L9.4959 11V5H11.0021V10.2L15.5205 12.9L14.7172 14.2Z"
+											fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_17)">
+										<rect x="-2.55328" y="-3" width="26.1066" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<p class="items__text">Today <time datetime="10:00">10:00</time> am - <time
+									datetime="07:00">7:00</time> pm
+							</p>
+							<p class="items__about">Working hours</p>
+						</div>
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<mask id="mask0_8_10" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="18" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 0L0 7.53V8.51L6.84 11.16L9.48 18H10.46L18 0Z" fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_10)">
+										<rect x="-4" y="-4" width="26" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<p class="items__text">Velyka Vasylkivska 100</p>
+							<p class="items__about">Get Directions</p>
+						</div>
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<mask id="mask0_8_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="18" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.68 11.91 13.08 11.82 13.43 11.94C14.55 12.31 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.39 0 1C0 0.45 0.45 0 1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79Z"
+											fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_3)">
+										<rect x="-4" y="-4" width="26" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<a class="items__call" href="tel:+38 (063)833 24 15">+38 (063)833 24 15</a>
+							<p class="items__about">Call Online</p>
+						</div>
+					</div>
+					<div class="hero__image">
+						<img src="img/hero/main-image.webp" alt="Main-Image">
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__head">
+							<div class="about__title titles">
+								<h2 class="titles__title"><span class="titles__bg">About</span> The Basics Of Healthy Food</h2>
+								<h3 class="titles__about">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint
+									ea
+									aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate
+									irure
+									esse
+									aliquip.</h3>
+							</div>
+						</div>
+						<div class="about__items">
+							<button type="button"
+								class="about__button about__button--left button about__button--rotate -icon-arrow"></button>
+							<div class="about__menu swiper">
+								<div class="about__swiper-wrapper swiper-wrapper">
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-1.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-2.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-3.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-4.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-5.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-6.webp" alt="Food Image">
+									</div>
+									<div class="about__image swiper-slide">
+										<img src="img/menu/menu-7.webp" alt="Food Image">
+									</div>
+								</div>
+							</div>
+							<button type="button" class="about__button about__button--right button -icon-arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="works">
+				<div class="works__container">
+					<div class="works__body">
+						<div class="works__title titles titles--after">
+							<h2 class="titles__title titles__title--fz"><span class="titles__bg">Work</span>How it works
+							</h2>
+						</div>
+						<div class="works__items">
+							<div class="works__item item-works">
+								<h3 class="item-works__title">Pick meals</h3>
+								<p class="item-works__about">Choose your meals from our diverse weekly menu. Find gluten or
+									dairy free, low carb & veggie options.</p>
+							</div>
+							<div class="works__item item-works">
+								<h3 class="item-works__title">Choose how often</h3>
+								<p class="item-works__about">Our team of chefs do the prep work - no more chopping, measuring,
+									or sink full of dishes!</p>
+							</div>
+							<div class="works__item item-works">
+								<h3 class="item-works__title">Fast deliveries</h3>
+								<p class="item-works__about">Your freshly prepped 15-min dinner kits arrive on your doorstep in
+									a refrigerated box.</p>
+							</div>
+							<div class="works__item item-works">
+								<h3 class="item-works__title">Tasty meals</h3>
+								<p class="item-works__about">Gobble makes cooking fast, so you have more time to unwind and be
+									with family.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="chef-menu" class="chef-menu">
+				<div class="chef-menu__container">
+					<div class="chef-menu__page">
+						<div class="chef-menu__title titles titles--after">
+							<h2 class="titles__title titles__title--fz"><span class="titles__bg">Dishes</span>Dish Of The Day
+							</h2>
+						</div>
+						<div class="chef-menu__items">
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-1.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-2.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-3.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-4.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-5.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+							<article class="chef-menu__card card-chef-menu">
+								<div class="card-chef-menu__share">
+									<a href="#" class="card-chef-menu__link">
+										<img src="img/icons/share.svg" alt="Share Img">
+									</a>
+									<div class="card-chef-menu__image">
+										<img src="img/menu/menu-6.webp" alt="Menu Fish">
+									</div>
+								</div>
+								<div class="card-chef-menu__about">
+									<div class="card-chef-menu__head">
+										<h3 class="card-chef-menu__title">Featured Meal</h3>
+										<p class="card-chef-menu__label">Served with french fries + drink</p>
+									</div>
+									<p class="card-chef-menu__text">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add
+										whopper patty, Add Tender crisp patty and more...</p>
+									<div class="card-chef-menu__footer">
+										<div class="card-chef-menu__rating rating">
+											<div class="rating__stars">
+												<div class="rating__active"></div>
+											</div>
+											<div class="rating__value">6</div>
+										</div>
+										<div class="card-chef-menu__order button">
+											<a class="button__link button__link--small" href="tel:+38 (063)833 24 15">Order</a>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="chefs" class="chefs">
+				<div class="chefs__container">
+					<div class="chefs__body">
+						<div class="chefs__title titles titles--after">
+							<h2 class="titles__title titles__title--fz"><span class="titles__bg">Chefs</span>This month's chefs
+							</h2>
+						</div>
+						<div class="chefs__items">
+							<div class="chefs__item item-chefs">
+								<div class="item-chefs__head">
+									<div class="item-chefs__image">
+										<img src="img/chefs/chef-1.webp" alt="Chef Image">
+									</div>
+									<div class="item-chefs__text">
+										<strong class="item-chefs__name">
+											Gregory Flores
+										</strong>
+										<p class="item-chefs__label">Chef of the cold</p>
+									</div>
+								</div>
+								<div class="item-chefs__gallery">
+									<div class="item-chefs__img item-chefs__img--width">
+										<img src="img/chefs/chef-menu-1.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-2.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-3.webp" alt="Chef Menu">
+									</div>
+								</div>
+							</div>
+							<div class="chefs__item item-chefs">
+								<div class="item-chefs__head">
+									<div class="item-chefs__image">
+										<img src="img/chefs/chef-2.webp" alt="Chef Image">
+									</div>
+									<div class="item-chefs__text">
+										<strong class="item-chefs__name">
+											Gregory Flores
+										</strong>
+										<p class="item-chefs__label">Chef of the cold</p>
+									</div>
+								</div>
+								<div class="item-chefs__gallery">
+									<div class="item-chefs__img item-chefs__img--width">
+										<img src="img/chefs/chef-menu-4.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-5.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-6.webp" alt="Chef Menu">
+									</div>
+								</div>
+							</div>
+							<div class="chefs__item item-chefs">
+								<div class="item-chefs__head">
+									<div class="item-chefs__image">
+										<img src="img/chefs/chef-3.webp" alt="Chef Image">
+									</div>
+									<div class="item-chefs__text">
+										<strong class="item-chefs__name">
+											Gregory Flores
+										</strong>
+										<p class="item-chefs__label">Chef of the cold</p>
+									</div>
+								</div>
+								<div class="item-chefs__gallery">
+									<div class="item-chefs__img item-chefs__img--width">
+										<img src="img/chefs/chef-menu-7.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-8.webp" alt="Chef Menu">
+									</div>
+									<div class="item-chefs__img">
+										<img src="img/chefs/chef-menu-9.webp" alt="Chef Menu">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="recepies">
+				<div class="recepies__container">
+					<div class="recepies__body">
+						<div class="recepies__title titles titles--after">
+							<h2 class="titles__title titles__title--fz"><span class="titles__bg">Recepies</span>Recipes From
+								Our Chefs
+							</h2>
+						</div>
+						<div class="recepies__items items-recepies">
+							<div class="items-recepies__big">
+								<div class="items-recepies__head">
+									<div class="items-recepies__img">
+										<img src="img/recepies/recepies.webp" alt="Recepies Image">
+									</div>
+									<button type="button" class="items-recepies__back -icon-arrow" href="#"></button>
+								</div>
+								<div class="items-recepies__body">
+									<h3 class="items-recepies__title subtitle">Breakfast</h3>
+									<div class="items-recepies__time">
+										<time class="time" datetime="2025-07-05">05 Jul 2025</time>
+									</div>
+									<p class="items-recepies__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+									<p class="items-recepies__name">Jason Keller</p>
+									<div class="items-recepies__actions actions">
+										<div class="items-recepies__view">
+											<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+												fill="none">
+												<mask id="mask0_2_73" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+													y="0" width="22" height="16">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+														fill="white" />
+												</mask>
+												<g mask="url(#mask0_2_73)">
+													<path d="M-2 -5H24V21H-2V-5Z" fill="white" />
+												</g>
+											</svg>
+											<p class="actions__number">275</p>
+										</div>
+										<div class="items-recepies__comment">
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+												fill="none">
+												<mask id="mask0_2_82" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+													y="0" width="20" height="20">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M19 4H17V13H4V15C4 15.55 4.45 16 5 16H16L20 20V5C20 4.45 19.55 4 19 4ZM15 10V1C15 0.45 14.55 0 14 0H1C0.45 0 0 0.45 0 1V15L4 11H14C14.55 11 15 10.55 15 10Z"
+														fill="white" />
+												</mask>
+												<g mask="url(#mask0_2_82)">
+													<path d="M-3 -3H23V23H-3V-3Z" fill="white" />
+												</g>
+											</svg>
+											<p class="actions__number">12</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="items-recepies__cards">
+								<div class="items-recepies__item item-recepies">
+									<p class="item-recepies__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut</p>
+									<div class="item-recepies__body">
+										<div class="item-recepies__text">
+											<h3 class="item-recepies__title subtitle">Lunch</h3>
+											<time class="item-recepies__time time" datetime="2025-07-05">05 Jul 2025</time>
+										</div>
+										<div class="item-recepies__actions actions">
+											<div class="items-recepies__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+													fill="none">
+													<mask id="mask0_2_73" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="22" height="16">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_73)">
+														<path d="M-2 -5H24V21H-2V-5Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">275</p>
+											</div>
+											<div class="items-recepies__comment">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+													fill="none">
+													<mask id="mask0_2_82" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="20" height="20">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M19 4H17V13H4V15C4 15.55 4.45 16 5 16H16L20 20V5C20 4.45 19.55 4 19 4ZM15 10V1C15 0.45 14.55 0 14 0H1C0.45 0 0 0.45 0 1V15L4 11H14C14.55 11 15 10.55 15 10Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_82)">
+														<path d="M-3 -3H23V23H-3V-3Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">12</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="items-recepies__item item-recepies">
+									<div class="item-recepies__img">
+										<img src="img/recepies/recepies-card.webp" alt="Image food">
+									</div>
+									<p class="item-recepies__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									<div class="item-recepies__body">
+										<div class="item-recepies__text">
+											<h3 class="item-recepies__title subtitle">Dinner</h3>
+											<time class="item-recepies__time time" datetime="2025-07-05">05 Jul 2025</time>
+										</div>
+										<div class="item-recepies__actions actions">
+											<div class="items-recepies__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+													fill="none">
+													<mask id="mask0_2_73" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="22" height="16">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_73)">
+														<path d="M-2 -5H24V21H-2V-5Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">275</p>
+											</div>
+											<div class="items-recepies__comment">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+													fill="none">
+													<mask id="mask0_2_82" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="20" height="20">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M19 4H17V13H4V15C4 15.55 4.45 16 5 16H16L20 20V5C20 4.45 19.55 4 19 4ZM15 10V1C15 0.45 14.55 0 14 0H1C0.45 0 0 0.45 0 1V15L4 11H14C14.55 11 15 10.55 15 10Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_82)">
+														<path d="M-3 -3H23V23H-3V-3Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">12</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="items-recepies__item item-recepies">
+									<p class="item-recepies__label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt</p>
+									<div class="item-recepies__body">
+										<div class="item-recepies__text">
+											<h3 class="item-recepies__title subtitle">Sweets</h3>
+											<time class="item-recepies__time time" datetime="2025-07-05">05 Jul 2025</time>
+										</div>
+										<div class="item-recepies__actions actions">
+											<div class="items-recepies__view">
+												<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16"
+													fill="none">
+													<mask id="mask0_2_73" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="22" height="16">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_73)">
+														<path d="M-2 -5H24V21H-2V-5Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">275</p>
+											</div>
+											<div class="items-recepies__comment">
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+													fill="none">
+													<mask id="mask0_2_82" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+														x="0" y="0" width="20" height="20">
+														<path fill-rule="evenodd" clip-rule="evenodd"
+															d="M19 4H17V13H4V15C4 15.55 4.45 16 5 16H16L20 20V5C20 4.45 19.55 4 19 4ZM15 10V1C15 0.45 14.55 0 14 0H1C0.45 0 0 0.45 0 1V15L4 11H14C14.55 11 15 10.55 15 10Z"
+															fill="white" />
+													</mask>
+													<g mask="url(#mask0_2_82)">
+														<path d="M-3 -3H23V23H-3V-3Z" fill="white" />
+													</g>
+												</svg>
+												<p class="actions__number">12</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="social">
+				<div class="social__container">
+					<div class="social__body">
+						<div class="social__title titles titles--after">
+							<h2 class="titles__title titles__title--fz"><span class="titles__bg">Social</span>We in Social
+							</h2>
+						</div>
+						<div class="social__items">
+							<div class="social__item item-social">
+								<div class="item-social__head">
+									<div class="item-social__networks">
+										<button type="button" class="item-social__link -icon-twitter"></button>
+										<strong class="item-social__name">Twitter</strong>
+									</div>
+									<div class="item-social__button button">
+										<a class="button__link button__link--small" href="#">Follow us</a>
+									</div>
+								</div>
+								<div class="item-social__footer">
+									<div class="item-social__wrapper">
+										<div class="item-social__date">
+											<time datetime="2025-06-24T16:20">24 Jun at 16:20 pm</time>
+										</div>
+										<p class="item-social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+											do
+											eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem
+											ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa laboriosam maxime illum
+											voluptatibus alias laudantium iusto eligendi, corrupti officiis ipsum facere inventore?
+											Aperiam soluta ipsa laborum cupiditate. Perspiciatis, sed?</p>
+										<a class="item-social__connect" href="#">@DennisFerguson</a>
+									</div>
+								</div>
+							</div>
+							<div class="social__item item-social">
+								<div class="item-social__head">
+									<div class="item-social__networks">
+										<button type="button" class="item-social__link -icon-instagram"></button>
+										<strong class="item-social__name">Instagram</strong>
+									</div>
+									<div class="item-social__button button">
+										<a class="button__link button__link--small" href="#">Follow us</a>
+									</div>
+								</div>
+								<div class="item-social__footer">
+									<div class="item-social__wrapper">
+										<div class="item-social__gallery">
+											<div class="item-social__img">
+												<img src="img/social/social-1.webp" alt="Image menu">
+											</div>
+											<div class="item-social__img">
+												<img src="img/social/social-2.webp" alt="Image menu">
+											</div>
+											<div class="item-social__img">
+												<img src="img/social/social-3.webp" alt="Image menu">
+											</div>
+											<div class="item-social__img">
+												<img src="img/social/social-4.webp" alt="Image menu">
+											</div>
+											<div class="item-social__img">
+												<img src="img/social/social-5.webp" alt="Image menu">
+											</div>
+											<div class="item-social__img">
+												<img src="img/social/social-6.webp" alt="Image menu">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="social__item item-social">
+								<div class="item-social__head">
+									<div class="item-social__networks">
+										<button type="button" class="item-social__link -icon-facebook"></button>
+										<strong class="item-social__name">Facebook</strong>
+									</div>
+									<div class="item-social__button button">
+										<a class="button__link button__link--small" href="#">Follow us</a>
+									</div>
+								</div>
+								<div class="item-social__footer">
+									<div class="item-social__wrapper">
+										<div class="item-social__date">
+											<time datetime="2025-06-24T16:20">26 Jun at 16:20 pm</time>
+										</div>
+										<p class="item-social__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+											do
+											eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem
+											ipsum dolor sit amet, consectetur adipiscing Lorem ipsum, dolor sit amet consectetur
+											adipisicing elit. Quis ullam repellendus tenetur iusto illo sequi quia molestias
+											veniam, incidunt placeat voluptatibus itaque laudantium molestiae eius accusamus modi
+											labore quaerat quidem.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="contacts" class="footer">
+			<div class="footer__body">
+				<div class="footer__start">
+					<div class="footer__items items">
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+									<mask id="mask0_8_17" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M10.5 0C4.97746 0 0.459015 4.5 0.459015 10C0.459015 15.5 4.97746 20 10.5 20C16.0225 20 20.541 15.5 20.541 10C20.541 4.5 16.0225 0 10.5 0ZM14.7172 14.2L9.4959 11V5H11.0021V10.2L15.5205 12.9L14.7172 14.2Z"
+											fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_17)">
+										<rect x="-2.55328" y="-3" width="26.1066" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<p class="items__text">Today <time datetime="10:00">10:00</time> am - <time
+									datetime="07:00">7:00</time> pm
+							</p>
+							<p class="items__about">Working hours</p>
+						</div>
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<mask id="mask0_8_10" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="18" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M18 0L0 7.53V8.51L6.84 11.16L9.48 18H10.46L18 0Z" fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_10)">
+										<rect x="-4" y="-4" width="26" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<p class="items__text">Velyka Vasylkivska 100</p>
+							<p class="items__about">Get Directions</p>
+						</div>
+						<div class="items__item">
+							<div class="items__svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+									<mask id="mask0_8_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+										width="18" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M3.62 7.79C5.06 10.62 7.38 12.93 10.21 14.38L12.41 12.18C12.68 11.91 13.08 11.82 13.43 11.94C14.55 12.31 15.76 12.51 17 12.51C17.55 12.51 18 12.96 18 13.51V17C18 17.55 17.55 18 17 18C7.61 18 0 10.39 0 1C0 0.45 0.45 0 1 0H4.5C5.05 0 5.5 0.45 5.5 1C5.5 2.25 5.7 3.45 6.07 4.57C6.18 4.92 6.1 5.31 5.82 5.59L3.62 7.79Z"
+											fill="white" />
+									</mask>
+									<g mask="url(#mask0_8_3)">
+										<rect x="-4" y="-4" width="26" height="26" fill="white" fill-opacity="0.5" />
+									</g>
+								</svg>
+							</div>
+							<a class="items__call" href="tel:+38 (063)833 24 15">+38 (063)833 24 15</a>
+							<p class="items__about">Call Online</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer__end">
+					<div class="footer__logo">
+						<a href="index.html" class="logo -icon-logo"><span>Healthy switcher</span></a>
+					</div>
+					<p class="footer__dev">© Designed by Yellow Snow. All Rights Reserved. </p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
