@@ -6,7 +6,7 @@
 	font-display: block;
 }
 
-[class*=" -icon-"] {
+[class*=" -icon-"]::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icons";
 	speak: never;
