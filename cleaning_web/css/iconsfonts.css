@@ -6,7 +6,7 @@
 	font-display: block;
 }
 
-[class*="-icon-"]::before {
+[class*=" -icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icons";
 	speak: never;
@@ -23,16 +23,24 @@
 
 .-icon-call:before {
 	content: "\e900";
+	color: #ffede6;
 }
 .-icon-facebook:before {
 	content: "\e901";
+	color: #fff;
 }
-.-icon-insta:before {
+.-icon-viber:before {
 	content: "\e902";
 }
-.-icon-mail:before {
+.-icon-insta:before {
 	content: "\e903";
+	color: #fff;
+}
+.-icon-mail:before {
+	content: "\e904";
+	color: #ffede6;
 }
 .-icon-watsap:before {
-	content: "\e904";
+	content: "\e905";
+	color: #fff;
 }

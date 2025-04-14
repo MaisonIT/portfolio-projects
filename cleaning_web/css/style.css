@@ -991,11 +991,8 @@ main {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.contacts__facebook {
-  background-color: var(--facebook-color);
-}
-.contacts__insta {
-  background-color: var(--insta-color);
+.contacts__viber {
+  background-color: var(--viber-color);
 }
 .contacts__whatsap {
   background-color: var(--whatsap-color);
