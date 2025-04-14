@@ -89,7 +89,6 @@ main {
   }
 }
 .header__logo {
-  color: var(--hover-logo-color);
   position: relative;
   z-index: 4;
 }
@@ -608,6 +607,10 @@ main {
   }
 }
 
+.-icon-logo {
+  color: var(--hover-logo-color);
+}
+
 .works__items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(12.5rem, 100%), 1fr));
@@ -1039,6 +1042,11 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 33.125em) {
+  .items-recepies__view, .items-recepies__comment {
+    gap: 0.3125rem;
+  }
+}
 .items-recepies__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1077,6 +1085,7 @@ main {
 @media (max-width: 33.125em) {
   .items-recepies__item {
     padding: 0.3125rem;
+    aspect-ratio: 0;
   }
 }
 

@@ -82,7 +82,6 @@ main {
 	}
 	// .header__logo
 	&__logo {
-		color: var(--hover-logo-color);
 		position: relative;
 		z-index: 4;
 	}
@@ -528,6 +527,10 @@ main {
 		}
 	}
 }
+// Logo
+.-icon-logo {
+	color: var(--hover-logo-color);
+}
 //=====================================================================
 .works {
 	// .works__items
@@ -885,6 +888,9 @@ main {
 		display: flex;
 		gap: toRem(14);
 		align-items: center;
+		@media (max-width: toEm(530)) {
+			gap: toRem(5);
+		}
 	}
 	// .items-recepies__cards
 	&__cards {
@@ -920,6 +926,7 @@ main {
 		}
 		@media (max-width: toEm(530)) {
 			padding: toRem(5);
+			aspect-ratio: 0;
 		}
 	}
 }

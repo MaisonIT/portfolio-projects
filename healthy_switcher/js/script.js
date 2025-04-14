@@ -16,7 +16,7 @@ function documentAction(e) {
 	if (targetElement.closest(`.icon-menu`)) {
 		html.classList.toggle(`menu-open`)
 	}
-	targetElement.closest(`.menu-link`) && html.classList.contains(`.menu-open`) ? html.classList.remove(`menu-open`) : null
+	targetElement.closest(`.menu__link`) && html.classList.contains(`menu-open`) ? html.classList.remove(`menu-open`) : null
 }
 
 // Swiper
