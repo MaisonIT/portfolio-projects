@@ -379,16 +379,8 @@ main {
   .services__container {
     -webkit-padding-before: 4.0625rem;
             padding-block-start: 4.0625rem;
-    -webkit-padding-after: 6.25rem;
-            padding-block-end: 6.25rem;
-  }
-}
-@media (min-width: 76.875em) {
-  .services__container {
-    -webkit-padding-before: 5.9375rem;
-            padding-block-start: 5.9375rem;
-    -webkit-padding-after: 10rem;
-            padding-block-end: 10rem;
+    -webkit-padding-after: 1.25rem;
+            padding-block-end: 1.25rem;
   }
 }
 .services__header {

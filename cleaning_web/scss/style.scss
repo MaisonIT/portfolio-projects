@@ -320,11 +320,7 @@ main {
 		padding-block-start: toRem(35);
 		@media (min-width: toEm(768)) {
 			padding-block-start: toRem(65);
-			padding-block-end: toRem(100);
-		}
-		@media (min-width: toEm(1230)) {
-			padding-block-start: toRem(95);
-			padding-block-end: toRem(160);
+			padding-block-end: toRem(20);
 		}
 	}
 	// .services__header
