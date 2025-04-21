@@ -497,7 +497,7 @@ main {
   .patrners::after {
     width: 3.125rem;
     height: 4.375rem;
-    inset-block-end: 0;
+    inset-block-end: -3%;
   }
 }
 .patrners__body {
