@@ -137,6 +137,11 @@ main {
 .menu {
 	// .menu__body
 	&__body {
+		@media (max-width: toEm(768)) {
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+		}
 		&::before {
 			content: "";
 			inline-size: 10%;
