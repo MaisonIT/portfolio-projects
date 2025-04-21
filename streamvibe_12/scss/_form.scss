@@ -1,0 +1,53 @@
+.support-form {
+	@include adaptiveValue("padding-top", 40, 20);
+	// .support-form__items
+	&__items {
+		display: flex;
+		@include adaptiveValue("gap", 50, 20);
+		flex-wrap: wrap;
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 50, 20);
+		}
+	}
+	// .support-form__item
+	&__item {
+		flex-basis: min(toRem(350), 100%);
+		flex-grow: 1;
+		flex-shrink: 0;
+	}
+	// .support-form__label
+	&__label {
+		display: block;
+		color: var(--white-color);
+		&:not(:last-child) {
+			margin-bottom: toRem(16);
+		}
+	}
+	// .support-form__input
+	&__input {
+	}
+	// .support-form__phone
+	&__phone {
+		display: flex;
+		gap: toRem(10);
+	}
+	// .support-form__select
+	&__select {
+	}
+	// .support-form__footer
+	&__footer {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: toRem(20);
+	}
+	// .support-form__checkbox
+	&__checkbox {
+	}
+	// .support-form__button
+	&__button {
+	}
+}
+.input {
+}
