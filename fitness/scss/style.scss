@@ -645,9 +645,6 @@ main {
 	// .item-works__spoiler
 	&__spoiler {
 		padding-inline-end: toRem(39);
-		&::marker {
-			display: none;
-		}
 		&[open] {
 			border-radius: toRem(10);
 			box-shadow: toRem(0) toRem(20) toRem(95) toRem(0) rgba(201, 203, 204, 0.3);
@@ -663,8 +660,13 @@ main {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		list-style: none;
 		margin-block-end: toRem(29);
+		strong {
+			list-style: none;
+			&::marker {
+				display: none;
+			}
+		}
 	}
 	// .item-works__marker
 	&__marker {

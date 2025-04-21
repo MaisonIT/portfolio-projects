@@ -769,9 +769,6 @@ main {
   -webkit-padding-end: 2.4375rem;
           padding-inline-end: 2.4375rem;
 }
-.item-works__spoiler::marker {
-  display: none;
-}
 .item-works__spoiler[open] {
   border-radius: 0.625rem;
   -webkit-box-shadow: 0rem 1.25rem 5.9375rem 0rem rgba(201, 203, 204, 0.3);
@@ -793,9 +790,14 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
   -webkit-margin-after: 1.8125rem;
           margin-block-end: 1.8125rem;
+}
+.item-works__title strong {
+  list-style: none;
+}
+.item-works__title strong::marker {
+  display: none;
 }
 .item-works__marker svg path {
   -webkit-transition: opacity 0.4s;
