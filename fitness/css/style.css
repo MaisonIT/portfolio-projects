@@ -491,12 +491,13 @@ main {
 @media (max-width: 53.125em) {
   .patrners::after {
     inset-inline-start: 90%;
-    inset-block-end: -5%;
   }
 }
-@media (max-width: 30em) {
+@media (max-width: 48em) {
   .patrners::after {
-    inset-block-end: -15%;
+    width: 3.125rem;
+    height: 4.375rem;
+    inset-block-end: 0;
   }
 }
 .patrners__body {
@@ -565,7 +566,13 @@ main {
 }
 @media (max-width: 61.5625em) {
   .about::after {
-    inset-block-end: 0;
+    inset-block-end: -3%;
+  }
+}
+@media (max-width: 48em) {
+  .about::after {
+    width: 3.125rem;
+    height: 4.375rem;
   }
 }
 .about::before {
@@ -720,9 +727,21 @@ main {
   inset-inline-end: -6%;
   inset-block-end: -39%;
 }
+@media (max-width: 48em) {
+  .works::after {
+    width: 3.125rem;
+    height: 4.375rem;
+  }
+}
 .works__body {
   -webkit-margin-after: 8.75rem;
           margin-block-end: 8.75rem;
+}
+@media (max-width: 48em) {
+  .works__body {
+    -webkit-margin-after: 1.875rem;
+            margin-block-end: 1.875rem;
+  }
 }
 .works__items {
   display: grid;
@@ -798,14 +817,9 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 0.625rem;
   -webkit-margin-after: 1.8125rem;
           margin-block-end: 1.8125rem;
-}
-.item-works__title strong {
-  list-style: none;
-}
-.item-works__title strong::marker {
-  display: none;
 }
 .item-works__marker svg path {
   -webkit-transition: opacity 0.4s;

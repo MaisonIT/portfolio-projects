@@ -395,10 +395,11 @@ main {
 		inset-block-end: 5%;
 		@media (max-width: toEm(850)) {
 			inset-inline-start: 90%;
-			inset-block-end: -5%;
 		}
-		@media (max-width: toEm(480)) {
-			inset-block-end: -15%;
+		@media (max-width: toEm(768)) {
+			width: toRem(50);
+			height: toRem(70);
+			inset-block-end: 0;
 		}
 	}
 	// .patrners__body
@@ -466,7 +467,11 @@ main {
 		inset-inline-start: -1%;
 		inset-block-end: -9%;
 		@media (max-width: toEm(985)) {
-			inset-block-end: 0;
+			inset-block-end: -3%;
+		}
+		@media (max-width: toEm(768)) {
+			width: toRem(50);
+			height: toRem(70);
 		}
 	}
 	&::before {
@@ -599,10 +604,17 @@ main {
 		position: absolute;
 		inset-inline-end: -6%;
 		inset-block-end: -39%;
+		@media (max-width: toEm(768)) {
+			width: toRem(50);
+			height: toRem(70);
+		}
 	}
 	// .works__body
 	&__body {
 		margin-block-end: toRem(140);
+		@media (max-width: toEm(768)) {
+			margin-block-end: toRem(30);
+		}
 	}
 	// .works__items
 	&__items {
@@ -666,13 +678,8 @@ main {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: toRem(10);
 		margin-block-end: toRem(29);
-		strong {
-			list-style: none;
-			&::marker {
-				display: none;
-			}
-		}
 	}
 	// .item-works__marker
 	&__marker {
