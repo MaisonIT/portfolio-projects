@@ -1,0 +1,15 @@
+.search-popup {
+	display: flex;
+	gap: toRem(15);
+
+	@media (max-width: toEm(369.98)) {
+		flex-direction: column;
+	}
+
+	// .search-popup__input
+	&__input {
+	}
+	// .search-popup__button
+	&__button {
+	}
+}

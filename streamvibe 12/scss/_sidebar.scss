@@ -1,0 +1,64 @@
+.released-year {
+	display: flex;
+	flex-wrap: wrap;
+	gap: toRem(5) toRem(10);
+	// .released-year__item
+	&__item {
+	}
+	// .released-year__link
+	&__link {
+		font-weight: 600;
+		color: var(--white-color);
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+//========================================================================================================================================================
+.rating-items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: toRem(20);
+	// .rating-items__rating
+	&__rating {
+		flex-grow: 1;
+	}
+}
+//========================================================================================================================================================
+.person {
+	display: grid;
+	gap: toRem(10);
+	// .person__item
+	&__item {
+		padding-inline: toRem(12);
+		padding-block: toRem(12);
+		border-radius: toRem(12);
+		border: toRem(1) solid var(--dark-color-4);
+		background: var(--bg-color);
+		display: flex;
+		gap: toRem(8);
+		align-items: flex-start;
+	}
+	// .person__image
+	&__image {
+		border-radius: toRem(8);
+		aspect-ratio: 1;
+		width: toRem(50);
+		flex-shrink: 0;
+	}
+	// .person__body
+	&__body {
+		align-self: center;
+	}
+	// .person__title
+	&__title {
+		font-weight: 600;
+		color: var(--white-color);
+	}
+	// .person__country
+	&__country {
+		font-size: toRem(14);
+	}
+}

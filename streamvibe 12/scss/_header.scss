@@ -1,0 +1,216 @@
+.header {
+	position: fixed;
+	inline-size: 100%;
+	inset-inline-start: 0;
+	inset-block-start: 0;
+	z-index: 50;
+	transition: background-color 0.5s;
+	&--inner {
+		position: sticky;
+	}
+	// .header__container
+	&__container {
+		padding-block: toRem(10);
+		display: grid;
+		gap: toRem(20);
+		align-items: center;
+		grid-template-columns: auto 1fr;
+
+		@media (min-width: toEm(768)) and (max-width: toEm(1199.98)) {
+			grid-template-columns: auto 1fr auto;
+		}
+		@media (min-width: toEm(992)) {
+			padding-block: toRem(18);
+			gap: toRem(30);
+		}
+		@media (min-width: toEm(1200)) {
+			grid-template-columns: 1fr auto 1fr;
+		}
+	}
+	&__link {
+		justify-self: start;
+	}
+	// .header__logo
+	&__logo {
+		position: relative;
+		z-index: 5;
+		inline-size: toRem(150);
+		@media (min-width: toEm(992)) {
+			inline-size: toRem(199);
+		}
+	}
+	// .header__menu
+	&__menu {
+	}
+	// .header__actions
+	&__actions {
+		position: relative;
+		z-index: 5;
+		justify-self: end;
+	}
+
+	&--scroll {
+		background-color: rgba(20, 20, 20, 0.8);
+	}
+}
+.menu {
+	background-color: var(--dark-color-2);
+	padding: toRem(85) toRem(15) toRem(30) toRem(15);
+	@media (min-width: toEm(768)) {
+		border-radius: toRem(12);
+		border: toRem(2) solid var(--dark-color-1);
+		padding: toRem(5);
+	}
+	@media (min-width: toEm(992)) {
+		border: toRem(4) solid var(--dark-color-1);
+		padding: toRem(10);
+	}
+	@media (max-width: toEm(767.98)) {
+		position: fixed;
+		inline-size: 100%;
+		block-size: 100%;
+		inset-inline-start: -100%;
+		inset-block-start: 0;
+		z-index: 2;
+		overflow: auto;
+		transition: inset-inline-start 0.5s;
+
+		.menu-open & {
+			inset-inline-start: 0%;
+		}
+		&::before {
+			content: "";
+			block-size: toRem(65);
+			inline-size: 100%;
+			position: fixed;
+			inset-inline-start: -100%;
+			inset-block-start: 0;
+			transition: inset-inline-start 0.5s;
+			background-color: var(--dark-color-2);
+
+			.menu-open & {
+				inset-inline-start: 0%;
+			}
+		}
+	}
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		column-gap: toRem(6);
+		row-gap: toRem(3);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		@media (max-width: toEm(767.98)) {
+			flex-direction: column;
+			align-items: flex-end;
+			row-gap: toRem(15);
+		}
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+		padding-inline: toRem(12);
+		padding-block: toRem(6);
+		border-radius: toRem(8);
+		transition:
+			background-color 0.3s,
+			color 0.3s;
+		&--active {
+			font-weight: 500;
+			color: var(--white-color);
+			background-color: var(--dark-color-3);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--white-color);
+				background-color: var(--dark-color-3);
+			}
+		}
+		@media (min-width: toEm(992)) and (max-width: toEm(1629.98)) {
+			padding-inline: toRem(20);
+			padding-block: toRem(10);
+		}
+		@media (min-width: toEm(1630)) {
+			padding-inline: toRem(24);
+			padding-block: toRem(14);
+		}
+		@media (max-width: toEm(767.98)) {
+			font-size: toRem(24);
+		}
+	}
+}
+.icon-menu {
+	display: none;
+	@media (max-width: toEm(767.98)) {
+		display: block;
+		inline-size: toRem(30);
+		block-size: toRem(18);
+		position: relative;
+		&::before,
+		&::after,
+		span {
+			content: "";
+			position: absolute;
+			block-size: toRem(2);
+			inline-size: 100%;
+			inset-inline-end: 0;
+			background-color: var(--white-color);
+			transition: all 0.5s;
+		}
+		&::before {
+			inset-block-start: 0;
+			.menu-open & {
+				inset-block-start: 50%;
+				transform: translateY(-50%) rotate(-45deg);
+			}
+		}
+		&::after {
+			inset-block-end: 0;
+			inline-size: 50%;
+			.menu-open & {
+				inset-block-end: 50%;
+				inline-size: 100%;
+				transform: translateY(50%) rotate(45deg);
+			}
+		}
+		span {
+			inset-block-start: 50%;
+			transform: translateY(-50%);
+			.menu-open & {
+				inline-size: 0;
+			}
+		}
+	}
+}
+.actions-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: toRem(20);
+	// .actions-header__item
+	&__item {
+		transition: color 0.3s;
+		font-size: toRem(24);
+		color: var(--white-color);
+		@media (min-width: toEm(1630)) {
+			font-size: toRem(27);
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--red-color);
+			}
+		}
+	}
+	@media (min-width: toEm(1630)) {
+		gap: toRem(37);
+	}
+}
