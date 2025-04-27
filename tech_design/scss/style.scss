@@ -246,14 +246,15 @@ main {
 		@media (min-width: toEm(1080)) {
 			font-size: toRem(95);
 		}
-		div {
+		span {
 			display: flex;
 			align-items: center;
 			gap: toRem(20);
 		}
-		span {
-			color: var(--bg-hover-color);
-		}
+	}
+	// item-hero__blue
+	&__blue {
+		color: var(--bg-hover-color);
 	}
 	// item-hero__img
 	&__img {

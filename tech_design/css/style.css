@@ -293,7 +293,7 @@ main {
     font-size: 5.9375rem;
   }
 }
-.item-hero__title div {
+.item-hero__title span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +302,7 @@ main {
           align-items: center;
   gap: 1.25rem;
 }
-.item-hero__title span {
+.item-hero__blue {
   color: var(--bg-hover-color);
 }
 .item-hero__img {
