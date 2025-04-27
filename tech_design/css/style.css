@@ -743,10 +743,10 @@ main {
 
 .scroller[data-animated=true] {
   overflow: hidden;
-  -webkit-mask: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, white), color-stop(80%, white), to(transparent));
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  mask: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, white), color-stop(80%, white), to(transparent));
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, white), color-stop(80%, white), to(transparent));
+  -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, white), color-stop(80%, white), to(transparent));
+  mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated=true] .scroller__inner {
