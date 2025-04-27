@@ -357,7 +357,7 @@ main {
 		padding-inline: toRem(25);
 		@media (min-width: toEm(743.98)) {
 			font-size: toRem(18);
-			adding-block: toRem(22) toRem(18);
+			padding-block: toRem(22) toRem(18);
 			padding-inline: toRem(38);
 		}
 		@media (min-width: toEm(1080)) {

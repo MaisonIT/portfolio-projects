@@ -434,7 +434,7 @@ main {
 @media (min-width: 46.49875em) {
   .portfolio__label {
     font-size: 1.125rem;
-    adding-block: 1.375rem 1.125rem;
+    padding-block: 1.375rem 1.125rem;
     padding-inline: 2.375rem;
   }
 }
