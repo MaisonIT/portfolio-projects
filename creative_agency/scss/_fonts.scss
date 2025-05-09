@@ -1,0 +1,31 @@
+// Inter шрифт
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap");
+// ITC Avant Garde Gothic Std
+@font-face {
+	font-family: "ITCAvantGardeGothicStd";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/ITCAvantGardeGothicStdBook.woff2") format("woff2");
+}
+@font-face {
+	font-family: "ITCAvantGardeGothicStd";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/ITCAvantGardeGothicStdMedium.woff2") format("woff2");
+}
+@font-face {
+	font-family: "ITCAvantGardeGothicStd";
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/ITCAvantGardeGothicStdDemi.woff2") format("woff2");
+}
+@font-face {
+	font-family: "ITCAvantGardeGothicStd";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url("../fonts/ITCAvantGardeGothicStdBold.woff2") format("woff2");
+}
