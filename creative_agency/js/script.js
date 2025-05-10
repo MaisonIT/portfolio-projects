@@ -11,6 +11,7 @@ function windowLoad() {
 	swiperAction()
 	scrollHeader()
 	swiperClientAction()
+	scrollAnimation()
 }
 
 function documentAction(e) {
@@ -46,13 +47,13 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-// Swiper
+// Swiper logo
 function scrollTag() {
 
 	const scrollers = document.querySelectorAll(`.scroller`);
 
 	if (!window.matchMedia(`(prefes-reduced-motion: reduce)`).matches) {
-		// addAnimation()
+		addAnimation()
 	}
 
 	function addAnimation() {
@@ -127,3 +128,48 @@ function scrollHeader() {
 		header.classList.toggle(`header--scroll`, (scrollY > 20))
 	}
 }
+
+// Scroll Animation
+function scrollAnimation() {
+	const options = {
+		root: null,
+		rootMargin: `0px 0px 0px 0px`,
+		theshold: 0.5,
+	}
+
+	const callBack = (entries, observer) => {
+		entries.forEach(entry => {
+			const currentElement = entry.target
+			if (entry.isIntersecting) {
+				currentElement.classList.add(`animate`)
+				console.log(`I see you`)
+			} else {
+				currentElement.classList.remove(`animate`)
+				console.log(`I dont see you`)
+			}
+		})
+	}
+	const observer = new IntersectionObserver(callBack, options)
+	const target = document.querySelectorAll(`.anim`)
+	console.log(target)
+	target.forEach(target => {
+		observer.observe(target)
+	})
+}
+
+// Delay items
+document.querySelectorAll(`.item-improves__item`).forEach((item, index) => {
+	item.style.transitionDelay = `${index * 0.5}s`
+})
+document.querySelectorAll(`.services__item`).forEach((item, index) => {
+	item.style.transitionDelay = `${index * 0.2}s`
+})
+document.querySelectorAll(`.projects__item`).forEach((item, index) => {
+	item.style.transitionDelay = `${index * 0.5}s`
+})
+document.querySelectorAll(`.testemonials__item`).forEach((item, index) => {
+	item.style.transitionDelay = `${index * 0.2}s`
+})
+document.querySelectorAll(`.contact__list`).forEach((item, index) => {
+	item.style.transitionDelay = `${index * 0.2}s`
+})
