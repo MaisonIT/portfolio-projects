@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Іконка -->
+	<!-- Заголовок сторінки в браузері -->
+	<title>Dark Web</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo logo">
+						<img src="img/logo.svg" alt="Logo">
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#movies" class="menu__link">Movies & Shows</a></li>
+								<li class="menu__item"><a href="#support" class="menu__link">Support</a></li>
+								<li class="menu__item"><a href="#subscriptions" class="menu__link">Subscriptions</a></li>
+							</ul>
+							<div class="menu__actions action">
+								<button class="action__button -icon-search"></button>
+								<button class="action__button -icon-notification"></button>
+							</div>
+						</nav>
+					</div>
+					<div class="header__actions action">
+						<button class="action__button -icon-search"></button>
+						<button class="action__button -icon-notification"></button>
+					</div>
+					<button type="button" class="header__item icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<section class="hero">
+				<div class="hero__body">
+					<div class="hero__image">
+						<img src="img/home/hero/bg.webp" alt="Main Image">
+					</div>
+					<div class="hero__play">
+						<img src="img/home/hero/play.svg" alt="Play Image">
+					</div>
+				</div>
+				<div class="hero__container">
+					<div class="hero__items title-item">
+						<h1 class="title-item__title title-item__title--big">
+							The Best Streaming Experience
+						</h1>
+						<p class="title-item__about">StreamVibe is the best streaming experience for watching your favorite
+							movies and shows on demand, anytime, anywhere. <span>
+								movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of
+								content, including the latest blockbusters, classic movies, popular TV shows, and more. You can
+								also create your own watchlists, so you can easily find the content you want to watch.
+								movies and shows on demand, anytime, anywhere. </span></p>
+						<div class="title-item__button buttons">
+							<button class="buttons__button -icon-play" type="button">Start Watching Now</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="explore">
+				<div class="explore__container">
+					<div class="explore__head head-title">
+						<div class="head-title__items title-item">
+							<h2 class="title-item__title">
+								Explore our wide variety of categories
+							</h2>
+							<p class="title-item__about">Whether you're looking for a comedy to make you laugh, a drama to make
+								you think, or a documentary to learn something new</p>
+						</div>
+						<div class="head-title__pagination controls">
+							<button type="button"
+								class="controls__scroll controls__scroll--prev swiper-button-disabled -icon-arrow"></button>
+							<div class="controls__pagination">
+								<span class="controls__element-item"></span>
+								<span class="controls__element-item"></span>
+								<span class="controls__element-item"></span>
+								<span class="controls__element-item"></span>
+							</div>
+							<button type="button"
+								class="controls__scroll controls__scroll--rotate swiper-button-disabled -icon-arrow"></button>
+						</div>
+					</div>
+					<div class="explore__items scroll swiper">
+						<div class="scroll__body swiper-wrapper">
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-5.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-6.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-7.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-8.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Adventure</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-9.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-10.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-11.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-12.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Comedy</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-13.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-14.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-15.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-16.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Drama</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-17.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-18.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-19.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-20.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Horror</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+							<article class="scroll__item swiper-slide">
+								<a href="#" class="scroll__link item-scroll">
+									<div class="item-scroll__image">
+										<img class="item-scroll__img" src="img/home/explore/film-1.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-2.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-3.webp" alt="Film Image">
+										<img class="item-scroll__img" src="img/home/explore/film-4.webp" alt="Film Image">
+									</div>
+									<div class="item-scroll__block">
+										<h4 class="item-scroll__title">Action</h4>
+										<div class="item-scroll__arrow -icon-arrow"></div>
+									</div>
+								</a>
+							</article>
+						</div>
+						<div class="scroll__scrollbar scrollbar"></div>
+					</div>
+				</div>
+			</section>
+			<section class="provide">
+				<div class="provide__container">
+					<div class="provide__head head-title">
+						<div class="head-title__items title-item">
+							<h2 class="title-item__title">
+								We Provide you streaming experience across various devices.
+							</h2>
+							<p class="title-item__about">With StreamVibe, you can enjoy your favorite movies and TV shows
+								anytime, anywhere. <span>
+									anytime, anywhere. Our platform is designed to be compatible with a wide range of devices,
+									ensuring that you never miss a moment of entertainment.
+									anytime, anywhere. </span></p>
+						</div>
+					</div>
+					<div class="provide__items">
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/phone.svg" alt="Phone Icon">
+								</div>
+								<h3 class="item-provide__title">Smartphones</h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/tablet.svg" alt="Tablet Icon">
+								</div>
+								<h3 class="item-provide__title">Tablet</h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/tv.svg" alt="TV Icon">
+								</div>
+								<h3 class="item-provide__title">Smart TV</h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/laptop.svg" alt="Laptop Icon">
+								</div>
+								<h3 class="item-provide__title">Laptops</h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/consoles.svg" alt="Consoles Icon">
+								</div>
+								<h3 class="item-provide__title">Gaming Consoles</h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+						<article class="provide__item item-provide">
+							<div class="item-provide__head">
+								<div class="item-provide__icon">
+									<img src="img/home/provide/vr.svg" alt="VR Icon">
+								</div>
+								<h3 class="item-provide__title">VR Headsets </h3>
+							</div>
+							<p class="item-provide__text">StreamVibe is optimized for both Android and iOS smartphones.
+								Download our app from the Google Play Store or the Apple App Store</p>
+						</article>
+					</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__head title-item">
+						<div class="title-item__block">
+							<h2 class="title-item__title">
+								Frequently Asked Questions
+							</h2>
+							<p class="title-item__about">Got questions? We've got answers! Check out our FAQ section to find
+								answers to the most common questions about StreamVibe.</p>
+						</div>
+						<div class="title-item__button buttons">
+							<button class="buttons__button" type="button">Ask a Question</button>
+						</div>
+					</div>
+					<div class="faq__items">
+						<div class="faq__columns">
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">What is StreamVibe?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">How much does StreamVibe cost?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">What content is available on StreamVibe?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">How can I watch StreamVibe?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="faq__columns">
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">How do I sign up for StreamVibe?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">What is the StreamVibe free trial?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">How do I contact StreamVibe customer support?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body">
+										<div class="item-faq__block">
+											<div class="item-faq__number"></div>
+											<h3 class="item-faq__title">What are the StreamVibe payment methods?</h3>
+										</div>
+										<div class="item-faq__marker">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
+												fill="none">
+												<path
+													d="M23.75 14.25H16.25V6.75C16.25 6.41848 16.1183 6.10054 15.8839 5.86612C15.6495 5.6317 15.3315 5.5 15 5.5C14.6685 5.5 14.3505 5.6317 14.1161 5.86612C13.8817 6.10054 13.75 6.41848 13.75 6.75V14.25H6.25C5.91848 14.25 5.60054 14.3817 5.36612 14.6161C5.1317 14.8505 5 15.1685 5 15.5C5 15.8315 5.1317 16.1495 5.36612 16.3839C5.60054 16.6183 5.91848 16.75 6.25 16.75H13.75V24.25C13.75 24.5815 13.8817 24.8995 14.1161 25.1339C14.3505 25.3683 14.6685 25.5 15 25.5C15.3315 25.5 15.6495 25.3683 15.8839 25.1339C16.1183 24.8995 16.25 24.5815 16.25 24.25V16.75H23.75C24.0815 16.75 24.3995 16.6183 24.6339 16.3839C24.8683 16.1495 25 15.8315 25 15.5C25 15.1685 24.8683 14.8505 24.6339 14.6161C24.3995 14.3817 24.0815 14.25 23.75 14.25Z"
+													fill="white" />
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+												fill="none">
+												<path
+													d="M23.75 13.75H6.25C5.91848 13.75 5.60054 13.8817 5.36612 14.1161C5.1317 14.3505 5 14.6685 5 15C5 15.3315 5.1317 15.6495 5.36612 15.8839C5.60054 16.1183 5.91848 16.25 6.25 16.25H23.75C24.0815 16.25 24.3995 16.1183 24.6339 15.8839C24.8683 15.6495 25 15.3315 25 15C25 14.6685 24.8683 14.3505 24.6339 14.1161C24.3995 13.8817 24.0815 13.75 23.75 13.75Z"
+													fill="white" />
+											</svg>
+										</div>
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="plan">
+				<div class="plan__container">
+					<div class="plan__head title-item">
+						<div class="title-item__block">
+							<h2 class="title-item__title">
+								Choose the plan that's right for you
+							</h2>
+							<p class="title-item__about">Join StreamVibe and select from our flexible subscription options
+								tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+						</div>
+						<div class="title-item__switch switcher">
+							<button data-type="m" class="switcher__button switcher__button--active"
+								type="button">Monthly</button>
+							<button data-type="y" class="switcher__button" type="button">Yearly</button>
+						</div>
+					</div>
+					<div class="plan__items">
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Basic Plan</h3>
+								<p class="item-plan__text">Enjoy an extensive library of movies and shows, featuring a range of
+									content, including recently released titles.</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small></div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Standard Plan</h3>
+								<p class="item-plan__text">Access to a wider selection of movies and shows, including most new
+									releases and exclusive content</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small></div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Premium Plan</h3>
+								<p class="item-plan__text">Access to a widest selection of movies and shows, including all new
+									releases and Offline Viewing</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small>
+							</div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__image">
+						<img src="img/home/trial/bg-trial.webp" alt="Banner Image">
+					</div>
+					<div class="banner__head title-item">
+						<div class="title-item__block">
+							<h2 class="title-item__title">
+								Start your free trial today!
+							</h2>
+							<p class="title-item__about">This is a clear and concise call to action that encourages users to
+								sign up for a free trial of StreamVibe.</p>
+						</div>
+						<div class="title-item__button buttons">
+							<button class="buttons__button" type="button">Start a Free Trail</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__items">
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Home</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Categories</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Devices</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Pricing</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Movies</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Shows</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Support</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Subscription</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Plans</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Features</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Connect With Us</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-facebook"></a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-twitter"></a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__privacy">
+						<p class="footer__text">@2023 streamvib, All Rights Reserved</p>
+						<div class="footer__terms">
+							<a href="#" class="footer__link">Terms of Use</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+							<a href="#" class="footer__link">Cookie Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
