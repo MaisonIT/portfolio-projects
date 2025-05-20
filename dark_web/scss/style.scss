@@ -6,7 +6,7 @@
 /* Локальне підключення шрифтів */
 @import "_fonts.scss";
 // Іконочний шрифт
-@import url("iconsfontstyle.css");
+@import url("iconsfontsstyle.css");
 /* Скидання стилів */
 @import url("reset.css");
 // Змінні
@@ -446,27 +446,10 @@ main {
 	}
 	// .faq__item
 	&__item {
-		max-width: 100%;
-		@media (min-width: toEm(1130)) {
-			max-width: toRem(758);
-		}
-		position: relative;
-		&::after {
-			content: "";
-			width: 100%;
-			height: toRem(1);
-			background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #e50000 16.67%, rgba(229, 0, 0, 0) 100%);
-			position: absolute;
-			inset-inline-start: 0;
-			inset-block-end: 0;
-		}
-	}
-}
-.item-faq {
-	cursor: pointer;
-	counter-increment: faq-counter;
-	// .item-faq__spoiler
-	&__spoiler {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		gap: toRem(24);
 		padding: toRem(20);
 		@media (min-width: toEm(768)) {
 			padding: toRem(24);
@@ -474,41 +457,14 @@ main {
 		@media (min-width: toEm(1440)) {
 			padding: toRem(30);
 		}
-		&[open] {
-			padding: toRem(20);
-			@media (min-width: toEm(768)) {
-				padding: toRem(24);
-			}
-			@media (min-width: toEm(1440)) {
-				padding: toRem(34) toRem(30);
-			}
-		}
-	}
-	// .item-faq__body
-	&__body {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: toRem(20);
-		&:hover .item-faq__title {
-			color: var(--bg-4);
-		}
-	}
-	// .item-faq__block
-	&__block {
-		display: flex;
-		align-items: center;
-		gap: toRem(16);
-		@media (min-width: toEm(1440)) {
-			gap: toRem(20);
-		}
-	}
-	// .item-faq__number
-	&__number {
 		&::before {
 			content: "";
 			content: counter(faq-counter, decimal-leading-zero);
 			font-size: toRem(20);
+			align-self: start;
+			text-align: center;
+			max-width: toRem(62);
+			max-height: toRem(67);
 			font-weight: 600;
 			padding: toRem(12);
 			background-color: var(--border);
@@ -521,59 +477,84 @@ main {
 				padding: toRem(20);
 			}
 		}
+		max-width: 100%;
+		@media (min-width: toEm(1130)) {
+			max-width: toRem(758);
+		}
+		position: relative;
 	}
-
-	// .item-faq__title
-	&__title {
+}
+.item-faq {
+	cursor: pointer;
+	counter-increment: faq-counter;
+	// .item-faq__spoiler
+	&__spoiler {
+		&.--active {
+			.item-faq__body {
+				&::before {
+					transform: translateY(toRem(10));
+					height: toRem(2);
+				}
+			}
+		}
+		&::after {
+			content: "";
+			width: 100%;
+			height: toRem(1);
+			background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #e50000 16.67%, rgba(229, 0, 0, 0) 100%);
+			position: absolute;
+			inset-inline-start: 0;
+			inset-block-end: 0;
+		}
+	}
+	// .item-faq__body
+	&__body {
+		flex-grow: 1;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
 		font-size: toRem(18);
 		font-weight: 500;
-		transition:
-			color 0.3s,
-			margin-block-start 0.3s;
+		transition: color 0.3s;
+		&::before {
+			transition:
+				height 0.5s,
+				transform 0.5s;
+			height: toRem(22);
+			width: toRem(22);
+			flex-shrink: 0;
+			overflow: hidden;
+			align-self: flex-start;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 		@media (min-width: toEm(768)) {
 			font-size: toRem(20);
 		}
 		@media (min-width: toEm(768)) {
 			font-size: toRem(22);
 		}
-		[open] & {
-			margin-block-start: toRem(-30);
+		&:hover {
+			color: var(--bg-4);
 		}
 	}
-	// item-faq__marker
-	&__marker {
-		[open] & {
-			align-self: flex-start;
-		}
-		position: relative;
-		svg {
-			&:nth-child(2) {
-				position: absolute;
-				inset-inline-end: 0;
-				// display: none;
-				// opacity: 0;
-			}
-		}
-		svg {
-			transition: opacity 0.3s;
-		}
-		[open] & {
-			svg {
-				&:nth-child(1) {
-					// display: none;
-					opacity: 0;
-				}
-				&:nth-child(2) {
-					// display: block;
-					opacity: 1;
-				}
-			}
+	// .item-faq__block
+	&__block {
+		display: flex;
+		align-items: center;
+		gap: toRem(16);
+		@media (min-width: toEm(1440)) {
+			gap: toRem(20);
 		}
 	}
 	// .item-faq__content
 	&__content {
 		color: #999;
-		padding-inline: toRem(82) toRem(50);
+		// padding-inline: toRem(82) toRem(50);
+		padding-block-start: toRem(20);
 	}
 }
 //=====================================================================

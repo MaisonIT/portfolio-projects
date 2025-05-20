@@ -3,7 +3,7 @@
 /* Google Fonts (Plugin) */
 /* Локальне підключення шрифтів */
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
-@import url("iconsfontstyle.css");
+@import url("iconsfontsstyle.css");
 /* Скидання стилів */
 @import url("reset.css");
 @import url("variables.css");
@@ -871,15 +871,68 @@ main {
   }
 }
 .faq__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
   max-width: 100%;
   position: relative;
+}
+@media (min-width: 48em) {
+  .faq__item {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 90em) {
+  .faq__item {
+    padding: 1.875rem;
+  }
+}
+.faq__item::before {
+  content: "";
+  content: counter(faq-counter, decimal-leading-zero);
+  font-size: 1.25rem;
+  -ms-flex-item-align: start;
+      align-self: start;
+  text-align: center;
+  max-width: 3.875rem;
+  max-height: 4.1875rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  background-color: var(--border);
+  border-radius: 0.625rem;
+  border: 0.0625rem solid #262626;
+}
+@media (min-width: 48em) {
+  .faq__item::before {
+    padding: 1rem;
+  }
+}
+@media (min-width: 48em) {
+  .faq__item::before {
+    padding: 1.25rem;
+  }
 }
 @media (min-width: 70.625em) {
   .faq__item {
     max-width: 47.375rem;
   }
 }
-.faq__item::after {
+
+.item-faq {
+  cursor: pointer;
+  counter-increment: faq-counter;
+}
+.item-faq__spoiler.--active .item-faq__body::before {
+  -webkit-transform: translateY(0.625rem);
+      -ms-transform: translateY(0.625rem);
+          transform: translateY(0.625rem);
+  height: 0.125rem;
+}
+.item-faq__spoiler::after {
   content: "";
   width: 100%;
   height: 0.0625rem;
@@ -889,50 +942,61 @@ main {
   inset-inline-start: 0;
   inset-block-end: 0;
 }
-
-.item-faq {
-  cursor: pointer;
-  counter-increment: faq-counter;
-}
-.item-faq__spoiler {
-  padding: 1.25rem;
-}
-@media (min-width: 48em) {
-  .item-faq__spoiler {
-    padding: 1.5rem;
-  }
-}
-@media (min-width: 90em) {
-  .item-faq__spoiler {
-    padding: 1.875rem;
-  }
-}
-.item-faq__spoiler[open] {
-  padding: 1.25rem;
-}
-@media (min-width: 48em) {
-  .item-faq__spoiler[open] {
-    padding: 1.5rem;
-  }
-}
-@media (min-width: 90em) {
-  .item-faq__spoiler[open] {
-    padding: 2.125rem 1.875rem;
-  }
-}
 .item-faq__body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
-.item-faq__body:hover .item-faq__title {
+.item-faq__body::before {
+  -webkit-transition: height 0.5s, -webkit-transform 0.5s;
+  transition: height 0.5s, -webkit-transform 0.5s;
+  transition: height 0.5s, transform 0.5s;
+  transition: height 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  height: 1.375rem;
+  width: 1.375rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 48em) {
+  .item-faq__body {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 48em) {
+  .item-faq__body {
+    font-size: 1.375rem;
+  }
+}
+.item-faq__body:hover {
   color: var(--bg-4);
 }
 .item-faq__block {
@@ -949,72 +1013,10 @@ main {
     gap: 1.25rem;
   }
 }
-.item-faq__number::before {
-  content: "";
-  content: counter(faq-counter, decimal-leading-zero);
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 0.75rem;
-  background-color: var(--border);
-  border-radius: 0.625rem;
-  border: 0.0625rem solid #262626;
-}
-@media (min-width: 48em) {
-  .item-faq__number::before {
-    padding: 1rem;
-  }
-}
-@media (min-width: 48em) {
-  .item-faq__number::before {
-    padding: 1.25rem;
-  }
-}
-.item-faq__title {
-  font-size: 1.125rem;
-  font-weight: 500;
-  -webkit-transition: color 0.3s, -webkit-margin-before 0.3s;
-  transition: color 0.3s, -webkit-margin-before 0.3s;
-  transition: color 0.3s, margin-block-start 0.3s;
-  transition: color 0.3s, margin-block-start 0.3s, -webkit-margin-before 0.3s;
-}
-@media (min-width: 48em) {
-  .item-faq__title {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 48em) {
-  .item-faq__title {
-    font-size: 1.375rem;
-  }
-}
-[open] .item-faq__title {
-  -webkit-margin-before: -1.875rem;
-          margin-block-start: -1.875rem;
-}
-.item-faq__marker {
-  position: relative;
-}
-[open] .item-faq__marker {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-.item-faq__marker svg:nth-child(2) {
-  position: absolute;
-  inset-inline-end: 0;
-}
-.item-faq__marker svg {
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-[open] .item-faq__marker svg:nth-child(1) {
-  opacity: 0;
-}
-[open] .item-faq__marker svg:nth-child(2) {
-  opacity: 1;
-}
 .item-faq__content {
   color: #999;
-  padding-inline: 5.125rem 3.125rem;
+  -webkit-padding-before: 1.25rem;
+          padding-block-start: 1.25rem;
 }
 
 .plan__container {
