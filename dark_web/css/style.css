@@ -926,7 +926,7 @@ main {
   cursor: pointer;
   counter-increment: faq-counter;
 }
-.item-faq__spoiler.--active .item-faq__body::before {
+.item-faq__spoiler.active .item-faq__body::before {
   -webkit-transform: translateY(0.625rem);
       -ms-transform: translateY(0.625rem);
           transform: translateY(0.625rem);

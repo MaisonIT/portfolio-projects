@@ -28,14 +28,14 @@ function documentAction(e) {
 
 		if (!spollerBody.classList.contains('_slide')) {
 			!spollerBody.hidden ?
-				spoller.classList.contains('--active') ? setTimeout(() => { spollerBody.hidden = true }, 500) : spollerBody.hidden = true
+				spoller.classList.contains('active') ? setTimeout(() => { spollerBody.hidden = true }, 500) : spollerBody.hidden = true
 				: null
 
 			!spoller.open ? spoller.open = true : setTimeout(() => { spoller.open = false }, 500)
 
 			_slideToggle(spollerBody)
 
-			spoller.classList.toggle('--active')
+			spoller.classList.toggle('active')
 		}
 	}
 

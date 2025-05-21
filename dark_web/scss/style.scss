@@ -489,7 +489,7 @@ main {
 	counter-increment: faq-counter;
 	// .item-faq__spoiler
 	&__spoiler {
-		&.--active {
+		&.active {
 			.item-faq__body {
 				&::before {
 					transform: translateY(toRem(10));
