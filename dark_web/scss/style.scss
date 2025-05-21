@@ -561,7 +561,7 @@ main {
 .plan {
 	// .plan__container
 	&__container {
-		margin-block-end: 80;
+		margin-block-end: toRem(80);
 		@media (min-width: toEm(768)) {
 			margin-block-end: toRem(113);
 		}
@@ -686,18 +686,25 @@ main {
 .banner {
 	// .banner__container
 	&__container {
+		margin-block-end: toRem(80);
+		@media (min-width: toEm(768)) {
+			margin-block-end: toRem(113);
+		}
+		@media (min-width: toEm(1440)) {
+			margin-block-end: toRem(150);
+		}
+	}
+	// .babber__body
+	&__body {
 		padding: toRem(50) toRem(30);
 		position: relative;
-		margin-block-end: 80;
 		border-radius: toRem(12);
 		border: toRem(1) solid #262626;
 		overflow: hidden;
 		@media (min-width: toEm(768)) {
-			margin-block-end: toRem(113);
 			padding: toRem(80) toRem(60);
 		}
 		@media (min-width: toEm(1440)) {
-			margin-block-end: toRem(150);
 			padding: toRem(100) toRem(80);
 		}
 	}
@@ -737,6 +744,7 @@ main {
 		justify-content: center;
 		@media (min-width: toEm(1000)) {
 			flex-wrap: nowrap;
+			text-align: left;
 			justify-content: space-between;
 		}
 	}
@@ -748,15 +756,29 @@ main {
 	background-color: var(--bg-2);
 	// .footer__body
 	&__body {
-		margin-block-end: toRem(50);
+		margin-block-end: toRem(20);
+		@media (min-width: toEm(768)) {
+			margin-block-end: toRem(50);
+		}
+		@media (min-width: toEm(1440)) {
+			margin-block-end: toRem(50);
+		}
 	}
 	// .footer__items
 	&__items {
-		padding-block: toRem(100);
+		padding-block: toRem(50);
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(toRem(200), 100%), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(toRem(150), 100%), 1fr));
 		gap: toRem(30);
 		justify-content: space-between;
+		@media (min-width: toEm(768)) {
+			padding-block: toRem(80);
+			gap: toRem(20);
+		}
+		@media (min-width: toEm(1440)) {
+			padding-block: toRem(100);
+			gap: toRem(30);
+		}
 	}
 	// .footer__item
 	&__item {

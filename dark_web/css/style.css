@@ -1020,8 +1020,8 @@ main {
 }
 
 .plan__container {
-  -webkit-margin-after: 80;
-          margin-block-end: 80;
+  -webkit-margin-after: 5rem;
+          margin-block-end: 5rem;
 }
 @media (min-width: 48em) {
   .plan__container {
@@ -1178,25 +1178,35 @@ main {
 }
 
 .banner__container {
-  padding: 3.125rem 1.875rem;
-  position: relative;
-  -webkit-margin-after: 80;
-          margin-block-end: 80;
-  border-radius: 0.75rem;
-  border: 0.0625rem solid #262626;
-  overflow: hidden;
+  -webkit-margin-after: 5rem;
+          margin-block-end: 5rem;
 }
 @media (min-width: 48em) {
   .banner__container {
     -webkit-margin-after: 7.0625rem;
             margin-block-end: 7.0625rem;
-    padding: 5rem 3.75rem;
   }
 }
 @media (min-width: 90em) {
   .banner__container {
     -webkit-margin-after: 9.375rem;
             margin-block-end: 9.375rem;
+  }
+}
+.banner__body {
+  padding: 3.125rem 1.875rem;
+  position: relative;
+  border-radius: 0.75rem;
+  border: 0.0625rem solid #262626;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  .banner__body {
+    padding: 5rem 3.75rem;
+  }
+}
+@media (min-width: 90em) {
+  .banner__body {
     padding: 6.25rem 5rem;
   }
 }
@@ -1239,6 +1249,7 @@ main {
   .banner__head {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    text-align: left;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1249,17 +1260,41 @@ main {
   background-color: var(--bg-2);
 }
 .footer__body {
-  -webkit-margin-after: 3.125rem;
-          margin-block-end: 3.125rem;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+@media (min-width: 48em) {
+  .footer__body {
+    -webkit-margin-after: 3.125rem;
+            margin-block-end: 3.125rem;
+  }
+}
+@media (min-width: 90em) {
+  .footer__body {
+    -webkit-margin-after: 3.125rem;
+            margin-block-end: 3.125rem;
+  }
 }
 .footer__items {
-  padding-block: 6.25rem;
+  padding-block: 3.125rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(12.5rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(9.375rem, 100%), 1fr));
   gap: 1.875rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (min-width: 48em) {
+  .footer__items {
+    padding-block: 5rem;
+    gap: 1.25rem;
+  }
+}
+@media (min-width: 90em) {
+  .footer__items {
+    padding-block: 6.25rem;
+    gap: 1.875rem;
+  }
 }
 .footer__item > :not(:last-child) {
   -webkit-margin-after: 1.5rem;
