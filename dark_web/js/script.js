@@ -596,6 +596,7 @@ buttons.forEach(button => {
 		document.getElementById(target).classList.add("active");
 	});
 });
+
 // Active header
 document.querySelectorAll('.menu__link').forEach(link => {
 	const currentUrl = window.location.href;

@@ -15,9 +15,10 @@
 		padding-block: toRem(50);
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(toRem(150), 100%), 1fr));
-		gap: toRem(30);
+		row-gap: toRem(30);
 		justify-content: space-between;
 		@media (min-width: toEm(768)) {
+			gap: toRem(30);
 			padding-block: toRem(80);
 			gap: toRem(20);
 		}
@@ -28,6 +29,7 @@
 	}
 	// .footer__item
 	&__item {
+		max-width: toRem(241);
 		& > :not(:last-child) {
 			margin-block-end: toRem(24);
 		}
@@ -35,11 +37,17 @@
 			.item-footer__links {
 				flex-direction: row;
 				.item-footer__link {
-					font-size: toRem(24);
-					padding: toRem(16);
+					font-size: toRem(20);
+					padding: toRem(12);
 					background-color: var(--bg-3);
 					border-radius: toRem(8);
 					border: toRem(1) solid #262626;
+					@media (min-width: toEm(768)) {
+						padding: toRem(16);
+					}
+					@media (min-width: toEm(1440)) {
+						font-size: toRem(24);
+					}
 					&:hover {
 						background-color: var(--bg-2);
 					}
