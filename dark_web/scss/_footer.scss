@@ -1,0 +1,115 @@
+.footer {
+	background-color: var(--bg-2);
+	// .footer__body
+	&__body {
+		margin-block-end: toRem(20);
+		@media (min-width: toEm(768)) {
+			margin-block-end: toRem(50);
+		}
+		@media (min-width: toEm(1440)) {
+			margin-block-end: toRem(50);
+		}
+	}
+	// .footer__items
+	&__items {
+		padding-block: toRem(50);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(toRem(150), 100%), 1fr));
+		gap: toRem(30);
+		justify-content: space-between;
+		@media (min-width: toEm(768)) {
+			padding-block: toRem(80);
+			gap: toRem(20);
+		}
+		@media (min-width: toEm(1440)) {
+			padding-block: toRem(100);
+			gap: toRem(30);
+		}
+	}
+	// .footer__item
+	&__item {
+		& > :not(:last-child) {
+			margin-block-end: toRem(24);
+		}
+		&:nth-child(6) {
+			.item-footer__links {
+				flex-direction: row;
+				.item-footer__link {
+					font-size: toRem(24);
+					padding: toRem(16);
+					background-color: var(--bg-3);
+					border-radius: toRem(8);
+					border: toRem(1) solid #262626;
+					&:hover {
+						background-color: var(--bg-2);
+					}
+				}
+			}
+		}
+	}
+	// .footer__privacy
+	&__privacy {
+		color: var(--color-text-2);
+		border-top: toRem(1) solid #262626;
+		padding-block-start: toRem(24);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(toRem(400), 100%), 1fr));
+		align-items: center;
+		justify-content: space-between;
+		gap: toRem(30);
+	}
+	// .footer__terms
+	&__terms {
+		justify-self: end;
+		display: flex;
+		// flex-wrap: wrap;
+		gap: toRem(20);
+		@media (max-width: toRem(860)) {
+			justify-self: baseline;
+		}
+		@media (max-width: toEm(385)) {
+			gap: toRem(5);
+		}
+	}
+	// .footer__link
+	&__link {
+		&:nth-child(2) {
+			border-left: toRem(1) solid #262626;
+			border-right: toRem(1) solid #262626;
+			padding-inline: toRem(20);
+			@media (max-width: toEm(385)) {
+				padding-inline: toRem(5);
+			}
+		}
+	}
+}
+.item-footer {
+	// .item-footer__title
+	&__title {
+		font-size: toRem(16);
+		font-weight: 600;
+		@media (min-width: toEm(768)) {
+			font-size: toRem(18);
+		}
+		@media (min-width: toEm(1439.98)) {
+			font-size: toRem(20);
+		}
+	}
+	// .item-footer__links
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: toRem(14);
+	}
+	// .item-footer__list
+	&__list {
+		font-weight: 500;
+		color: var(--color-text-2);
+	}
+	// .item-footer__link
+	&__link {
+		&:hover {
+			color: var(--color-text);
+		}
+	}
+}

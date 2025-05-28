@@ -7,9 +7,20 @@ const html = document.documentElement
 function loadPage() {
 	document.addEventListener(`click`, documentAction)
 	html.classList.add(`loaded`)
-	slider()
+	sliderExplore()
 	scrollHeader()
 	plansAction()
+	sliderMovies()
+	sliderGenresMovies()
+	sliderPopularMovies()
+	sliderTrendingMovies()
+	sliderReleaseMovies()
+	sliderMustMovies()
+	sliderGenresShows()
+	sliderPopularShows()
+	sliderTrendingShows()
+	sliderReleaseShows()
+	sliderMustShows()
 
 }
 function documentAction(e) {
@@ -50,7 +61,7 @@ function documentAction(e) {
 	}
 }
 
-// Scroll
+// Scroll header
 function scrollHeader() {
 	window.addEventListener(`scroll`, scrollAction)
 
@@ -61,16 +72,32 @@ function scrollHeader() {
 
 }
 
-
-// Slider
-function slider() {
-	const swiper = new Swiper('.swiper', {
+// Slider Main
+function sliderMovies() {
+	const swiper = new Swiper('.present__swiper', {
+		slidesPerView: `auto`,
+		// loop: false,
+		navigation: {
+			nextEl: '.controls__swipe-main--next',
+			prevEl: '.controls__swipe-main--prev',
+		},
+		pagination: {
+			el: '.controls__main-slide',
+			clickable: true,
+			bulletClass: `controls__element-main-slide`,
+			bulletActiveClass: `controls__element-main-slide--active`,
+		},
+	});
+}
+// Slider Explore
+function sliderExplore() {
+	const swiper = new Swiper('.swiper-explore', {
 		slidesPerView: 5,
 		spaceBetween: 30,
 		loop: false,
 		navigation: {
-			nextEl: '.controls__scroll--rotate',
-			prevEl: '.controls__scroll--prev',
+			nextEl: '.controls__scroll-explore--next',
+			prevEl: '.controls__scroll-explore--prev',
 		},
 		breakpoints: {
 			320: {
@@ -92,12 +119,364 @@ function slider() {
 			bulletActiveClass: `controls__element-item--active`,
 		},
 		scrollbar: {
-			el: '.scroll__scrollbar',
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Slider Genres (movies)
+function sliderGenresMovies() {
+	const swiper = new Swiper('.swiper-genres', {
+		slidesPerView: 5,
+		spaceBetween: 30,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-genres--next',
+			prevEl: '.controls__scroll-genres--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__genres-slide',
+			clickable: true,
+			bulletClass: `controls__element-genres-slide`,
+			bulletActiveClass: `controls__element-genres-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Slider Popular (movies)
+function sliderPopularMovies() {
+	const swiper = new Swiper('.swiper-popular', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-popular--next',
+			prevEl: '.controls__scroll-popular--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__popular-slide',
+			clickable: true,
+			bulletClass: `controls__element-popular-slide`,
+			bulletActiveClass: `controls__element-popular-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+
+}
+// Slider Trending (movies)
+function sliderTrendingMovies() {
+	const swiper = new Swiper('.swiper-trending', {
+		slidesPerView: 5,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-trending--next',
+			prevEl: '.controls__scroll-trending--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__trending-slide',
+			clickable: true,
+			bulletClass: `controls__element-trending-slide`,
+			bulletActiveClass: `controls__element-trending-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Slider Release (movies)
+function sliderReleaseMovies() {
+	const swiper = new Swiper('.swiper-release', {
+		slidesPerView: 5,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-release--next',
+			prevEl: '.controls__scroll-release--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__release-slide',
+			clickable: true,
+			bulletClass: `controls__element-release-slide`,
+			bulletActiveClass: `controls__element-release-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Sider Must (movies)
+function sliderMustMovies() {
+	const swiper = new Swiper('.swiper-must', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-must--next',
+			prevEl: '.controls__scroll-must--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.3,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1440: {
+				slidesPerView: `4`,
+			}
+		},
+		pagination: {
+			el: '.controls__must-slide',
+			clickable: true,
+			bulletClass: `controls__element-must-slide`,
+			bulletActiveClass: `controls__element-must-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
 			draggable: true,
 		},
 	});
 }
 
+// Slider Genres (shows)
+function sliderGenresShows() {
+	const swiper = new Swiper('.swiper-genres-shows', {
+		slidesPerView: 5,
+		spaceBetween: 30,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-genres-shows--next',
+			prevEl: '.controls__scroll-genres-shows--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__genres-shows-slide',
+			clickable: true,
+			bulletClass: `controls__element-genres-shows-slide`,
+			bulletActiveClass: `controls__element-genres-shows-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Slider Popular (shows)
+function sliderPopularShows() {
+	const swiper = new Swiper('.swiper-popular-shows', {
+		slidesPerView: 4,
+		spaceBetween: 30,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-popular-shows--next',
+			prevEl: '.controls__scroll-popular-shows--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.8,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 20,
+			},
+			1440: {
+				spaceBetween: 30,
+			}
+		},
+		pagination: {
+			el: '.controls__popular-shows-slide',
+			clickable: true,
+			bulletClass: `controls__element-popular-shows-slide`,
+			bulletActiveClass: `controls__element-popular-shows-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+
+}
+// Sider Trending (shows)
+function sliderTrendingShows() {
+	const swiper = new Swiper('.swiper-trending-shows', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-trending-shows--next',
+			prevEl: '.controls__scroll-trending-shows--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.3,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1440: {
+				slidesPerView: `4`,
+			}
+		},
+		pagination: {
+			el: '.controls__trending-shows-slide',
+			clickable: true,
+			bulletClass: `controls__element-trending-shows-slide`,
+			bulletActiveClass: `controls__element-trending-shows-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Sider Release (shows)
+function sliderReleaseShows() {
+	const swiper = new Swiper('.swiper-release-shows', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-release-shows--next',
+			prevEl: '.controls__scroll-release-shows--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.3,
+				spaceBetween: 20,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1440: {
+				slidesPerView: `4`,
+			}
+		},
+		pagination: {
+			el: '.controls__release-shows-slide',
+			clickable: true,
+			bulletClass: `controls__element-release-shows-slide`,
+			bulletActiveClass: `controls__element-release-shows-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
+// Sider Must (shows)
+function sliderMustShows() {
+	const swiper = new Swiper('.swiper-must-shows', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__scroll-must-shows--next',
+			prevEl: '.controls__scroll-must-shows--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1.3,
+				spaceBetween: 16,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1440: {
+				slidesPerView: `4`,
+			}
+		},
+		pagination: {
+			el: '.controls__must-shows-slide',
+			clickable: true,
+			bulletClass: `controls__element-must-shows-slide`,
+			bulletActiveClass: `controls__element-must-shows-slide--active`,
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+	});
+}
 // Допоміжні модулі плавного розкриття та закриття об'єкта ======================================================================================================================================================================
 let _slideUp = (target, duration = 500, showmore = 0) => {
 	if (!target.classList.contains('_slide')) {
@@ -175,7 +554,6 @@ let _slideToggle = (target, duration = 500) => {
 	}
 }
 
-
 // Plans
 async function getPlans(activeType) {
 	const response = await fetch('json/plans.json')
@@ -195,8 +573,36 @@ function plansShow(data, activeType) {
 
 }
 function plansAction() {
-	const activeType = document.querySelector(`.switcher__button--active`).dataset.type
-	if (activeType) {
-		getPlans(activeType)
+	const activeSwitcher = document.querySelector('.switcher__button--active');
+	if (activeSwitcher) {
+		const activeType = activeSwitcher.dataset.type
+		if (activeType) {
+			getPlans(activeType)
+		}
 	}
 }
+// Catalog
+const buttons = document.querySelectorAll(".switch__button");
+const contents = document.querySelectorAll(".catalog");
+
+buttons.forEach(button => {
+	button.addEventListener("click", () => {
+		const target = button.dataset.tab;
+
+		buttons.forEach(btn => btn.classList.remove("active"));
+		contents.forEach(content => content.classList.remove("active"));
+
+		button.classList.add("active");
+		document.getElementById(target).classList.add("active");
+	});
+});
+// Active header
+document.querySelectorAll('.menu__link').forEach(link => {
+	const currentUrl = window.location.href;
+
+	if (currentUrl.includes(link.getAttribute('href'))) {
+		link.classList.add('active');
+	} else {
+		link.classList.remove('active');
+	}
+});
