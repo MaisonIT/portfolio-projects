@@ -411,7 +411,7 @@
 		}
 	}
 }
-.inner__season:open {
+.inner__season[open] {
 	padding: toRem(16) toRem(20);
 	@media (min-width: toEm(768)) {
 		padding: toRem(40);
@@ -429,7 +429,7 @@
 		gap: toRem(15);
 		align-items: center;
 		justify-content: space-between;
-		:open & {
+		[open] & {
 			margin-block-end: toRem(20);
 			@media (min-width: toEm(768)) {
 				margin-block-end: toRem(24);
@@ -450,7 +450,7 @@
 			border: toRem(1) solid #262626;
 			background: var(--main-bg);
 			transition: transform 0.3s;
-			:open & {
+			[open] & {
 				transform: rotate(90deg);
 			}
 			@media (min-width: toEm(1440)) {
@@ -584,9 +584,7 @@
 			grid-column: span 1;
 		}
 	}
-
 	// .content-season__head
-
 	&__head {
 		display: flex;
 		align-items: center;
@@ -596,7 +594,7 @@
 			margin-block-end: toRem(10);
 		}
 		@media (min-width: toEm(1440)) {
-			margin-block-end: 14;
+			margin-block-end: toRem(14);
 		}
 	}
 
