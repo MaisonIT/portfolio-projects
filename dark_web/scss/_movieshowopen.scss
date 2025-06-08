@@ -219,6 +219,7 @@
 	}
 	// .inner__sidebar
 	&__sidebar {
+		display: flex;
 		&--block {
 			@media (min-width: toEm(1300)) {
 				display: flex;
