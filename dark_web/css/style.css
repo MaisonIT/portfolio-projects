@@ -1757,6 +1757,9 @@ main {
   }
 }
 .inner__sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-preferred-size: 32.6%;
       flex-basis: 32.6%;
   -ms-flex-negative: 0;
@@ -1987,16 +1990,16 @@ main {
   }
 }
 
-.inner__season:open {
+.inner__season[open] {
   padding: 1rem 1.25rem;
 }
 @media (min-width: 48em) {
-  .inner__season:open {
+  .inner__season[open] {
     padding: 2.5rem;
   }
 }
 @media (min-width: 90em) {
-  .inner__season:open {
+  .inner__season[open] {
     padding: 3.125rem;
   }
 }
@@ -2020,18 +2023,18 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-:open .season-item__title {
+[open] .season-item__title {
   -webkit-margin-after: 1.25rem;
           margin-block-end: 1.25rem;
 }
 @media (min-width: 48em) {
-  :open .season-item__title {
+  [open] .season-item__title {
     -webkit-margin-after: 1.5rem;
             margin-block-end: 1.5rem;
   }
 }
 @media (min-width: 90em) {
-  :open .season-item__title {
+  [open] .season-item__title {
     -webkit-margin-after: 1.875rem;
             margin-block-end: 1.875rem;
   }
@@ -2054,7 +2057,7 @@ main {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-:open .season-item__title::before {
+[open] .season-item__title::before {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -2251,8 +2254,8 @@ main {
 }
 @media (min-width: 90em) {
   .content-season__head {
-    -webkit-margin-after: 14;
-            margin-block-end: 14;
+    -webkit-margin-after: 0.875rem;
+            margin-block-end: 0.875rem;
   }
 }
 .content-season__title {
