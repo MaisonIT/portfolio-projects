@@ -17,6 +17,13 @@
 @import "_header.scss";
 // Footer
 @import "_footer.scss";
+// Mixins template
+%card-theme {
+	border-radius: toRem(12);
+	border: toRem(1) solid #262626;
+	background: var(--bg-3);
+}
+
 /* Основні стилі */
 html {
 	scroll-behavior: smooth;
@@ -70,6 +77,7 @@ main {
 }
 // Сторінки
 @import "_movies.scss";
+@import "_movieshowopen.scss";
 //=====================================================================
 [class*="__container"] {
 	padding-inline: toRem(15);

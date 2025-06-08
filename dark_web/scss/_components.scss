@@ -472,10 +472,13 @@
 			color: var(--bg-4);
 		}
 		&::before {
-			padding: toRem(14);
+			padding: toRem(10);
 			border-radius: toRem(8);
 			border: toRem(1) solid var(--border);
 			transition: color 0.4s;
+			@media (min-width: toEm(1440)) {
+				padding: toRem(14);
+			}
 		}
 		&--rotate {
 			&::before {
@@ -495,7 +498,9 @@
 	.controls__popular-shows-slide,
 	.controls__trending-shows-slide,
 	.controls__release-shows-slide,
-	.controls__must-shows-slide {
+	.controls__must-shows-slide,
+	.controls__review-slide,
+	.controls__review-show-slide {
 		display: flex;
 		gap: toRem(3);
 		justify-content: center;
@@ -512,7 +517,9 @@
 	.controls__element-popular-shows-slide,
 	.controls__element-trending-shows-slide,
 	.controls__element-release-shows-slide,
-	.controls__element-must-shows-slide {
+	.controls__element-must-shows-slide,
+	.controls__element-review-slide,
+	.controls__element-review-show-slide {
 		height: toRem(4);
 		width: toRem(16);
 		background-color: #333;

@@ -21,6 +21,10 @@ function loadPage() {
 	sliderTrendingShows()
 	sliderReleaseShows()
 	sliderMustShows()
+	sliderCast()
+	sliderReview()
+	sliderCastShow()
+	sliderReviewShow()
 
 }
 function documentAction(e) {
@@ -372,7 +376,7 @@ function sliderPopularShows() {
 	});
 
 }
-// Sider Trending (shows)
+// Slider Trending (shows)
 function sliderTrendingShows() {
 	const swiper = new Swiper('.swiper-trending-shows', {
 		slidesPerView: 1,
@@ -407,7 +411,7 @@ function sliderTrendingShows() {
 		},
 	});
 }
-// Sider Release (shows)
+// Slider Release (shows)
 function sliderReleaseShows() {
 	const swiper = new Swiper('.swiper-release-shows', {
 		slidesPerView: 1,
@@ -442,7 +446,7 @@ function sliderReleaseShows() {
 		},
 	});
 }
-// Sider Must (shows)
+// Slider Must (shows)
 function sliderMustShows() {
 	const swiper = new Swiper('.swiper-must-shows', {
 		slidesPerView: 1,
@@ -474,6 +478,120 @@ function sliderMustShows() {
 		scrollbar: {
 			el: '.scrollbar',
 			draggable: true,
+		}
+	});
+}
+// Slider Cast (moviesopen)
+function sliderCast() {
+	const swiper = new Swiper('.cast-slide', {
+		slidesPerView: 4,
+		spaceBetween: 10,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__swipe-cast--next',
+			prevEl: '.controls__swipe-cast--prev',
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 8,
+			},
+			1440: {
+				slidesPerView: 8,
+				spaceBetween: 20,
+			}
+		},
+	});
+}
+// Slider Review (moviesopen)
+function sliderReview() {
+	const swiper = new Swiper('.review-slider', {
+		loop: false,
+		navigation: {
+			nextEl: '.controls__swipe-review--next',
+			prevEl: '.controls__swipe-review--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 16,
+			},
+			1350: {
+				slidesPerView: 1,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			}
+		},
+		pagination: {
+			el: '.controls__review-slide',
+			clickable: true,
+			bulletClass: `controls__element-review-slide`,
+			bulletActiveClass: `controls__element-review-slide--active`,
+		},
+	});
+}
+// Slider Cast (showopen)
+function sliderCastShow() {
+	const swiper = new Swiper('.cast-show-slide', {
+		slidesPerView: 4,
+		spaceBetween: 10,
+		loop: false,
+		navigation: {
+			nextEl: '.controls__swipe-cast-show--next',
+			prevEl: '.controls__swipe-cast-show--prev',
+		},
+		scrollbar: {
+			el: '.scrollbar',
+			draggable: true,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 8,
+			},
+			1440: {
+				slidesPerView: 8,
+				spaceBetween: 20,
+			}
+		},
+	});
+}
+// Slider Review (showopen)
+function sliderReviewShow() {
+	const swiper = new Swiper('.review-show-slider', {
+		loop: false,
+		navigation: {
+			nextEl: '.controls__swipe-review-show--next',
+			prevEl: '.controls__swipe-review-show--prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 16,
+			},
+			1350: {
+				slidesPerView: 1,
+			},
+			1440: {
+				slidesPerView: 2,
+				spaceBetween: 20,
+			}
+		},
+		pagination: {
+			el: '.controls__review-show-slide',
+			clickable: true,
+			bulletClass: `controls__element-review-show-slide`,
+			bulletActiveClass: `controls__element-review-show-slide--active`,
 		},
 	});
 }

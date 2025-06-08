@@ -21,6 +21,25 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.-icon-play-shows:before {
+	content: "\e912";
+}
+.-icon-genres:before {
+	content: "\e90e";
+	color: #999;
+}
+.-icon-language:before {
+	content: "\e90f";
+	color: #999;
+}
+.-icon-release:before {
+	content: "\e910";
+	color: #999;
+}
+.-icon-star:before {
+	content: "\e911";
+	color: #999;
+}
 .-icon-arrow:before {
 	content: "\e900";
 	color: #fff;
