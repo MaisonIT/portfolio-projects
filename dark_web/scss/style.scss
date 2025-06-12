@@ -6,7 +6,7 @@
 /* Локальне підключення шрифтів */
 @import "_fonts.scss";
 // Іконочний шрифт
-@import url("iconfontstyle.css");
+@import url("styleiconfont.css");
 /* Скидання стилів */
 @import url("reset.css");
 // Змінні
@@ -78,6 +78,7 @@ main {
 // Сторінки
 @import "_movies.scss";
 @import "_movieshowopen.scss";
+@import "_support.scss";
 //=====================================================================
 [class*="__container"] {
 	padding-inline: toRem(15);

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Іконка -->
+	<!-- Заголовок сторінки в браузері -->
+	<title>Dark Web</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo logo">
+						<img src="img/logo.svg" alt="Logo">
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="movies.html" class="menu__link">Movies & Shows</a></li>
+								<li class="menu__item"><a href="#support" class="menu__link">Support</a></li>
+								<li class="menu__item"><a href="#subscriptions" class="menu__link">Subscriptions</a></li>
+							</ul>
+							<div class="menu__actions action">
+								<button class="action__button -icon-search"></button>
+								<button class="action__button -icon-notification"></button>
+							</div>
+						</nav>
+					</div>
+					<div class="header__actions action">
+						<button class="action__button -icon-search"></button>
+						<button class="action__button -icon-notification"></button>
+					</div>
+					<button type="button" class="header__item icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="support-page">
+			<section class="forms">
+				<div class="forms__container">
+					<div class="forms__body">
+						<div class="forms__items">
+							<div class="forms__item item-forms">
+								<div class="item-forms__head">
+									<h2 class="item-forms__title">Welcome to our support page!</h2>
+									<p class="item-forms__label">We're here to help you with any problems you may be having with
+										our product.</p>
+								</div>
+								<div class="item-forms__img">
+									<img src="img/support/present.webp" alt="Films Image">
+								</div>
+							</div>
+							<div class="forms__item item-forms">
+								<form class="item-forms__form support-form" action="#">
+									<div class="support-form__input-block">
+										<label class="support-form__label" for="name">First Name</label>
+										<input class="support-form__input" placeholder="Enter First Name" id="name" name="name"
+											required type="text">
+									</div>
+									<div class="support-form__input-block">
+										<label class="support-form__label" for="last-name">Last Name</label>
+										<input class="support-form__input" placeholder="Enter Last Name" id="last-name"
+											name="last-name" required type="text">
+									</div>
+									<div class="support-form__input-block">
+										<label class="support-form__label" for="mail">Email</label>
+										<input class="support-form__input" placeholder="Enter your Email" id="mail" name="mail"
+											required type="email">
+									</div>
+									<div class="support-form__input-block">
+										<label class="support-form__label" for="tel">Phone Number</label>
+										<div class="support-form__phone">
+											<div class="support-form__select select">
+												<button data-value="1" class="select__value -icon-arrow-form" type="button">
+													<img src="img/support/flag.webp" alt="Flag Image">
+												</button>
+												<div class="select__items">
+													<button class="select__item" type="button">
+														<img src="img/support/flag.webp" alt="Flag Image">
+													</button>
+													<button class="select__item" type="button">
+														<img src="img/support/flag.webp" alt="Flag Image">
+													</button>
+													<button class="select__item" type="button">
+														<img src="img/support/flag.webp" alt="Flag Image">
+													</button>
+												</div>
+											</div>
+											<input value="1" name="form[]" type="hidden">
+											<input class="support-form__input" placeholder="Enter Phone Number" required type="tel"
+												id="tel" name="tel">
+										</div>
+									</div>
+									<div class="support-form__text-block">
+										<label class="support-form__label" for="message">Message</label>
+										<textarea class="support-form__textarea" placeholder="Enter your Message" name="message"
+											id="message"></textarea>
+									</div>
+									<div class="support-form__footer">
+										<div class="support-form__chekbox chekbox">
+											<label class="chekbox__label">
+												<input class="chekbox__input" type="checkbox" name="form[]">
+												<span class="chekbox__text">I agree with Terms of Use and Privacy Policy</span>
+											</label>
+										</div>
+										<div class="support-form__button buttons"><button class="buttons__button"
+												type="submit">Send Message</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<div class="faq__container">
+					<div class="faq__head title-item">
+						<div class="title-item__block">
+							<h2 class="title-item__title">
+								Frequently Asked Questions
+							</h2>
+							<p class="title-item__about">Got questions? We've got answers! Check out our FAQ section to find
+								answers to the most common questions about StreamVibe.</p>
+						</div>
+						<div class="title-item__button buttons">
+							<button class="buttons__button" type="button">Ask a Question</button>
+						</div>
+					</div>
+					<div class="faq__items">
+						<div class="faq__columns">
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										What is StreamVibe?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										How much does StreamVibe cost?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										What content is available on StreamVibe?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										How can I watch StreamVibe?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="faq__columns">
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										How do I sign up for StreamVibe?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										What is the StreamVibe free trial?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										How do I contact StreamVibe customer support?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+							<div class="faq__item item-faq">
+								<details class="item-faq__spoiler">
+									<summary class="item-faq__body -icon-plus">
+										What are the StreamVibe payment methods?
+									</summary>
+									<div class="item-faq__content">
+										<p>StreamVibe is a streaming service that allows you to watch movies and shows on demand.
+										</p>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__body">
+						<div class="banner__image">
+							<img src="img/home/trial/bg-trial.webp" alt="Banner Image">
+						</div>
+						<div class="banner__head title-item">
+							<div class="title-item__block">
+								<h2 class="title-item__title">
+									Start your free trial today!
+								</h2>
+								<p class="title-item__about">This is a clear and concise call to action that encourages users to
+									sign up for a free trial of StreamVibe.</p>
+							</div>
+							<div class="title-item__button buttons">
+								<button class="buttons__button" type="button">Start a Free Trail</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__items">
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Home</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Categories</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Devices</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Pricing</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Movies</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Shows</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Support</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Subscription</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Plans</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Features</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Connect With Us</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-facebook"></a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-twitter"></a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link -icon-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__privacy">
+						<p class="footer__text">@2023 streamvib, All Rights Reserved</p>
+						<div class="footer__terms">
+							<a href="#" class="footer__link">Terms of Use</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+							<a href="#" class="footer__link">Cookie Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

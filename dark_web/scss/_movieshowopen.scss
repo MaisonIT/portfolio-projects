@@ -17,6 +17,7 @@
 		grid-template-rows: 1fr auto;
 		padding-block-end: toRem(16);
 		padding-inline: toRem(24);
+
 		@media (min-width: toEm(768)) {
 			aspect-ratio: 1595 / 835;
 			padding-block-end: toRem(20);
@@ -42,6 +43,7 @@
 		width: 100%;
 		z-index: 2;
 		border-radius: toRem(12);
+		overflow: hidden;
 		border: toRem(1) solid #262626;
 	}
 	// .main-block__items
@@ -78,7 +80,6 @@
 	font-weight: 500;
 	// .inner__container
 	&__container {
-		margin-block-end: toRem(80);
 		@media (min-width: toEm(768)) {
 			margin-block-end: toRem(128);
 		}

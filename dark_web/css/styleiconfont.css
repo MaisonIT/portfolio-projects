@@ -1,0 +1,102 @@
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class*=" -icon-"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon";
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.-icon-arrow-form:before {
+	content: "\e913";
+	color: #999;
+}
+.-icon-play-shows:before {
+	content: "\e912";
+}
+.-icon-genres:before {
+	content: "\e90e";
+	color: #999;
+}
+.-icon-language:before {
+	content: "\e90f";
+	color: #999;
+}
+.-icon-release:before {
+	content: "\e910";
+	color: #999;
+}
+.-icon-star:before {
+	content: "\e911";
+	color: #999;
+}
+.-icon-arrow:before {
+	content: "\e900";
+	color: #fff;
+}
+.-icon-clock:before {
+	content: "\e901";
+	color: #999;
+}
+.-icon-data:before {
+	content: "\e902";
+	color: #999;
+}
+.-icon-facebook:before {
+	content: "\e903";
+	color: #fff;
+}
+.-icon-like:before {
+	content: "\e904";
+	color: #fff;
+}
+.-icon-linkedin:before {
+	content: "\e905";
+	color: #fff;
+}
+.-icon-notification:before {
+	content: "\e906";
+	color: #fff;
+}
+.-icon-play:before {
+	content: "\e907";
+	color: #fff;
+}
+.-icon-plus:before {
+	content: "\e908";
+	color: #fff;
+}
+.-icon-rate:before {
+	content: "\e909";
+	color: #e60000;
+}
+.-icon-search:before {
+	content: "\e90a";
+	color: #fff;
+}
+.-icon-twitter:before {
+	content: "\e90b";
+	color: #fff;
+}
+.-icon-view:before {
+	content: "\e90c";
+	color: #999;
+}
+.-icon-volume:before {
+	content: "\e90d";
+	color: #fff;
+}

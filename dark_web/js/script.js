@@ -25,7 +25,6 @@ function loadPage() {
 	sliderReview()
 	sliderCastShow()
 	sliderReviewShow()
-
 }
 function documentAction(e) {
 	const targetElement = e.target
@@ -33,7 +32,6 @@ function documentAction(e) {
 		html.classList.toggle(`menu-open`)
 	}
 	targetElement.closest(`.menu__link`) && html.classList.contains(`menu-open`) ? html.classList.remove(`menu-open`) : null
-
 	// Спойлери
 	if (targetElement.closest('summary')) {
 		e.preventDefault()
@@ -53,7 +51,6 @@ function documentAction(e) {
 			spoller.classList.toggle('active')
 		}
 	}
-
 	// План
 	if (targetElement.closest('.switcher__button')) {
 		const button = targetElement.closest('.switcher__button')
@@ -62,6 +59,20 @@ function documentAction(e) {
 			button.classList.add('switcher__button--active')
 			plansAction()
 		}
+	}
+	// Select Language
+	if (targetElement.closest(`.select__value`)) {
+		const selectValue = targetElement.closest(`.select__value`)
+		const select = selectValue.closest(`.select`)
+		select.classList.toggle(`--select-open`)
+	}
+	if (targetElement.closest(`.select__item`)) {
+		const selectItem = targetElement.closest(`.select__item`)
+		const select = selectItem.closest(`.select`)
+		const inputValue = select.nextElementSibling
+	}
+	if (!targetElement.closest(`.select`) && targetElement.querySelector(`.select.--select-open`)) {
+		targetElement.querySelector(`.select.--select-open`).classList.remove(`--select-open`)
 	}
 }
 
