@@ -10,27 +10,15 @@
 			padding-block: toRem(235) toRem(150);
 		}
 	}
-
-	// .forms__body
-
-	&__body {
-	}
-
 	// .forms__items
-
 	&__items {
 		display: grid;
-		grid-template-columns: repeat(minmax(min(toRem(600), 100%), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(toRem(600), 100%), 1fr));
 		gap: toRem(50);
 		@media (min-width: toRem(1440)) {
 			gap: toRem(80);
 			grid-template-columns: auto 1fr;
 		}
-	}
-
-	// .forms__item
-
-	&__item {
 	}
 }
 .item-forms {
@@ -151,14 +139,7 @@
 			margin-block-start: 0;
 		}
 	}
-
-	// .support-form__select
-
-	&__select {
-	}
-
 	// .support-form__textarea
-
 	&__textarea {
 		@extend .support-form__input;
 		resize: vertical;
@@ -170,9 +151,7 @@
 			min-height: toRem(163);
 		}
 	}
-
 	// .support-form__footer
-
 	&__footer {
 		flex-grow: 1;
 		display: flex;
@@ -181,14 +160,7 @@
 		flex-wrap: wrap;
 		gap: toRem(20);
 	}
-
-	// .support-form__chekbox
-
-	&__chekbox {
-	}
-
 	// .support-form__button
-
 	&__button {
 		flex-grow: 1;
 		.buttons__button {
@@ -219,13 +191,12 @@
 		&::before {
 			font-size: toRem(9);
 			transition: transform 0.3s;
-			.--select-open & {
+			.select-open & {
 				transform: rotate(180deg);
 			}
 		}
 	}
 	// .select__items
-
 	&__items {
 		visibility: hidden;
 		opacity: 0;
@@ -244,7 +215,7 @@
 		flex-direction: column;
 		gap: toRem(10);
 		transition: opacity 0.3s;
-		.--select-open & {
+		.select-open & {
 			visibility: visible;
 			opacity: 1;
 		}
@@ -257,7 +228,6 @@
 }
 .chekbox {
 	// .chekbox__label
-
 	&__label {
 		color: #999;
 	}
@@ -269,7 +239,6 @@
 		height: 0;
 	}
 	// .chekbox__text
-
 	&__text {
 		display: flex;
 		align-items: center;
@@ -287,10 +256,4 @@
 }
 .chekbox__input:checked + .chekbox__text::before {
 	background-color: var(--bg-4);
-}
-.buttons {
-	// .buttons__button
-
-	&__button {
-	}
 }

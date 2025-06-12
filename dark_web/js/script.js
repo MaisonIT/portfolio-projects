@@ -64,15 +64,15 @@ function documentAction(e) {
 	if (targetElement.closest(`.select__value`)) {
 		const selectValue = targetElement.closest(`.select__value`)
 		const select = selectValue.closest(`.select`)
-		select.classList.toggle(`--select-open`)
+		select.classList.toggle(`select-open`)
 	}
 	if (targetElement.closest(`.select__item`)) {
 		const selectItem = targetElement.closest(`.select__item`)
 		const select = selectItem.closest(`.select`)
 		const inputValue = select.nextElementSibling
 	}
-	if (!targetElement.closest(`.select`) && targetElement.querySelector(`.select.--select-open`)) {
-		targetElement.querySelector(`.select.--select-open`).classList.remove(`--select-open`)
+	if (!targetElement.closest(`.select`) && targetElement.querySelector(`.select.select-open`)) {
+		targetElement.querySelector(`.select.select-open`).classList.remove(`select-open`)
 	}
 }
 

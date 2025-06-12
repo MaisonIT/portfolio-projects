@@ -2354,7 +2354,7 @@ main {
 }
 .forms__items {
   display: grid;
-  grid-template-columns: repeat(minmax(min(37.5rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(37.5rem, 100%), 1fr));
   gap: 3.125rem;
 }
 @media (min-width: 90rem) {
@@ -2363,6 +2363,7 @@ main {
     grid-template-columns: auto 1fr;
   }
 }
+
 .item-forms__head {
   max-width: 100%;
   -webkit-margin-after: 1.5625rem;
@@ -2576,7 +2577,7 @@ main {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
-.--select-open .select__value::before {
+.select-open .select__value::before {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2605,7 +2606,7 @@ main {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-.--select-open .select__items {
+.select-open .select__items {
   visibility: visible;
   opacity: 1;
 }
