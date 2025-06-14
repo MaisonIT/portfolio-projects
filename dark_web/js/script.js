@@ -726,6 +726,22 @@ buttons.forEach(button => {
 	});
 });
 
+// Catalog price
+const buttonPrice = document.querySelectorAll(".switch-price__button");
+const contentPrice = document.querySelectorAll(".mobile-body__item");
+
+buttonPrice.forEach(button => {
+	button.addEventListener("click", () => {
+		const target = button.dataset.tab;
+
+		buttonPrice.forEach(btn => btn.classList.remove("active"));
+		contentPrice.forEach(content => content.classList.remove("active"));
+
+		button.classList.add("active");
+		document.getElementById(target).classList.add("active");
+	});
+});
+
 // Active header
 document.querySelectorAll('.menu__link').forEach(link => {
 	const currentUrl = window.location.href;

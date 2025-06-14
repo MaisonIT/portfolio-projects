@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Іконка -->
+	<!-- Заголовок сторінки в браузері -->
+	<title>Dark Web</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="index.html" class="header__logo logo">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="movies.html" class="menu__link">Movies & Shows</a></li>
+								<li class="menu__item"><a href="support.html" class="menu__link">Support</a></li>
+								<li class="menu__item"><a href="#subscriptions" class="menu__link">Subscriptions</a></li>
+							</ul>
+							<div class="menu__actions action">
+								<button class="action__button -icon-search"></button>
+								<button class="action__button -icon-notification"></button>
+							</div>
+						</nav>
+					</div>
+					<div class="header__actions action">
+						<button class="action__button -icon-search"></button>
+						<button class="action__button -icon-notification"></button>
+					</div>
+					<button type="button" class="header__item icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="subscriptions-page">
+			<section class="plan">
+				<div class="plan__container">
+					<div class="plan__head title-item">
+						<div class="title-item__block">
+							<h2 class="title-item__title">
+								Choose the plan that's right for you
+							</h2>
+							<p class="title-item__about">Join StreamVibe and select from our flexible subscription options
+								tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+						</div>
+						<div class="title-item__switch switcher">
+							<button data-type="m" class="switcher__button switcher__button--active"
+								type="button">Monthly</button>
+							<button data-type="y" class="switcher__button" type="button">Yearly</button>
+						</div>
+					</div>
+					<div class="plan__items">
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Basic Plan</h3>
+								<p class="item-plan__text">Enjoy an extensive library of movies and shows, featuring a range of
+									content, including recently released titles.</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small></div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Standard Plan</h3>
+								<p class="item-plan__text">Access to a wider selection of movies and shows, including most new
+									releases and exclusive content</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small></div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+						<article class="plan__item item-plan">
+							<div class="item-plan__head">
+								<h3 class="item-plan__title">Premium Plan</h3>
+								<p class="item-plan__text">Access to a widest selection of movies and shows, including all new
+									releases and Offline Viewing</p>
+							</div>
+							<div class="item-plan__price"><span></span><small>/month</small>
+							</div>
+							<div class="item-plan__buttons buttons">
+								<button class="buttons__button buttons__button--black">Start Free Trial</button>
+								<button class="buttons__button">Choose Plan</button>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="plans">
+				<div class="plans__container">
+					<div class="plans__body">
+						<div class="plans__head title-item">
+							<div class="title-item__block">
+								<h2 class="title-item__title">
+									Compare our plans and find the right one for you
+								</h2>
+								<p class="title-item__about">StreamVibe offers three different plans to fit your needs: Basic,
+									Standard, and Premium. Compare the features of each plan and choose the one that's right for
+									you.</p>
+							</div>
+							<div class="title-item__switcher switch-price">
+								<button class="switch-price__button active" data-tab="basic" type="button">Basic</button>
+								<button class="switch-price__button" data-tab="standart" type="button">Standard</button>
+								<button class="switch-price__button" data-tab="premium" type="button">Premium</button>
+							</div>
+						</div>
+						<div class="plans__mobile-body mobile-body">
+							<div class="mobile-body__items">
+								<div class="mobile-body__item active" id="basic">
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Price</h4>
+											<p class="mobile-body__about">$9.99/Month</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Free Trail</h4>
+											<p class="mobile-body__about">7 Days</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Content</h4>
+											<p class="mobile-body__about">Access to a wide selection of movies and shows, including
+												some new releases.</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Devices</h4>
+											<p class="mobile-body__about">Watch on one device simultaneously</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Cancel Anytime</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">HDR</h4>
+											<p class="mobile-body__about">No</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Dolby Atmos</h4>
+											<p class="mobile-body__about">No</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Ad - Free</h4>
+											<p class="mobile-body__about">No</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Offline Viewing</h4>
+											<p class="mobile-body__about">No</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Family Sharing</h4>
+											<p class="mobile-body__about">No</p>
+										</article>
+									</div>
+								</div>
+								<div class="mobile-body__item" id="standart">
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Price</h4>
+											<p class="mobile-body__about">$12.99/Month</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Free Trail</h4>
+											<p class="mobile-body__about">7 Days</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Content</h4>
+											<p class="mobile-body__about">Access to a wider selection of movies and shows,
+												including most new releases and exclusive content</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Devices</h4>
+											<p class="mobile-body__about">Watch on Two device simultaneously</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Cancel Anytime</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">HDR</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Dolby Atmos</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Ad - Free</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Offline Viewing</h4>
+											<p class="mobile-body__about">Yes, for select titles.</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Family Sharing</h4>
+											<p class="mobile-body__about">5 family members.</p>
+										</article>
+									</div>
+								</div>
+								<div class="mobile-body__item" id="premium">
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Price</h4>
+											<p class="mobile-body__about">$14.99/Month</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Free Trail</h4>
+											<p class="mobile-body__about">7 Days</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Content</h4>
+											<p class="mobile-body__about">Access to a widest selection of movies and shows,
+												including all new releases and Offline Viewing</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Devices</h4>
+											<p class="mobile-body__about">Watch on Four device simultaneously</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Cancel Anytime</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">HDR</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Dolby Atmos</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Ad - Free</h4>
+											<p class="mobile-body__about">Yes</p>
+										</article>
+									</div>
+									<div class="mobile-body__box">
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Offline Viewing</h4>
+											<p class="mobile-body__about">Yes, for all titles.</p>
+										</article>
+										<article class="mobile-body__section">
+											<h4 class="mobile-body__title">Family Sharing</h4>
+											<p class="mobile-body__about">Yes, up to 6 family members.</p>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="plans__table table">
+							<table class="table__body">
+								<thead>
+									<tr>
+										<th class="table__title">Features</th>
+										<th class="table__title">Basic</th>
+										<th class="table__title">Standard <span>Popular</span></th>
+										<th class="table__title">Premium</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="table__item">Price</td>
+										<td class="table__item">$9.99/Month</td>
+										<td class="table__item">$12.99/Month</td>
+										<td class="table__item">$14.99/Month</td>
+									</tr>
+									<tr>
+										<td class="table__item">Content</td>
+										<td class="table__item">Access to a wide selection of movies and shows, including some new
+											releases.</td>
+										<td class="table__item">Access to a wider selection of movies and shows, including most
+											new releases and exclusive content</td>
+										<td class="table__item">Access to a widest selection of movies and shows, including all
+											new releases and Offline Viewing</td>
+									</tr>
+									<tr>
+										<td class="table__item">Devices</td>
+										<td class="table__item">Watch on one device simultaneously</td>
+										<td class="table__item">Watch on Two device simultaneously</td>
+										<td class="table__item">Watch on Four device simultaneously</td>
+									</tr>
+									<tr>
+										<td class="table__item">Free Trail</td>
+										<td class="table__item">7 Days</td>
+										<td class="table__item">7 Days</td>
+										<td class="table__item">7 Days</td>
+									</tr>
+									<tr>
+										<td class="table__item">Cancel Anytime</td>
+										<td class="table__item">Yes</td>
+										<td class="table__item">Yes</td>
+										<td class="table__item">Yes</td>
+									</tr>
+									<tr>
+										<td class="table__item">HDR</td>
+										<td class="table__item">No</td>
+										<td class="table__item">Yes</td>
+										<td class="table__item">Yes</td>
+									</tr>
+									<tr>
+										<td class="table__item">Dolby Atmos</td>
+										<td class="table__item">No</td>
+										<td class="table__item">Yes</td>
+										<td class="table__item">Yes</td>
+									</tr>
+									<tr>
+										<td class="table__item">Ad - Free</td>
+										<td class="table__item">No</td>
+										<td class="table__item">Yes</td>
+										<td class="table__item">Yes</td>
+									</tr>
+									<tr>
+										<td class="table__item">Offline Viewing</td>
+										<td class="table__item">No</td>
+										<td class="table__item">Yes, for select titles.</td>
+										<td class="table__item">Yes, for all titles.</td>
+									</tr>
+									<tr>
+										<td class="table__item">Family Sharing</td>
+										<td class="table__item">No</td>
+										<td class="table__item">Yes, up to 5 family members.</td>
+										<td class="table__item">Yes, up to 6 family members.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="banner">
+				<div class="banner__container">
+					<div class="banner__body">
+						<div class="banner__image">
+							<img src="img/home/trial/bg-trial.webp" alt="Banner Image">
+						</div>
+						<div class="banner__head title-item">
+							<div class="title-item__block">
+								<h2 class="title-item__title">
+									Start your free trial today!
+								</h2>
+								<p class="title-item__about">This is a clear and concise call to action that encourages users to
+									sign up for a free trial of StreamVibe.</p>
+							</div>
+							<div class="title-item__button buttons">
+								<button class="buttons__button" type="button">Start a Free Trail</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<div class="footer__items">
+						<div class="footer__item item-footer">
+							<a href="index.html" class="item-footer__title">Home</a>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Categories</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Devices</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Pricing</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<a href="movies.html" class="item-footer__title">Movies</a>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<a href="movies.html" class="item-footer__title">Shows</a>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Gernes</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Trending</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">New Release</a></li>
+								<li class="item-footer__list"><a href="#" class="item-footer__link">Popular</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<a href="support.html" class="item-footer__title">Support</a>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="support.html" class="item-footer__link">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<a href="subscriptions.html" class="item-footer__title">Subscription</a>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="subscriptions.html" class="item-footer__link">Plans</a>
+								</li>
+								<li class="item-footer__list"><a href="subscriptions.html"
+										class="item-footer__link">Features</a></li>
+							</ul>
+						</div>
+						<div class="footer__item item-footer">
+							<h3 class="item-footer__title">Connect With Us</h3>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a href="https://www.facebook.com/"
+										class="item-footer__link -icon-facebook"></a></li>
+								<li class="item-footer__list"><a href="https://x.com/"
+										class="item-footer__link -icon-twitter"></a></li>
+								<li class="item-footer__list"><a href="https://www.linkedin.com/"
+										class="item-footer__link -icon-linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__privacy">
+						<p class="footer__text">@2023 streamvib, All Rights Reserved</p>
+						<div class="footer__terms">
+							<a href="#" class="footer__link">Terms of Use</a>
+							<a href="#" class="footer__link">Privacy Policy</a>
+							<a href="#" class="footer__link">Cookie Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
