@@ -140,6 +140,7 @@
 		display: none;
 		@media (max-width: toEm(460)) {
 			display: flex;
+			padding-block-end: toRem(20);
 		}
 	}
 }

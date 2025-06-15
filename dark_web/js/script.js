@@ -711,7 +711,7 @@ function plansAction() {
 	}
 }
 // Catalog
-const buttons = document.querySelectorAll(".switch__button");
+const buttons = document.querySelectorAll(".switch-button");
 const contents = document.querySelectorAll(".catalog");
 
 buttons.forEach(button => {
