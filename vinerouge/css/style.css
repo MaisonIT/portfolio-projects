@@ -1560,6 +1560,7 @@ summary {
   position: absolute;
   inset-inline-start: 9.375rem;
   inset-block-start: 9.375rem;
+  pointer-events: none;
 }
 .items-blog__form {
   display: -webkit-box;
@@ -1577,8 +1578,7 @@ summary {
 
 .form__body input {
   width: 40.125rem;
-  -webkit-padding-after: 1.3125rem;
-          padding-block-end: 1.3125rem;
+  padding-block: 1.3125rem;
   border-bottom: 0.0625rem solid var(--color-text);
   text-align: center;
 }
