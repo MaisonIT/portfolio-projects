@@ -17,6 +17,11 @@
 html {
 	scroll-behavior: smooth;
 }
+#shop,
+#events,
+#blog {
+	scroll-margin-top: toRem(105);
+}
 body {
 	font-family: "Libre Baskerville", sans-serif;
 	font-size: toRem(14);
