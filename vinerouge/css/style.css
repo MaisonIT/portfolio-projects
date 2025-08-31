@@ -19,7 +19,10 @@ html {
 }
 
 #shop,
-#events,
+#events {
+  scroll-margin-top: 7.5rem;
+}
+
 #blog {
   scroll-margin-top: 6.5625rem;
 }

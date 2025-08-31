@@ -18,7 +18,9 @@ html {
 	scroll-behavior: smooth;
 }
 #shop,
-#events,
+#events {
+	scroll-margin-top: toRem(120);
+}
 #blog {
 	scroll-margin-top: toRem(105);
 }
