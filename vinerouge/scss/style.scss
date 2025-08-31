@@ -108,9 +108,6 @@ summary {
 			inline-size: 100%;
 			block-size: 100%;
 			transition: inset-inline-start 0.5s;
-			@media (max-width: toEm(768)) {
-				padding-inline-end: toRem(15);
-			}
 			.menu-open & {
 				inset-inline-start: 0;
 				background-color: var(--main-bg);
@@ -132,8 +129,14 @@ summary {
 	&__body {
 		background: var(--bg-2);
 		padding-inline-end: toRem(20);
-		padding-block-end: toRem(20);
 		padding-block-start: toRem(160);
+		padding-block-end: toRem(20);
+		padding-inline-end: toRem(20);
+		@media (min-width: toEm(1365)) {
+			padding-inline-end: 0;
+			padding-block-start: 0;
+			padding-block-end: 0;
+		}
 		@media (min-width: toEm(768)) {
 			padding-inline-end: toRem(70);
 		}

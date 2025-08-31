@@ -138,14 +138,6 @@ summary {
     -webkit-transition: inset-inline-start 0.5s;
     transition: inset-inline-start 0.5s;
   }
-}
-@media (max-width: 85.3125em) and (max-width: 48em) {
-  .header__menu {
-    -webkit-padding-end: 0.9375rem;
-            padding-inline-end: 0.9375rem;
-  }
-}
-@media (max-width: 85.3125em) {
   .menu-open .header__menu {
     inset-inline-start: 0;
     background-color: var(--main-bg);
@@ -170,10 +162,21 @@ summary {
   background: var(--bg-2);
   -webkit-padding-end: 1.25rem;
           padding-inline-end: 1.25rem;
-  -webkit-padding-after: 1.25rem;
-          padding-block-end: 1.25rem;
   -webkit-padding-before: 10rem;
           padding-block-start: 10rem;
+  -webkit-padding-after: 1.25rem;
+          padding-block-end: 1.25rem;
+  padding-inline-end: 1.25rem;
+}
+@media (min-width: 85.3125em) {
+  .menu__body {
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+    -webkit-padding-before: 0;
+            padding-block-start: 0;
+    -webkit-padding-after: 0;
+            padding-block-end: 0;
+  }
 }
 @media (min-width: 48em) {
   .menu__body {
