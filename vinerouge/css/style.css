@@ -168,12 +168,18 @@ summary {
 
 .menu__body {
   background: var(--bg-2);
-  -webkit-padding-end: 4.375rem;
-          padding-inline-end: 4.375rem;
+  -webkit-padding-end: 1.25rem;
+          padding-inline-end: 1.25rem;
   -webkit-padding-after: 1.25rem;
           padding-block-end: 1.25rem;
   -webkit-padding-before: 10rem;
           padding-block-start: 10rem;
+}
+@media (min-width: 48em) {
+  .menu__body {
+    -webkit-padding-after: 4.375rem;
+            padding-block-end: 4.375rem;
+  }
 }
 .menu__list {
   display: -webkit-box;
