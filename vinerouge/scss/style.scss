@@ -108,8 +108,6 @@ summary {
 			inline-size: 100%;
 			block-size: 100%;
 			transition: inset-inline-start 0.5s;
-			padding-block-start: toRem(160);
-			padding-inline-end: toRem(70);
 			@media (max-width: toEm(768)) {
 				padding-inline-end: toRem(15);
 			}
@@ -130,6 +128,13 @@ summary {
 	}
 }
 .menu {
+	// .menu__body
+	&__body {
+		background: var(--bg-2);
+		padding-inline-end: toRem(70);
+		padding-block-end: toRem(20);
+		padding-block-start: toRem(160);
+	}
 	// .menu__list
 	&__list {
 		display: flex;
