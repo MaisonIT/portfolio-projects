@@ -135,7 +135,7 @@ summary {
 		padding-block-end: toRem(20);
 		padding-block-start: toRem(160);
 		@media (min-width: toEm(768)) {
-			padding-block-end: toRem(70);
+			padding-inline-end: toRem(70);
 		}
 	}
 	// .menu__list

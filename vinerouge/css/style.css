@@ -177,8 +177,8 @@ summary {
 }
 @media (min-width: 48em) {
   .menu__body {
-    -webkit-padding-after: 4.375rem;
-            padding-block-end: 4.375rem;
+    -webkit-padding-end: 4.375rem;
+            padding-inline-end: 4.375rem;
   }
 }
 .menu__list {
