@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Іконка -->
+	<!-- Заголовок сторінки в браузері -->
+	<title>Food Delivery</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo logo">
+						<div class="logo__img">
+							<img src="img/logo.svg" alt="Logo">
+						</div>
+						<strong class="logo__name">Foodeli</strong>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#about" class="menu__link">Why Foodeli?</a></li>
+								<li class="menu__item"><a href="#services" class="menu__link -icon-arrow-head">Services</a>
+								</li>
+								<li class="menu__item"><a href="#menu" class="menu__link -icon-arrow-head">Menu</a></li>
+								<li class="menu__item"><a href="#footer" class="menu__link">Contact</a></li>
+								<li class="menu__item menu__item--log"><a href="#" class="menu__link">Login</a></li>
+							</ul>
+							<div class="menu__button-block buttons">
+								<button class="buttons__button -icon-log" type="button">Login</button>
+							</div>
+						</nav>
+					</div>
+					<div class="header__actions action">
+						<button class="action__button -icon-search" type="button"></button>
+						<div class="action__block">
+							<button class="action__button -icon-shop" type="button"></button>
+							<span class="action__counter">0</span>
+						</div>
+						<div class="action__button-block buttons">
+							<button class="buttons__button -icon-log" type="button">Login</button>
+						</div>
+					</div>
+					<button type="button" class="header__item icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<section id="about" class="hero">
+				<div class="hero__container">
+					<div class="hero__items">
+						<div class="hero__item item-hero">
+							<div class="item-hero__head titles">
+								<div class="titles__tagline">
+									<p class="titles__tagline-text">More than Faster</p>
+									<div class="titles__tagline-icon">
+										<img src="img/hero/decor-fruit.webp" alt="Decor Fruit">
+									</div>
+								</div>
+								<div class="titles__block">
+									<h1 class="titles__title titles__title--big">Claim Best Offer on Fast
+										<span>Food</span>
+										<span>&</span>
+										<span>Restaurants</span>
+									</h1>
+									<p class="titles__text">Our job is to filling your tummy with delicious food and with fast
+										and
+										free delivery</p>
+									<div class="titles__actions buttons">
+										<button class="buttons__button buttons__button--big">Get Started</button>
+										<button class="buttons__play -icon-play">Watch Video</button>
+									</div>
+								</div>
+							</div>
+							<div class="item-hero__customers">
+								<div class="item-hero__items">
+									<div class="item-hero__customer-icon">
+										<img src="img/reviews/customer-1.webp" alt="Customer Icon">
+									</div>
+									<div class="item-hero__customer-icon">
+										<img src="img/reviews/customer-2.webp" alt="Customer Icon">
+									</div>
+									<div class="item-hero__customer-icon">
+										<img src="img/reviews/customer-3.webp" alt="Customer Icon">
+									</div>
+								</div>
+								<div class="item-hero__customer-text">
+									<h4 class="item-hero__customer-title">Our Happy Customer</h4>
+									<p class="item-hero__customer-review -icon-rate-fill">4,8 <span>(12.5k Review)</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="hero__item item-image">
+							<div class="item-image__img">
+								<img src="img/hero/image-plate.webp" alt="Plate with food image">
+							</div>
+							<div class="item-image__decor-clock -icon-clock"></div>
+							<div class="item-image__decor-fire">
+								<img src="img/icon-emoji/decor-fire.svg" alt="Fire decor Icon">
+							</div>
+							<div class="item-image__decor-arrow">
+								<img src="img/hero/decor-arrow.svg" alt="Arow decor image">
+							</div>
+							<div class="item-image__delivery-boy delivery-card">
+								<div class="delivery-card__items">
+									<div class="delivery-card__img">
+										<img src="img/icon-emoji/delivery-boy.webp" alt="Delivery boy icon">
+									</div>
+									<div class="delivery-card__block">
+										<p class="delivery-card__name">Richard Watson</p>
+										<p class="delivery-card__job">Food Courier</p>
+									</div>
+								</div>
+								<button type="button" class="delivery-card__icon -icon-phone"></button>
+							</div>
+							<article class="item-image__food-card card-food">
+								<div class="card-food__img">
+									<img src="img/hero/image-pizza.webp" alt="Pizza image">
+								</div>
+								<div class="card-food__block">
+									<div class="card-food__head">
+										<h4 class="card-food__title">Italian Pizza</h4>
+										<div class="card-food__rating">
+											<span class="card-food__rate -icon-rate-fill"></span>
+											<span class="card-food__rate -icon-rate-fill"></span>
+											<span class="card-food__rate -icon-rate-fill"></span>
+											<span class="card-food__rate -icon-rate-fill"></span>
+											<span class="card-food__rate -icon-rate"></span>
+										</div>
+									</div>
+									<p class="card-food__price"><span>$</span>7.49</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="services__container">
+					<div class="services__head titles">
+						<h3 class="titles__label">WHAT WE SERVE</h3>
+						<h1 class="titles__title">Your Favourite Food <br> Delivery Partner</h1>
+					</div>
+					<div class="services__items">
+						<div class="services__item item-services">
+							<div class="item-services__img">
+								<img src="img/serve/easy-order.svg" alt="Order food image">
+							</div>
+							<div class="item-services__head titles">
+								<h1 class="titles__title titles__title--small">Easy To Order</h1>
+								<p class="titles__text">You only need a few steps in ordering food</p>
+							</div>
+						</div>
+						<div class="services__item item-services">
+							<div class="item-services__img">
+								<img src="img/serve/delivery.svg" alt="Delivery food image">
+							</div>
+							<div class="item-services__head titles">
+								<h1 class="titles__title titles__title--small">Fastest Delivery</h1>
+								<p class="titles__text">Delivery that is always ontime even faster</p>
+							</div>
+						</div>
+						<div class="services__item item-services">
+							<div class="item-services__img">
+								<img src="img/serve/quality.svg" alt="Quality service image">
+							</div>
+							<div class="item-services__head titles">
+								<h1 class="titles__title titles__title--small">Best Quality</h1>
+								<p class="titles__text">Not only fast for us quality is also number one</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="menu" class="menu-section">
+				<div class="menu-section__container">
+					<div class="menu-section__block">
+						<div class="menu-section__head titles">
+							<h3 class="titles__label">OUR MENU</h3>
+							<h1 class="titles__title">Menu That Always <br> Makes You Fall In Love</h1>
+						</div>
+						<div class="menu-section__actions swiper-actions">
+							<button class="swiper-actions__button swiper-button--prev -icon-arrow" type="button"></button>
+							<button class="swiper-actions__button swiper-button--next -icon-arrow" type="button"></button>
+						</div>
+					</div>
+					<div class="menu-section__items">
+						<div class="menu-section__item-block item-menu">
+							<ul class="item-menu__menu-list">
+								<li class="item-menu__list"><button class="item-menu__button switch-button active"
+										data-tab="burger">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										<span>Burger</span>
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button switch-button" data-tab="pizza">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-pizza.webp" alt="Icon pizza">
+										</div>
+										Pizza
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button switch-button" data-tab="cake">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-cake.webp" alt="Icon capcake">
+										</div>
+										Cupcake
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button switch-button" data-tab="ramen">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-ramen.webp" alt="Icon ramen">
+										</div>
+										Ramen
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button switch-button" data-tab="icecream">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-icecream.webp" alt="Icon ice cream">
+										</div>
+										Ice Cream
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+								<li class="item-menu__list"><button class="item-menu__button">
+										<div class="item-menu__img">
+											<img src="img/menu/icon-burger.webp" alt="Icon burger">
+										</div>
+										Burger
+									</button></li>
+							</ul>
+						</div>
+						<div class="catalog active" id="burger">
+							<div class="catalog__item-block item-swiper swiper">
+								<div class="item-swiper__wrapper swiper-wrapper">
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-1.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Italian Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 7.49</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog" id="pizza">
+							<div class="catalog__item-block item-swiper swiper">
+								<div class="item-swiper__wrapper swiper-wrapper">
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/pizza.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Italian Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 7.49</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog" id="cake">
+							<div class="catalog__item-block item-swiper swiper">
+								<div class="item-swiper__wrapper swiper-wrapper">
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/cake.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Italian Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 7.49</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog" id="ramen">
+							<div class="catalog__item-block item-swiper swiper">
+								<div class="item-swiper__wrapper swiper-wrapper">
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/ramen.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Italian Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 7.49</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog" id="icecream">
+							<div class="catalog__item-block item-swiper swiper">
+								<div class="item-swiper__wrapper swiper-wrapper">
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/icecream.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Italian Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 7.49</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-swiper__card swiper-slide">
+										<div class="item-swiper__img">
+											<img src="img/menu/menu-card-2.webp" alt="Menu-card image">
+										</div>
+										<div class="item-swiper__block card-food">
+											<div class="card-food__block card-food__block--big">
+												<div class="card-food__head">
+													<h4 class="card-food__title">Sausage Pizza</h4>
+												</div>
+												<p class="card-food__price"><span>$</span> 6.59</p>
+												<a class="card-food__link -icon-arrow" target="_blank" href="#">Oreder now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__items">
+						<div class="testimonials__item testimonials-image">
+							<div class="testimonials-image__img">
+								<img src="img/testimonials/image-chef.webp" alt="Chef image">
+							</div>
+							<div class="testimonials-image__decor-popcorn">
+								<img src="img/testimonials/decor-popcorn.webp" alt="Popcorn image">
+							</div>
+							<div class="testimonials-image__decor-leafs">
+								<img src="img/testimonials/decor-leaf.webp" alt="Leafs image">
+							</div>
+							<div class="testimonials-image__decor-onions">
+								<img src="img/testimonials/decor-onion.webp" alt="Onoins image">
+							</div>
+							<div class="testimonials-image__decor-peppers">
+								<img src="img/testimonials/decor-pepper.webp" alt="Peppers image">
+							</div>
+							<article class="testimonials-image__reviews">
+								<h4 class="testimonials-image__title">Our Reviewers</h4>
+								<div class="testimonials-image__item">
+									<div class="testimonials-image__icon">
+										<img src="img/reviews/customer-1.webp" alt="Customer image">
+									</div>
+									<div class="testimonials-image__icon">
+										<img src="img/reviews/customer-2.webp" alt="Customer image">
+									</div>
+									<div class="testimonials-image__icon">
+										<img src="img/reviews/customer-3.webp" alt="Customer image">
+									</div>
+									<div class="testimonials-image__number">12k+</div>
+								</div>
+							</article>
+						</div>
+						<div class="testimonials__item item-testimonials">
+							<div class="item-testimonials__head titles">
+								<h3 class="titles__label">WHAT THEY SAY</h3>
+								<h1 class="titles__title">What Our Customers <br> Say About Us</h1>
+							</div>
+							<blockquote class="item-testimonials__qoute">
+								“Fudo is the best. Besides the many and delicious meals, the service is also very good,
+								especially in the very fast delivey. I highly recommend Fudo to you”.
+							</blockquote>
+							<div class="item-testimonials__customer">
+								<div class="item-testimonials__customer-icon">
+									<img src="img/reviews/customer-1.webp" alt="Customer icon">
+								</div>
+								<div class="item-testimonials__text">
+									<cite class="item-testimonials__name">Theresa Jordan</cite>
+									<p class="item-testimonials__about">Food Enthusiast</p>
+								</div>
+								<div class="item-testimonials__rating">
+									<span class="item-testimonials__rate -icon-rate-fill"></span>
+									<span class="item-testimonials__rate -icon-rate-fill"></span>
+									<span class="item-testimonials__rate -icon-rate-fill"></span>
+									<span class="item-testimonials__rate -icon-rate-fill"></span>
+									<span class="item-testimonials__rate -icon-rate"></span>
+									<span class="item-testimonials__rate">4,8</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="app">
+				<div class="app__container">
+					<div class="app__items">
+						<div class="app__item item-app">
+							<div class="item-app__block">
+								<div class="item-app__decor-smile">
+									<img src="img/icon-emoji/decor-smile.webp" alt="Smile image">
+								</div>
+								<div class="item-app__decor-fire">
+									<img src="img/icon-emoji/decor-fire.svg" alt="Fire icon">
+								</div>
+								<div class="item-app__head titles">
+									<h3 class="titles__label">DOWNLOAD APP</h3>
+									<h1 class="titles__title">Get Started With <br> Fudo Today!</h1>
+									<p class="titles__text">Discover food wherever and whenever and get your food delivered
+										quickly.</p>
+								</div>
+								<div class="item-app__notifiction">
+									<div class="item-app__notofication-block">
+										<div class="item-app__notifiction-icon">
+											<img src="img/app/notification-card.webp" alt="Notification image">
+										</div>
+									</div>
+									<p class="item-app__text">Your Food Has Arrived</p>
+								</div>
+							</div>
+							<div class="item-app__actions">
+								<div class="item-app__button buttons">
+									<button class="buttons__button buttons__button--big">Get Started</button>
+								</div>
+								<div class="item-app__delivery-boy delivery-card">
+									<div class="delivery-card__items">
+										<div class="delivery-card__img">
+											<img src="img/icon-emoji/delivery-boy.webp" alt="Delivery boy icon">
+										</div>
+										<div class="delivery-card__block">
+											<p class="delivery-card__name">Richard Watson</p>
+											<p class="delivery-card__job">Food Courier</p>
+										</div>
+									</div>
+									<button type="button" class="delivery-card__icon -icon-phone"></button>
+								</div>
+							</div>
+						</div>
+						<div class="app__item item-app-image">
+							<div class="item-app-image__img">
+								<img src="img/app/image-app.webp" alt="App image">
+							</div>
+							<div class="item-app-image__decor-tasty">
+								<img src="img/icon-emoji/decor-tasty.webp" alt="Tasty icon">
+							</div>
+							<div class="item-app-image__decor-wave">
+								<img src="img/app/decor-wave.webp" alt="Wave image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__items">
+					<div class="footer__item item-footer">
+						<div class="footer__logo logo">
+							<div class="logo__img">
+								<img src="img/logo.svg" alt="Logo">
+							</div>
+							<strong class="logo__name">Foodeli</strong>
+						</div>
+						<p class="item-footer__about">Our job is to filling your tummy with delicious food and with fast and
+							free delivery.</p>
+						<div class="item-footer__social">
+							<a href="#" target="_blank" class="item-footer__button -icon-instagram"></a>
+							<a href="#" target="_blank" class="item-footer__button -icon-facebook"></a>
+							<a href="#" target="_blank" class="item-footer__button -icon-twitter"></a>
+						</div>
+					</div>
+					<div class="footer__item item-footer">
+						<article class="item-footer__block">
+							<h4 class="item-footer__title">About</h4>
+							<ul class="item-footer__menu-list">
+								<li class="item-footer__link"><a href="#about">About Us</a></li>
+								<li class="item-footer__link"><a href="#">Features</a></li>
+								<li class="item-footer__link"><a href="#">News</a></li>
+								<li class="item-footer__link"><a href="#menu">Menu</a></li>
+							</ul>
+						</article>
+						<article class="item-footer__block">
+							<h4 class="item-footer__title">Company</h4>
+							<ul class="item-footer__menu-list">
+								<li class="item-footer__link"><a href="#about">Why Foodeli?</a></li>
+								<li class="item-footer__link"><a href="#">Partner With Us</a></li>
+								<li class="item-footer__link"><a href="#">FAQ</a></li>
+								<li class="item-footer__link"><a href="#">Blog</a></li>
+							</ul>
+						</article>
+						<article class="item-footer__block">
+							<h4 class="item-footer__title">Support</h4>
+							<ul class="item-footer__menu-list">
+								<li class="item-footer__link"><a href="#">Account</a></li>
+								<li class="item-footer__link"><a href="#">Support Center</a></li>
+								<li class="item-footer__link"><a href="#">Feedback</a></li>
+								<li class="item-footer__link"><a href="#">Contact Us</a></li>
+								<li class="item-footer__link"><a href="#">Accessibilty</a></li>
+							</ul>
+						</article>
+						<article class="item-footer__block">
+							<h4 class="item-footer__title">Get in Touch</h4>
+							<form class="item-footer__form form" action="#">
+								<label for="mail" class="form__label">
+									Question or feedback? <br>
+									We’d love to hear from you
+								</label>
+								<div class="form__box">
+									<input name="mail" id="mail" type="email" placeholder="Email Address">
+									<button class="form__button -icon-send-email" type="submit"></button>
+								</div>
+							</form>
+						</article>
+					</div>
+				</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
