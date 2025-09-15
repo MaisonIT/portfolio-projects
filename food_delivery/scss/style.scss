@@ -150,9 +150,11 @@ main {
 	color: var(--color-text-2);
 
 	&__body {
-		padding-block: toRem(100) toRem(20);
-		padding-inline-end: toRem(20);
-		background-color: #fff;
+		.menu-open & {
+			padding-block: toRem(100) toRem(20);
+			padding-inline-end: toRem(20);
+			background-color: #fff;
+		}
 	}
 	@media (max-width: toEm(980)) {
 		position: absolute;

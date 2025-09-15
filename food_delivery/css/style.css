@@ -177,7 +177,7 @@ main {
   font-size: 0.875rem;
   color: var(--color-text-2);
 }
-.menu__body {
+.menu-open .menu__body {
   padding-block: 6.25rem 1.25rem;
   -webkit-padding-end: 1.25rem;
           padding-inline-end: 1.25rem;
