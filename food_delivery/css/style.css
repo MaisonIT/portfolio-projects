@@ -332,13 +332,13 @@ main {
   font-weight: 500;
 }
 .hero__container {
-  -webkit-padding-before: 2.5rem;
-          padding-block-start: 2.5rem;
+  -webkit-padding-before: 7.5rem;
+          padding-block-start: 7.5rem;
 }
 @media (min-width: 48em) {
   .hero__container {
-    -webkit-padding-before: 7.8125rem;
-            padding-block-start: 7.8125rem;
+    -webkit-padding-before: 13.3125rem;
+            padding-block-start: 13.3125rem;
   }
 }
 .hero__items {

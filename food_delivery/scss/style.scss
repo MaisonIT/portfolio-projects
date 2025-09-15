@@ -279,9 +279,9 @@ main {
 	// .hero__container
 
 	&__container {
-		padding-block-start: toRem(40);
+		padding-block-start: toRem(120);
 		@media (min-width: toEm(768)) {
-			padding-block-start: toRem(125);
+			padding-block-start: toRem(213);
 		}
 	}
 
