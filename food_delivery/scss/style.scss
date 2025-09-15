@@ -603,11 +603,13 @@ main {
 
 	&__item-block {
 		&:nth-child(1) {
-			height: toRem(573);
 			overflow: auto;
-			max-width: toRem(367);
 			box-sizing: content-box;
 			padding-inline-end: toRem(90);
+			@media (min-width: toEm(1225)) {
+				max-width: toRem(367);
+				height: toRem(573);
+			}
 			&::-webkit-scrollbar {
 				width: toRem(6);
 			}
@@ -635,9 +637,12 @@ main {
 	}
 }
 .swiper-actions {
-	display: flex;
 	align-items: center;
 	gap: toRem(36);
+	display: none;
+	@media (min-width: toEm(768)) {
+		display: flex;
+	}
 	// .swiper-actions__button
 
 	&__button {
@@ -671,8 +676,11 @@ main {
 	&__menu-list {
 		padding-block: toRem(34);
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		gap: toRem(30);
+		@media (min-width: toEm(1225)) {
+			flex-direction: column;
+		}
 	}
 
 	// .item-menu__button
