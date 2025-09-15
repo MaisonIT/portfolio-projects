@@ -811,6 +811,8 @@ main {
   background-color: var(--color-bg-text-hover);
 }
 .item-menu__img {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   padding: 0.5625rem 0.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1671,11 +1673,6 @@ main {
   max-width: 7.0625rem;
   aspect-ratio: 113/97;
   border-radius: 1.25rem;
-}
-@media (min-width: 25.3125em) {
-  .card-food__img {
-    position: none;
-  }
 }
 .card-food__block--big {
   display: -webkit-box;

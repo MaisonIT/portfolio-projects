@@ -698,6 +698,7 @@ main {
 	// .item-menu__img
 
 	&__img {
+		flex-basis: 25%;
 		padding: toRem(9) toRem(10);
 		display: flex;
 		justify-content: center;
@@ -1548,9 +1549,6 @@ main {
 		max-width: toRem(113);
 		aspect-ratio: 113 / 97;
 		border-radius: toRem(20);
-		@media (min-width: toEm(405)) {
-			position: none;
-		}
 	}
 
 	// .card-food__block
