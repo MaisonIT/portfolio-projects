@@ -17,6 +17,12 @@
 html {
 	scroll-behavior: smooth;
 }
+#menu {
+	scroll-margin-block-start: toRem(110);
+}
+#services {
+	scroll-margin-block-start: toRem(110);
+}
 body {
 	font-family: "Poppins", sans-serif;
 	font-size: toRem(14);
@@ -674,12 +680,13 @@ main {
 	// .item-menu__menu-list
 
 	&__menu-list {
-		padding-block: toRem(34);
+		padding-block-end: toRem(34);
 		display: flex;
 		flex-direction: row;
-		gap: toRem(30);
 		@media (min-width: toEm(1225)) {
 			flex-direction: column;
+			padding-block: toRem(34);
+			gap: toRem(30);
 		}
 	}
 
@@ -688,14 +695,18 @@ main {
 	&__button {
 		display: flex;
 		align-items: center;
-		gap: toRem(22);
 		font-size: toRem(24);
 		font-weight: 500;
 		line-height: 0.933;
 		padding: toRem(14) toRem(19);
+		padding-inline-end: toRem(50);
 		border-radius: toRem(50);
-		min-width: toRem(254);
 		max-height: toRem(85);
+		@media (min-width: toEm(1225)) {
+			min-width: toRem(254);
+			gap: toRem(22);
+			padding-inline-end: 0;
+		}
 		&:hover {
 			background-color: #ee5f77;
 		}

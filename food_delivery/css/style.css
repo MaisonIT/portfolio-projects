@@ -14,6 +14,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#menu {
+  scroll-margin-block-start: 6.875rem;
+}
+
+#services {
+  scroll-margin-block-start: 6.875rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
@@ -786,7 +794,8 @@ main {
 }
 
 .item-menu__menu-list {
-  padding-block: 2.125rem;
+  -webkit-padding-after: 2.125rem;
+          padding-block-end: 2.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,7 +803,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 1.875rem;
 }
 @media (min-width: 76.5625em) {
   .item-menu__menu-list {
@@ -802,6 +810,8 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-block: 2.125rem;
+    gap: 1.875rem;
   }
 }
 .item-menu__button {
@@ -811,14 +821,22 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.375rem;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 0.933;
   padding: 0.875rem 1.1875rem;
+  -webkit-padding-end: 3.125rem;
+          padding-inline-end: 3.125rem;
   border-radius: 3.125rem;
-  min-width: 15.875rem;
   max-height: 5.3125rem;
+}
+@media (min-width: 76.5625em) {
+  .item-menu__button {
+    min-width: 15.875rem;
+    gap: 1.375rem;
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
+  }
 }
 .item-menu__button:hover {
   background-color: #ee5f77;
