@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- Підключення шрифтів -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+	<!-- Підключення окремого файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Іконка -->
+	<!-- Заголовок сторінки в браузері -->
+	<title>Furniture Website</title>
+	<!-- Відкрити усі вкладки в новій вкладці -->
+	<!-- <base target="_blank" href> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo logo">
+						<a class="logo__head" href="#home">Furni<span>.</span></a>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#about" class="menu__link -icon-arrow-head">About</a>
+								</li>
+								<li class="menu__item"><a href="#services" class="menu__link -icon-arrow-head">Services</a></li>
+								<li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
+								<li class="menu__item"><a href="#contact" class="menu__link">Contac us</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions action">
+						<button class="action__button" type="button">
+							<img src="img/header/user.svg" alt="User icon">
+						</button>
+						<button class="action__button" type="button">
+							<img src="img/header/cart.svg" alt="Cart icon">
+						</button>
+					</div>
+					<button id="burger" type="button" class="header__item icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="home-page">
+			<section id="home" class="hero">
+				<div class="hero__container">
+					<div class="hero__items">
+						<div class="hero__item item-hero">
+							<div class="item-hero__titles titles">
+								<h1 class="titles__title titles__title--big">Modern Interior
+									Design Studio</h1>
+							</div>
+							<div class="hero__buttons buttons">
+								<a class="buttons__button buttons__button--yellow" href="#">Shop Now</a>
+								<a class="buttons__button buttons__button--transparent" href="#">Explore</a>
+							</div>
+						</div>
+						<div class="hero__item item-image">
+							<div class="item-image__img">
+								<img src="img/hero/main-couch.webp" alt="Couch image">
+								<div class="item-image__decor">
+									<img src="img/decor/hero-decor.svg" alt="Deor dots">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="shop">
+				<div class="shop__container">
+					<div class="shop__items">
+						<div class="shop__item">
+							<div class="shop__titles titles">
+								<h2 class="titles__title">Crafted with excellent material.</h2>
+								<p class="titles__text">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
+									vivethe as it was for us to know what was to be done.</p>
+							</div>
+							<div class="shop__buttons buttons">
+								<a class="buttons__button buttons__button--black" href="#">Explore</a>
+							</div>
+						</div>
+						<div class="shop__item swiper-shop swiper">
+							<div class="swiper-shop__wrapper swiper-wrapper">
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-1.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-2.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-3.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-3.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-3.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-3.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-wrapper__slide swiper-slide">
+									<div class="swiper-slide__block">
+										<div class="swiper-slide__img">
+											<img src="img/products/product-3.webp" alt="Product chair">
+										</div>
+										<div class="swiper-slide__bottom">
+											<div class="swiper-slide__text">
+												<p class="swiper-slide__name">Nordic <span>chair</span></p>
+												<p class="swiper-slide__cost">$50.00</p>
+											</div>
+											<div class="swiper-slide__add">
+												<img src="img/shop/shop-add.svg" alt="Add icon">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="about__container">
+					<div class="about__items">
+						<div class="about__item item-about">
+							<div class="item-about__titles titles">
+								<h2 class="titles__title">Why Choose Us</h2>
+								<p class="titles__text">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
+									vivethe as it was for us to know what was to be done. the</p>
+							</div>
+							<div class="item-about__block block-about">
+								<article class="block-about__item">
+									<div class="block-about__icon">
+										<img src="img/about/truck-icon.svg" alt="Truck icon">
+									</div>
+									<div class="block-about__text">
+										<h3 class="block-about__title">
+											Fast & Free Shipping
+										</h3>
+										<p class="block-about__text">
+											Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was
+										</p>
+									</div>
+								</article>
+								<article class="block-about__item">
+									<div class="block-about__icon">
+										<img src="img/about/shop-bag-icon.svg" alt="Shop bag icon">
+									</div>
+									<div class="block-about__text">
+										<h3 class="block-about__title">
+											Easy to Shop
+										</h3>
+										<p class="block-about__text">
+											Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was
+										</p>
+									</div>
+								</article>
+								<article class="block-about__item">
+									<div class="block-about__icon">
+										<img src="img/about/support-icon.svg" alt="Support icon">
+									</div>
+									<div class="block-about__text">
+										<h3 class="block-about__title">
+											24/7 Support
+										</h3>
+										<p class="block-about__text">
+											Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was
+										</p>
+									</div>
+								</article>
+								<article class="block-about__item">
+									<div class="block-about__icon">
+										<img src="img/about/return-icon.svg" alt="Return icon">
+									</div>
+									<div class="block-about__text">
+										<h3 class="block-about__title">
+											Hassle Free Returns
+										</h3>
+										<p class="block-about__text">
+											Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was
+										</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="about__item item-about-image">
+							<div class="item-about-image__img">
+								<img src="img/about/why-choose-us-img.webp" alt="About Image">
+								<div class="item-about-image__decor">
+									<img src="img/decor/about-decor.svg" alt="About Decor Dots">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="services">
+				<div class="services__container">
+					<div class="services__items">
+						<div class="services__item item-image-grid">
+							<div class="item-image-grid__decor">
+								<img src="img/decor/services-decor.svg" alt="Services decor dots">
+							</div>
+							<div class="item-image-grid__img">
+								<img src="img/services/img-grid-1.webp" alt="Image couch">
+							</div>
+							<div class="item-image-grid__img">
+								<img src="img/services/img-grid-2.webp" alt="Image chairs">
+							</div>
+							<div class="item-image-grid__img">
+								<img src="img/services/img-grid-3.webp" alt="Image chair">
+							</div>
+						</div>
+						<div class="services__item item-services">
+							<div class="item-services__titles titles">
+								<h2 class="titles__title">We help you make <br>
+									Modern Interior Design </h2>
+								<p class="titles__text">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
+									vivethe as it was for us to know what was to be done. the this is a long post for the
+									text.`This small text has to be place here, since this is a place holder. You can also chane
+									it.</p>
+							</div>
+							<div class="item-services__block">
+								<ul class="item-services__lists">
+									<li class="item-services__list">Donec mattis porta eros,let aliquet finibus ri</li>
+									<li class="item-services__list">Donec mattis porta eros,let aliquet finibus ri</li>
+									<li class="item-services__list">Donec mattis porta eros,let aliquet finibus ri</li>
+									<li class="item-services__list">Donec mattis porta eros,let aliquet finibus ri</li>
+								</ul>
+								<div class="item-services__button buttons">
+									<a class="buttons__button buttons__button--black buttons__button--padding"
+										href="#">Explore</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="products">
+				<div class="products__container">
+					<div class="products__items">
+						<div class="products__item item-products">
+							<div class="item-products__img">
+								<img src="img/products/product-1.webp" alt="Chair image">
+							</div>
+							<div class="item-products__block">
+								<h3 class="item-products__title">Nordic Chair</h3>
+								<p class="item-products__text">Donec mattis porta eros, aliquet finibus risus in. Donecd </p>
+								<a class="item-products__link" href="#">Read more</a>
+							</div>
+						</div>
+						<div class="products__item item-products">
+							<div class="item-products__img">
+								<img src="img/products/product-2.webp" alt="Chair image">
+							</div>
+							<div class="item-products__block">
+								<h3 class="item-products__title">Kruzi Aero</h3>
+								<p class="item-products__text">Donec mattis porta eros, aliquet finibus risus in. Donecd </p>
+								<a class="item-products__link" href="#">Read more</a>
+							</div>
+						</div>
+						<div class="products__item item-products">
+							<div class="item-products__img">
+								<img src="img/products/product-3.webp" alt="Chair image">
+							</div>
+							<div class="item-products__block">
+								<h3 class="item-products__title">Ergonomic Chair</h3>
+								<p class="item-products__text">Donec mattis porta eros, aliquet finibus risus in. Donecd </p>
+								<a class="item-products__link" href="#">Read more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__title titles">
+						<h2 class="titles__title">Testimonials</h2>
+					</div>
+					<div class="testimonials__block">
+						<button
+							class="testimonials__button -icon-arrow-scroll testimonials__button--rotate swiper-testimonials-prev"
+							type="button"></button>
+						<div class="testimonials__swiper swiper swiper-testimonials">
+							<div class="swiper-testimonials__wrapper swiper-wrapper">
+								<div class="swiper-testimonials__slide swiper-slide">
+									<div class="swiper-testimonials__body">
+										<blockquote class="swiper-testimonials__testimonial">
+											‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan
+											felis fermentum euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus
+											suscipit nibh. Integer vel nibh tellus. Pellentesque in risus non dui venenatis
+											sollicitudin sed vitae diam. Fusce tincidunt nisl mi, at molestie odio accumsan non.
+											Pellentesque ma’’
+										</blockquote>
+										<div class="swiper-testimonials__about">
+											<div class="swiper-testimonials__img">
+												<img src="img/testimonials/person-1.webp" alt="Client image">
+											</div>
+											<cite class="swiper-testimonials__name">Michelle Anna </cite>
+											<p class="swiper-testimonials__job">CEO, Co-Founder, XYZ Inc.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-testimonials__slide swiper-slide">
+									<div class="swiper-testimonials__body">
+										<blockquote class="swiper-testimonials__testimonial">
+											‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan
+											felis fermentum euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus
+											suscipit nibh. Integer vel nibh tellus. Pellentesque in risus non dui venenatis
+											sollicitudin sed vitae diam. Fusce tincidunt nisl mi, at molestie odio accumsan non.
+											Pellentesque ma’’
+										</blockquote>
+										<div class="swiper-testimonials__about">
+											<div class="swiper-testimonials__img">
+												<img src="img/testimonials/person-1.webp" alt="Client image">
+											</div>
+											<cite class="swiper-testimonials__name">Michelle Anna </cite>
+											<p class="swiper-testimonials__job">CEO, Co-Founder, XYZ Inc.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-testimonials__slide swiper-slide">
+									<div class="swiper-testimonials__body">
+										<blockquote class="swiper-testimonials__testimonial">
+											‘’Donec nibh magna, interdum quis massa sed, rhoncus laoreet quam. Mauris accumsan
+											felis fermentum euismod egestas. Mauris ante augue, cursus sit amet arcu a, maximus
+											suscipit nibh. Integer vel nibh tellus. Pellentesque in risus non dui venenatis
+											sollicitudin sed vitae diam. Fusce tincidunt nisl mi, at molestie odio accumsan non.
+											Pellentesque ma’’
+										</blockquote>
+										<div class="swiper-testimonials__about">
+											<div class="swiper-testimonials__img">
+												<img src="img/testimonials/person-1.webp" alt="Client image">
+											</div>
+											<cite class="swiper-testimonials__name">Michelle Anna </cite>
+											<p class="swiper-testimonials__job">CEO, Co-Founder, XYZ Inc.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="testimonials__button -icon-arrow-scroll swiper-testimonials-next"
+							type="button"></button>
+					</div>
+					<div class="testimonials__pagination">
+						<span class="testimonials__pagination-bullet"></span>
+					</div>
+				</div>
+			</section>
+			<section id="blog" class="blog">
+				<div class="blog__container">
+					<div class="blog__head">
+						<div class="blog__title titles">
+							<h2 class="titles__title">Recent Blog</h2>
+						</div>
+						<button class="blog__button">View All Posts</button>
+					</div>
+					<div id="blog-open" class="blog__items">
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-2.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-3.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+						<article class="blog__item item-blog">
+							<div class="item-blog__img">
+								<img src="img/blog/post-1.webp" alt="Blog chair image">
+							</div>
+							<div class="item-blog__block">
+								<h3 class="item-blog__title">First Time Home Owner Ideas</h3>
+								<div class="item-blog__text">
+									by <cite>Nana Ama</cite> on <data value="2022-11-18"></data>Nov 18th, 2022
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__items">
+						<div class="subscribe__item item-subscribe">
+							<div class="item-subscribe__block">
+								<h3 class="item-subscribe__title -icon-mail-icon">Subscribe to Newsletter</h3>
+								<div class="item-subscribe__form">
+									<form class="form" action="#">
+										<div class="form__block">
+											<div class="form__input"><input placeholder="Enter your name" type="text"></div>
+											<div class="form__input"><input placeholder="Enter your e-mail" type="email"></div>
+											<button type="submit" class="form__button -icon-send-icon"></button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="subscribe__item image-subscribe">
+							<img src="img/subscribe/sofa.webp" alt="Sofa image">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo logo">
+					<a class="logo__footer" href="#home"><span>Furni</span>.</a>
+				</div>
+				<div class="footer__items">
+					<div class="footer__item item-footer">
+						<p class="item-footer__text">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe
+							as it was for us to know what was to be done. the this is a long post for the text.`This small text
+							has to be place here, since this is </p>
+					</div>
+					<div class="footer__item item-footer">
+						<div class="item-footer__block">
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a class="item-footer__link" href="#">About Us</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Services</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Blog</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Contact us</a></li>
+							</ul>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Support</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Knowledge base</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Live chat</a></li>
+							</ul>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Jobs</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Our team</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Leadership</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Privacy Policy</a></li>
+							</ul>
+							<ul class="item-footer__links">
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Nordic Chair</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Kruzo Aero</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Blog</a></li>
+								<li class="item-footer__list"><a class="item-footer__link" href="#">Ergonomic</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__block">
+					<div class="footer__socials">
+						<a class="footer__link -icon-facebook-icon" href="#"></a>
+						<a class="footer__link -icon-insta-icon" href="#"></a>
+						<a class="footer__link -icon-twitter-icon" href="#"></a>
+						<a class="footer__link -icon-linkedin-icon" href="#"></a>
+					</div>
+					<div class="footer__copyright">
+						<p class="footer__text">Copyright 2022 degraft87@gmail.com. All Rights Reserved.</p>
+						<div class="footer__terms">
+							<a href="#">Terms & Conditions</a>
+							<a href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
