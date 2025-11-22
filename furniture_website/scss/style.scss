@@ -1296,10 +1296,10 @@ main {
 				background-color: var(--color-text-btn);
 				color: #fff;
 			}
-			// &:hover {
-			// 	background-color: var(--color-text-btn);
-			// 	color: #fff;
-			// }
+			&:hover {
+				background-color: var(--color-text-btn);
+				color: #fff;
+			}
 		}
 		&--transparent {
 			color: #fff;
