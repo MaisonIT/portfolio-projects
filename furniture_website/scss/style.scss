@@ -17,16 +17,23 @@
 html {
 	scroll-behavior: smooth;
 }
+#about,
+#services,
+#blog,
+#contact {
+	scroll-margin-block-start: toRem(100);
+}
+
 body {
 	background-color: var(--main-bg);
 	font-family: "Inter", sans-serif;
 	font-size: toRem(14);
 	color: var(--main-color);
-	// opacity: 0;
-	// transition: opacity 1.5s;
-	// .loaded & {
-	// 	opacity: 1;
-	// }
+	opacity: 0;
+	transition: opacity 1.5s;
+	.loaded & {
+		opacity: 1;
+	}
 }
 a,
 button,
@@ -50,6 +57,10 @@ main {
 	overflow: clip; /* clip */
 	display: flex;
 	flex-direction: column;
+}
+@media (hover: none) {
+	.buttons__button--yellow {
+	}
 }
 //=====================================================================
 [class*="__container"] {
@@ -227,8 +238,8 @@ main {
 	// .action__button
 
 	&__button {
-		height: toRem(34);
-		width: toRem(34);
+		max-height: toRem(34);
+		max-width: toRem(34);
 		&:hover {
 			transform: scale(1.2);
 		}
@@ -1050,6 +1061,9 @@ main {
 		padding-block: toRem(12) toRem(17);
 		padding-inline: toRem(22);
 		min-width: toRem(262);
+		input {
+			outline: none;
+		}
 	}
 
 	// .form__button
@@ -1278,10 +1292,14 @@ main {
 		&--yellow {
 			color: var(--color-text-btn);
 			background-color: var(--bg-decor-btn);
-			&:hover {
+			&:active {
 				background-color: var(--color-text-btn);
 				color: #fff;
 			}
+			// &:hover {
+			// 	background-color: var(--color-text-btn);
+			// 	color: #fff;
+			// }
 		}
 		&--transparent {
 			color: #fff;
@@ -1307,9 +1325,5 @@ main {
 .swiper-button-disabled {
 	background-color: #c4c4c4;
 	color: #000;
-}
-.swiper-pagination-bullet {
-}
-.swiper-pagination-bullet-active {
 }
 //=====================================================================
