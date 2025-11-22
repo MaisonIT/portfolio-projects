@@ -24,7 +24,7 @@ function headerScroll() {
 
 	function scrollAction() {
 		const header = document.querySelector(`.header`);
-		header.classList.toggle(`header--scroll`, (scrollY > 20))
+		header.classList.toggle(`header-scroll`, (scrollY > 20))
 	}
 }
 

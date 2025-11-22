@@ -66,27 +66,31 @@ main {
 	inset-block-start: 0;
 	inline-size: 100%;
 	z-index: 999;
-	&::before {
-		content: "";
-		inline-size: 100%;
-		block-size: 80%;
+	&.header-scroll {
 		background-color: var(--hero-bg);
-		position: absolute;
-		z-index: 1;
-		inset-inline-start: 0;
-		inset-block-start: 0;
 	}
+	// &::before {
+	// 	content: "";
+	// 	inline-size: 100%;
+	// 	block-size: 80%;
+	// 	background-color: var(--hero-bg);
+	// 	position: absolute;
+	// 	z-index: 6;
+	// 	inset-inline-start: 0;
+	// 	inset-block-start: 0;
+	// }
 
 	// .header__body
 
 	&__body {
-		padding-block: toRem(49);
+		padding-block: toRem(25);
 		display: grid;
 		grid-template-columns: auto 1fr auto;
 		align-items: center;
 		gap: toRem(30);
 		@media (min-width: toEm(830)) {
 			gap: toRem(90);
+			padding-block: toRem(49);
 		}
 	}
 
@@ -102,7 +106,7 @@ main {
 	&__menu {
 		justify-self: end;
 		position: relative;
-		z-index: 7;
+		z-index: 5;
 		@media (max-width: toEm(830)) {
 			position: fixed;
 			inset-inline-end: -100%;
@@ -685,13 +689,14 @@ main {
 
 	&__item {
 		display: flex;
-		align-items: end;
+		align-items: center;
 		justify-content: space-between;
 		gap: toRem(30);
 		&:nth-child(1) {
 			.item-products__img {
 				max-width: toRem(91);
 				aspect-ratio: 91 / 125;
+				transform: translateY(toRem(-15));
 				&::before {
 					inset-block-end: toRem(10);
 				}
@@ -699,14 +704,16 @@ main {
 		}
 		&:nth-child(2) {
 			.item-products__img {
-				max-width: toRem(113);
+				width: toRem(113);
 				aspect-ratio: 113 / 123;
+				transform: translateY(toRem(-25));
 			}
 		}
 		&:nth-child(3) {
 			.item-products__img {
 				max-width: toRem(78);
 				aspect-ratio: 78 / 119;
+				transform: translateY(toRem(-10));
 				&::before {
 					inset-block-end: toRem(10);
 				}
@@ -715,24 +722,24 @@ main {
 	}
 }
 .item-products {
+	// .item-products__body
+
+	&__body {
+		height: toRem(98);
+		width: toRem(98);
+		aspect-ratio: 1 / 1;
+		background: rgba(53, 115, 110, 0.3);
+		border-radius: toRem(10);
+		position: relative;
+	}
+
 	// .item-products__img
 
 	&__img {
-		transform: translateY(toRem(-10));
-		position: relative;
-		z-index: 6;
-		&::before {
-			content: "";
-			height: toRem(98);
-			width: toRem(98);
-			aspect-ratio: 1 / 1;
-			background: rgba(53, 115, 110, 0.3);
-			border-radius: toRem(10);
-			position: absolute;
-			inset-inline-start: toRem(-5);
-			inset-block-end: toRem(0);
-			z-index: -1;
-		}
+		// position: absolute;
+		// inset-inline-start: 0;
+		// inset-block-start: 0;
+		// z-index: 6;
 	}
 
 	// .item-products__block

@@ -68,18 +68,11 @@ main {
   inline-size: 100%;
   z-index: 999;
 }
-.header::before {
-  content: "";
-  inline-size: 100%;
-  block-size: 80%;
+.header.header-scroll {
   background-color: var(--hero-bg);
-  position: absolute;
-  z-index: 1;
-  inset-inline-start: 0;
-  inset-block-start: 0;
 }
 .header__body {
-  padding-block: 3.0625rem;
+  padding-block: 1.5625rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
   -webkit-box-align: center;
@@ -90,6 +83,7 @@ main {
 @media (min-width: 51.875em) {
   .header__body {
     gap: 5.625rem;
+    padding-block: 3.0625rem;
   }
 }
 .header__logo {
@@ -99,7 +93,7 @@ main {
 .header__menu {
   justify-self: end;
   position: relative;
-  z-index: 7;
+  z-index: 5;
 }
 @media (max-width: 51.875em) {
   .header__menu {
@@ -703,9 +697,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -714,40 +708,38 @@ main {
 .products__item:nth-child(1) .item-products__img {
   max-width: 5.6875rem;
   aspect-ratio: 91/125;
+  -webkit-transform: translateY(-0.9375rem);
+      -ms-transform: translateY(-0.9375rem);
+          transform: translateY(-0.9375rem);
 }
 .products__item:nth-child(1) .item-products__img::before {
   inset-block-end: 0.625rem;
 }
 .products__item:nth-child(2) .item-products__img {
-  max-width: 7.0625rem;
+  width: 7.0625rem;
   aspect-ratio: 113/123;
+  -webkit-transform: translateY(-1.5625rem);
+      -ms-transform: translateY(-1.5625rem);
+          transform: translateY(-1.5625rem);
 }
 .products__item:nth-child(3) .item-products__img {
   max-width: 4.875rem;
   aspect-ratio: 78/119;
+  -webkit-transform: translateY(-0.625rem);
+      -ms-transform: translateY(-0.625rem);
+          transform: translateY(-0.625rem);
 }
 .products__item:nth-child(3) .item-products__img::before {
   inset-block-end: 0.625rem;
 }
 
-.item-products__img {
-  -webkit-transform: translateY(-0.625rem);
-      -ms-transform: translateY(-0.625rem);
-          transform: translateY(-0.625rem);
-  position: relative;
-  z-index: 6;
-}
-.item-products__img::before {
-  content: "";
+.item-products__body {
   height: 6.125rem;
   width: 6.125rem;
   aspect-ratio: 1/1;
   background: rgba(53, 115, 110, 0.3);
   border-radius: 0.625rem;
-  position: absolute;
-  inset-inline-start: -0.3125rem;
-  inset-block-end: 0rem;
-  z-index: -1;
+  position: relative;
 }
 .item-products__block {
   display: -webkit-box;
