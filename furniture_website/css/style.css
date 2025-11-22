@@ -246,6 +246,11 @@ main {
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
+.action__button:active {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
 .action__button img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1069,6 +1074,9 @@ main {
 .form__button:hover {
   background-color: var(--bg-decor-btn);
 }
+.form__button:active {
+  background-color: var(--bg-decor-btn);
+}
 .form__button::before {
   color: #fff;
   font-size: 1.75rem;
@@ -1221,6 +1229,9 @@ main {
 .item-footer__link:hover {
   color: #000;
 }
+.item-footer__link:active {
+  color: #000;
+}
 
 .logo {
   font-size: 32px;
@@ -1295,11 +1306,19 @@ main {
   background-color: var(--bg-decor-btn);
   color: var(--color-text-btn);
 }
+.buttons__button--transparent:active {
+  background-color: var(--bg-decor-btn);
+  color: var(--color-text-btn);
+}
 .buttons__button--black {
   background-color: var(--color-text-btn);
   color: #fff;
 }
 .buttons__button--black:hover {
+  background-color: var(--bg-decor-btn);
+  color: var(--color-text-btn);
+}
+.buttons__button--black:active {
   background-color: var(--bg-decor-btn);
   color: var(--color-text-btn);
 }

@@ -243,6 +243,9 @@ main {
 		&:hover {
 			transform: scale(1.2);
 		}
+		&:active {
+			transform: scale(1.2);
+		}
 		img {
 			object-fit: contain;
 		}
@@ -1077,6 +1080,9 @@ main {
 		&:hover {
 			background-color: var(--bg-decor-btn);
 		}
+		&:active {
+			background-color: var(--bg-decor-btn);
+		}
 		&::before {
 			color: #fff;
 			font-size: toRem(28);
@@ -1227,6 +1233,9 @@ main {
 		&:hover {
 			color: #000;
 		}
+		&:active {
+			color: #000;
+		}
 	}
 }
 //======Components====================================================
@@ -1308,11 +1317,19 @@ main {
 				background-color: var(--bg-decor-btn);
 				color: var(--color-text-btn);
 			}
+			&:active {
+				background-color: var(--bg-decor-btn);
+				color: var(--color-text-btn);
+			}
 		}
 		&--black {
 			background-color: var(--color-text-btn);
 			color: #fff;
 			&:hover {
+				background-color: var(--bg-decor-btn);
+				color: var(--color-text-btn);
+			}
+			&:active {
 				background-color: var(--bg-decor-btn);
 				color: var(--color-text-btn);
 			}
