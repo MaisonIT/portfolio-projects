@@ -304,7 +304,7 @@ main {
 }
 
 .shop__container {
-  padding-block: 4.25rem 3.875rem;
+  padding-block: 0 3.875rem;
 }
 @media (min-width: 54.0625em) {
   .shop__container {
@@ -334,8 +334,8 @@ main {
 }
 @media (min-width: 32.5em) {
   .shop__item {
-    -webkit-padding-before: 3rem;
-            padding-block-start: 3rem;
+    -webkit-padding-after: 3rem;
+            padding-block-end: 3rem;
   }
 }
 .shop__titles {
@@ -589,6 +589,9 @@ main {
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   gap: 0.9375rem;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 @media (min-width: 42.5em) {
   .services__item:nth-child(1) {
@@ -597,6 +600,9 @@ main {
 }
 .services__item:nth-child(2) {
   max-width: 27.75rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .item-image-grid {

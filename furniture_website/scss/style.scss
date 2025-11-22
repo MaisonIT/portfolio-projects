@@ -305,7 +305,7 @@ main {
 	// .shop__container
 
 	&__container {
-		padding-block: toRem(68) toRem(62);
+		padding-block: 0 toRem(62);
 		@media (min-width: toEm(865)) {
 			padding-block: toRem(68) toRem(125);
 		}
@@ -328,7 +328,7 @@ main {
 	&__item {
 		padding-block-end: toRem(30);
 		@media (min-width: toEm(520)) {
-			padding-block-start: toRem(48);
+			padding-block-end: toRem(48);
 		}
 	}
 
@@ -578,12 +578,14 @@ main {
 			grid-template-columns: repeat(2, auto);
 			grid-template-rows: repeat(2, auto);
 			gap: toRem(15);
+			order: 2;
 			@media (min-width: toEm(680)) {
 				gap: toRem(33);
 			}
 		}
 		&:nth-child(2) {
 			max-width: toRem(444);
+			order: 1;
 		}
 	}
 }
