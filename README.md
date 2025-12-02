@@ -47,5 +47,5 @@ Git / GitHub
 GitHub: https://github.com/MaisonIT
 
 Email: frontdev.m@gmail.com
-LinkedIn: linkedin.com/in/mike-petrushov-54b326357/
+LinkedIn: linkedin.com/in/mike-petrushov-54b326357
 Telegram: @devmf7
