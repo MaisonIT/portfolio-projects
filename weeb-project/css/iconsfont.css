@@ -6,7 +6,7 @@
    font-display: block;
 }
 
-[class*=" --icon-"]::before {
+[class*=" -icon-"]::before {
    /* use !important to prevent issues with browser extensions that change fonts */
    font-family: "weeb";
    speak: never;
@@ -21,36 +21,36 @@
    -moz-osx-font-smoothing: grayscale;
 }
 
-.--icon-arrow:before {
+.-icon-arrow:before {
    content: "\e900";
 }
-.--icon-icon-smartfinder:before {
+.-icon-icon-smartfinder:before {
    content: "\e909";
 }
-.--icon-facebook:before {
+.-icon-facebook:before {
    content: "\e901";
 }
-.--icon-instagram:before {
+.-icon-instagram:before {
    content: "\e902";
 }
-.--icon-linkedin:before {
+.-icon-linkedin:before {
    content: "\e903";
 }
-.--icon-twitter:before {
+.-icon-twitter:before {
    content: "\e904";
 }
-.--icon-youtube:before {
+.-icon-youtube:before {
    content: "\e905";
 }
-.--icon-icon-artvenue:before {
+.-icon-icon-artvenue:before {
    content: "\e906";
 }
-.--icon-icon-shells:before {
+.-icon-icon-shells:before {
    content: "\e907";
 }
-.--icon-icon-waves:before {
+.-icon-icon-waves:before {
    content: "\e90b";
 }
-.--icon-icon-zoomerr:before {
+.-icon-icon-zoomerr:before {
    content: "\e90c";
 }
