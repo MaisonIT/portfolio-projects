@@ -1,419 +1,425 @@
 <!doctype html>
 <!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
 <html lang="en">
-  <head>
-    <!-- Кодування тексту -->
-    <meta charset="UTF-8" />
-    <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Swiper -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
-    <!-- Підключення шрифтів -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
-    <!-- Підключення окремого файлу стилів -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Іконка -->
-    <!-- <link
+
+<head>
+   <!-- Кодування тексту -->
+   <meta charset="UTF-8">
+   <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Swiper -->
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+   <!-- Підключення шрифтів -->
+   <!-- <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap" rel="stylesheet"> -->
+   <!-- Підключення окремого файлу стилів -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Іконка -->
+   <!-- <link
       rel="shortcut icon"
       href="/img/icons/favicon.ico"
       type="image/x-icon"
       /> -->
-    <!-- Заголовок сторінки в браузері -->
-    <title>Weeb</title>
-    <!-- Відкрити усі вкладки в новій вкладці -->
-    <!-- <base target="_blank" href> -->
-  </head>
-  <body>
-    <div class="wrapper">
+   <!-- Заголовок сторінки в браузері -->
+   <title>Weeb</title>
+   <!-- Відкрити усі вкладки в новій вкладці -->
+   <!-- <base target="_blank" href> -->
+</head>
+
+<body>
+   <div class="wrapper">
       <header class="header">
-        <div class="header__container">
-          <div class="header-items">
-            <div class="header-items__block">
-              <a class="header-items__logo logo" href="#">weeb</a>
-              <ul class="header-items__menu">
-                <li class="header-items__list">
-                  <a href="#" class="header-items__list-link">About Us</a>
-                </li>
-                <li class="header-items__list">
-                  <a href="#" class="header-items__list-link">Solutions</a>
-                </li>
-                <li class="header-items__list">
-                  <a href="#" class="header-items__list-link">Pricing</a>
-                </li>
-                <li class="header-items__list">
-                  <a href="#" class="header-items__list-link">Resources</a>
-                </li>
-                <li class="header-items__list header-items__list--mob" data-auth="login">
-                  <a href="#" class="header-items__list-link">Log In</a>
-                </li>
-                <li class="header-items__list header-items__list--mob" data-auth="join">
-                  <a href="#" class="header-items__list-link">Jion now</a>
-                </li>
-              </ul>
-              <div class="header-items__burger-block">
-                <button class="header-items__burger burger-menu">
-                  <span></span>
-                </button>
-              </div>
+         <div class="header__container">
+            <div class="header-items">
+               <div class="header-items__block">
+                  <a class="header-items__logo logo" href="#">weeb</a>
+                  <ul class="header-items__menu">
+                     <li class="header-items__list">
+                        <a href="#" class="header-items__list-link">About Us</a>
+                     </li>
+                     <li class="header-items__list">
+                        <a href="#" class="header-items__list-link">Solutions</a>
+                     </li>
+                     <li class="header-items__list">
+                        <a href="#" class="header-items__list-link">Pricing</a>
+                     </li>
+                     <li class="header-items__list">
+                        <a href="#" class="header-items__list-link">Resources</a>
+                     </li>
+                     <li class="header-items__list header-items__list--mob" data-auth="login">
+                        <a href="#" class="header-items__list-link">Log In</a>
+                     </li>
+                     <li class="header-items__list header-items__list--mob" data-auth="join">
+                        <a href="#" class="header-items__list-link">Jion now</a>
+                     </li>
+                  </ul>
+                  <div class="header-items__burger-block">
+                     <button class="header-items__burger burger-menu">
+                        <span></span>
+                     </button>
+                  </div>
+               </div>
+               <div class="header-items__buttons buttons">
+                  <button class="buttons__button log" data-auth="login">Log In</button>
+                  <button class="buttons__button join" data-auth="join">Join Now</button>
+               </div>
             </div>
-            <div class="header-items__buttons buttons">
-              <button class="buttons__button log" data-auth="login">Log In</button>
-              <button class="buttons__button join" data-auth="join">Join Now</button>
-            </div>
-          </div>
-        </div>
+         </div>
       </header>
       <main id="home" class="main">
-        <div id="auth-popup-app"></div>
-        <section class="hero is-anim">
-          <div class="hero__container">
-            <div class="hero__items">
-              <div class="hero__item title-block">
-                <h1 class="title-block__title">
-                  Design
-                  <span class="decor-bottom">Faster</span>
-                  <span class="decor-color">&</span>
-                  <span class="decor-top">Better</span>
-                </h1>
-                <p class="title-block__about">
-                  Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
-                  <br />
-                  Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
-                </p>
-                <div class="title-block__actions buttons is-anim">
-                  <button class="buttons__button join" data-auth="join">Join now</button>
-                  <button class="buttons__button">View Demo</button>
-                </div>
-              </div>
-              <div class="hero__img">
-                <img src="img/desktop.svg" alt="Desktop Image" />
-              </div>
+         <div id="auth-popup-app"></div>
+         <section class="hero is-anim">
+            <div class="hero__container">
+               <div class="hero__items">
+                  <div class="hero__item title-block">
+                     <h1 class="title-block__title">
+                        Design
+                        <span class="decor-bottom">Faster</span>
+                        <span class="decor-color">&</span>
+                        <span class="decor-top">Better</span>
+                     </h1>
+                     <p class="title-block__about">
+                        Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
+                        <br />
+                        Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.
+                     </p>
+                     <div class="title-block__actions buttons is-anim">
+                        <button class="buttons__button join" data-auth="join">Join now</button>
+                        <button class="buttons__button">View Demo</button>
+                     </div>
+                  </div>
+                  <div class="hero__img">
+                     <img src="img/desktop.svg" alt="Desktop Image">
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="partners is-anim">
-          <div class="partners__container">
-            <div class="partners__items">
-              <div class="partners__item title-block">
-                <h2 class="title-block__title title-block__title--fz">Join Leading Companies</h2>
-              </div>
-              <div class="scroller">
-                <ul class="partners__logo-menu scroller__inner">
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-smartfinder" href="#">SmartFinder</a>
-                  </li>
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-zoomerr" href="#">Zoomerr</a>
-                  </li>
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-shells" href="#">SHELLS</a>
-                  </li>
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-waves" href="#">WAVES</a>
-                  </li>
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-artvenue" href="#">SmaArtVenuertFinder</a>
-                  </li>
-                  <li class="partners__logo-list scroller__item">
-                    <a class="partners__logo-link -icon-icon-smartfinder" href="#">SmartFinder</a>
-                  </li>
-                </ul>
-              </div>
+         </section>
+         <section class="partners is-anim">
+            <div class="partners__container">
+               <div class="partners__items">
+                  <div class="partners__item title-block">
+                     <h2 class="title-block__title title-block__title--fz">Join Leading Companies</h2>
+                  </div>
+                  <div class="scroller">
+                     <ul class="partners__logo-menu scroller__inner">
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-smartfinder" href="#">SmartFinder</a>
+                        </li>
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-zoomerr" href="#">Zoomerr</a>
+                        </li>
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-shells" href="#">SHELLS</a>
+                        </li>
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-waves" href="#">WAVES</a>
+                        </li>
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-artvenue" href="#">SmaArtVenuertFinder</a>
+                        </li>
+                        <li class="partners__logo-list scroller__item">
+                           <a class="partners__logo-link -icon-icon-smartfinder" href="#">SmartFinder</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="discover is-anim">
-          <div class="discover__container">
-            <div class="discover__items">
-              <div class="discover__item title-block">
-                <div class="title-block__head">
-                  <p class="title-block__name">Discover</p>
-                  <h2 class="title-block__title">
-                    <span class="decor-color-purple-400">Unlimited</span>
-                    <span class="decor-border">ideas</span>
-                    for your next great projects
-                  </h2>
-                </div>
-                <p class="title-block__about">
-                  Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
-                  <br />
-                  Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
-                </p>
-                <div class="title-block__actions">
-                  <a class="title-block__link -icon-arrow" href="#">Discover Ideas</a>
-                </div>
-              </div>
-              <div class="discover__img">
-                <img src="img/decor/decor-1.svg" alt="Decor Image" />
-              </div>
+         </section>
+         <section class="discover is-anim">
+            <div class="discover__container">
+               <div class="discover__items">
+                  <div class="discover__item title-block">
+                     <div class="title-block__head">
+                        <p class="title-block__name">Discover</p>
+                        <h2 class="title-block__title">
+                           <span class="decor-color-purple-400">Unlimited</span>
+                           <span class="decor-border">ideas</span>
+                           for your next great projects
+                        </h2>
+                     </div>
+                     <p class="title-block__about">
+                        Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
+                        <br />
+                        Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
+                     </p>
+                     <div class="title-block__actions">
+                        <a class="title-block__link -icon-arrow" href="#">Discover Ideas</a>
+                     </div>
+                  </div>
+                  <div class="discover__img">
+                     <img src="img/decor/decor-1.svg" alt="Decor Image">
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="powerfull is-anim">
-          <div class="powerfull__container">
-            <div class="powerfull__items">
-              <div class="powerfull__item title-block">
-                <div class="title-block__head">
-                  <p class="title-block__name">Powerful</p>
-                  <h3 class="title-block__title title-block__title--fz">All the tools you can imagine</h3>
-                </div>
-                <p class="title-block__about">
-                  Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
-                  gravida ac, rutrum molestie adipiscing lacinia.
-                </p>
-              </div>
-              <div class="powerfull__img">
-                <img src="img/desktop.svg" alt="Desctop Image" />
-              </div>
+         </section>
+         <section class="powerfull is-anim">
+            <div class="powerfull__container">
+               <div class="powerfull__items">
+                  <div class="powerfull__item title-block">
+                     <div class="title-block__head">
+                        <p class="title-block__name">Powerful</p>
+                        <h3 class="title-block__title title-block__title--fz">All the tools you can imagine</h3>
+                     </div>
+                     <p class="title-block__about">
+                        Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien
+                        elit
+                        gravida ac, rutrum molestie adipiscing lacinia.
+                     </p>
+                  </div>
+                  <div class="powerfull__img">
+                     <img src="img/desktop.svg" alt="Desctop Image">
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="customers is-anim">
-          <div class="customers__container">
-            <div class="customers__items">
-              <div class="customers__item title-block">
-                <div class="title-block__head">
-                  <p class="title-block__name">Customers</p>
-                  <h2 class="title-block__title">
-                    <span class="decor-color-purple-400">Target</span>
-                    <span class="decor-color-pink">cu</span>
-                    stomers with our powerful AI kit
-                  </h2>
-                </div>
-                <p class="title-block__about">
-                  Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
-                  <br />
-                  Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
-                </p>
-                <div class="title-block__actions">
-                  <a class="title-block__link -icon-arrow" href="#">How Targeting Customers Works</a>
-                </div>
-              </div>
-              <div class="customers__img">
-                <img src="img/decor/decor-2.svg" alt="Decor Image" />
-              </div>
+         </section>
+         <section class="customers is-anim">
+            <div class="customers__container">
+               <div class="customers__items">
+                  <div class="customers__item title-block">
+                     <div class="title-block__head">
+                        <p class="title-block__name">Customers</p>
+                        <h2 class="title-block__title">
+                           <span class="decor-color-purple-400">Target</span>
+                           <span class="decor-color-pink">cu</span>
+                           stomers with our powerful AI kit
+                        </h2>
+                     </div>
+                     <p class="title-block__about">
+                        Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.
+                        <br />
+                        Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.
+                     </p>
+                     <div class="title-block__actions">
+                        <a class="title-block__link -icon-arrow" href="#">How Targeting Customers Works</a>
+                     </div>
+                  </div>
+                  <div class="customers__img">
+                     <img src="img/decor/decor-2.svg" alt="Decor Image">
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="speed is-anim">
-          <div class="speed__container">
-            <div class="speed__items">
-              <div class="speed__item title-block">
-                <div class="title-block__head">
-                  <p class="title-block__name">Speed</p>
-                  <h3 class="title-block__title title-block__title--fz">Work fast, w/o interruptions</h3>
-                </div>
-                <p class="title-block__about">
-                  Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
-                  gravida ac, rutrum molestie adipiscing lacinia.
-                </p>
-              </div>
-              <div class="speed__image">
-                <img src="img/desktop.svg" alt="Desktop Image" />
-              </div>
+         </section>
+         <section class="speed is-anim">
+            <div class="speed__container">
+               <div class="speed__items">
+                  <div class="speed__item title-block">
+                     <div class="title-block__head">
+                        <p class="title-block__name">Speed</p>
+                        <h3 class="title-block__title title-block__title--fz">Work fast, w/o interruptions</h3>
+                     </div>
+                     <p class="title-block__about">
+                        Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien
+                        elit
+                        gravida ac, rutrum molestie adipiscing lacinia.
+                     </p>
+                  </div>
+                  <div class="speed__image">
+                     <img src="img/desktop.svg" alt="Desktop Image">
+                  </div>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="testimonials is-anim">
-          <div class="testimonials__container">
-            <div class="testimonials__items">
-              <div class="testimonials__item title-block">
-                <div class="title-block__head">
-                  <p class="title-block__name">Testimonials</p>
-                  <h3 class="title-block__title title-block__title--fz">
-                    <span class="decor-bottom">Bigapp</span>
-                    got to the next level
-                  </h3>
-                </div>
-                <div class="title-block__actions">
-                  <a class="title-block__link -icon-arrow" href="#">View Case Study</a>
-                </div>
-              </div>
-              <div class="testimonials__image">
-                <img src="img/mobile-desctop.svg" alt="Mobile Desktop Image" />
-              </div>
-              <figure class="testimonials__block">
-                <blockquote class="testimonials__qoute">
-                  <p>
-                    “Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis
-                    scelerisque faucibus.”
-                  </p>
-                </blockquote>
-                <figcaption class="testimonials__author">
-                  <div class="testimonials__author-image">
-                    <img src="img/testimonials/user-1.webp" alt="Rawanda Melfor Image" />
+         </section>
+         <section class="testimonials is-anim">
+            <div class="testimonials__container">
+               <div class="testimonials__items">
+                  <div class="testimonials__item title-block">
+                     <div class="title-block__head">
+                        <p class="title-block__name">Testimonials</p>
+                        <h3 class="title-block__title title-block__title--fz">
+                           <span class="decor-bottom">Bigapp</span>
+                           got to the next level
+                        </h3>
+                     </div>
+                     <div class="title-block__actions">
+                        <a class="title-block__link -icon-arrow" href="#">View Case Study</a>
+                     </div>
                   </div>
-                  <div class="testimonials__info">
-                    <cite class="testimonials__name">Rawanda Melfor</cite>
-                    <p class="testimonials__about">Co-founder Bigapp</p>
+                  <div class="testimonials__image">
+                     <img src="img/mobile-desctop.svg" alt="Mobile Desktop Image">
                   </div>
-                </figcaption>
-              </figure>
+                  <figure class="testimonials__block">
+                     <blockquote class="testimonials__qoute">
+                        <p>
+                           “Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat
+                           turpis
+                           scelerisque faucibus.”
+                        </p>
+                     </blockquote>
+                     <figcaption class="testimonials__author">
+                        <div class="testimonials__author-image">
+                           <img src="img/testimonials/user-1.webp" alt="Rawanda Melfor Image">
+                        </div>
+                        <div class="testimonials__info">
+                           <cite class="testimonials__name">Rawanda Melfor</cite>
+                           <p class="testimonials__about">Co-founder Bigapp</p>
+                        </div>
+                     </figcaption>
+                  </figure>
+               </div>
             </div>
-          </div>
-        </section>
-        <section class="events is-anim">
-          <div class="events__container">
-            <div class="events__items">
-              <div class="events__item title-block">
-                <h3 class="title-block__title title-block__title--fz">Design events near your</h3>
-                <button class="title-block__link title-block__link--small -icon-arrow spoiler-button">
-                  Explore Events
-                </button>
-              </div>
-              <div class="events__items-block">
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Design Thinking</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-1.webp" alt="Event Image" />
-                    </div>
+         </section>
+         <section class="events is-anim">
+            <div class="events__container">
+               <div class="events__items">
+                  <div class="events__item title-block">
+                     <h3 class="title-block__title title-block__title--fz">Design events near your</h3>
+                     <button class="title-block__link title-block__link--small -icon-arrow spoiler-button">
+                        Explore Events
+                     </button>
                   </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Design Thinking</p>
-                      <h4 class="title-block__title title-block__title--small">Wild Horse Event</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                  <div class="events__items-block">
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Design Thinking</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-1.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Design Thinking</p>
+                              <h4 class="title-block__title title-block__title--small">Wild Horse Event</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Festival</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-2.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Festival</p>
+                              <h4 class="title-block__title title-block__title--small">Music & Colors</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Bootcamp</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-3.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Bootcamp</p>
+                              <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Bootcamp</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-3.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Bootcamp</p>
+                              <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Bootcamp</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-3.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Bootcamp</p>
+                              <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
+                     <div class="events__block item-block">
+                        <div class="item-block__head">
+                           <p class="item-block__label">Bootcamp</p>
+                           <div class="item-block__img">
+                              <img src="img/events/event-3.webp" alt="Event Image">
+                           </div>
+                        </div>
+                        <div class="item-block__about title-block">
+                           <div class="title-block__head">
+                              <p class="title-block__name title-block__name--small">Bootcamp</p>
+                              <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
+                           </div>
+                           <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
+                        </div>
+                     </div>
                   </div>
-                </div>
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Festival</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-2.webp" alt="Event Image" />
-                    </div>
-                  </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Festival</p>
-                      <h4 class="title-block__title title-block__title--small">Music & Colors</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
-                  </div>
-                </div>
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Bootcamp</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-3.webp" alt="Event Image" />
-                    </div>
-                  </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Bootcamp</p>
-                      <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
-                  </div>
-                </div>
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Bootcamp</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-3.webp" alt="Event Image" />
-                    </div>
-                  </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Bootcamp</p>
-                      <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
-                  </div>
-                </div>
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Bootcamp</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-3.webp" alt="Event Image" />
-                    </div>
-                  </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Bootcamp</p>
-                      <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
-                  </div>
-                </div>
-                <div class="events__block item-block">
-                  <div class="item-block__head">
-                    <p class="item-block__label">Bootcamp</p>
-                    <div class="item-block__img">
-                      <img src="img/events/event-3.webp" alt="Event Image" />
-                    </div>
-                  </div>
-                  <div class="item-block__about title-block">
-                    <div class="title-block__head">
-                      <p class="title-block__name title-block__name--small">Bootcamp</p>
-                      <h4 class="title-block__title title-block__title--small">Happy Father’s Day</h4>
-                    </div>
-                    <a class="title-block__link title-block__link--small -icon-arrow" href="#">Buy Tickets</a>
-                  </div>
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </section>
+         </section>
       </main>
       <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__items">
-            <a class="footer__item logo -icon-icon-waves" href="#home">weeb</a>
-            <div class="footer__item">
-              <h5 class="footer__title">PRODUCT</h5>
-              <ul class="footer__item-menu">
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Pricing</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Overview</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Browse</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Accessibility</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Five</a></li>
-              </ul>
+         <div class="footer__container">
+            <div class="footer__items">
+               <a class="footer__item logo -icon-icon-waves" href="#home">weeb</a>
+               <div class="footer__item">
+                  <h5 class="footer__title">PRODUCT</h5>
+                  <ul class="footer__item-menu">
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Pricing</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Overview</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Browse</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Accessibility</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Five</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h5 class="footer__title">Solutions</h5>
+                  <ul class="footer__item-menu">
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Brainstorming</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Ideation</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Wireframing</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Research</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h5 class="footer__title">Resources</h5>
+                  <ul class="footer__item-menu">
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Help Center</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Blog</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Tutorials</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h5 class="footer__title">Company</h5>
+                  <ul class="footer__item-menu">
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">About</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Press</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Events</a></li>
+                     <li class="footer__item-list"><a class="footer__item-link" href="#">Careers</a></li>
+                  </ul>
+               </div>
             </div>
-            <div class="footer__item">
-              <h5 class="footer__title">Solutions</h5>
-              <ul class="footer__item-menu">
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Brainstorming</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Ideation</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Wireframing</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Research</a></li>
-              </ul>
+            <div class="footer__bottom">
+               <p class="footer__rights">@ 2023 Weeb, Inc. All rights reserved.</p>
+               <ul class="footer__socials">
+                  <li class="footer__list"><a class="footer__link -icon-youtube" href="#"></a></li>
+                  <li class="footer__list"><a class="footer__link -icon-facebook" href="#"></a></li>
+                  <li class="footer__list"><a class="footer__link -icon-twitter" href="#"></a></li>
+                  <li class="footer__list"><a class="footer__link -icon-instagram" href="#"></a></li>
+                  <li class="footer__list"><a class="footer__link -icon-linkedin" href="#"></a></li>
+               </ul>
             </div>
-            <div class="footer__item">
-              <h5 class="footer__title">Resources</h5>
-              <ul class="footer__item-menu">
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Help Center</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Blog</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Tutorials</a></li>
-              </ul>
-            </div>
-            <div class="footer__item">
-              <h5 class="footer__title">Company</h5>
-              <ul class="footer__item-menu">
-                <li class="footer__item-list"><a class="footer__item-link" href="#">About</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Press</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Events</a></li>
-                <li class="footer__item-list"><a class="footer__item-link" href="#">Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__bottom">
-            <p class="footer__rights">@ 2023 Weeb, Inc. All rights reserved.</p>
-            <ul class="footer__socials">
-              <li class="footer__list"><a class="footer__link -icon-youtube" href="#"></a></li>
-              <li class="footer__list"><a class="footer__link -icon-facebook" href="#"></a></li>
-              <li class="footer__list"><a class="footer__link -icon-twitter" href="#"></a></li>
-              <li class="footer__list"><a class="footer__link -icon-instagram" href="#"></a></li>
-              <li class="footer__list"><a class="footer__link -icon-linkedin" href="#"></a></li>
-            </ul>
-          </div>
-        </div>
+         </div>
       </footer>
-    </div>
-    <!-- Підключення Vue-файлу з кодом -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- Підключення JS-файлу з кодом -->
-    <script src="js/script.js"></script>
-  </body>
+   </div>
+   <!-- Підключення Vue-файлу з кодом -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+   <!-- Підключення JS-файлу з кодом -->
+   <script src="js/script.js"></script>
+</body>
+
 </html>
