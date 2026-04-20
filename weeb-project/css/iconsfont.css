@@ -1,0 +1,56 @@
+@font-face {
+   font-family: "weeb";
+   src: url("../fonts/weeb.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class*=" --icon-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "weeb";
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.--icon-arrow:before {
+   content: "\e900";
+}
+.--icon-icon-smartfinder:before {
+   content: "\e909";
+}
+.--icon-facebook:before {
+   content: "\e901";
+}
+.--icon-instagram:before {
+   content: "\e902";
+}
+.--icon-linkedin:before {
+   content: "\e903";
+}
+.--icon-twitter:before {
+   content: "\e904";
+}
+.--icon-youtube:before {
+   content: "\e905";
+}
+.--icon-icon-artvenue:before {
+   content: "\e906";
+}
+.--icon-icon-shells:before {
+   content: "\e907";
+}
+.--icon-icon-waves:before {
+   content: "\e90b";
+}
+.--icon-icon-zoomerr:before {
+   content: "\e90c";
+}
