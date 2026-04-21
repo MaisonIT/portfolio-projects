@@ -224,6 +224,7 @@ img {
          position: absolute;
          top: 0;
          left: 0;
+         border-radius: toRem(20);
 
          .menu-open & {
             inline-size: 100%;
@@ -243,6 +244,7 @@ img {
          position: absolute;
          bottom: 0;
          right: 0;
+         border-radius: toRem(20);
          .menu-open & {
             inline-size: 100%;
             bottom: 50%;
@@ -256,6 +258,7 @@ img {
          position: absolute;
          top: 40%;
          left: 0;
+         border-radius: toRem(20);
          background-color: var(--white);
 
          .menu-open & {
@@ -555,6 +558,7 @@ img {
       max-width: toRem(750);
       aspect-ratio: 750 / 439;
       transition: transform 2s;
+      border-radius: toRem(20);
       @media (min-width: toEm(760)) {
          order: 2;
       }
@@ -679,6 +683,7 @@ img {
       gap: toRem(24);
       max-height: toRem(1200);
       overflow: hidden;
+      max-height: toRem(400);
       transition: max-height 0.4s ease;
       @media (min-width: toEm(760)) {
          max-height: toRem(400);
@@ -1056,7 +1061,7 @@ body.lock {
 }
 .popup__form .popup__item input:focus-visible + label,
 .popup__item input:not(:placeholder-shown) + label {
-   top: toRem(-5);
+   top: toRem(-10);
    font-size: toRem(16);
 }
 .popup__item input {
@@ -1070,7 +1075,7 @@ body.lock {
 }
 
 .popup__rules {
-   padding-inline-start: toRem(20);
+   padding-inline-start: toRem(10);
    font-size: toRem(12);
 }
 
@@ -1109,4 +1114,25 @@ body.lock {
    to {
       transform: translate(calc(-50% - toRem(13.5)));
    }
+}
+//====Затемнення============================================================
+main {
+   position: relative;
+}
+.main::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+   z-index: 5;
+}
+.lock.main::before {
+   opacity: 1;
+   visibility: visible;
 }

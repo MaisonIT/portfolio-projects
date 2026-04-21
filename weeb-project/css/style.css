@@ -241,6 +241,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 1.25rem;
 }
 .menu-open .header-items__burger::after {
   inline-size: 100%;
@@ -260,6 +261,7 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+  border-radius: 1.25rem;
 }
 .menu-open .header-items__burger::before {
   inline-size: 100%;
@@ -275,6 +277,7 @@ img {
   position: absolute;
   top: 40%;
   left: 0;
+  border-radius: 1.25rem;
   background-color: var(--white);
 }
 .menu-open .header-items__burger span {
@@ -627,6 +630,7 @@ img {
   transition: -webkit-transform 2s;
   transition: transform 2s;
   transition: transform 2s, -webkit-transform 2s;
+  border-radius: 1.25rem;
 }
 @media (min-width: 47.5em) {
   .speed__image {
@@ -767,6 +771,7 @@ img {
   gap: 1.5rem;
   max-height: 75rem;
   overflow: hidden;
+  max-height: 25rem;
   -webkit-transition: max-height 0.4s ease;
   transition: max-height 0.4s ease;
 }
@@ -1189,18 +1194,18 @@ body.lock {
 }
 
 .popup__item input:not(:-moz-placeholder) + label {
-  top: -0.3125rem;
+  top: -0.625rem;
   font-size: 1rem;
 }
 
 .popup__item input:not(:-ms-input-placeholder) + label {
-  top: -0.3125rem;
+  top: -0.625rem;
   font-size: 1rem;
 }
 
 .popup__form .popup__item input:focus-visible + label,
 .popup__item input:not(:placeholder-shown) + label {
-  top: -0.3125rem;
+  top: -0.625rem;
   font-size: 1rem;
 }
 
@@ -1215,8 +1220,8 @@ body.lock {
 }
 
 .popup__rules {
-  -webkit-padding-start: 1.25rem;
-          padding-inline-start: 1.25rem;
+  -webkit-padding-start: 0.625rem;
+          padding-inline-start: 0.625rem;
   font-size: 0.75rem;
 }
 
@@ -1271,4 +1276,25 @@ body.lock {
     -webkit-transform: translate(calc(-50% - 0.84375rem));
             transform: translate(calc(-50% - 0.84375rem));
   }
+}
+main {
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 5;
+}
+
+.lock.main::before {
+  opacity: 1;
+  visibility: visible;
 }

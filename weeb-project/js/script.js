@@ -17,9 +17,11 @@ function loadPage(){
 function menuAction(e){
    const currentElement = e.target
    const menuBlock = document.querySelector(`.header-items__block`)
+   const mainBlock = document.querySelector(`.main`)
    
    if (currentElement.closest(`.burger-menu`)){
       menuBlock.classList.toggle(`menu-open`)
+      mainBlock.classList.toggle(`lock`)
    }
 
    currentElement.closest(`.header-items__list-link`) && menuBlock.closest(`.menu-open`) ? menuBlock.classList.remove(`menu-open`) : null
