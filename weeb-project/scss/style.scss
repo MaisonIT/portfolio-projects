@@ -296,6 +296,8 @@ img {
       box-shadow:
          0 25px 50px -12px rgba(0, 0, 0, 0.25),
          0 0 15px 0 rgba(0, 0, 0, 0.07);
+      border-radius: toRem(20);
+      overflow: hidden;
       transition: transform 2s;
       .is-anim & {
          transform: scale(0);
@@ -471,6 +473,8 @@ img {
       max-width: toRem(750);
       aspect-ratio: 750 / 480;
       transition: transform 2s;
+      border-radius: toRem(10);
+      overflow: hidden;
       @media (min-width: toEm(760)) {
          order: 2;
       }
@@ -558,7 +562,8 @@ img {
       max-width: toRem(750);
       aspect-ratio: 750 / 439;
       transition: transform 2s;
-      border-radius: toRem(20);
+      border-radius: toRem(10);
+      overflow: hidden;
       @media (min-width: toEm(760)) {
          order: 2;
       }
@@ -596,6 +601,8 @@ img {
       aspect-ratio: 350 / 750;
       border-radius: 50px;
       transition: transform 2s;
+      border-radius: toRem(20);
+      overflow: hidden;
       box-shadow:
          0 25px 50px -12px rgba(0, 0, 0, 0.25),
          0 0 15px 0 rgba(0, 0, 0, 0.07);
@@ -849,7 +856,6 @@ img {
       }
    }
 }
-
 //=====Component======================================================
 // logo component
 .logo {
