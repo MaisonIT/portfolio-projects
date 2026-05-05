@@ -179,9 +179,16 @@
    // .partners__list-link
 
    &__list-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: toRem(159);
       aspect-ratio: 159 / 100;
       padding: toRem(30);
+
+      img {
+         object-fit: contain;
+      }
       @media (min-width: toEm(1100)) {
          width: toRem(196);
          aspect-ratio: 196 / 72;
