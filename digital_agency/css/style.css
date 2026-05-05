@@ -1744,6 +1744,7 @@ textarea:focus-visible {
           justify-content: center;
   border: 1px solid var(--color-grey-15);
   border-top: none;
+  padding: 1.875rem;
 }
 @media (min-width: 68.75em) {
   .partners__list-item {
@@ -1762,11 +1763,10 @@ textarea:focus-visible {
           justify-content: center;
   width: 9.9375rem;
   aspect-ratio: 159/100;
-  padding: 1.875rem;
 }
 .partners__list-link img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 68.75em) {
   .partners__list-link {

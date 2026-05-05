@@ -171,6 +171,9 @@
       justify-content: center;
       border: 1px solid var(--color-grey-15);
       border-top: none;
+
+      padding: toRem(30);
+
       @media (min-width: toEm(1100)) {
          border: none;
       }
@@ -184,10 +187,9 @@
       justify-content: center;
       width: toRem(159);
       aspect-ratio: 159 / 100;
-      padding: toRem(30);
 
       img {
-         object-fit: contain;
+         object-fit: cover;
       }
       @media (min-width: toEm(1100)) {
          width: toRem(196);
