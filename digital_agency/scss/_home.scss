@@ -196,9 +196,9 @@
 // services
 .services {
    .banner-block {
-      @include bannerSize(toRem(1596), 358, 188);
+      @include bannerSize(toRem(458), 458, 188);
 
-      @media (min-width: toEm(420)) {
+      @media (min-width: toEm(480)) {
          @include bannerSize(toRem(1596), 1596, 336);
       }
    }
@@ -212,7 +212,7 @@
       &.banner-block {
          @include bannerSize(toRem(1596), 358, 188);
 
-         @media (min-width: toEm(420)) {
+         @media (min-width: toEm(480)) {
             @include bannerSize(toRem(1596), 1596, 336);
          }
       }
@@ -250,9 +250,9 @@
 
    &__item {
       &.banner-block {
-         @include bannerSize(toRem(358), 358, 270);
+         @include bannerSize(toRem(458), 458, 270);
 
-         @media (min-width: toEm(420)) {
+         @media (min-width: toEm(480)) {
             @include bannerSize(toRem(1596), 1596, 366);
          }
       }
@@ -289,7 +289,7 @@
       font-weight: 500;
       margin-block-end: toRem(20);
       @media (min-width: toEm(1440)) {
-         margin-block-end: (24);
+         margin-block-end: toRem(24);
       }
    }
 
@@ -383,9 +383,9 @@
 
    &__item {
       &.banner-block {
-         @include bannerSize(toRem(358), 358, 222);
+         @include bannerSize(toRem(458), 458, 222);
 
-         @media (min-width: toEm(420)) {
+         @media (min-width: toEm(480)) {
             @include bannerSize(toRem(1596), 1596, 336);
          }
       }

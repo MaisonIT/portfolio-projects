@@ -3,7 +3,7 @@
 
    &__item {
       &.banner-block {
-         @include bannerSize(toRem(358), 358, 222);
+         @include bannerSize(toRem(458), 458, 222);
 
          @media (min-width: toEm(480)) {
             @include bannerSize(toRem(1596), 1596, 336);
