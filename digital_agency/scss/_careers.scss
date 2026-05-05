@@ -1,0 +1,69 @@
+.career {
+   // .career__head
+   &__head {
+      &.banner-block {
+         @include bannerSize(toRem(358), 358, 222);
+
+         @media (min-width: toEm(480)) {
+            @include bannerSize(toRem(1596), 1596, 336);
+         }
+      }
+   }
+
+   // .career__body
+
+   &__body {
+      @extend .process__head;
+   }
+
+   // .career__items
+
+   &__items {
+      .numbered-list__title {
+         font-size: clamp(1.625rem, 0.915vw + 1.402rem, 2.5rem);
+
+         color: var(--color-green-80);
+
+         gap: toRem(20);
+
+         @media (min-width: toEm(768)) {
+            gap: toRem(40);
+         }
+         @media (min-width: toEm(1440)) {
+            gap: toRem(50);
+         }
+      }
+   }
+}
+
+.vacancys {
+   // .vacancys__head
+
+   &__head {
+      @extend .career__body;
+
+      .head-title__text {
+         max-width: toRem(1100);
+      }
+   }
+
+   // .vacancys__body
+
+   &__body {
+      .items__head {
+         flex-direction: column;
+         align-items: start;
+         gap: toRem(24);
+
+         @media (min-width: toEm(1440)) {
+            gap: toRem(30);
+         }
+      }
+   }
+
+   // .vacancys__title
+
+   &__title {
+      @extend .services-block__title;
+   }
+}

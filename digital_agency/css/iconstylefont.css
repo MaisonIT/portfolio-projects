@@ -1,0 +1,235 @@
+@font-face {
+   font-family: "digial-icons";
+   src: url("../fonts/digial-icons.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class*=" -icon-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "digial-icons";
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.-icon-design-head:before {
+   content: "\e934";
+   color: #9eff00;
+}
+.-icon-arrow:before {
+   content: "\e933";
+   color: #9eff00;
+}
+.-icon-chek:before {
+   content: "\e932";
+   color: #9eff00;
+}
+.-icon-app-prototyping:before {
+   content: "\e900";
+   color: #9eff00;
+}
+.-icon-app-testing:before {
+   content: "\e901";
+   color: #9eff00;
+}
+.-icon-back-end:before {
+   content: "\e902";
+   color: #9eff00;
+}
+.-icon-brand-guidelines:before {
+   content: "\e903";
+   color: #9eff00;
+}
+.-icon-brand-strategy:before {
+   content: "\e904";
+   color: #9eff00;
+}
+.-icon-bug-tracking:before {
+   content: "\e905";
+   color: #9eff00;
+}
+.-icon-client:before {
+   content: "\e906";
+   color: #9eff00;
+}
+.-icon-content-management:before {
+   content: "\e907";
+   color: #9eff00;
+}
+.-icon-continuous-mprovement:before {
+   content: "\e908";
+   color: #9eff00;
+}
+.-icon-custom-iconography:before {
+   content: "\e909";
+   color: #9eff00;
+}
+.-icon-custom-platform:before {
+   content: "\e90a";
+   color: #9eff00;
+}
+.-icon-custom-web:before {
+   content: "\e90b";
+   color: #9eff00;
+}
+.-icon-design:before {
+   content: "\e90c";
+   color: #9eff00;
+}
+.-icon-e-commerce:before {
+   content: "\e90d";
+   color: #9eff00;
+}
+.-icon-email:before {
+   content: "\e90e";
+   color: #9eff00;
+}
+.-icon-engineering:before {
+   content: "\e90f";
+   color: #9eff00;
+}
+.-icon-enterprise:before {
+   content: "\e910";
+   color: #9eff00;
+}
+.-icon-expertise:before {
+   content: "\e911";
+   color: #9eff00;
+}
+.-icon-facebook:before {
+   content: "\e912";
+   color: #9eff00;
+}
+.-icon-front-end:before {
+   content: "\e913";
+   color: #9eff00;
+}
+.-icon-functional:before {
+   content: "\e914";
+   color: #9eff00;
+}
+.-icon-graphic:before {
+   content: "\e915";
+   color: #9eff00;
+}
+.-icon-hr-manager:before {
+   content: "\e916";
+   color: #9eff00;
+}
+.-icon-information:before {
+   content: "\e917";
+   color: #9eff00;
+}
+.-icon-integration:before {
+   content: "\e918";
+   color: #9eff00;
+}
+.-icon-intuitive:before {
+   content: "\e919";
+   color: #9eff00;
+}
+.-icon-iterative-development:before {
+   content: "\e91a";
+   color: #9eff00;
+}
+.-icon-legacy-system:before {
+   content: "\e91b";
+   color: #9eff00;
+}
+.-icon-linkedin:before {
+   content: "\e91c";
+   color: #9eff00;
+}
+.-icon-location:before {
+   content: "\e91d";
+   color: #9eff00;
+}
+.-icon-logo-design:before {
+   content: "\e91e";
+   color: #9eff00;
+}
+.-icon-management:before {
+   content: "\e91f";
+   color: #9eff00;
+}
+.-icon-marketing:before {
+   content: "\e920";
+   color: #9eff00;
+}
+.-icon-native-ios:before {
+   content: "\e921";
+   color: #9eff00;
+}
+.-icon-partnership:before {
+   content: "\e922";
+   color: #9eff00;
+}
+.-icon-perfomance:before {
+   content: "\e923";
+   color: #9eff00;
+}
+.-icon-phone:before {
+   content: "\e924";
+   color: #9eff00;
+}
+.-icon-plus:before {
+   content: "\e925";
+   color: #fff;
+}
+.-icon-prototyping:before {
+   content: "\e926";
+   color: #9eff00;
+}
+.-icon-regular-progress:before {
+   content: "\e927";
+   color: #9eff00;
+}
+.-icon-requirements-gathering:before {
+   content: "\e928";
+   color: #9eff00;
+}
+.-icon-research-persona:before {
+   content: "\e929";
+   color: #9eff00;
+}
+.-icon-resource:before {
+   content: "\e92a";
+   color: #9eff00;
+}
+.-icon-responsive:before {
+   content: "\e92b";
+   color: #9eff00;
+}
+.-icon-result:before {
+   content: "\e92c";
+   color: #9eff00;
+}
+.-icon-scrum:before {
+   content: "\e92d";
+   color: #9eff00;
+}
+.-icon-test-planning:before {
+   content: "\e92e";
+   color: #9eff00;
+}
+.-icon-twitter:before {
+   content: "\e92f";
+   color: #9eff00;
+}
+.-icon-typography:before {
+   content: "\e930";
+   color: #9eff00;
+}
+.-icon-visual-branding:before {
+   content: "\e931";
+   color: #9eff00;
+}

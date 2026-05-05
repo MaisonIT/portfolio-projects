@@ -1,0 +1,113 @@
+@use "sass:math";
+// mixins
+@import "_mixins.scss";
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+// стилі компонентів
+@import "_components.scss";
+// Іконочний шрифт
+@import url("iconstylefont.css");
+/* Скидання стилів */
+@import url("reset.css");
+// Змінні
+@import url("variables.css");
+
+// Сторінки
+// home
+@import "_home.scss";
+
+// services
+@import "_services.scss";
+// works
+@import "_works.scss";
+// process
+@import "_process.scss";
+// about
+@import "_about.scss";
+// careers
+@import "_careers.scss";
+// contacts
+@import "_contacts.scss";
+// плавний скролл
+html {
+   scroll-behavior: smooth;
+}
+// загальні стилі
+body {
+   font-family: "Barlow", sans-serif;
+   font-size: toRem(14);
+   font-weight: 400;
+   background-color: var(--color-grey-10);
+   // background: red;
+   color: var(--color-absolute-white);
+   opacity: 0;
+   transition: opacity 1s;
+   .load & {
+      opacity: 1;
+   }
+   @media (min-width: toEm(390)) {
+      font-size: toRem(16);
+   }
+   @media (min-width: toEm(1440)) {
+      font-size: toRem(18);
+   }
+}
+
+// плавне перемикання стану
+a,
+button {
+   transition: background-color 0.3s;
+}
+
+main {
+   flex-grow: 1;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: clip; /* clip */
+   display: flex;
+   flex-direction: column;
+}
+
+// img adaptive/secure
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+summary {
+   list-style: none;
+}
+summary::marker {
+   display: none;
+}
+
+//====container===============================================
+[class*="__container"] {
+   padding-inline: toRem(15);
+   margin-inline: auto;
+   @media (min-width: toEm(1100)) {
+      padding-inline: 0;
+      max-width: toRem(1596);
+   }
+}
+//=====main styles============================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
