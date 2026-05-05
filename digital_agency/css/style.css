@@ -530,7 +530,6 @@
   aspect-ratio: 1/1;
   padding: 1.25rem;
   border-radius: 0.75rem;
-  border: 1px solid #2e2e2e;
   background: -webkit-gradient(linear, left top, left bottom, from(#242424), to(rgba(36, 36, 36, 0)));
   background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
 }
