@@ -1,0 +1,172 @@
+<!doctype html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+   <!-- Кодування тексту -->
+   <meta charset="UTF-8">
+   <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Підключення окремого файлу стилів -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Іконка -->
+   <!-- <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+      /> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Заголовок сторінки в браузері -->
+   <title>E-Commerce Cyber-Cart</title>
+   <!-- Відкрити усі вкладки в новій вкладці -->
+   <!-- <base target="_blank" href> -->
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__items">
+               <div class="header__logo logo">
+                  <strong class="logo__name">cyber</strong>
+               </div>
+               <div class="header__search search-input -icon-search">
+                  <input name="search" class="search-input__body search-input__body--global" type="search"
+                     placeholder="Search">
+               </div>
+               <nav class="header__menu menu">
+                  <ul class="menu__item">
+                     <li class="menu__list"><a class="menu__link" href="index.html">Home</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">About</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Contact Us</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Blog</a></li>
+                     <li class="menu__list actions">
+                        <a class="actions__link -icon-like" href="#"></a>
+                        <a class="actions__link actions__link--cart -icon-cart" href="cart.html"><span
+                              class="actions__link-cart-count">0</span></a>
+                        <a class="actions__link -icon-profile" href="#"></a>
+                     </li>
+                  </ul>
+               </nav>
+               <ul class="header__actions actions">
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-like"></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="cart.html" class="actions__link actions__link--cart -icon-cart"><span
+                           class="actions__link-cart-count">0</span></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-profile"></a>
+                  </li>
+               </ul>
+               <button class="header__item burger-menu">
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="cart">
+            <div class="cart__container">
+               <div class="cart__items">
+                  <div class="cart__item cart-body">
+                     <h1 class="cart-body__title">Shopping Cart</h1>
+                     <div class="cart-body__items">
+                     </div>
+                  </div>
+                  <div class="cart__item order-body">
+                     <h2 class="order-body__title">Order Summary</h2>
+                     <div class="order-body__items">
+                        <form action="#" class="order-body__form">
+                           <div class="order-body__item">
+                              <label for="promo" class="order-body__lbel">Discount code / Promo code</label>
+                              <input type="text" id="promo" name="promo" placeholder="Code" class="order-body__input">
+                           </div>
+                           <div class="order-body__item">
+                              <label for="bonus" class="order-body__lbel">Your bonus card number</label>
+                              <div class="order-body__input-block">
+                                 <input type="text" id="bonus" name="bonus" placeholder="Enter Card Number"
+                                    class="order-body__input">
+                                 <button class="order-body__button-apply" type="submit">Apply</button>
+                              </div>
+                           </div>
+                        </form>
+                        <div class="order-body__summary summary">
+                           <div class="summary__body">
+                              <div class="summary__subtotal-block">
+                                 <h3 class="summary__title">Subtotal</h3>
+                                 <div class="summary__subtotal"></div>
+                              </div>
+                              <div class="summary__tax-block">
+                                 <h3 class="summary__subtitle">Estimated Tax</h3>
+                                 <div class="summary__tax"></div>
+                              </div>
+                              <div class="summary__delivery-block">
+                                 <h3 class="summary__subtitle">Estimated shipping & Handling</h3>
+                                 <div class="summary__delivery"></div>
+                              </div>
+                              <div class="summary__total-block">
+                                 <h3 class="summary__title">Total</h3>
+                                 <div class="summary__total"></div>
+                              </div>
+                           </div>
+                           <div class="summary__button buttons">
+                              <a href="checkout-adress.html"
+                                 class="buttons__button buttons__button--checkout">Checkout</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__items">
+               <div class="footer__logo logo">
+                  <strong class="logo__name">cyber</strong>
+                  <p class="logo__about">We are a residential interior design firm located in Portland. Our
+                     boutique-studio offers more than</p>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Services</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Bonus program</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Gift cards</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Credit and payment</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Service contracts</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Non-cash account</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Payment</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Assistance to the buyer</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Find an order</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of delivery</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Exchange and return of
+                           goods</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Guarantee</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Frequently asked questions</a>
+                     </li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of use of the site</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <ul class="footer__socials">
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-twitter" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-facebook" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-tiktok" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-instagram" href="#"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <!-- Підключення JS-файлу з кодом -->
+   <script src="js/script.js"></script>
+</body>
+
+</html>

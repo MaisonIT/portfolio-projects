@@ -1,0 +1,470 @@
+<!doctype html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+   <!-- Кодування тексту -->
+   <meta charset="UTF-8">
+   <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Підключення окремого файлу стилів -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Іконка -->
+   <!-- <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+      /> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Заголовок сторінки в браузері -->
+   <title>E-Commerce Cyber</title>
+   <!-- Відкрити усі вкладки в новій вкладці -->
+   <!-- <base target="_blank" href> -->
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__items">
+               <div class="header__logo logo">
+                  <strong class="logo__name">cyber</strong>
+               </div>
+               <div class="header__search search-input -icon-search">
+                  <input name="search" class="search-input__body" type="search" placeholder="Search">
+               </div>
+               <nav class="header__menu menu">
+                  <ul class="menu__item">
+                     <li class="menu__list"><a class="menu__link" href="index.html">Home</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">About</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Contact Us</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Blog</a></li>
+                     <li class="menu__list actions">
+                        <a class="actions__link -icon-like" href="#"></a>
+                        <a class="actions__link actions__link--cart -icon-cart" href="cart.html">
+                           <span class="actions__link-cart-count">0</span>
+                        </a>
+                        <a class="actions__link -icon-profile" href="#"></a>
+                     </li>
+                  </ul>
+               </nav>
+               <ul class="header__actions actions">
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-like"></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="cart.html" class="actions__link actions__link--cart -icon-cart"><span
+                           class="actions__link-cart-count">0</span></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-profile"></a>
+                  </li>
+               </ul>
+               <button class="header__item burger-menu">
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="hero">
+            <div class="hero__container">
+               <div class="hero__items">
+                  <div class="hero__item title-block">
+                     <p class="title-block__label">Pro.Beyond.</p>
+                     <h1 class="title-block__title title-block__title--hero">IPhone 14 <span
+                           class="title-block__span-fw">Pro</span></h1>
+                     <p class="title-block__about title-block__about--hero">Created to change everything for the
+                        better. For everyone</p>
+                     <div class="title-block__button buttons">
+                        <button class="buttons__button">Shop Now</button>
+                     </div>
+                  </div>
+                  <div class="hero__img">
+                     <img src="img/home/hero-image.webp" alt="Phone Image">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="promo-card">
+            <div class="promo-card__items">
+               <div class="promo-card__item promo-card__item--ps">
+                  <div class="promo-card__img">
+                     <img src="img/home/ps.webp" alt="Playstation Image">
+                  </div>
+                  <div class="promo-card__title title-block">
+                     <h3 class="title-block__title">Playstation <span class="title-block__span-fw-5">5</span>
+                     </h3>
+                     <p class="title-block__about">Incredibly powerful CPUs, GPUs, and an SSD
+                        with integrated I/O will redefine your PlayStation experience.</p>
+                  </div>
+               </div>
+               <div class="promo-card__item promo-card__item--mac">
+                  <div class="promo-card__img">
+                     <img src="img/home/mac.webp" alt="MacBook Image">
+                  </div>
+                  <div class="promo-card__title title-block">
+                     <h3 class="title-block__title">Macbook <span class="title-block__span-fw-5">Air</span></h3>
+                     <p class="title-block__about">The new 15‑inch MacBook Air makes room
+                        for
+                        more of what you love with a spacious Liquid Retina display.</p>
+                     <div class="title-block__button buttons">
+                        <button class="buttons__button">Shop Now</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="promo-card__bottom">
+                  <div class="promo-card__item promo-card__item--pods">
+                     <div class="promo-card__img">
+                        <img src="img/home/airpods.webp" alt="Apple
+                           AirPods Max Image">
+                     </div>
+                     <div class="promo-card__title title-block">
+                        <h3 class="title-block__title">Apple
+                           AirPods <span class="title-block__span-fw-5">Max</span></h3>
+                        <p class="title-block__about">Computational audio. Listen, it's powerful
+                        </p>
+                     </div>
+                  </div>
+                  <div class="promo-card__item promo-card__item--vision">
+                     <div class="promo-card__img">
+                        <img src="img/home/vision.webp" alt="Apple
+                           Vision Pro Image">
+                     </div>
+                     <div class="promo-card__title title-block">
+                        <h3 class="title-block__title">Apple
+                           Vision <span class="title-block__span-fw-5">Pro</span></h3>
+                        <p class="title-block__about">An immersive way to experience
+                           entertainment</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="categories">
+            <div class="categories__container">
+               <div class="categories__head">
+                  <h2 class="categories__title">Browse By Category</h2>
+                  <div class="categories__actions actions-scroll">
+                     <button class="actions-scroll__button -icon-arrow actions-scroll__button-prev"
+                        type="button"></button>
+                     <button
+                        class="actions-scroll__button actions-scroll__button--rotate -icon-arrow actions-scroll__button-next"
+                        type="button"></button>
+                  </div>
+               </div>
+               <div class="categories__body swiper swiper-categories">
+                  <ul class="categories__items swiper-wrapper">
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="smartphones.html">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/phones.svg" alt="Phones icon">
+                           </div>
+                           Phones
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/smart-watches.svg" alt="Smart
+                           Watches icon">
+                           </div>
+                           Smart
+                           Watches
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/cameras.svg" alt="Cameras
+                           icon">
+                           </div>
+                           Cameras
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/headphones.svg" alt="Headphones
+                           icon">
+                           </div>
+                           Headphones
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/computers.svg" alt="Computers
+                           icon">
+                           </div>
+                           Computers
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/gaming.svg" alt="Gaming
+                           icon">
+                           </div>
+                           Gaming
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/gaming.svg" alt="Gaming
+                           icon">
+                           </div>
+                           Gaming
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/gaming.svg" alt="Gaming
+                           icon">
+                           </div>
+                           Gaming
+                        </a>
+                     </li>
+                     <li class="categories__list swiper-slide">
+                        <a class="categories__link" href="#">
+                           <div class="categories__icon">
+                              <img src="img/home/icons/gaming.svg" alt="Gaming
+                           icon">
+                           </div>
+                           Gaming
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="products">
+            <div class="products__container">
+               <div class="products__head">
+                  <ul class="products__list-menu">
+                     <li class="products__list-item"><button class="products__list-link active"
+                           data-category="new-arrival">New
+                           Arrival</button></li>
+                     <li class="products__list-item"><button class="products__list-link"
+                           data-category="bestseller">Bestseller</button>
+                     </li>
+                     <li class="products__list-item"><button class="products__list-link"
+                           data-category="featured-products">Featured
+                           Products</button></li>
+                  </ul>
+                  <span class="products__tab-line"></span>
+               </div>
+               <div class="products__items">
+                  <!-- <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div>
+                  <div class="products__item item-product">
+                     <button type="button" class="item-product__head -icon-like"></button>
+                     <div class="item-product__img"></div>
+                     <h3 class="item-product__title"></h3>
+                     <p class="item-product__price"></p>
+                     <div class="item-product__button buttons">
+                        <button class="buttons__button buttons__button--product">Buy Now</button>
+                     </div>
+                  </div> -->
+
+               </div>
+            </div>
+         </section>
+         <section class="promo-banner">
+            <div class="promo-banner__items promo-banner-swiper swiper">
+               <div class="promo-banner__block swiper-wrapper">
+                  <div class="promo-banner__item promo-banner__item--popular swiper-slide">
+                     <div class="promo-banner__img">
+                        <img src="img/home/featured-products/popular-products-1.webp" alt="Popular products">
+                     </div>
+                     <div class="promo-banner__body">
+                        <h3 class="promo-banner__title">Popular Products</h3>
+                        <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
+                           performance, multitasking and ease of use.</p>
+                        <div class="promo-banner__button buttons">
+                           <button class="buttons__button">Shop Now</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="promo-banner__item promo-banner__item--ipad swiper-slide">
+                     <div class="promo-banner__img">
+                        <img src="img/home/featured-products/ipad-pro-1.webp" alt="Ipad Pro">
+                     </div>
+                     <div class="promo-banner__body">
+                        <h3 class="promo-banner__title">Ipad Pro</h3>
+                        <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
+                           performance, multitasking and ease of use.</p>
+                        <div class="promo-banner__button buttons">
+                           <button class="buttons__button">Shop Now</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="promo-banner__item promo-banner__item--samsung swiper-slide">
+                     <div class="promo-banner__img">
+                        <img src="img/home/featured-products/samsung-galaxy-1.webp" alt="Popular products">
+                     </div>
+                     <div class="promo-banner__body">
+                        <h3 class="promo-banner__title">Samsung Galaxy</h3>
+                        <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
+                           performance, multitasking and ease of use.</p>
+                        <div class="promo-banner__button buttons">
+                           <button class="buttons__button">Shop Now</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="promo-banner__item promo-banner__item--mac swiper-slide">
+                     <div class="promo-banner__img">
+                        <img src="img/home/featured-products/macbook-pro-1.webp" alt="Popular products">
+                     </div>
+                     <div class="promo-banner__body">
+                        <h3 class="promo-banner__title">Macbook Pro</h3>
+                        <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
+                           performance, multitasking and ease of use.</p>
+                        <div class="promo-banner__button buttons">
+                           <button class="buttons__button">Shop Now</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="promo-banner__pagination swiper-pagination"></div>
+         </section>
+         <section class="promotion">
+            <div class="promotion__container">
+               <div class="promotion__head">
+                  <h2 class="promotion__title">Discounts up to -50%</h2>
+               </div>
+               <div class="promotion__items"></div>
+            </div>
+         </section>
+         <section class="advertising-banner">
+            <div class="advertising-banner__bg">
+               <picture>
+                  <source media="(max-width: 767.98px)" srcset="img/home/banner/banner-2.webp">
+                  <img src="img/home/banner/banner-1.webp" alt="Advertising Banner">
+               </picture>
+            </div>
+            <div class="advertising-banner__items">
+               <h2 class="advertising-banner__title">Big Summer <span class="advertising-banner__span-fw">Sale</span>
+               </h2>
+               <p class="advertising-banner__about">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+               <div class="advertising-banner__button buttons">
+                  <button class="buttons__button">Shop Now</button>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__items">
+               <div class="footer__logo logo">
+                  <strong class="logo__name">cyber</strong>
+                  <p class="logo__about">We are a residential interior design firm located in Portland. Our
+                     boutique-studio offers more than</p>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Services</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Bonus program</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Gift cards</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Credit and payment</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Service contracts</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Non-cash account</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Payment</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Assistance to the buyer</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Find an order</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of delivery</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Exchange and return of
+                           goods</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Guarantee</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Frequently asked questions</a>
+                     </li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of use of the site</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <ul class="footer__socials">
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-twitter" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-facebook" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-tiktok" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-instagram" href="#"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <!-- Swiper -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Підключення JS-файлу з кодом -->
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>

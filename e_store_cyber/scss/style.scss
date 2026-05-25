@@ -1,0 +1,106 @@
+@use "sass:math";
+// mixins
+@import "_mixins.scss";
+/* Локальне підключення шрифтів */
+@import "_fonts.scss";
+// стилі компонентів
+@import "_components.scss";
+// Іконочний шрифт
+@import url("../css/iconfont.css");
+/* Скидання стилів */
+@import url("reset.css");
+// Змінні
+@import url("variables.css");
+
+// Сторінки
+// home
+@import "_home.scss";
+// smartphones
+@import "_smartphones.scss";
+// product
+@import "product.scss";
+// cart
+@import "_cart.scss";
+// cart
+@import "_checkout.scss";
+
+// плавний скролл
+html {
+   scroll-behavior: smooth;
+}
+// загальні стилі
+body {
+   font-family: "Inter", sans-serif;
+   font-size: toRem(14);
+   font-weight: 400;
+
+   opacity: 0;
+
+   transition: opacity 0.2s ease;
+
+   .load & {
+      opacity: 1;
+   }
+}
+details summary {
+   list-style: none;
+   cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+   display: none;
+}
+
+// плавне перемикання стану
+a,
+button {
+   transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease;
+}
+
+main {
+   flex-grow: 1;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: clip; /* clip */
+   display: flex;
+   flex-direction: column;
+}
+
+// img adaptive/secure
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+input:focus {
+   outline: none;
+}
+//====container===============================================
+[class*="__container"] {
+   max-width: toRem(1150);
+   padding-inline: toRem(15);
+   margin-inline: auto;
+}
+//=====main styles============================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================
+
+//===== ======================================================

@@ -1,0 +1,1309 @@
+[
+   {
+      "id": 1,
+      "title": "Apple iPhone 14 Pro Max",
+      "slug": "apple-iphone-14-pro-max",
+      "category": "new-arrival",
+      "brand": "apple",
+      "price": 1399,
+      "oldPrice": 1499,
+      "discount": false,
+      "liked": false,
+      "rating": 4.8,
+      "reviewsCount": 125,
+      "reviewsSummary": {
+         "excellent": 100,
+         "good": 11,
+         "average": 3,
+         "belowAverage": 8,
+         "poor": 1
+      },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MQ9T3",
+      "tags": [
+         "smartphone",
+         "apple",
+         "ios",
+         "flagship",
+         "oled"
+      ],
+      "description": "Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.",
+      "filters": {
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant",
+            "dustresistant"
+         ],
+         "memory": "128g"
+      },
+      "colors": [
+         {
+            "name": "Deep Purple",
+            "value": "#5B4B8A"
+         },
+         {
+            "name": "Black",
+            "value": "#1D1D1F"
+         },
+         {
+            "name": "Gold",
+            "value": "#F4D58D"
+         },
+         {
+            "name": "Silver",
+            "value": "#F5F5F7"
+         }
+      ],
+      "memoryOptions": [
+         "128GB",
+         "256GB",
+         "512GB",
+         "1TB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-max/main.webp",
+         "gallery": [
+            "img/catalog/apple-iphone-14-pro-max/second.webp",
+            "img/catalog/apple-iphone-14-pro-max/third.webp",
+            "img/catalog/apple-iphone-14-pro-max/fourth.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.7″",
+            "resolution": "2796×1290",
+            "refreshRate": "120Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "460 ppi",
+            "type": "Super Retina XDR OLED",
+            "additionalFeatures": [
+               "Dynamic Island",
+               "Always-On display",
+               "HDR display",
+               "True Tone",
+               "Wide color (P3)"
+            ]
+         },
+         "system": {
+            "os": "iOS 16",
+            "processor": "Apple A16 Bionic",
+            "cores": 6,
+            "neuralEngine": "16-core",
+            "ram": "6 GB"
+         },
+         "camera": {
+            "main": "48 MP",
+            "ultrawide": "12 MP",
+            "telephoto": "12 MP",
+            "front": "12 MP",
+            "opticalZoom": "3x",
+            "videoRecording": "4K 60fps",
+            "slowMotion": "240fps",
+            "nightMode": "Yes",
+            "cinematicMode": "Yes",
+            "smartHDR": "Smart HDR 4"
+         },
+         "battery": {
+            "capacity": "4323 mAh",
+            "fastCharging": "Up to 50% in 30 min",
+            "wirelessCharging": "MagSafe / Qi",
+            "videoPlayback": "Up to 29 hours",
+            "audioPlayback": "Up to 95 hours"
+         },
+         "connectivity": {
+            "simFormat": "Nano-SIM + eSIM",
+            "mobileNetwork": "5G",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Lightning"
+         },
+         "security": {
+            "faceId": "Yes",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Surgical-grade stainless steel",
+            "frontPanel": "Ceramic Shield",
+            "backMaterial": "Textured matte glass",
+            "protection": "IP68"
+         },
+         "dimensions": {
+            "height": "160.7 mm",
+            "width": "77.6 mm",
+            "thickness": "7.85 mm",
+            "weight": "240 g"
+         },
+         "sensors": {
+            "faceIdSensor": "Yes",
+            "lidarScanner": "Yes",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "Yes"
+         },
+         "additionalFeatures": [
+            "MagSafe support",
+            "Dolby Vision",
+            "Spatial Audio",
+            "Apple Pay support"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "Grace Carey",
+            "avatar": "img/testemonials/grace.webp",
+            "rating": 5,
+            "date": "24 January, 2023",
+            "text": "I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤"
+         },
+         {
+            "name": "Ronald Richards",
+            "avatar": "img/testemonials/ronald.webp",
+            "rating": 5,
+            "date": "24 January, 2023",
+            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
+         },
+         {
+            "name": "Darcy King",
+            "avatar": "img/testemonials/darcy.webp",
+            "rating": 4,
+            "date": "24 January, 2023",
+            "text": "I might be the only one to say this but the camera is a little funky. Hoping it will change with a software update: otherwise, love this phone! Came in great condition",
+            "images": [
+               "img/testemonials/darcyrev/review1.webp",
+               "img/testemonials/darcyrev/review2.webp"
+            ]
+         },
+         {
+            "name": "Ronald Richards",
+            "avatar": "img/testemonials/ronald.webp",
+            "rating": 5,
+            "date": "24 January, 2023",
+            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
+         },
+         {
+            "name": "Ronald Richards",
+            "avatar": "img/testemonials/ronald.webp",
+            "rating": 2,
+            "date": "24 January, 2023",
+            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
+         }
+      ]
+   },
+   {
+      "id": 2,
+      "title": "Blackmagic Pocket Cinema Camera 6K",
+      "brand": "blackmagic",
+      "battery": "5mah",
+      "screenType": "ips",
+      "screenSize": "69",
+      "protection": [],
+      "memory": "512g",
+      "slug": "blackmagic-pocket-cinema-camera-6k",
+      "price": 2535,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 3,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 4,
+      "title": "AirPods Max Silver Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "ips",
+      "screenSize": "59",
+      "protection": [],
+      "memory": "64g",
+      "slug": "airpods-max-silver-starlight-aluminium",
+      "price": 549,
+      "oldPrice": 599,
+      "discount": true,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 5,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 6,
+      "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
+      "brand": "samsung",
+      "battery": "5mah",
+      "screenType": "dynamicamoled",
+      "screenSize": "7more",
+      "protection": [
+         "ip68",
+         "waterresistant",
+         "dustresistant"
+      ],
+      "memory": "256g",
+      "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
+      "price": 1799,
+      "oldPrice": 1999,
+      "discount": false,
+      "liked": true,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 7,
+      "title": "Galaxy Buds FE Graphite",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "ips",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "galaxy-buds-fe-graphite",
+      "price": 99.99,
+      "oldPrice": 129.99,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 8,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 3,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 9,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 10,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 11,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 11,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 12,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 13,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 14,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 15,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 16,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 17,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 18,
+      "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "512g",
+      "slug": "apple-iphone-14-pro-gold",
+      "price": 1437,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 19,
+      "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "1t",
+      "slug": "apple-iphone-14-pro-gold",
+      "price": 1499,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 20,
+      "title": "Apple iPhone 11 128GB White (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "ips",
+      "screenSize": "64",
+      "protection": [
+         "ip67",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-11-white",
+      "price": 510,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 21,
+      "title": "Apple iPhone 11 128GB White (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "ips",
+      "screenSize": "64",
+      "protection": [
+         "ip67",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-11-white-2",
+      "price": 550,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 22,
+      "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-13-mini-pink",
+      "price": 850,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 23,
+      "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "256g",
+      "slug": "apple-iphone-14-pro-space-black",
+      "price": 1399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 24,
+      "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "256g",
+      "slug": "apple-iphone-14-pro-silver",
+      "price": 1399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 25,
+      "title": "Blackmagic Pocket Cinema Camera 6K",
+      "brand": "blackmagic",
+      "battery": "5mah",
+      "screenType": "ips",
+      "screenSize": "69",
+      "protection": [],
+      "memory": "512g",
+      "slug": "blackmagic-pocket-cinema-camera-6k",
+      "price": 2535,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 26,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 27,
+      "title": "AirPods Max Silver Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "ips",
+      "screenSize": "59",
+      "protection": [],
+      "memory": "64g",
+      "slug": "airpods-max-silver-starlight-aluminium",
+      "price": 549,
+      "oldPrice": 599,
+      "discount": true,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 28,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 29,
+      "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
+      "brand": "samsung",
+      "battery": "5mah",
+      "screenType": "dynamicamoled",
+      "screenSize": "7more",
+      "protection": [
+         "ip68",
+         "waterresistant",
+         "dustresistant"
+      ],
+      "memory": "256g",
+      "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
+      "price": 1799,
+      "oldPrice": 1999,
+      "discount": false,
+      "liked": true,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 30,
+      "title": "Galaxy Buds FE Graphite",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "ips",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "galaxy-buds-fe-graphite",
+      "price": 99.99,
+      "oldPrice": 129.99,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 31,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 32,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 33,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 34,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 35,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 36,
+      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
+      "brand": "apple",
+      "battery": "3mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "price": 399,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "new-arrival",
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 37,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 38,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 39,
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
+      "brand": "apple",
+      "battery": "5mah",
+      "screenType": "retina",
+      "screenSize": "7more",
+      "protection": [],
+      "memory": "64g",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "price": 398,
+      "oldPrice": 450,
+      "discount": false,
+      "liked": false,
+      "category": "bestseller",
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 40,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 41,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 42,
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
+      "brand": "samsung",
+      "battery": "3mah",
+      "screenType": "superamoled",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "64g",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "price": 369,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 43,
+      "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "512g",
+      "slug": "apple-iphone-14-pro-gold",
+      "price": 1437,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 44,
+      "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "1t",
+      "slug": "apple-iphone-14-pro-gold",
+      "price": 1499,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 45,
+      "title": "Apple iPhone 11 128GB White (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "ips",
+      "screenSize": "64",
+      "protection": [
+         "ip67",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-11-white",
+      "price": 510,
+      "oldPrice": null,
+      "discount": true,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 46,
+      "title": "Apple iPhone 11 128GB White (MQ233)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "ips",
+      "screenSize": "64",
+      "protection": [
+         "ip67",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-11-white-2",
+      "price": 550,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 47,
+      "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "59",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "128g",
+      "slug": "apple-iphone-13-mini-pink",
+      "price": 850,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 48,
+      "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "256g",
+      "slug": "apple-iphone-14-pro-space-black",
+      "price": 1399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
+         "gallery": []
+      }
+   },
+   {
+      "id": 49,
+      "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
+      "brand": "apple",
+      "battery": "4mah",
+      "screenType": "retina",
+      "screenSize": "69",
+      "protection": [
+         "ip68",
+         "waterresistant"
+      ],
+      "memory": "256g",
+      "slug": "apple-iphone-14-pro-silver",
+      "price": 1399,
+      "oldPrice": null,
+      "discount": false,
+      "liked": false,
+      "category": "featured-products",
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
+         "gallery": []
+      }
+   }
+]

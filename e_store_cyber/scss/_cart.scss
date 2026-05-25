@@ -1,0 +1,362 @@
+.cart {
+   // .cart__items
+
+   &__items {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: toRem(40);
+
+      padding-block: toRem(40);
+
+      @media (min-width: toEm(768)) {
+         gap: toRem(48);
+
+         padding-block: toRem(112);
+      }
+   }
+
+   // .cart__item
+
+   &__item {
+      &.order-body {
+         padding: toRem(56) toRem(16);
+
+         border-radius: toRem(10);
+         border: 1px solid var(--color-grey-39);
+
+         @media (min-width: toEm(768)) {
+            padding: toRem(56) toRem(64);
+         }
+      }
+   }
+}
+
+// cart
+.cart-body {
+   display: flex;
+   flex-direction: column;
+
+   @media (min-width: toEm(768)) {
+      gap: toRem(40);
+   }
+
+   // .cart-body__title
+
+   &__title {
+      font-size: toRem(24);
+      font-weight: 600;
+      line-height: 1; /* 100% */
+   }
+
+   // .cart-body__items
+
+   &__items {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: toEm(768)) {
+         gap: toRem(40);
+      }
+   }
+
+   // .cart-body__item
+
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: toRem(15);
+
+      padding-block: toRem(56) toRem(40);
+
+      border-bottom: 0.5px solid var(--color-grey-38);
+
+      @media (min-width: toEm(768)) {
+         padding-block: toRem(16) toRem(32);
+      }
+   }
+
+   // .cart-body__img
+
+   &__img {
+      width: toRem(90);
+      aspect-ratio: 1 / 1;
+
+      flex-shrink: 0;
+      img {
+         object-fit: contain;
+      }
+   }
+
+   // .cart-body__row
+   &__row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: toRem(8);
+   }
+
+   // .cart-body__text-block
+
+   &__text-block {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(8);
+
+      max-width: toRem(191);
+
+      line-height: 1.5; /* 150% */
+   }
+
+   // .cart-body__name
+   &__name {
+      font-size: toRem(16);
+      font-weight: 500;
+   }
+
+   // .cart-body__actions-block
+
+   &__actions-block {
+      display: flex;
+      align-items: center;
+      gap: toRem(24);
+   }
+
+   // .cart-body__actions
+
+   &__actions {
+      display: flex;
+      align-items: center;
+      gap: toRem(16);
+   }
+
+   // .cart-body__minus
+
+   &__minus {
+      font-size: toRem(24);
+   }
+
+   // .cart-body__count
+
+   &__count {
+      padding: toRem(8) toRem(16);
+
+      border-radius: toRem(4);
+      border: 0.5px solid var(--color-grey-14);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // .cart-body__plus
+
+   &__plus {
+      font-size: toRem(24);
+   }
+
+   // .cart-body__price
+
+   &__price {
+      font-size: toRem(20);
+      font-weight: 500;
+      line-height: 1.6; /* 160% */
+      letter-spacing: 0.6px;
+   }
+
+   // .cart-body__remove
+
+   &__remove {
+      font-size: toRem(24);
+   }
+}
+
+// order
+.order-body {
+   flex-grow: 1;
+   // .order-body__title
+
+   &__title {
+      font-size: toRem(20);
+      font-weight: 700;
+      line-height: 0.8; /* 80% */
+   }
+
+   // .order-body__items
+
+   &__items {
+      padding-block-start: toRem(40);
+
+      display: flex;
+      flex-direction: column;
+      gap: toRem(24);
+   }
+
+   // .order-body__form
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(24);
+   }
+
+   // .order-body__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(8);
+   }
+
+   // .order-body__lbel
+
+   &__lbel {
+      color: var(--color-grey-13);
+
+      font-weight: 500;
+      line-height: 1.14; /* 114.286% */
+   }
+
+   // .order-body__input
+
+   &__input {
+      padding: toRem(16);
+
+      border-radius: toRem(7);
+      border: 0.5px solid var(--color-grey-40);
+
+      background: var(--color-white);
+      &::placeholder {
+         color: var(--color-grey-16);
+
+         line-height: 1.171; /* 171.429% */
+         letter-spacing: -0.07px;
+      }
+
+      .order-body__input-block & {
+         padding: 0;
+         border: none;
+      }
+   }
+
+   // .order-body__input-block
+
+   &__input-block {
+      display: flex;
+
+      padding: toRem(16);
+
+      border-radius: toRem(7);
+
+      border: 0.5px solid var(--color-grey-40);
+   }
+
+   // .order-body__button-apply
+
+   &__button-apply {
+      padding-block: toRem(8);
+      font-size: toRem(12);
+      font-weight: 500;
+      line-height: 1.333; /* 133.333% */
+
+      text-align: center;
+
+      width: toRem(76);
+
+      border-radius: toRem(6);
+      border: 1px solid var(--color-black);
+
+      transition: background-color 0.2s ease;
+   }
+}
+@media (any-hover: hover) {
+   .order-body__button-apply:hover {
+      background-color: var(--color-grey-4);
+   }
+}
+
+// summary
+.summary {
+   // .summary__body
+
+   &__body {
+      font-weight: 500;
+
+      display: flex;
+      flex-direction: column;
+      gap: toRem(16);
+   }
+
+   // .summary__subtotal-block
+
+   &__subtotal-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: toRem(15);
+   }
+
+   // .summary__title
+
+   &__title {
+      font-size: toRem(16);
+      line-height: 1.5; /* 150% */
+      letter-spacing: 0.48px;
+   }
+
+   // .summary__subtotal
+
+   &__subtotal {
+      line-height: 2; /* 200% */
+   }
+
+   // .summary__tax-block
+
+   &__tax-block {
+      @extend .summary__subtotal-block;
+   }
+
+   // .summary__subtitle
+
+   &__subtitle {
+      color: var(--color-grey-13);
+      font-weight: 400;
+      line-height: 2; /* 200% */
+   }
+
+   // .summary__tax
+
+   &__tax {
+      @extend .summary__subtotal;
+   }
+
+   // .summary__delivery-block
+
+   &__delivery-block {
+      @extend .summary__subtotal-block;
+   }
+
+   // .summary__delivery
+
+   &__delivery {
+      @extend .summary__subtotal;
+   }
+
+   // .summary__total-block
+
+   &__total-block {
+      @extend .summary__subtotal-block;
+   }
+
+   // .summary__total
+
+   &__total {
+      @extend .summary__subtotal;
+   }
+
+   // .summary__button
+
+   &__button {
+      padding-block-start: toRem(48);
+   }
+}

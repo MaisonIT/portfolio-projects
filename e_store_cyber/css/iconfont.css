@@ -1,0 +1,104 @@
+@font-face {
+   font-family: "cyber-icon-font";
+   src: url("../fonts/cyber-icon-font.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class*=" -icon-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "cyber-icon-font";
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.-icon-filters:before {
+   content: "\e911";
+}
+.-icon-show:before {
+   content: "\e912";
+   color: #979797;
+}
+.-icon-instagram:before {
+   content: "\e902";
+}
+.-icon-arrow-2:before {
+   content: "\e900";
+   color: #a4a4a4;
+}
+.-icon-close:before {
+   content: "\e907";
+}
+.-icon-arrow-3:before {
+   content: "\e901";
+}
+.-icon-arrow:before {
+   content: "\e903";
+}
+.-icon-cameras:before {
+   content: "\e905";
+}
+.-icon-cart:before {
+   content: "\e906";
+}
+.-icon-computers:before {
+   content: "\e908";
+}
+.-icon-delivery:before {
+   content: "\e90a";
+   color: #797979;
+}
+.-icon-edit:before {
+   content: "\e90b";
+}
+.-icon-facebook:before {
+   content: "\e90c";
+   color: #fff;
+}
+.-icon-gaming:before {
+   content: "\e90e";
+}
+.-icon-guaranteed:before {
+   content: "\e90f";
+   color: #797979;
+}
+.-icon-headphones:before {
+   content: "\e910";
+}
+.-icon-like:before {
+   content: "\e914";
+}
+.-icon-phones:before {
+   content: "\e91a";
+}
+.-icon-profile:before {
+   content: "\e91b";
+}
+.-icon-search:before {
+   content: "\e91d";
+   color: #989898;
+}
+.-icon-smart-watches:before {
+   content: "\e920";
+}
+.-icon-stock:before {
+   content: "\e923";
+   color: #797979;
+}
+.-icon-tiktok:before {
+   content: "\e924";
+   color: #fff;
+}
+.-icon-twitter:before {
+   content: "\e925";
+   color: #fff;
+}
