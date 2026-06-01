@@ -415,6 +415,7 @@
   .buttons__button:hover {
     background-color: var(--color-black);
     border-color: var(--color-black);
+    color: var(--color-white);
   }
   .buttons__button--wishlist:hover, .buttons__button--details:hover, .buttons__button--testemonials:hover {
     color: var(--color-white);

@@ -449,6 +449,8 @@
    .buttons__button:hover {
       background-color: var(--color-black);
       border-color: var(--color-black);
+
+      color: var(--color-white);
    }
    .buttons__button--wishlist:hover {
       color: var(--color-white);
