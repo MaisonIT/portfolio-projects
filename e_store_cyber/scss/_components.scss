@@ -605,3 +605,33 @@
       transform: translateX(-50%) translateY(0);
    }
 }
+
+// стрілка на гору
+.scroll-top {
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   background: #000;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition: all 0.3s ease;
+   z-index: 100;
+}
+
+.scroll-top.active {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
+}
+
+.scroll-top::before {
+   transform: rotate(90deg);
+}

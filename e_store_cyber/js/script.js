@@ -5,6 +5,7 @@ const html = document.documentElement
 const burgerButton = document.querySelector(`.burger-menu`)
 const burgerMenu = document.querySelector(`.header__menu`)
 let allProducts = [];
+let filteredProducts = []
 let currentPage = 1
 const productsPerPage = 8
 let addresses = JSON.parse(localStorage.getItem(`addresses`)) || []
@@ -118,6 +119,15 @@ function loadPage() {
 
    // update breadcrumbs
    updateBreadcrumbs()
+
+   // додавання в корзину з картки товару
+   initCatalogAddToCart()
+
+   // видалення окремого тегу
+   initActiveFiltersEvents()
+
+   // стрілка на гору
+   initScrollTop();
 }
 
 // burger
@@ -424,7 +434,7 @@ function renderProducts(products) {
             </p>
 
             <div class="item-product__button buttons">
-               <button class="buttons__button buttons__button--product">
+               <button class="buttons__button buttons__button--product" data-slug="${product.slug}">
                   Buy Now
                </button>
             </div>
@@ -703,7 +713,7 @@ function renderCatalogProducts(products) {
             <div class="item-product__button buttons">
 
                <button
-                  class="buttons__button buttons__button--product">
+                  class="buttons__button buttons__button--product" data-slug="${product.slug}">
 
                   Buy Now
 
@@ -1100,7 +1110,7 @@ function applyFilters() {
       activeFilters[filterType].push(filterValue)
    })
 
-   const filteredProducts = allProducts.filter(product => {
+   filteredProducts = allProducts.filter(product => {
 
       // пошук
       if (searchValue && !product.title.toLowerCase().includes(searchValue)) return false
@@ -1118,60 +1128,40 @@ function applyFilters() {
    })
 
    currentPage = 1
-   renderActiveFilters(activeFilters)
+   updateFiltersCount(filteredProducts)
+   renderActiveFilters(activeFilters, priceMin, priceMax)
    paginateProducts(filteredProducts)
 }
 
-function updateFiltersCount() {
+function updateFiltersCount(products = allProducts) {
 
-   const filterInputs =
-      document.querySelectorAll(
-         '.spoiler-filters__input'
-      );
+   const filterInputs = document.querySelectorAll('.spoiler-filters__input')
 
    filterInputs.forEach(input => {
 
-      const filterType =
-         input.dataset.filter;
+      const filterType = input.dataset.filter;
 
-      const filterValue =
-         input.id;
+      const filterValue = input.id;
 
-      const count =
-         allProducts.filter(product => {
+      const count = products.filter(product => {
 
-            // array values
-            if (
-               Array.isArray(
-                  product.filters?.[filterType]
-               )
-            ) {
+         if (Array.isArray(product.filters?.[filterType])) {
+            return product.filters[filterType]?.includes(filterValue);
+         }
+         return (product.filters?.[filterType] === filterValue);
 
-               return product.filters?.[
-                  filterType
-               ]?.includes(filterValue);
-
-            }
-
-            return (
-               product.filters?.[filterType] ===
-               filterValue
-            );
-
-         }).length;
-
-      const label =
-         input.nextElementSibling;
+      }).length;
 
       const countElement =
-         label.querySelector(
-            '.spoiler-filters__count'
-         );
+         input.nextElementSibling
+            ?.querySelector(
+               '.spoiler-filters__count'
+            );
 
       if (countElement) {
 
          countElement.textContent =
-            `${count}`;
+            count;
 
       }
 
@@ -1180,8 +1170,10 @@ function updateFiltersCount() {
 }
 
 // фільтри які застосовані
-function renderActiveFilters(activeFilters) {
+function renderActiveFilters(activeFilters, priceMin, priceMax) {
    const container = document.querySelector('.active-filters')
+   const mobileContainer = document.querySelector('.active-filters-mobile');
+
    if (!container) return
 
    container.innerHTML = ''
@@ -1190,24 +1182,39 @@ function renderActiveFilters(activeFilters) {
       values.map(value => ({ type, value }))
    )
 
+   if (priceMin > 0 || priceMax < 10000) {
+      allTags.push({
+         type: 'price', value: `${priceMin} - ${priceMax}$`
+      });
+   }
+
    if (!allTags.length) {
-      container.hidden = true
-      return
+      container.hidden = true;
+      if (mobileContainer) {
+         mobileContainer.hidden = true;
+         mobileContainer.innerHTML = '';
+      }
+      return;
    }
 
    container.hidden = false
+   if (mobileContainer) mobileContainer.hidden = false;
+
+   if (mobileContainer) mobileContainer.innerHTML = '';
 
    // кнопка очистити все
    container.insertAdjacentHTML('beforeend', `
       <button class="active-filters__clear">Clear all</button>
    `)
 
+   if (mobileContainer) mobileContainer.insertAdjacentHTML('beforeend', `
+   <button class="active-filters__clear">Clear all</button>
+`);
+
    allTags.forEach(({ type, value }) => {
       // беремо текст лейбла з фільтра
       const label = document.querySelector(`label[for="${value}"]`)
-      const labelText = label
-         ? label.textContent.replace(/\d+/g, '').trim()
-         : value
+      const labelText = type === 'price' ? value : label ? label.textContent.replace(/\d+/g, '').trim() : value;
 
       container.insertAdjacentHTML('beforeend', `
          <button class="active-filters__tag" data-type="${type}" data-value="${value}">
@@ -1215,27 +1222,58 @@ function renderActiveFilters(activeFilters) {
             <span class="active-filters__tag-remove">✕</span>
          </button>
       `)
+
+      if (mobileContainer) mobileContainer.insertAdjacentHTML('beforeend', `
+   <button class="active-filters__tag" data-type="${type}" data-value="${value}">
+      ${labelText}
+      <span class="active-filters__tag-remove">✕</span>
+   </button>
+`);
    })
 
-   // видалення окремого тегу
-   container.addEventListener('click', e => {
-      const tag = e.target.closest('.active-filters__tag')
-      const clearAll = e.target.closest('.active-filters__clear')
+
+}
+
+// видалення окремого тегу
+function initActiveFiltersEvents() {
+   document.addEventListener('click', e => {
+
+      const tag = e.target.closest('.active-filters__tag');
+      const clearAll = e.target.closest('.active-filters__clear');
+
+      if (!tag && !clearAll) return;
 
       if (clearAll) {
-         document.querySelectorAll('.spoiler-filters__input:checked').forEach(input => {
-            input.checked = false
-         })
-         applyFilters()
-         return
+         document.querySelectorAll('.spoiler-filters__input:checked').forEach(input => input.checked = false);
+         const minRange = document.querySelector('.price-slider__range--min');
+         const maxRange = document.querySelector('.price-slider__range--max');
+         const minValue = document.querySelector('.price-slider__price-value--min');
+         const maxValue = document.querySelector('.price-slider__price-value--max');
+         minRange.value = minRange.min;
+         maxRange.value = maxRange.max;
+         minValue.value = minRange.min;
+         maxValue.value = maxRange.max;
+         applyFilters();
+         return;
       }
 
-      if (tag) {
-         const input = document.querySelector(`#${tag.dataset.value}`)
-         if (input) input.checked = false
-         applyFilters()
+      if (tag.dataset.type === 'price') {
+         const minRange = document.querySelector('.price-slider__range--min');
+         const maxRange = document.querySelector('.price-slider__range--max');
+         const minValue = document.querySelector('.price-slider__price-value--min');
+         const maxValue = document.querySelector('.price-slider__price-value--max');
+         minRange.value = minRange.min;
+         maxRange.value = maxRange.max;
+         minValue.value = minRange.min;
+         maxValue.value = maxRange.max;
+      } else {
+         const input = document.getElementById(tag.dataset.value);
+         if (input) input.checked = false;
       }
-   })
+
+      applyFilters();
+
+   });
 }
 
 // mobile filter
@@ -2961,7 +2999,6 @@ async function loadCartPage() {
    renderCartProducts(cartProducts)
    renderCartSummary(cartProducts)
 
-   console.log(cartProducts)
 }
 
 // render cart products
@@ -3010,7 +3047,7 @@ function renderCartProducts(products) {
 
                   <div class="cart-body__actions">
 
-                     <button class="cart-body__minus">
+                        <button class="cart-body__minus" ${product.quantity === 1 ? 'disabled' : ''}>
                         -
                      </button>
 
@@ -3025,7 +3062,7 @@ function renderCartProducts(products) {
                   </div>
 
                   <p class="cart-body__price">
-                     $${product.price}
+                     $${product.price * product.quantity}
                   </p>
 
                   <button
@@ -4399,5 +4436,76 @@ function updateBreadcrumbs() {
    currentBreadcrumb.textContent =
       categoryNames[currentType] ||
       'Catalog';
+
+}
+
+// додавання в корзину з картки товару
+function initCatalogAddToCart() {
+
+   document.addEventListener('click', e => {
+
+      const button =
+         e.target.closest(
+            '.buttons__button--product'
+         );
+
+      if (!button) return;
+
+      e.preventDefault();
+
+      const slug =
+         button.dataset.slug;
+
+      let cart =
+         JSON.parse(
+            localStorage.getItem('cart')
+         ) || [];
+
+      const existingProduct =
+         cart.find(item =>
+            item.slug === slug
+         );
+
+      if (existingProduct) {
+
+         existingProduct.quantity++;
+
+      } else {
+
+         cart.push({
+            slug,
+            quantity: 1
+         });
+
+      }
+
+      localStorage.setItem(
+         'cart',
+         JSON.stringify(cart)
+      );
+
+      updateCartCount();
+
+      console.log('Added:', slug);
+   });
+}
+
+// стрілка на гору
+function initScrollTop() {
+
+   const button = document.querySelector('.scroll-top');
+
+   if (!button) return;
+
+   window.addEventListener('scroll', () => {
+      button.classList.toggle('active', window.scrollY > 400);
+   });
+
+   button.addEventListener('click', () => {
+      window.scrollTo({
+         top: 0,
+         behavior: 'smooth'
+      });
+   });
 
 }

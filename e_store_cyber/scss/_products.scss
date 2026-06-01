@@ -44,6 +44,8 @@
       flex-direction: column;
       gap: toRem(31);
 
+      overflow: auto;
+
       &.active {
          inset-inline-start: 0;
          inline-size: 100%;
@@ -581,4 +583,23 @@
       color: var(--color-grey-34);
       text-decoration: underline;
    }
+}
+
+.active-filters-mobile {
+   display: none;
+}
+
+@media (max-width: 767.98px) {
+   .active-filters-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+   }
+}
+
+.cart-body__minus:disabled {
+   opacity: 0.4;
+   pointer-events: none;
+   cursor: default;
 }

@@ -561,6 +561,44 @@
           transform: translateX(-50%) translateY(0);
 }
 
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.scroll-top::before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 /* Скидання стилів */
 .hero {
   font-weight: 500;
@@ -1345,6 +1383,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.9375rem;
+  overflow: auto;
 }
 .catalog__side-body.active {
   inset-inline-start: 0;
@@ -1877,6 +1916,27 @@
   font-weight: 500;
   color: var(--color-grey-34);
   text-decoration: underline;
+}
+
+.active-filters-mobile {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .active-filters-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+  }
+}
+.cart-body__minus:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
 }
 
 .product__items {
