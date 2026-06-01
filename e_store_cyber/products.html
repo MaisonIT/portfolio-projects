@@ -1,0 +1,437 @@
+<!doctype html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+   <!-- Кодування тексту -->
+   <meta charset="UTF-8">
+   <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Підключення окремого файлу стилів -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Іконка -->
+   <!-- <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+      /> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Заголовок сторінки в браузері -->
+   <title>E-Commerce Cyber-Smartphones</title>
+   <!-- Відкрити усі вкладки в новій вкладці -->
+   <!-- <base target="_blank" href> -->
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__items">
+               <div class="header__logo logo">
+                  <a href="index.html" class="logo__link"><strong class="logo__name">cyber</strong></a>
+               </div>
+               <div class="header__search search-input -icon-search">
+                  <input name="search" class="search-input__body search-input__body--global" type="search"
+                     placeholder="Search">
+               </div>
+               <nav class="header__menu menu">
+                  <ul class="menu__item">
+                     <li class="menu__list"><a class="menu__link" href="index.html">Home</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">About</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Contact Us</a></li>
+                     <li class="menu__list"><a class="menu__link" href="#">Blog</a></li>
+                     <li class="menu__list actions">
+                        <a class="actions__link -icon-like" href="#"></a>
+                        <a class="actions__link actions__link--cart -icon-cart" href="cart.html"><span
+                              class="actions__link-cart-count">0</span></a>
+                        <a class="actions__link -icon-profile" href="#"></a>
+                     </li>
+                  </ul>
+               </nav>
+               <ul class="header__actions actions">
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-like"></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="cart.html" class="actions__link actions__link--cart -icon-cart"><span
+                           class="actions__link-cart-count">0</span></a>
+                  </li>
+                  <li class="actions__action-list">
+                     <a href="#" class="actions__link -icon-profile"></a>
+                  </li>
+               </ul>
+               <button class="header__item burger-menu">
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="breadcrumbs">
+            <div class="breadcrumbs__container">
+               <ul class="breadcrumbs__menu">
+                  <li class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Home</a></li>
+                  <li class="breadcrumbs__list-svg -icon-arrow-2"></li>
+                  <li class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Catalog</a></li>
+                  <li class="breadcrumbs__list-svg -icon-arrow-2"></li>
+                  <li class="breadcrumbs__list breadcrumbs__current active">All</li>
+               </ul>
+            </div>
+         </div>
+         <div class="catalog">
+            <div class="catalog__container">
+               <aside class="catalog__side-body side-filters">
+                  <button class="side-filters__close -icon-arrow">Filters</button>
+                  <form class="side-filters__form form-catalog" action="#">
+                     <div class="form-catalog__spoiler-body">
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Price</summary>
+                           <div class="spoiler-filters__body spoiler-filters__body--price">
+                              <div class="spoiler-filters__price-head">
+                                 <p class="spoiler-filters__price-label">From</p>
+                                 <p class="spoiler-filters__price-label">To</p>
+                              </div>
+                              <div class="spoiler-filters__price-slider price-slider">
+                                 <div class="price-slider__price-values">
+                                    <input class="price-slider__price-value price-slider__price-value--min"
+                                       id="pricefrom" name="pricefrom" placeholder="0" type="text">
+                                    <span class="price-slider__price-decor"></span>
+                                    <input class="price-slider__price-value price-slider__price-value--max" id="priceto"
+                                       name="priceto" placeholder="999999" type="text">
+                                 </div>
+                                 <input type="range" class="price-slider__range price-slider__range--min" min="0"
+                                    max="10000" value="1000" step="100">
+                                 <input type="range" class="price-slider__range price-slider__range--max" min="0"
+                                    max="10000" value="5000" step="100">
+                                 <div class="price-slider__track">
+                                    <div class="price-slider__price-fill"></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Brand</summary>
+                           <div class="spoiler-filters__input-search search-input -icon-search">
+                              <input name="search" class="search-input__body search-input__body--brands" type="search"
+                                 placeholder="Search">
+                           </div>
+                           <div class="spoiler-filters__body spoiler-filters__body--brands">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="apple" name="apple" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="apple">Apple <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="samsung" name="samsung" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="samsung">Samsung <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="xiaomi" name="xiaomi" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="xiaomi">Xiaomi <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="poco" name="poco" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="poco">Poco <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="oppo" name="oppo" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="oppo">OPPO <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="honor" name="honor" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="honor">Honor <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="motorola" name="motorola" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="motorola">Motorola <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="nokia" name="nokia" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="nokia">Nokia <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="realme" name="realme" type="checkbox"
+                                    data-filter="brand">
+                                 <label class="spoiler-filters__label" for="realme">Realme <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Battery capacity</summary>
+                           <div class="spoiler-filters__body">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="3mah" name="3mah" type="checkbox"
+                                    data-filter="battery">
+                                 <label class="spoiler-filters__label" for="3mah">2000–3000 mAh <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="4mah" name="4mah" type="checkbox"
+                                    data-filter="battery">
+                                 <label class="spoiler-filters__label" for="4mah">3000–4000 mAh <span
+                                       class="spoiler-filters__count"></span>
+                                 </label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="5mah" name="5mah" type="checkbox"
+                                    data-filter="battery">
+                                 <label class="spoiler-filters__label" for="5mah">4000–5000 mAh <span
+                                       class="spoiler-filters__count"></span>
+                                 </label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="5more" name="5more" type="checkbox"
+                                    data-filter="battery">
+                                 <label class="spoiler-filters__label" for="5more">5000+ mAh <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Screen type</summary>
+                           <div class="spoiler-filters__body">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="amoled" name="amoled" type="checkbox"
+                                    data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="amoled">AMOLED <span
+                                       class="spoiler-filters__count"></span>
+                                 </label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="superamoled" name="superamoled"
+                                    type="checkbox" data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="superamoled">Super AMOLED <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="ips" name="ips" type="checkbox"
+                                    data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="ips">IPS <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="ltpo" name="ltpo" type="checkbox"
+                                    data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="ltpo">LTPO <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="retina" name="retina" type="checkbox"
+                                    data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="retina">Retina <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="dynamicamoled" name="dynamicamoled"
+                                    type="checkbox" data-filter="screenType">
+                                 <label class="spoiler-filters__label" for="dynamicamoled">Dynamic AMOLED <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Screen diagonal</summary>
+                           <div class="spoiler-filters__body">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="59" name="59" type="checkbox"
+                                    data-filter="screenSize">
+                                 <label class="spoiler-filters__label" for="59">5" – 5.9" <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="64" name="64" type="checkbox"
+                                    data-filter="screenSize">
+                                 <label class="spoiler-filters__label" for="64">6" – 6.4" <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="69" name="69" type="checkbox"
+                                    data-filter="screenSize">
+                                 <label class="spoiler-filters__label" for="69">6.5" – 6.9" <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="7more" name="7more" type="checkbox"
+                                    data-filter="screenSize">
+                                 <label class="spoiler-filters__label" for="7more">7"+ <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Protection class</summary>
+                           <div class="spoiler-filters__body">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="ip53" name="ip53" type="checkbox"
+                                    data-filter="protection">
+                                 <label class="spoiler-filters__label" for="ip53">IP53 <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="ip67" name="ip67" type="checkbox"
+                                    data-filter="protection">
+                                 <label class="spoiler-filters__label" for="ip67">IP67 <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="ip68" name="ip68" type="checkbox"
+                                    data-filter="protection">
+                                 <label class="spoiler-filters__label" for="ip68">IP68 <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="waterresistant" name="waterresistant"
+                                    type="checkbox" data-filter="protection">
+                                 <label class="spoiler-filters__label" for="waterresistant">Water resistant <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="dustresistant" name="dustresistant"
+                                    type="checkbox" data-filter="protection">
+                                 <label class="spoiler-filters__label" for="dustresistant">Dust resistant <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Built-in memory</summary>
+                           <div class="spoiler-filters__body">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="64g" name="64g" type="checkbox"
+                                    data-filter="memory">
+                                 <label class="spoiler-filters__label" for="64g">64 GB <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="128g" name="128g" type="checkbox"
+                                    data-filter="memory">
+                                 <label class="spoiler-filters__label" for="128g">128 GB <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="256g" name="256g" type="checkbox"
+                                    data-filter="memory">
+                                 <label class="spoiler-filters__label" for="256g">256 GB <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="512g" name="512g" type="checkbox"
+                                    data-filter="memory">
+                                 <label class="spoiler-filters__label" for="512g">512 GB <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="1t" name="1t" type="checkbox"
+                                    data-filter="memory">
+                                 <label class="spoiler-filters__label" for="1t">1 TB <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
+                     </div>
+                  </form>
+               </aside>
+               <div class="catalog__body">
+                  <div class="catalog__head">
+                     <div class="catalog__selected-block">
+                        <p class="catalog__selected-prod">Selected Products:</p>
+                        <span class="catalog__number-products"></span>
+                     </div>
+                     <div class="catalog__block">
+                        <button class="catalog__filters filters-button">
+                           <p class="filters-button__body -icon-filters">Filters</p>
+                        </button>
+                        <div class="catalog__sort select">
+                           <button class="select__value -icon-arrow-2" data-sort="rating"><span class="select__text">By
+                                 rating</span></button>
+                           <div class="select__items">
+                              <button class="select__item" data-sort="rating">By
+                                 rating</button>
+                              <button class="select__item" data-sort="price-asc">Price: Low to High</button>
+                              <button class="select__item" data-sort="price-desc">Price: High to Low</button>
+                              <button class="select__item" data-sort="newest">Newest</button>
+                              <button class="select__item" data-sort="popular">Most Popular</button>
+                              <button class="select__item" data-sort="best-sell">Best Selling</button>
+                              <button class="select__item" data-sort="discount">Discounts</button>
+                              <button class="select__item" data-sort="a-z">Alphabetically</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="catalog__active-filters active-filters">
+                     <!-- теги рендеряться через JS -->
+                  </div>
+                  <div class="catalog__items"></div>
+                  <nav class="catalog__pagination pagination-catalog">
+                     <button class="pagination-catalog__arrow pagination-catalog__arrow--prev -icon-arrow-2"></button>
+                     <div class="pagination-catalog__items"></div>
+                     <button class="pagination-catalog__arrow pagination-catalog__arrow--next -icon-arrow-2"></button>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__items">
+               <div class="footer__logo logo">
+                  <a href="index.html" class="logo__link"><strong class="logo__name">cyber</strong></a>
+                  <p class="logo__about">We are a residential interior design firm located in Portland. Our
+                     boutique-studio offers more than</p>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Services</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Bonus program</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Gift cards</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Credit and payment</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Service contracts</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Non-cash account</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Payment</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h3 class="footer__title">Assistance to the buyer</h3>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Find an order</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of delivery</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Exchange and return of
+                           goods</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Guarantee</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Frequently asked questions</a>
+                     </li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="#">Terms of use of the site</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <ul class="footer__socials">
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-twitter" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-facebook" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-tiktok" href="#"></a></li>
+               <li class="footer__socials-item"><a class="footer__socials-item-link -icon-instagram" href="#"></a></li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+   <!-- Підключення JS-файлу з кодом -->
+   <script src="js/script.js"></script>
+</body>
+
+</html>

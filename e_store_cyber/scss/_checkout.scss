@@ -99,11 +99,6 @@
       margin-block-end: toRem(32);
    }
 
-   // .adress__item-block
-
-   &__item-block {
-   }
-
    // .adress__item
 
    &__item {
@@ -268,6 +263,7 @@
 
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       gap: toRem(8);
 
@@ -311,8 +307,12 @@
 
    &__buttons {
       display: flex;
-      justify-content: end;
+      justify-content: center;
       gap: toRem(24);
+
+      @media (min-width: toEm(768)) {
+         justify-content: end;
+      }
    }
 }
 .adress__input-radio:checked + .adress__label::after {
@@ -325,7 +325,7 @@
    inset: 0;
    z-index: 100;
 
-   display: none;
+   display: flex;
    justify-content: center;
    align-items: center;
 
@@ -335,15 +335,16 @@
 
    opacity: 0;
    visibility: hidden;
+   pointer-events: none;
 
    transition:
-      opacity 0.2s ease,
-      visibility 0.2s ease;
+      opacity 0.3s ease,
+      visibility 0.3s ease;
 
    &.active {
       opacity: 1;
       visibility: visible;
-      display: flex;
+      pointer-events: auto;
    }
 
    // .adress-modal__close
@@ -364,6 +365,9 @@
       background-color: #fff;
 
       display: grid;
+
+      transform: translateY(toRem(30));
+      transition: transform 0.3s ease;
    }
 
    // .adress-modal__form
@@ -395,6 +399,10 @@
       background-color: #000;
       color: #fff;
    }
+}
+
+.adress-modal.active .adress-modal__body {
+   transform: translateY(0);
 }
 
 // shipping-page

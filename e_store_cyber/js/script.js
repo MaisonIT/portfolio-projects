@@ -115,6 +115,9 @@ function loadPage() {
 
    // payment tabs
    paymentTabs()
+
+   // update breadcrumbs
+   updateBreadcrumbs()
 }
 
 // burger
@@ -141,9 +144,14 @@ function burgerAction(e) {
    // плавне розкриття спойлера фільтрів
    if (target.closest(`summary`)) {
       e.preventDefault()
+      e.preventDefault()
       const spoilerTitle = target.closest(`summary`)
       const spoiler = spoilerTitle.closest(`details`)
-      const spoilerBody = spoilerTitle.nextElementSibling
+
+      // шукаємо останній дочірній div, а не просто nextElementSibling
+      const spoilerBody = spoiler.querySelector('.spoiler-filters__body, .spoiler-filters__input-search') === spoilerTitle.nextElementSibling
+         ? spoiler.children[spoiler.children.length - 1]
+         : spoilerTitle.nextElementSibling
 
       // розкриття спойлера
       if (!spoilerBody.classList.contains(`_slide`)) {
@@ -193,8 +201,12 @@ function swiperCategories() {
 
    if (swiperCategoriesBody) {
       new Swiper(`.swiper-categories`, {
-         slidesPerView: `2.2`,
-         spaceBetween: 0,
+         slidesPerView: `2`,
+         spaceBetween: 16,
+         grid: {
+            rows: 3,       // 3 рядки × 2 колонки = 6 карток на "сторінці"
+            fill: 'row',   // заповнює по рядках (зліва направо)
+         },
          navigation: {
             nextEl: '.actions-scroll__button-next',
             prevEl: '.actions-scroll__button-prev',
@@ -204,6 +216,9 @@ function swiperCategories() {
             768: {
                slidesPerView: `auto`,
                spaceBetween: 32,
+               grid: {
+                  rows: 1, // на десктопі повертаємось до одного рядка
+               }
             }
          }
       })
@@ -310,6 +325,23 @@ function productsRender() {
 
       allProducts = products;
       initFilters()
+
+      const params = new URLSearchParams(window.location.search); const currentType = params.get('type'); if (currentType) { const filteredProducts = allProducts.filter(product => product.type === currentType); if (document.querySelector('.catalog__items')) { paginateProducts(filteredProducts); } else { renderProducts(filteredProducts); } return; }
+
+      let filteredProducts =
+         allProducts;
+
+      if (currentType) {
+
+         filteredProducts =
+            allProducts.filter(product =>
+               product.type ===
+               currentType
+            );
+
+      }
+
+      renderProducts(filteredProducts);
 
       if (
          document.querySelector(
@@ -1030,11 +1062,16 @@ function initFilters() {
    // глобальний пошук в хедері
    initGlobalSearch();
 
+   // початковий стан активних фільтрів
+   renderActiveFilters({})
+
+   // price slider
+   initPriceSlider()
+
    // filters events
    filterInputs.forEach(input => {
 
       input.addEventListener('change', () => {
-
          applyFilters();
 
       });
@@ -1044,88 +1081,45 @@ function initFilters() {
 
 // counts filters
 function applyFilters() {
+   const checkedInputs = document.querySelectorAll('.spoiler-filters__input:checked')
+   const activeFilters = {}
 
-   const checkedInputs =
-      document.querySelectorAll(
-         '.spoiler-filters__input:checked'
-      );
+   // ціновий діапазон
+   const minRange = document.querySelector('.price-slider__range--min')
+   const maxRange = document.querySelector('.price-slider__range--max')
+   const priceMin = minRange ? parseInt(minRange.value) : 0
+   const priceMax = maxRange ? parseInt(maxRange.value) : Infinity
 
-   const activeFilters = {};
-
-   const globalSearchInput =
-      document.querySelector(
-         '.search-input__body--global'
-      );
-
-   const searchValue =
-      globalSearchInput
-         ? globalSearchInput.value
-            .trim()
-            .toLowerCase()
-         : '';
+   const globalSearchInput = document.querySelector('.search-input__body--global')
+   const searchValue = globalSearchInput ? globalSearchInput.value.trim().toLowerCase() : ''
 
    checkedInputs.forEach(input => {
+      const filterType = input.dataset.filter
+      const filterValue = input.id
+      if (!activeFilters[filterType]) activeFilters[filterType] = []
+      activeFilters[filterType].push(filterValue)
+   })
 
-      const filterType =
-         input.dataset.filter;
+   const filteredProducts = allProducts.filter(product => {
 
-      const filterValue =
-         input.id;
+      // пошук
+      if (searchValue && !product.title.toLowerCase().includes(searchValue)) return false
 
-      // create array
-      if (!activeFilters[filterType]) {
+      // ціна ← ось тут
+      if (product.price < priceMin || product.price > priceMax) return false
 
-         activeFilters[filterType] = [];
-
-      }
-
-      activeFilters[filterType].push(
-         filterValue
-      );
-
-   });
-
-   const filteredProducts =
-      allProducts.filter(product => {
-
-         if (
-            searchValue &&
-            !product.title
-               .toLowerCase()
-               .includes(searchValue)
-         ) {
-
-            return false;
-
+      // інші фільтри
+      return Object.entries(activeFilters).every(([key, values]) => {
+         if (Array.isArray(product.filters?.[key])) {
+            return product.filters?.[key].some(item => values.includes(item))
          }
+         return values.includes(product.filters?.[key])
+      })
+   })
 
-         return Object.entries(
-            activeFilters
-         ).every(([key, values]) => {
-
-            // protection array
-            if (
-               Array.isArray(product.filters?.[key])
-            ) {
-
-               return product.filters?.[key].some(item =>
-                  values.includes(item)
-               );
-
-            }
-
-            return values.includes(
-               product.filters?.[key]
-            );
-
-         });
-
-      });
-
-   currentPage = 1;
-
-   paginateProducts(filteredProducts);
-
+   currentPage = 1
+   renderActiveFilters(activeFilters)
+   paginateProducts(filteredProducts)
 }
 
 function updateFiltersCount() {
@@ -1183,6 +1177,65 @@ function updateFiltersCount() {
 
    });
 
+}
+
+// фільтри які застосовані
+function renderActiveFilters(activeFilters) {
+   const container = document.querySelector('.active-filters')
+   if (!container) return
+
+   container.innerHTML = ''
+
+   const allTags = Object.entries(activeFilters).flatMap(([type, values]) =>
+      values.map(value => ({ type, value }))
+   )
+
+   if (!allTags.length) {
+      container.hidden = true
+      return
+   }
+
+   container.hidden = false
+
+   // кнопка очистити все
+   container.insertAdjacentHTML('beforeend', `
+      <button class="active-filters__clear">Clear all</button>
+   `)
+
+   allTags.forEach(({ type, value }) => {
+      // беремо текст лейбла з фільтра
+      const label = document.querySelector(`label[for="${value}"]`)
+      const labelText = label
+         ? label.textContent.replace(/\d+/g, '').trim()
+         : value
+
+      container.insertAdjacentHTML('beforeend', `
+         <button class="active-filters__tag" data-type="${type}" data-value="${value}">
+            ${labelText}
+            <span class="active-filters__tag-remove">✕</span>
+         </button>
+      `)
+   })
+
+   // видалення окремого тегу
+   container.addEventListener('click', e => {
+      const tag = e.target.closest('.active-filters__tag')
+      const clearAll = e.target.closest('.active-filters__clear')
+
+      if (clearAll) {
+         document.querySelectorAll('.spoiler-filters__input:checked').forEach(input => {
+            input.checked = false
+         })
+         applyFilters()
+         return
+      }
+
+      if (tag) {
+         const input = document.querySelector(`#${tag.dataset.value}`)
+         if (input) input.checked = false
+         applyFilters()
+      }
+   })
 }
 
 // mobile filter
@@ -1298,6 +1351,76 @@ function mobileFilters() {
 
    }
 
+}
+
+// price-slider
+function initPriceSlider() {
+   const minRange = document.querySelector('.price-slider__range--min')
+   const maxRange = document.querySelector('.price-slider__range--max')
+   const fill = document.querySelector('.price-slider__price-fill')
+   const minValue = document.querySelector('.price-slider__price-value--min')
+   const maxValue = document.querySelector('.price-slider__price-value--max')
+
+   if (!minRange || !maxRange || !fill || !minValue || !maxValue) return
+
+   function updateFill() {
+      const min = parseInt(minRange.value)
+      const max = parseInt(maxRange.value)
+      const total = parseInt(maxRange.max)
+
+      const leftPercent = (min / total) * 100
+      const rightPercent = (max / total) * 100
+
+      fill.style.left = leftPercent + '%'
+      fill.style.width = (rightPercent - leftPercent) + '%'
+   }
+
+   // повзунок → інпут
+   minRange.addEventListener('input', () => {
+      if (parseInt(minRange.value) >= parseInt(maxRange.value)) {
+         minRange.value = parseInt(maxRange.value) - parseInt(maxRange.step)
+      }
+      minValue.value = minRange.value
+      updateFill()
+      applyFilters()
+   })
+
+   maxRange.addEventListener('input', () => {
+      if (parseInt(maxRange.value) <= parseInt(minRange.value)) {
+         maxRange.value = parseInt(minRange.value) + parseInt(maxRange.step)
+      }
+      maxValue.value = maxRange.value
+      updateFill()
+      applyFilters()
+   })
+
+   // інпут → повзунок
+   minValue.addEventListener('input', () => {
+      const val = parseInt(minValue.value)
+      if (isNaN(val)) return
+
+      const max = parseInt(maxRange.value)
+      const clamped = Math.min(Math.max(val, parseInt(minRange.min)), max - parseInt(minRange.step))
+      minRange.value = clamped
+      updateFill()
+      applyFilters()
+   })
+
+   maxValue.addEventListener('input', () => {
+      const val = parseInt(maxValue.value)
+      if (isNaN(val)) return
+
+      const min = parseInt(minRange.value)
+      const clamped = Math.max(Math.min(val, parseInt(maxRange.max)), min + parseInt(maxRange.step))
+      maxRange.value = clamped
+      updateFill()
+      applyFilters()
+   })
+
+   // початковий стан
+   minValue.value = minRange.value
+   maxValue.value = maxRange.value
+   updateFill()
 }
 
 // brand search
@@ -1426,10 +1549,14 @@ function openProductTextAbout() {
 
          });
 
+         button.innerText = `more...`;
+
       } else {
 
          aboutBlock.style.maxHeight =
             aboutBlock.scrollHeight + 'px';
+
+         button.innerText = `less...`;
 
       }
 
@@ -1475,10 +1602,16 @@ function toggleBlock(
 
             });
 
+            button.querySelector('span').textContent =
+               'View More';
+
          } else {
 
             block.style.maxHeight =
                block.scrollHeight + 'px';
+
+            button.querySelector('span').textContent =
+               'View Less';
 
          }
 
@@ -1554,107 +1687,64 @@ async function loadProductPage() {
 
 // product-gallery
 function renderProductGallery(product) {
+   const sideGallery = document.querySelector('.product__image-side')
+   const swiperWrapper = document.querySelector('.product__image-main-wrapper')
 
-   const sideGallery =
-      document.querySelector(
-         '.product__image-side'
-      );
+   if (!sideGallery || !swiperWrapper) return
 
-   const mainImage =
-      document.querySelector(
-         '.product__image-main img'
-      );
+   const allImages = [product.images.main, ...product.images.gallery]
 
-   if (
-      !sideGallery ||
-      !mainImage
-   ) return;
+   // рендеримо слайди для свайпера
+   swiperWrapper.innerHTML = allImages.map((image, index) => `
+      <div class="swiper-slide">
+         <img src="${image}" alt="${product.title}">
+      </div>
+   `).join('')
 
-   sideGallery.innerHTML = '';
+   // рендеримо бічні мініатюри
+   sideGallery.innerHTML = allImages.map((image, index) => `
+      <div class="product__image-side-img ${index === 0 ? 'active' : ''}">
+         <img src="${image}" alt="${product.title}">
+      </div>
+   `).join('')
 
-   const allImages = [
-
-      product.images.main,
-
-      ...product.images.gallery
-
-   ];
-
-   mainImage.src =
-      product.images.main;
-
-   mainImage.alt =
-      product.title;
-
-   allImages.forEach(
-      (image, index) => {
-
-         sideGallery
-            .insertAdjacentHTML(
-
-               'beforeend',
-
-               `
-               <div
-                  class="
-                     product__image-side-img
-                     ${index === 0 ? 'active' : ''}
-                  "
-               >
-
-                  <img
-                     src="${image}"
-                     alt="${product.title}"
-                  >
-
-               </div>
-               `
-            );
-
+   // ініціалізуємо swiper
+   const gallerySwiper = new Swiper('.swiper-product-gallery', {
+      slidesPerView: 1,
+      pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+      },
+      // на десктопі вимикаємо свайп
+      breakpoints: {
+         768: {
+            allowTouchMove: false,
+            pagination: { enabled: false }
+         }
       }
-   );
+   })
 
+   // синхронізація свайпера з бічними мініатюрами
+   gallerySwiper.on('slideChange', () => {
+      const index = gallerySwiper.activeIndex
+
+      document.querySelectorAll('.product__image-side-img').forEach((item, i) => {
+         item.classList.toggle('active', i === index)
+      })
+   })
+
+   // клік по мініатюрі — перемикає слайд
    sideGallery.onclick = e => {
+      const sideImg = e.target.closest('.product__image-side-img')
+      if (!sideImg) return
 
-      const currentImage =
-         e.target.closest('img');
+      const index = [...sideGallery.children].indexOf(sideImg)
+      gallerySwiper.slideTo(index)
 
-      if (!currentImage) return;
-
-      const oldMainSrc =
-         mainImage.src;
-
-      const oldMainAlt =
-         mainImage.alt;
-
-      mainImage.src =
-         currentImage.src;
-
-      mainImage.alt =
-         currentImage.alt;
-
-      document
-         .querySelectorAll(
-            '.product__image-side-img'
-         )
-         .forEach(item => {
-
-            item.classList.remove(
-               'active'
-            );
-
-         });
-
-      currentImage
-         .closest(
-            '.product__image-side-img'
-         )
-         .classList.add(
-            'active'
-         );
-
-   };
-
+      document.querySelectorAll('.product__image-side-img').forEach((item, i) => {
+         item.classList.toggle('active', i === index)
+      })
+   }
 }
 
 // product-info
@@ -1760,6 +1850,18 @@ function renderProductColors(product) {
       }
    );
 
+   // обробник подїї перемикання кольорів
+   colorsList.addEventListener('click', e => {
+      const button = e.target.closest('.product__list-link')
+      if (!button) return
+
+      colorsList.querySelectorAll('.product__list-link').forEach(btn => {
+         btn.classList.remove('active')
+      })
+
+      button.classList.add('active')
+   })
+
 }
 
 // product-memory
@@ -1807,6 +1909,18 @@ function renderProductMemory(product) {
 
          }
       );
+
+   // обробник подїї перемикання кольорів
+   memoryList.addEventListener('click', e => {
+      const button = e.target.closest('.product__memory-list-link')
+      if (!button) return
+
+      memoryList.querySelectorAll('.product__memory-list-link').forEach(btn => {
+         btn.classList.remove('active')
+      })
+
+      button.classList.add('active')
+   })
 
 }
 
@@ -2455,55 +2569,9 @@ function renderReviewsSummary(product) {
          reviews
 
       </div>
-
-      <div
-         class="
-            reviews__rating
-            rating-stars
-         "
-      >
-
-         <div
-            class="
-               rating-stars__empty
-            "
-         >
-
-            <img
-               src="
-               img/icons/rate-stars.svg
-               "
-
-               alt="
-                  Rate stars empty
-               "
-            >
-
+         <div class="reviews__rating">
+         ${renderStars(product.rating)}
          </div>
-
-         <div
-            class="
-               rating-stars__fill
-            "
-
-            style="
-               width:${ratingWidth}%
-            "
-         >
-
-            <img
-               src="
-               img/icons/rate-stars-fill.svg
-               "
-
-               alt="
-                  Rate stars fill
-               "
-            >
-
-         </div>
-
-      </div>
    `;
 
    chart.innerHTML = '';
@@ -2738,55 +2806,8 @@ function renderProductReviews(product) {
 
                      </div>
 
-                     <div
-                        class="
-                           testemonials__rate-stars
-                        "
-                     >
-
-                        <div
-                           class="
-                              testemonials__rate-star
-                              testemonials__rate-star--empty
-                           "
-                        >
-
-                           <img
-                              src="
-                                 img/icons/rate-stars.svg
-                              "
-
-                              alt="
-                                 Rate stars empty
-                              "
-                           >
-
-                        </div>
-
-                        <div
-                           class="
-                              testemonials__rate-star
-                              testemonials__rate-star--fill
-                           "
-
-                           style="
-                              width:${ratingWidth}%
-                           "
-                        >
-
-                           <img
-                              src="
-                                 img/icons/rate-stars-fill.svg
-                              "
-
-                              alt="
-                                 Rate stars fill
-                              "
-                           >
-
-                        </div>
-
-                     </div>
+                     <div class="testemonials__rate-stars">
+                     ${renderStars(review.rating)}</div>
 
                      <div
                         class="
@@ -2816,6 +2837,29 @@ function renderProductReviews(product) {
 
       });
 
+}
+
+// генерація зірочок
+function renderStars(rating) {
+   return Array.from({ length: 5 }, (_, i) => {
+      const filled = i < Math.floor(rating)
+      const partial = !filled && i < rating
+
+      return `
+         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <defs>
+               <linearGradient id="partial-${i}">
+                  <stop offset="${partial ? (rating % 1) * 100 : 0}%" stop-color="#F5A623"/>
+                  <stop offset="${partial ? (rating % 1) * 100 : 0}%" stop-color="#D9D9D9"/>
+               </linearGradient>
+            </defs>
+            <path
+               d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+               fill="${filled ? '#F5A623' : partial ? `url(#partial-${i})` : '#D9D9D9'}"
+            />
+         </svg>
+      `
+   }).join('')
 }
 
 // add product to cart
@@ -4312,5 +4356,48 @@ function showToast(message) {
       )
 
    }, 2500)
+
+}
+
+// update breadcrumbs
+function updateBreadcrumbs() {
+
+   const currentBreadcrumb =
+      document.querySelector(
+         '.breadcrumbs__current'
+      );
+
+   if (!currentBreadcrumb) return;
+
+   const params =
+      new URLSearchParams(
+         window.location.search
+      );
+
+   const currentType =
+      params.get('type');
+
+   if (!currentType) return;
+
+   const categoryNames = {
+
+      phones: 'Phones',
+
+      'smart-watches':
+         'Smart Watches',
+
+      cameras: 'Cameras',
+
+      headphones: 'Headphones',
+
+      computers: 'Computers',
+
+      gaming: 'Gaming'
+
+   };
+
+   currentBreadcrumb.textContent =
+      categoryNames[currentType] ||
+      'Catalog';
 
 }

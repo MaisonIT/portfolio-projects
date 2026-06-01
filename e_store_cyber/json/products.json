@@ -38,7 +38,8 @@
             "waterresistant",
             "dustresistant"
          ],
-         "memory": "128g"
+         "memory": "128g",
+         "brand": "apple"
       },
       "colors": [
          {
@@ -202,17 +203,13 @@
             "date": "24 January, 2023",
             "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
          }
-      ]
+      ],
+      "type": "phones"
    },
    {
       "id": 2,
       "title": "Blackmagic Pocket Cinema Camera 6K",
       "brand": "blackmagic",
-      "battery": "5mah",
-      "screenType": "ips",
-      "screenSize": "69",
-      "protection": [],
-      "memory": "512g",
       "slug": "blackmagic-pocket-cinema-camera-6k",
       "price": 2535,
       "oldPrice": null,
@@ -222,19 +219,21 @@
       "images": {
          "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "blackmagic",
+         "battery": "5mah",
+         "screenType": "ips",
+         "screenSize": "69",
+         "protection": [],
+         "memory": "512g"
+      },
+      "type": "cameras"
    },
    {
       "id": 3,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -244,17 +243,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 4,
       "title": "AirPods Max Silver Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "ips",
-      "screenSize": "59",
-      "protection": [],
-      "memory": "64g",
       "slug": "airpods-max-silver-starlight-aluminium",
       "price": 549,
       "oldPrice": 599,
@@ -264,20 +269,21 @@
       "images": {
          "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "ips",
+         "screenSize": "59",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "headphones"
    },
    {
       "id": 5,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -287,21 +293,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 6,
       "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
       "brand": "samsung",
-      "battery": "5mah",
-      "screenType": "dynamicamoled",
-      "screenSize": "7more",
-      "protection": [
-         "ip68",
-         "waterresistant",
-         "dustresistant"
-      ],
-      "memory": "256g",
       "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
       "price": 1799,
       "oldPrice": 1999,
@@ -311,19 +320,25 @@
       "images": {
          "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "5mah",
+         "screenType": "dynamicamoled",
+         "screenSize": "7more",
+         "protection": [
+            "ip68",
+            "waterresistant",
+            "dustresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    },
    {
       "id": 7,
       "title": "Galaxy Buds FE Graphite",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "ips",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "galaxy-buds-fe-graphite",
       "price": 99.99,
       "oldPrice": 129.99,
@@ -333,17 +348,23 @@
       "images": {
          "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "ips",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "headphones"
    },
    {
       "id": 8,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -353,19 +374,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 3,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -375,19 +398,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 9,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -397,19 +424,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 10,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -419,19 +450,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 11,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -441,19 +476,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 11,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -463,17 +502,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 12,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -483,17 +528,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 13,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -503,17 +552,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 14,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -523,20 +576,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 15,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -546,20 +600,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 16,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -569,20 +627,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 17,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -592,20 +654,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 18,
       "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "512g",
       "slug": "apple-iphone-14-pro-gold",
       "price": 1437,
       "oldPrice": null,
@@ -615,20 +681,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "512g"
+      },
+      "type": "phones"
    },
    {
       "id": 19,
       "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "1t",
       "slug": "apple-iphone-14-pro-gold",
       "price": 1499,
       "oldPrice": null,
@@ -638,20 +708,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "1t"
+      },
+      "type": "phones"
    },
    {
       "id": 20,
       "title": "Apple iPhone 11 128GB White (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "ips",
-      "screenSize": "64",
-      "protection": [
-         "ip67",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-11-white",
       "price": 510,
       "oldPrice": null,
@@ -661,20 +735,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "ips",
+         "screenSize": "64",
+         "protection": [
+            "ip67",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 21,
       "title": "Apple iPhone 11 128GB White (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "ips",
-      "screenSize": "64",
-      "protection": [
-         "ip67",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-11-white-2",
       "price": 550,
       "oldPrice": null,
@@ -684,20 +762,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "ips",
+         "screenSize": "64",
+         "protection": [
+            "ip67",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 22,
       "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-13-mini-pink",
       "price": 850,
       "oldPrice": null,
@@ -707,20 +789,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 23,
       "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "256g",
       "slug": "apple-iphone-14-pro-space-black",
       "price": 1399,
       "oldPrice": null,
@@ -730,20 +816,24 @@
       "images": {
          "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    },
    {
       "id": 24,
       "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "256g",
       "slug": "apple-iphone-14-pro-silver",
       "price": 1399,
       "oldPrice": null,
@@ -753,17 +843,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    },
    {
       "id": 25,
       "title": "Blackmagic Pocket Cinema Camera 6K",
       "brand": "blackmagic",
-      "battery": "5mah",
-      "screenType": "ips",
-      "screenSize": "69",
-      "protection": [],
-      "memory": "512g",
       "slug": "blackmagic-pocket-cinema-camera-6k",
       "price": 2535,
       "oldPrice": null,
@@ -773,19 +870,21 @@
       "images": {
          "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "blackmagic",
+         "battery": "5mah",
+         "screenType": "ips",
+         "screenSize": "69",
+         "protection": [],
+         "memory": "512g"
+      },
+      "type": "cameras"
    },
    {
       "id": 26,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -795,17 +894,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 27,
       "title": "AirPods Max Silver Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "ips",
-      "screenSize": "59",
-      "protection": [],
-      "memory": "64g",
       "slug": "airpods-max-silver-starlight-aluminium",
       "price": 549,
       "oldPrice": 599,
@@ -815,20 +920,21 @@
       "images": {
          "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "ips",
+         "screenSize": "59",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "headphones"
    },
    {
       "id": 28,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -838,21 +944,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 29,
       "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
       "brand": "samsung",
-      "battery": "5mah",
-      "screenType": "dynamicamoled",
-      "screenSize": "7more",
-      "protection": [
-         "ip68",
-         "waterresistant",
-         "dustresistant"
-      ],
-      "memory": "256g",
       "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
       "price": 1799,
       "oldPrice": 1999,
@@ -862,19 +971,25 @@
       "images": {
          "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "5mah",
+         "screenType": "dynamicamoled",
+         "screenSize": "7more",
+         "protection": [
+            "ip68",
+            "waterresistant",
+            "dustresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    },
    {
       "id": 30,
       "title": "Galaxy Buds FE Graphite",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "ips",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "galaxy-buds-fe-graphite",
       "price": 99.99,
       "oldPrice": 129.99,
@@ -884,17 +999,23 @@
       "images": {
          "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "ips",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "headphones"
    },
    {
       "id": 31,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -904,19 +1025,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 32,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -926,19 +1049,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 33,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -948,19 +1075,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 34,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -970,19 +1101,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 35,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -992,19 +1127,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 36,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
       "brand": "apple",
-      "battery": "3mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
@@ -1014,17 +1153,23 @@
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 37,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -1034,17 +1179,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 38,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -1054,17 +1203,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 39,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
       "brand": "apple",
-      "battery": "5mah",
-      "screenType": "retina",
-      "screenSize": "7more",
-      "protection": [],
-      "memory": "64g",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
@@ -1074,20 +1227,21 @@
       "images": {
          "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "5mah",
+         "screenType": "retina",
+         "screenSize": "7more",
+         "protection": [],
+         "memory": "64g"
+      },
+      "type": "computers"
    },
    {
       "id": 40,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -1097,20 +1251,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 41,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -1120,20 +1278,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 42,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
       "brand": "samsung",
-      "battery": "3mah",
-      "screenType": "superamoled",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "64g",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
@@ -1143,20 +1305,24 @@
       "images": {
          "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "superamoled",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "type": "smart-watches"
    },
    {
       "id": 43,
       "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "512g",
       "slug": "apple-iphone-14-pro-gold",
       "price": 1437,
       "oldPrice": null,
@@ -1166,20 +1332,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "512g"
+      },
+      "type": "phones"
    },
    {
       "id": 44,
       "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "1t",
       "slug": "apple-iphone-14-pro-gold",
       "price": 1499,
       "oldPrice": null,
@@ -1189,20 +1359,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "1t"
+      },
+      "type": "phones"
    },
    {
       "id": 45,
       "title": "Apple iPhone 11 128GB White (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "ips",
-      "screenSize": "64",
-      "protection": [
-         "ip67",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-11-white",
       "price": 510,
       "oldPrice": null,
@@ -1212,20 +1386,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "ips",
+         "screenSize": "64",
+         "protection": [
+            "ip67",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 46,
       "title": "Apple iPhone 11 128GB White (MQ233)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "ips",
-      "screenSize": "64",
-      "protection": [
-         "ip67",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-11-white-2",
       "price": 550,
       "oldPrice": null,
@@ -1235,20 +1413,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "ips",
+         "screenSize": "64",
+         "protection": [
+            "ip67",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 47,
       "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "59",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "128g",
       "slug": "apple-iphone-13-mini-pink",
       "price": 850,
       "oldPrice": null,
@@ -1258,20 +1440,24 @@
       "images": {
          "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "128g"
+      },
+      "type": "phones"
    },
    {
       "id": 48,
       "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "256g",
       "slug": "apple-iphone-14-pro-space-black",
       "price": 1399,
       "oldPrice": null,
@@ -1281,20 +1467,24 @@
       "images": {
          "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    },
    {
       "id": 49,
       "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
       "brand": "apple",
-      "battery": "4mah",
-      "screenType": "retina",
-      "screenSize": "69",
-      "protection": [
-         "ip68",
-         "waterresistant"
-      ],
-      "memory": "256g",
       "slug": "apple-iphone-14-pro-silver",
       "price": 1399,
       "oldPrice": null,
@@ -1304,6 +1494,18 @@
       "images": {
          "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
          "gallery": []
-      }
+      },
+      "filters": {
+         "brand": "apple",
+         "battery": "4mah",
+         "screenType": "retina",
+         "screenSize": "69",
+         "protection": [
+            "ip68",
+            "waterresistant"
+         ],
+         "memory": "256g"
+      },
+      "type": "phones"
    }
 ]

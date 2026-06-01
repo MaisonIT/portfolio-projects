@@ -15,7 +15,8 @@
       href="/img/icons/favicon.ico"
       type="image/x-icon"
       /> -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Swiper styles -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
    <!-- Заголовок сторінки в браузері -->
    <title>E-Commerce Cyber</title>
    <!-- Відкрити усі вкладки в новій вкладці -->
@@ -67,7 +68,7 @@
          </div>
       </header>
       <main class="main">
-         <section class="hero">
+         <section id="home" class="hero">
             <div class="hero__container">
                <div class="hero__items">
                   <div class="hero__item title-block">
@@ -77,7 +78,7 @@
                      <p class="title-block__about title-block__about--hero">Created to change everything for the
                         better. For everyone</p>
                      <div class="title-block__button buttons">
-                        <button class="buttons__button">Shop Now</button>
+                        <a href="products.html" class="buttons__button">Shop Now</a>
                      </div>
                   </div>
                   <div class="hero__img">
@@ -93,8 +94,8 @@
                      <img src="img/home/ps.webp" alt="Playstation Image">
                   </div>
                   <div class="promo-card__title title-block">
-                     <h3 class="title-block__title">Playstation <span class="title-block__span-fw-5">5</span>
-                     </h3>
+                     <h2 class="title-block__title">Playstation <span class="title-block__span-fw-5">5</span>
+                     </h2>
                      <p class="title-block__about">Incredibly powerful CPUs, GPUs, and an SSD
                         with integrated I/O will redefine your PlayStation experience.</p>
                   </div>
@@ -104,12 +105,12 @@
                      <img src="img/home/mac.webp" alt="MacBook Image">
                   </div>
                   <div class="promo-card__title title-block">
-                     <h3 class="title-block__title">Macbook <span class="title-block__span-fw-5">Air</span></h3>
+                     <h2 class="title-block__title">Macbook <span class="title-block__span-fw-5">Air</span></h2>
                      <p class="title-block__about">The new 15‑inch MacBook Air makes room
                         for
                         more of what you love with a spacious Liquid Retina display.</p>
                      <div class="title-block__button buttons">
-                        <button class="buttons__button">Shop Now</button>
+                        <a href="products.html" class="buttons__button">Shop Now</a>
                      </div>
                   </div>
                </div>
@@ -120,8 +121,8 @@
                            AirPods Max Image">
                      </div>
                      <div class="promo-card__title title-block">
-                        <h3 class="title-block__title">Apple
-                           AirPods <span class="title-block__span-fw-5">Max</span></h3>
+                        <h2 class="title-block__title">Apple
+                           AirPods <span class="title-block__span-fw-5">Max</span></h2>
                         <p class="title-block__about">Computational audio. Listen, it's powerful
                         </p>
                      </div>
@@ -132,8 +133,8 @@
                            Vision Pro Image">
                      </div>
                      <div class="promo-card__title title-block">
-                        <h3 class="title-block__title">Apple
-                           Vision <span class="title-block__span-fw-5">Pro</span></h3>
+                        <h2 class="title-block__title">Apple
+                           Vision <span class="title-block__span-fw-5">Pro</span></h2>
                         <p class="title-block__about">An immersive way to experience
                            entertainment</p>
                      </div>
@@ -156,7 +157,7 @@
                <div class="categories__body swiper swiper-categories">
                   <ul class="categories__items swiper-wrapper">
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="smartphones.html">
+                        <a class="categories__link" href="products.html?type=phones">
                            <div class="categories__icon">
                               <img src="img/home/icons/phones.svg" alt="Phones icon">
                            </div>
@@ -164,7 +165,7 @@
                         </a>
                      </li>
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="#">
+                        <a class="categories__link" href="products.html?type=smart-watches">
                            <div class="categories__icon">
                               <img src="img/home/icons/smart-watches.svg" alt="Smart
                            Watches icon">
@@ -174,7 +175,7 @@
                         </a>
                      </li>
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="#">
+                        <a class="categories__link" href="products.html?type=cameras">
                            <div class="categories__icon">
                               <img src="img/home/icons/cameras.svg" alt="Cameras
                            icon">
@@ -183,7 +184,7 @@
                         </a>
                      </li>
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="#">
+                        <a class="categories__link" href="products.html?type=headphones">
                            <div class="categories__icon">
                               <img src="img/home/icons/headphones.svg" alt="Headphones
                            icon">
@@ -192,7 +193,7 @@
                         </a>
                      </li>
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="#">
+                        <a class="categories__link" href="products.html?type=computers">
                            <div class="categories__icon">
                               <img src="img/home/icons/computers.svg" alt="Computers
                            icon">
@@ -201,7 +202,7 @@
                         </a>
                      </li>
                      <li class="categories__list swiper-slide">
-                        <a class="categories__link" href="#">
+                        <a class="categories__link" href="products.html?type=gaming">
                            <div class="categories__icon">
                               <img src="img/home/icons/gaming.svg" alt="Gaming
                            icon">
@@ -257,79 +258,6 @@
                   <span class="products__tab-line"></span>
                </div>
                <div class="products__items">
-                  <!-- <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div>
-                  <div class="products__item item-product">
-                     <button type="button" class="item-product__head -icon-like"></button>
-                     <div class="item-product__img"></div>
-                     <h3 class="item-product__title"></h3>
-                     <p class="item-product__price"></p>
-                     <div class="item-product__button buttons">
-                        <button class="buttons__button buttons__button--product">Buy Now</button>
-                     </div>
-                  </div> -->
-
                </div>
             </div>
          </section>
@@ -345,7 +273,7 @@
                         <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
                            performance, multitasking and ease of use.</p>
                         <div class="promo-banner__button buttons">
-                           <button class="buttons__button">Shop Now</button>
+                           <a href="smartphones.html" class="buttons__button">Shop Now</a>
                         </div>
                      </div>
                   </div>
@@ -358,7 +286,7 @@
                         <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
                            performance, multitasking and ease of use.</p>
                         <div class="promo-banner__button buttons">
-                           <button class="buttons__button">Shop Now</button>
+                           <a href="products.html" class="buttons__button">Shop Now</a>
                         </div>
                      </div>
                   </div>
@@ -371,7 +299,7 @@
                         <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
                            performance, multitasking and ease of use.</p>
                         <div class="promo-banner__button buttons">
-                           <button class="buttons__button">Shop Now</button>
+                           <a href="products.html" class="buttons__button">Shop Now</a>
                         </div>
                      </div>
                   </div>
@@ -384,7 +312,7 @@
                         <p class="promo-banner__about">iPad combines a magnificent 10.2-inch Retina display, incredible
                            performance, multitasking and ease of use.</p>
                         <div class="promo-banner__button buttons">
-                           <button class="buttons__button">Shop Now</button>
+                           <a href="products.html" class="buttons__button">Shop Now</a>
                         </div>
                      </div>
                   </div>
@@ -412,7 +340,7 @@
                </h2>
                <p class="advertising-banner__about">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
                <div class="advertising-banner__button buttons">
-                  <button class="buttons__button">Shop Now</button>
+                  <a href="products.html" class="buttons__button">Shop Now</a>
                </div>
             </div>
          </section>
@@ -421,7 +349,7 @@
          <div class="footer__container">
             <div class="footer__items">
                <div class="footer__logo logo">
-                  <strong class="logo__name">cyber</strong>
+                  <a href="#home" class="logo__link"><strong class="logo__name">cyber</strong></a>
                   <p class="logo__about">We are a residential interior design firm located in Portland. Our
                      boutique-studio offers more than</p>
                </div>

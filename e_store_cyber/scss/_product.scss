@@ -28,6 +28,9 @@
       flex-direction: column;
       gap: toRem(30);
 
+      width: 100%;
+      overflow: hidden;
+
       @media (min-width: toEm(768)) {
          flex-direction: row;
          gap: toRem(48);
@@ -52,6 +55,8 @@
    // .product__image-side-img
 
    &__image-side-img {
+      flex: 1;
+
       max-width: toRem(74);
       aspect-ratio: 74 / 93;
 
@@ -60,6 +65,10 @@
       opacity: 0.4;
 
       cursor: pointer;
+
+      img {
+         object-fit: contain;
+      }
 
       &.active {
          opacity: 1;
@@ -70,14 +79,19 @@
 
    &__image-main {
       order: 1;
-
-      flex: 1 0 toREm(513);
+      width: 100%;
 
       max-width: toRem(413);
       aspect-ratio: 413 / 516;
 
       @media (min-width: toEm(768)) {
          order: 2;
+
+         flex: 1 0 toRem(513);
+      }
+
+      img {
+         object-fit: contain;
       }
    }
 
@@ -164,6 +178,16 @@
       aspect-ratio: 1 / 1;
       border-radius: 50%;
       overflow: hidden;
+
+      cursor: pointer;
+
+      outline: 2px solid transparent;
+      outline-offset: toRem(3);
+      transition: outline-color 0.2s ease;
+
+      &.active {
+         outline-color: var(--color-black);
+      }
 
       // .product__list-link--black
       &--black {
@@ -687,40 +711,8 @@
 
 // rating stars
 .rating-stars {
-   position: relative;
-
-   width: toRem(120);
-   aspect-ratio: 120 / 24;
-
-   flex-shrink: 0;
-   // .rating-stars__empty
-
-   &__empty,
-   &__fill {
-      position: absolute;
-      inset-inline-start: 0;
-      inset-block-start: 0;
-
-      img {
-         display: block;
-
-         width: toRem(124);
-
-         height: toRem(24);
-
-         min-width: toRem(124);
-
-         flex-shrink: 0;
-      }
-   }
-
-   // .rating-stars__fill
-
-   &__fill {
-      overflow: hidden;
-
-      white-space: nowrap;
-   }
+   display: flex;
+   gap: toRem(4);
 }
 
 // testemonials
@@ -799,40 +791,8 @@
    // .testemonials__rate-stars
 
    &__rate-stars {
-      max-width: toRem(117);
-      aspect-ratio: 117 / 24;
-
-      position: relative;
-   }
-
-   // .testemonials__rate-star
-
-   &__rate-star {
-      // .testemonials__rate-star--empty
-      &--empty,
-      &--fill {
-         position: absolute;
-         inset-inline-start: 0;
-         inset-block-start: 0;
-      }
-
-      // .testemonials__rate-star--fill
-      &--fill {
-         overflow: hidden;
-
-         white-space: nowrap;
-         img {
-            display: block;
-
-            width: toRem(117);
-
-            height: toRem(24);
-
-            min-width: toRem(117);
-
-            flex-shrink: 0;
-         }
-      }
+      display: flex;
+      gap: toRem(4);
    }
 
    // .testemonials__date

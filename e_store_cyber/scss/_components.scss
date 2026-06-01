@@ -22,7 +22,7 @@
       padding-block: toRem(24);
       display: grid;
       // grid-template-columns: repeat(auto-fit, minmax(min(toRem(280), 100%), 1fr));
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: 1fr 1fr auto;
       gap: toRem(15);
       align-items: center;
       position: relative;
@@ -73,11 +73,7 @@
 
    &__actions {
       &.actions {
-         display: none;
-
-         @media (min-width: toEm(768)) {
-            display: flex;
-         }
+         display: flex;
       }
    }
 
@@ -235,7 +231,7 @@
    gap: toRem(5);
    width: toRem(25);
    position: relative;
-   z-index: 3;
+   z-index: 6;
 
    &.active {
       gap: 0;
@@ -306,7 +302,7 @@
 
    &__title {
       &--hero {
-         font-size: toRem(96);
+         font-size: clamp(4.5rem, 2.286vw + 3.943rem, 6rem);
          font-weight: 100;
          line-height: 72px; /* 75% */
          letter-spacing: -0.96px;
@@ -419,7 +415,11 @@
          border: 1px solid var(--color-black);
 
          padding-block: toRem(24);
-         padding-inline: toRem(86);
+         padding-inline: toRem(60);
+
+         @media (min-width: toEm(768)) {
+            padding-inline: toRem(86);
+         }
 
          // width: 100%;
       }
@@ -429,7 +429,11 @@
          background: var(--color-black);
 
          padding-block: toRem(24);
-         padding-inline: toRem(86);
+         padding-inline: toRem(60);
+
+         @media (min-width: toEm(768)) {
+            padding-inline: toRem(86);
+         }
 
          // width: 100%;
       }
@@ -545,7 +549,8 @@
 
    &__menu {
       padding-block: toRem(40);
-      display: none;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: toRem(16);
 
@@ -554,10 +559,6 @@
       // font-size: toRem(16);
       font-weight: 500;
       line-height: 1;
-
-      @media (min-width: toEm(768)) {
-         display: flex;
-      }
    }
 
    // .breadcrumbs__list
@@ -571,34 +572,34 @@
 
 // toast notification
 .toast {
-   padding: toRem(14) toRem(20);
+   position: fixed;
 
-   background-color: var(--color-black);
+   inset-block-start: toRem(20);
+   inset-inline-start: 50%;
 
-   color: var(--color-white);
+   transform: translateX(-50%);
+
+   z-index: 999999;
+
+   min-width: toRem(300);
+
+   padding: toRem(16) toRem(24);
 
    border-radius: toRem(12);
 
-   font-weight: 500;
+   background-color: var(--color-black);
+   color: var(--color-white);
 
    opacity: 0;
-
    visibility: hidden;
-
-   transform: translateY(-20px);
 
    transition:
       opacity 0.3s ease,
-      transform 0.3s ease,
-      visibility 0.3s ease;
-
-   pointer-events: none;
+      transform 0.3s ease;
 
    &.show {
       opacity: 1;
-
       visibility: visible;
-
-      transform: translateY(0);
+      transform: translateX(-50%) translateY(0);
    }
 }
