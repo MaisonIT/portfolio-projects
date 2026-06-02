@@ -72,7 +72,7 @@
                <ul class="breadcrumbs__menu">
                   <li class="breadcrumbs__list"><a class="breadcrumbs__link" href="index.html">Home</a></li>
                   <li class="breadcrumbs__list-svg -icon-arrow-2"></li>
-                  <li class="breadcrumbs__list"><a class="breadcrumbs__link" href="#">Catalog</a></li>
+                  <li class="breadcrumbs__list"><a class="breadcrumbs__link" href="products.html">Catalog</a></li>
                   <li class="breadcrumbs__list-svg -icon-arrow-2"></li>
                   <li class="breadcrumbs__list breadcrumbs__current active">All</li>
                </ul>
@@ -85,6 +85,51 @@
                   <div class="active-filters-mobile"></div>
                   <form class="side-filters__form form-catalog" action="#">
                      <div class="form-catalog__spoiler-body">
+                        <details class="form-catalog__filters-spoiler spoiler-filters">
+                           <summary class="spoiler-filters__title -icon-arrow-3">Category</summary>
+                           <div class="spoiler-filters__input-search search-input -icon-search">
+                              <input name="search" class="search-input__body search-input__body--category" type="search"
+                                 placeholder="Search">
+                           </div>
+                           <div class="spoiler-filters__body spoiler-filters__body--category">
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="phones" name="phones" type="checkbox"
+                                    data-filter="category" data-value="phones">
+                                 <label class="spoiler-filters__label" for="phones">Phones <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="smartwatches" name="smartwatches"
+                                    type="checkbox" data-filter="category" data-value="smart-watches">
+                                 <label class="spoiler-filters__label" for="smartwatches">Smart Watches <span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="cameras" name="cameras" type="checkbox"
+                                    data-filter="category" data-value="cameras">
+                                 <label class="spoiler-filters__label" for="cameras">Cameras<span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="headphones" name="headphones" type="checkbox"
+                                    data-filter="category" data-value="headphones">
+                                 <label class="spoiler-filters__label" for="headphones">Headphones<span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="computers" name="computers" type="checkbox"
+                                    data-filter="category" data-value="computers">
+                                 <label class="spoiler-filters__label" for="computers">Computers<span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                              <div class="spoiler-filters__block-input">
+                                 <input class="spoiler-filters__input" id="gaming" name="gaming" type="checkbox"
+                                    data-filter="category" data-value="gaming">
+                                 <label class="spoiler-filters__label" for="gaming">Gaming<span
+                                       class="spoiler-filters__count"></span></label>
+                              </div>
+                           </div>
+                        </details>
                         <details class="form-catalog__filters-spoiler spoiler-filters">
                            <summary class="spoiler-filters__title -icon-arrow-3">Price</summary>
                            <div class="spoiler-filters__body spoiler-filters__body--price">

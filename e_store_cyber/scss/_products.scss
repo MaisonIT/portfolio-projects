@@ -13,7 +13,7 @@
       gap: toRem(32);
 
       padding-block-end: toRem(45);
-      padding-block-start: toRem(45);
+      padding-block-start: toRem(24);
 
       @media (min-width: toEm(768)) {
          padding-block-end: toRem(56);
@@ -594,8 +594,11 @@
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin: 20px 0;
    }
+}
+
+.active-filters-mobile[hidden] {
+   display: none;
 }
 
 .cart-body__minus:disabled {

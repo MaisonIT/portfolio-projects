@@ -128,6 +128,9 @@ function loadPage() {
 
    // стрілка на гору
    initScrollTop();
+
+   // like on card
+   likeOnCard()
 }
 
 // burger
@@ -336,7 +339,39 @@ function productsRender() {
       allProducts = products;
       initFilters()
 
-      const params = new URLSearchParams(window.location.search); const currentType = params.get('type'); if (currentType) { const filteredProducts = allProducts.filter(product => product.type === currentType); if (document.querySelector('.catalog__items')) { paginateProducts(filteredProducts); } else { renderProducts(filteredProducts); } return; }
+      const params = new URLSearchParams(window.location.search);
+      const currentType = params.get('type')
+
+      if (currentType) {
+         const filteredProducts = allProducts.filter(product => product.type === currentType)
+         if (document.querySelector('.catalog__items')) {
+            paginateProducts(filteredProducts)
+         } else {
+            renderProducts(filteredProducts)
+         } return
+      }
+
+      const filter = params.get('filter');
+      const value = params.get('value');
+
+      if (filter && value) {
+         const filteredProducts = allProducts.filter(product => {
+
+            if (Array.isArray(product.filters?.[filter])) {
+               return product.filters[filter].includes(value);
+            }
+
+            return product.filters?.[filter] === value;
+         });
+
+         if (document.querySelector('.catalog__items')) {
+            paginateProducts(filteredProducts);
+         } else {
+            renderProducts(filteredProducts);
+         }
+
+         return;
+      }
 
       let filteredProducts =
          allProducts;
@@ -1105,7 +1140,7 @@ function applyFilters() {
 
    checkedInputs.forEach(input => {
       const filterType = input.dataset.filter
-      const filterValue = input.id
+      const filterValue = input.dataset.value || input.id
       if (!activeFilters[filterType]) activeFilters[filterType] = []
       activeFilters[filterType].push(filterValue)
    })
@@ -1120,10 +1155,17 @@ function applyFilters() {
 
       // інші фільтри
       return Object.entries(activeFilters).every(([key, values]) => {
-         if (Array.isArray(product.filters?.[key])) {
-            return product.filters?.[key].some(item => values.includes(item))
+
+         if (key === 'category') {
+            return values.includes(product.type)
          }
+
+         if (Array.isArray(product.filters?.[key])) {
+            return product.filters[key].some(item => values.includes(item))
+         }
+
          return values.includes(product.filters?.[key])
+
       })
    })
 
@@ -1141,14 +1183,19 @@ function updateFiltersCount(products = allProducts) {
 
       const filterType = input.dataset.filter;
 
-      const filterValue = input.id;
+      const filterValue = input.dataset.value || input.id
 
       const count = products.filter(product => {
+
+         if (filterType === 'category') {
+            return product.type === filterValue;
+         }
 
          if (Array.isArray(product.filters?.[filterType])) {
             return product.filters[filterType]?.includes(filterValue);
          }
-         return (product.filters?.[filterType] === filterValue);
+
+         return product.filters?.[filterType] === filterValue;
 
       }).length;
 
@@ -1721,6 +1768,8 @@ async function loadProductPage() {
    renderProductReviews(currentProduct);
 
    initAddToCart(currentProduct);
+
+   renderProductBreadcrumbs(currentProduct);
 }
 
 // product-gallery
@@ -1730,7 +1779,7 @@ function renderProductGallery(product) {
 
    if (!sideGallery || !swiperWrapper) return
 
-   const allImages = [product.images.main, ...product.images.gallery]
+   const allImages = [product.images?.main, ...(product.images?.gallery || [])].filter(Boolean);
 
    // рендеримо слайди для свайпера
    swiperWrapper.innerHTML = allImages.map((image, index) => `
@@ -1854,6 +1903,8 @@ function renderProductColors(product) {
 
    colorsList.innerHTML = '';
 
+   if (!product.colors?.length) return;
+
    product.colors.forEach(
       (color, index) => {
 
@@ -1914,6 +1965,8 @@ function renderProductMemory(product) {
 
    memoryList.innerHTML = '';
 
+   if (!product.memoryOptions?.length) return;
+
    product.memoryOptions
       .forEach(
          (memory, index) => {
@@ -1964,6 +2017,8 @@ function renderProductMemory(product) {
 
 // product-details
 function renderProductDetails(product) {
+
+   if (!product.specifications) return;
 
    const detailsList =
       document.querySelector(
@@ -2567,6 +2622,8 @@ function renderProductCharacteristics(product) {
 // reviews summary
 function renderReviewsSummary(product) {
 
+   if (!product.reviewsSummary) return;
+
    const reviewsSide =
       document.querySelector(
          '.reviews__side'
@@ -2577,9 +2634,7 @@ function renderReviewsSummary(product) {
          '.reviews__rating-chart'
       );
 
-   if (
-      !reviewsSide ||
-      !chart
+   if (!reviewsSide || !chart
    ) return;
 
    const ratingWidth =
@@ -2737,6 +2792,8 @@ function renderProductReviews(product) {
    ) return;
 
    reviewsContainer.innerHTML = '';
+
+   if (!product.reviews?.length) return;
 
    product.reviews.forEach(
       review => {
@@ -4400,42 +4457,72 @@ function showToast(message) {
 function updateBreadcrumbs() {
 
    const currentBreadcrumb =
-      document.querySelector(
-         '.breadcrumbs__current'
-      );
+      document.querySelector('.breadcrumbs__current');
 
    if (!currentBreadcrumb) return;
 
    const params =
-      new URLSearchParams(
-         window.location.search
-      );
+      new URLSearchParams(window.location.search);
 
-   const currentType =
-      params.get('type');
+   const currentType = params.get('type');
+   const filter = params.get('filter');
+   const value = params.get('value');
+
+   if (filter === 'brand' && value) {
+      const brandName = value.charAt(0).toUpperCase() + value.slice(1);
+      currentBreadcrumb.textContent = brandName;
+
+      return;
+   }
 
    if (!currentType) return;
 
    const categoryNames = {
-
       phones: 'Phones',
-
-      'smart-watches':
-         'Smart Watches',
-
+      'smart-watches': 'Smart Watches',
       cameras: 'Cameras',
-
       headphones: 'Headphones',
-
       computers: 'Computers',
-
       gaming: 'Gaming'
-
    };
 
    currentBreadcrumb.textContent =
-      categoryNames[currentType] ||
-      'Catalog';
+      categoryNames[currentType] || 'Catalog';
+
+}
+
+function renderProductBreadcrumbs(product) {
+
+   const breadcrumbs = document.querySelectorAll('.breadcrumbs__list');
+
+   if (breadcrumbs.length < 5) return;
+
+   breadcrumbs[2].innerHTML = `
+      <a class="breadcrumbs__link" href="products.html?type=${product.type}">
+         ${product.type === 'phones' ? 'Phones' :
+         product.type === 'smart-watches' ? 'Smart Watches' :
+            product.type === 'cameras' ? 'Cameras' :
+               product.type === 'headphones' ? 'Headphones' :
+                  product.type === 'computers' ? 'Computers' :
+                     product.type === 'gaming' ? 'Gaming' :
+                        'Catalog'}
+      </a>
+   `;
+
+   const brandName =
+      product.filters.brand.charAt(0).toUpperCase() +
+      product.filters.brand.slice(1);
+
+   function capitalize(text) {
+      return text.charAt(0).toUpperCase() + text.slice(1);
+   }
+
+   breadcrumbs[3].innerHTML = `
+   <a class="breadcrumbs__link" href="products.html?filter=brand&value=${product.filters.brand}">
+         ${capitalize(product.filters.brand)}
+   </a>`;
+
+   breadcrumbs[4].textContent = product.title;
 
 }
 
@@ -4506,6 +4593,24 @@ function initScrollTop() {
          top: 0,
          behavior: 'smooth'
       });
+   });
+
+}
+
+// like in card
+function likeOnCard() {
+   document.addEventListener('click', e => {
+
+      const button = e.target.closest('.item-product__head');
+
+      if (!button) return;
+
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+
+      button.classList.toggle('active');
+
    });
 
 }

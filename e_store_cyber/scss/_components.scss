@@ -635,3 +635,8 @@
 .scroll-top::before {
    transform: rotate(90deg);
 }
+
+// liked
+.item-product__head.active svg path {
+   fill: red;
+}

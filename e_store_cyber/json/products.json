@@ -4,7 +4,7 @@
       "title": "Apple iPhone 14 Pro Max",
       "slug": "apple-iphone-14-pro-max",
       "category": "new-arrival",
-      "brand": "apple",
+      "brand": "Apple",
       "price": 1399,
       "oldPrice": 1499,
       "discount": false,
@@ -28,7 +28,7 @@
          "flagship",
          "oled"
       ],
-      "description": "Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.",
+      "description": "Enhanced capabilities thanks to an enlarged 6.7-inch display and the powerful A16 Bionic chip. Capture stunning photos in low light conditions and enjoy smooth performance throughout the day.",
       "filters": {
          "battery": "4mah",
          "screenType": "retina",
@@ -169,39 +169,7 @@
             "avatar": "img/testemonials/grace.webp",
             "rating": 5,
             "date": "24 January, 2023",
-            "text": "I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤"
-         },
-         {
-            "name": "Ronald Richards",
-            "avatar": "img/testemonials/ronald.webp",
-            "rating": 5,
-            "date": "24 January, 2023",
-            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
-         },
-         {
-            "name": "Darcy King",
-            "avatar": "img/testemonials/darcy.webp",
-            "rating": 4,
-            "date": "24 January, 2023",
-            "text": "I might be the only one to say this but the camera is a little funky. Hoping it will change with a software update: otherwise, love this phone! Came in great condition",
-            "images": [
-               "img/testemonials/darcyrev/review1.webp",
-               "img/testemonials/darcyrev/review2.webp"
-            ]
-         },
-         {
-            "name": "Ronald Richards",
-            "avatar": "img/testemonials/ronald.webp",
-            "rating": 5,
-            "date": "24 January, 2023",
-            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
-         },
-         {
-            "name": "Ronald Richards",
-            "avatar": "img/testemonials/ronald.webp",
-            "rating": 2,
-            "date": "24 January, 2023",
-            "text": "This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an iPhone 14 pro max and get several cords and plugs."
+            "text": "I bought an Unlocked black iPhone 14 Pro Max in excellent condition and everything is PERFECT. It was super easy to set up and the phone works and looks great."
          }
       ],
       "type": "phones"
@@ -209,17 +177,33 @@
    {
       "id": 2,
       "title": "Blackmagic Pocket Cinema Camera 6K",
-      "brand": "blackmagic",
+      "brand": "Blackmagic",
       "slug": "blackmagic-pocket-cinema-camera-6k",
       "price": 2535,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 42,
+      "reviewsSummary": {
+         "excellent": 32,
+         "good": 6,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "BM-PCC6K",
+      "tags": [
+         "camera",
+         "cinema",
+         "6k",
+         "blackmagic",
+         "video"
+      ],
+      "description": "Features a Super 35 size sensor, 13 stops of dynamic range and dual native ISO up to 25,600 for incredible low light performance and stunning HDR images.",
       "filters": {
          "brand": "blackmagic",
          "battery": "5mah",
@@ -228,22 +212,152 @@
          "protection": [],
          "memory": "512g"
       },
+      "colors": [
+         {
+            "name": "Carbon Black",
+            "value": "#1C1B1F"
+         }
+      ],
+      "memoryOptions": [
+         "SD Card",
+         "CFast 2.0",
+         "External USB-C Drive"
+      ],
+      "images": {
+         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
+         "gallery": [
+            "img/catalog/blackmagic-pocket-cinema-camera-6k/second.webp",
+            "img/catalog/blackmagic-pocket-cinema-camera-6k/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "5.0″",
+            "resolution": "1920×1080",
+            "refreshRate": "60Hz",
+            "brightness": "1500 nits",
+            "pixelDensity": "441 ppi",
+            "type": "LCD Touchscreen",
+            "additionalFeatures": [
+               "Tiltable screen",
+               "On-screen overlays",
+               "Focus peaking"
+            ]
+         },
+         "system": {
+            "os": "Blackmagic OS",
+            "processor": "Custom Processing Engine",
+            "cores": 0,
+            "neuralEngine": "None",
+            "ram": "N/A"
+         },
+         "camera": {
+            "main": "6144 x 3456",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "Depends on Lens",
+            "videoRecording": "6K 50fps",
+            "slowMotion": "120fps",
+            "nightMode": "Dual Native ISO",
+            "cinematicMode": "Yes",
+            "smartHDR": "Gen 5 Color Science"
+         },
+         "battery": {
+            "capacity": "5000 mAh",
+            "fastCharging": "Via DC input",
+            "wirelessCharging": "No",
+            "videoPlayback": "Up to 60 min recording",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "No",
+            "bluetooth": "Yes",
+            "nfc": "No",
+            "gps": "No",
+            "connector": "USB-C / HDMI / Mini XLR"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Carbon fiber polycarbonate composite",
+            "frontPanel": "N/A",
+            "backMaterial": "Composite plastic",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "123 mm",
+            "width": "179 mm",
+            "thickness": "112 mm",
+            "weight": "898 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "No",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "No",
+            "proximitySensor": "No"
+         },
+         "additionalFeatures": [
+            "DaVinci Resolve Studio included",
+            "Blackmagic RAW",
+            "Active EF Lens Mount"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "2-3 days"
+      },
+      "warranty": {
+         "years": 2
+      },
+      "reviews": [
+         {
+            "name": "Alex Miller",
+            "avatar": "img/testemonials/alex.webp",
+            "rating": 5,
+            "date": "12 March, 2024",
+            "text": "The 6K BRAW footage out of this pocket camera is cinematic magic. Incredible dynamic range for the price!"
+         }
+      ],
       "type": "cameras"
    },
    {
       "id": 3,
       "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 84,
+      "reviewsSummary": {
+         "excellent": 62,
+         "good": 15,
+         "average": 4,
+         "belowAverage": 2,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3",
+      "tags": [
+         "smartwatch",
+         "apple",
+         "watchos",
+         "fitness",
+         "starlight"
+      ],
+      "description": "S9 SiP enables a superb bright display and a magical new way to quickly and easily use your Apple Watch without touching the screen using double tap.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -254,22 +368,160 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         },
+         {
+            "name": "Midnight",
+            "value": "#1C232B"
+         },
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": [
+            "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/second.webp",
+            "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.7″",
+            "resolution": "352×430",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "326 ppi",
+            "type": "Always-On Retina LTPO OLED",
+            "additionalFeatures": [
+               "Edge-to-edge display",
+               "Ion-X glass front"
+            ]
+         },
+         "system": {
+            "os": "watchOS 10",
+            "processor": "Apple S9 SiP",
+            "cores": 2,
+            "neuralEngine": "4-core",
+            "ram": "1 GB"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "282 mAh",
+            "fastCharging": "Yes, up to 80% in 45 min",
+            "wirelessCharging": "Magnetic Charger",
+            "videoPlayback": "N/A",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "None (GPS Only)",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 4",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Magnetic to USB-C"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Aluminium",
+            "frontPanel": "Ion-X glass",
+            "backMaterial": "Ceramic and sapphire crystal back",
+            "protection": "WR50 (50m water resistant), IP6X"
+         },
+         "dimensions": {
+            "height": "41 mm",
+            "width": "35 mm",
+            "thickness": "10.7 mm",
+            "weight": "32 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No",
+            "bloodOxygen": "Yes",
+            "heartRate": "Yes"
+         },
+         "additionalFeatures": [
+            "Double Tap gesture",
+            "ECG app",
+            "Temperature sensing",
+            "GymKit"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "Sarah Connor",
+            "avatar": "img/testemonials/sarah.webp",
+            "rating": 5,
+            "date": "10 January, 2024",
+            "text": "The double tap feature is surprisingly useful when cooking. Love the Starlight finish!"
+         }
+      ],
       "type": "smart-watches"
    },
    {
       "id": 4,
       "title": "AirPods Max Silver Starlight Aluminium",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "airpods-max-silver-starlight-aluminium",
       "price": 549,
       "oldPrice": 599,
       "discount": true,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 210,
+      "reviewsSummary": {
+         "excellent": 170,
+         "good": 25,
+         "average": 10,
+         "belowAverage": 3,
+         "poor": 2
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MGYJ3",
+      "tags": [
+         "headphones",
+         "apple",
+         "audio",
+         "anc",
+         "overear"
+      ],
+      "description": "Over-ear headphones completely reimagined. From cushion to canopy, AirPods Max are designed for an uncompromising fit that creates the optimal acoustic seal.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -278,24 +530,151 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         },
+         {
+            "name": "Space Gray",
+            "value": "#3C3D3A"
+         }
+      ],
+      "memoryOptions": [],
+      "images": {
+         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
+         "gallery": [
+            "img/catalog/airpods-max-silver-starlight-aluminium/second.webp",
+            "img/catalog/airpods-max-silver-starlight-aluminium/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "N/A",
+            "resolution": "N/A",
+            "refreshRate": "N/A",
+            "brightness": "N/A",
+            "pixelDensity": "N/A",
+            "type": "N/A",
+            "additionalFeatures": []
+         },
+         "system": {
+            "os": "Audio OS",
+            "processor": "Apple H1 chip (each earcup)",
+            "cores": 0,
+            "neuralEngine": "None",
+            "ram": "N/A"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "664 mAh",
+            "fastCharging": "5 mins gives 1.5 hrs listening",
+            "wirelessCharging": "No",
+            "videoPlayback": "N/A",
+            "audioPlayback": "Up to 20 hours"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "No",
+            "bluetooth": "5.0",
+            "nfc": "No",
+            "gps": "No",
+            "connector": "Lightning"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Stainless steel / Aluminum",
+            "frontPanel": "N/A",
+            "backMaterial": "N/A",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "187.3 mm",
+            "width": "168.6 mm",
+            "thickness": "83.4 mm",
+            "weight": "384.8 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "No",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "No",
+            "proximitySensor": "Yes (Position sensor)"
+         },
+         "additionalFeatures": [
+            "Active Noise Cancellation",
+            "Transparency mode",
+            "Personalized Spatial Audio",
+            "Adaptive EQ"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "John Doe",
+            "avatar": "img/testemonials/john.webp",
+            "rating": 4,
+            "date": "15 February, 2024",
+            "text": "The ANC is the best I have ever experienced. A bit heavy on the head but premium build."
+         }
+      ],
       "type": "headphones"
    },
    {
       "id": 5,
       "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
+      "brand": "Samsung",
       "slug": "samsung-galaxy-watch6-classic-47mm-black",
       "price": 369,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
+      "rating": 4.5,
+      "reviewsCount": 92,
+      "reviewsSummary": {
+         "excellent": 68,
+         "good": 14,
+         "average": 5,
+         "belowAverage": 3,
+         "poor": 2
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R960",
+      "tags": [
+         "smartwatch",
+         "samsung",
+         "wearos",
+         "classic",
+         "rotating-bezel"
+      ],
+      "description": "The rotating bezel is back. Meet the watch that stands the test of time with a larger screen, custom workout tracking, and sleek stainless steel frame.",
       "filters": {
-         "brand": "samsung",
+         "brand": "Samsung",
          "battery": "3mah",
          "screenType": "superamoled",
          "screenSize": "59",
@@ -305,24 +684,158 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Black",
+            "value": "#212121"
+         },
+         {
+            "name": "Silver",
+            "value": "#CCCCCC"
+         }
+      ],
+      "memoryOptions": [
+         "16GB"
+      ],
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": [
+            "img/catalog/samsung-galaxy-watch6-classic-47mm-black/second.webp",
+            "img/catalog/samsung-galaxy-watch6-classic-47mm-black/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.5″",
+            "resolution": "480×480",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "453 ppi",
+            "type": "Super AMOLED",
+            "additionalFeatures": [
+               "Always-on display",
+               "Sapphire crystal protection"
+            ]
+         },
+         "system": {
+            "os": "Android Wear OS 4",
+            "processor": "Exynos W930",
+            "cores": 2,
+            "neuralEngine": "None",
+            "ram": "2 GB"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "425 mAh",
+            "fastCharging": "Yes, WPC wireless fast charging",
+            "wirelessCharging": "Yes",
+            "videoPlayback": "N/A",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "None (Bluetooth version)",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 4",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Wireless Dock"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Stainless Steel",
+            "frontPanel": "Sapphire Crystal",
+            "backMaterial": "3D Ceramic",
+            "protection": "IP68, 5ATM, MIL-STD-810H"
+         },
+         "dimensions": {
+            "height": "46.5 mm",
+            "width": "46.5 mm",
+            "thickness": "10.9 mm",
+            "weight": "59 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No",
+            "bioelectricalImpedance": "Yes",
+            "opticalHeartRate": "Yes"
+         },
+         "additionalFeatures": [
+            "Physical rotating bezel",
+            "Body Composition analysis",
+            "Sleep coaching",
+            "Samsung Pay"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "Michael Scott",
+            "avatar": "img/testemonials/michael.webp",
+            "rating": 5,
+            "date": "05 March, 2024",
+            "text": "The classic physical dial is awesome. WearOS handles apps gracefully."
+         }
+      ],
       "type": "smart-watches"
    },
    {
       "id": 6,
       "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
-      "brand": "samsung",
+      "brand": "Samsung",
       "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
       "price": 1799,
       "oldPrice": 1999,
       "discount": false,
       "liked": true,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 140,
+      "reviewsSummary": {
+         "excellent": 110,
+         "good": 20,
+         "average": 6,
+         "belowAverage": 3,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-F946B",
+      "tags": [
+         "smartphone",
+         "samsung",
+         "foldable",
+         "flagship",
+         "amoled"
+      ],
+      "description": "The ultimate 7.6″ multi-tasking screen. Fold it up, slide it in your pocket, and enjoy massive PC-like power everywhere you go.",
       "filters": {
-         "brand": "samsung",
+         "brand": "Samsung",
          "battery": "5mah",
          "screenType": "dynamicamoled",
          "screenSize": "7more",
@@ -333,24 +846,158 @@
          ],
          "memory": "256g"
       },
+      "colors": [
+         {
+            "name": "Phantom Black",
+            "value": "#1A1A1A"
+         },
+         {
+            "name": "Icy Blue",
+            "value": "#A9C2D4"
+         }
+      ],
+      "memoryOptions": [
+         "256GB",
+         "512GB",
+         "1TB"
+      ],
+      "images": {
+         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
+         "gallery": [
+            "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/second.webp",
+            "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "7.6″ (Main)",
+            "resolution": "2176×1812",
+            "refreshRate": "120Hz",
+            "brightness": "1750 nits",
+            "pixelDensity": "374 ppi",
+            "type": "Foldable Dynamic AMOLED 2X",
+            "additionalFeatures": [
+               "6.2″ Cover Screen",
+               "S Pen support",
+               "HDR10+"
+            ]
+         },
+         "system": {
+            "os": "Android 13",
+            "processor": "Snapdragon 8 Gen 2 for Galaxy",
+            "cores": 8,
+            "neuralEngine": "Qualcomm AI Engine",
+            "ram": "12 GB"
+         },
+         "camera": {
+            "main": "50 MP",
+            "ultrawide": "12 MP",
+            "telephoto": "10 MP",
+            "front": "4 MP Under Display + 10 MP Cover",
+            "opticalZoom": "3x",
+            "videoRecording": "8K 24fps / 4K 60fps",
+            "slowMotion": "960fps",
+            "nightMode": "Yes (Nightography)",
+            "cinematicMode": "Yes",
+            "smartHDR": "Auto HDR"
+         },
+         "battery": {
+            "capacity": "4400 mAh",
+            "fastCharging": "25W, 50% in 30 min",
+            "wirelessCharging": "Fast Wireless Charging 2.0",
+            "videoPlayback": "Up to 21 hours",
+            "audioPlayback": "Up to 73 hours"
+         },
+         "connectivity": {
+            "simFormat": "Nano-SIM + eSIM",
+            "mobileNetwork": "5G",
+            "wifi": "Wi-Fi 6E / 7 ready",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "USB Type-C 3.2"
+         },
+         "security": {
+            "faceId": "No (Side Fingerprint)",
+            "emergencySOS": "Yes",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Armor Aluminum",
+            "frontPanel": "Gorilla Glass Victus 2",
+            "backMaterial": "Gorilla Glass Victus 2",
+            "protection": "IPX8 water resistant"
+         },
+         "dimensions": {
+            "height": "154.9 mm",
+            "width": "129.9 mm (unfolded)",
+            "thickness": "6.1 mm (unfolded)",
+            "weight": "253 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "Yes"
+         },
+         "additionalFeatures": [
+            "Samsung DeX support",
+            "Flex Mode",
+            "Stereo speakers tuned by AKG"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "David Tennant",
+            "avatar": "img/testemonials/david.webp",
+            "rating": 5,
+            "date": "18 February, 2024",
+            "text": "The gapless hinge is a great refinement. Productivity monster."
+         }
+      ],
       "type": "phones"
    },
    {
       "id": 7,
       "title": "Galaxy Buds FE Graphite",
-      "brand": "samsung",
+      "brand": "Samsung",
       "slug": "galaxy-buds-fe-graphite",
       "price": 99.99,
       "oldPrice": 129.99,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
-         "gallery": []
+      "rating": 4.4,
+      "reviewsCount": 65,
+      "reviewsSummary": {
+         "excellent": 40,
+         "good": 15,
+         "average": 5,
+         "belowAverage": 3,
+         "poor": 2
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R400N",
+      "tags": [
+         "earbugs",
+         "samsung",
+         "audio",
+         "anc",
+         "wireless"
+      ],
+      "description": "Your everyday audio companion. Galaxy Buds FE bring modern Active Noise Cancellation and a comfortable wingtip design to your daily routine.",
       "filters": {
-         "brand": "samsung",
+         "brand": "Samsung",
          "battery": "3mah",
          "screenType": "ips",
          "screenSize": "59",
@@ -359,22 +1006,147 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Graphite",
+            "value": "#2E2E31"
+         },
+         {
+            "name": "White",
+            "value": "#F5F5F5"
+         }
+      ],
+      "memoryOptions": [],
+      "images": {
+         "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
+         "gallery": [
+            "img/catalog/galaxy-buds-fe-graphite/second.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "N/A",
+            "resolution": "N/A",
+            "refreshRate": "N/A",
+            "brightness": "N/A",
+            "pixelDensity": "N/A",
+            "type": "N/A",
+            "additionalFeatures": []
+         },
+         "system": {
+            "os": "RTOS",
+            "processor": "BES2500ZP",
+            "cores": 0,
+            "neuralEngine": "None",
+            "ram": "N/A"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "60 mAh (buds) / 479 mAh (case)",
+            "fastCharging": "Yes",
+            "wirelessCharging": "No",
+            "videoPlayback": "N/A",
+            "audioPlayback": "Up to 8.5 hours (ANC off)"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "No",
+            "bluetooth": "5.2",
+            "nfc": "No",
+            "gps": "No",
+            "connector": "USB-C"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Plastic",
+            "frontPanel": "N/A",
+            "backMaterial": "N/A",
+            "protection": "IPX2 water resistant"
+         },
+         "dimensions": {
+            "height": "19.2 mm",
+            "width": "17.1 mm",
+            "thickness": "22.2 mm",
+            "weight": "5.6 g (each bud)"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "No",
+            "gyroscope": "No",
+            "ambientLightSensor": "No",
+            "proximitySensor": "Yes (Hall & Touch)"
+         },
+         "additionalFeatures": [
+            "Active Noise Cancellation",
+            "Ambient Sound Mode",
+            "Auto Switch with Galaxy devices"
+         ]
+      },
+      "delivery": {
+         "free": false,
+         "estimated": "2-3 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "Amy Pond",
+            "avatar": "img/testemonials/amy.webp",
+            "rating": 4,
+            "date": "20 February, 2024",
+            "text": "The fit is amazing with the wingtips. Bass response is punchy."
+         }
+      ],
       "type": "headphones"
    },
    {
       "id": 8,
       "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
       "price": 398,
       "oldPrice": 450,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 450,
+      "reviewsSummary": {
+         "excellent": 380,
+         "good": 50,
+         "average": 15,
+         "belowAverage": 3,
+         "poor": 2
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MK2L3",
+      "tags": [
+         "tablet",
+         "apple",
+         "ipad",
+         "ios",
+         "retina"
+      ],
+      "description": "Powerful. Easy to use. Versatile. Designed for all the things you love to do. Work, play, create, learn, stay connected, and more. All at an incredible value.",
       "filters": {
          "brand": "apple",
          "battery": "5mah",
@@ -383,48 +1155,154 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         },
+         {
+            "name": "Space Gray",
+            "value": "#3C3D3A"
+         }
+      ],
+      "memoryOptions": [
+         "64GB",
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": [
+            "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/second.webp",
+            "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/third.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "10.2″",
+            "resolution": "2160×1620",
+            "refreshRate": "60Hz",
+            "brightness": "500 nits",
+            "pixelDensity": "264 ppi",
+            "type": "Retina IPS LCD",
+            "additionalFeatures": [
+               "True Tone display",
+               "Apple Pencil (1st gen) support"
+            ]
+         },
+         "system": {
+            "os": "iPadOS 15",
+            "processor": "Apple A13 Bionic",
+            "cores": 6,
+            "neuralEngine": "8-core",
+            "ram": "3 GB"
+         },
+         "camera": {
+            "main": "8 MP",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "12 MP Ultra Wide",
+            "opticalZoom": "No",
+            "videoRecording": "1080p 30fps",
+            "slowMotion": "120fps",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "HDR for photos"
+         },
+         "battery": {
+            "capacity": "8557 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "No",
+            "videoPlayback": "Up to 10 hours",
+            "audioPlayback": "Up to 10 hours"
+         },
+         "connectivity": {
+            "simFormat": "None (Wi-Fi version)",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 5",
+            "bluetooth": "4.2",
+            "nfc": "No",
+            "gps": "No",
+            "connector": "Lightning"
+         },
+         "security": {
+            "faceId": "No (Touch ID)",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Aluminum",
+            "frontPanel": "Glass",
+            "backMaterial": "Aluminum",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "250.6 mm",
+            "width": "174.1 mm",
+            "thickness": "7.5 mm",
+            "weight": "487 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No"
+         },
+         "additionalFeatures": [
+            "Stereo speakers",
+            "Center Stage front camera",
+            "3.5mm headphone jack"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [
+         {
+            "name": "Clara Oswald",
+            "avatar": "img/testemonials/clara.webp",
+            "rating": 5,
+            "date": "24 February, 2024",
+            "text": "Best entry-level tablet. Perfect for watching Netflix and drawing with Apple Pencil."
+         }
+      ],
       "type": "computers"
    },
    {
-      "id": 3,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
-      "price": 399,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "3mah",
-         "screenType": "retina",
-         "screenSize": "59",
-         "protection": [
-            "waterresistant"
-         ],
-         "memory": "64g"
-      },
-      "type": "smart-watches"
-   },
-   {
       "id": 9,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm Midnight Aluminium",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-midnight-aluminium",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 48,
+      "reviewsSummary": {
+         "excellent": 35,
+         "good": 8,
+         "average": 3,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T4",
+      "tags": [
+         "smartwatch",
+         "apple",
+         "watchos",
+         "fitness",
+         "midnight"
+      ],
+      "description": "S9 SiP enables a superb bright display and a magical new way to quickly and easily use your Apple Watch without touching the screen using double tap.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -435,22 +1313,138 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Midnight",
+            "value": "#1C232B"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": [
+            "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/second.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.7″",
+            "resolution": "352×430",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "326 ppi",
+            "type": "Always-On Retina LTPO OLED",
+            "additionalFeatures": [
+               "Edge-to-edge display"
+            ]
+         },
+         "system": {
+            "os": "watchOS 10",
+            "processor": "Apple S9 SiP",
+            "cores": 2,
+            "neuralEngine": "4-core",
+            "ram": "1 GB"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "282 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "Magnetic",
+            "videoPlayback": "N/A",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 4",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Magnetic to USB-C"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Aluminium",
+            "frontPanel": "Ion-X glass",
+            "backMaterial": "Ceramic back",
+            "protection": "WR50, IP6X"
+         },
+         "dimensions": {
+            "height": "41 mm",
+            "width": "35 mm",
+            "thickness": "10.7 mm",
+            "weight": "32 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No",
+            "heartRate": "Yes"
+         },
+         "additionalFeatures": [
+            "Double Tap gesture",
+            "ECG App"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 10,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
-      "price": 399,
+      "title": "Apple Watch Series 9 GPS 45mm Starlight Aluminium",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-45mm-starlight-aluminium",
+      "price": 429,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 55,
+      "reviewsSummary": {
+         "excellent": 45,
+         "good": 6,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T5",
+      "tags": [
+         "smartwatch",
+         "apple",
+         "watchos",
+         "fitness"
+      ],
+      "description": "S9 SiP enables a larger 45mm screen size. More real estate to see health data notifications at a single glance.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -461,48 +1455,136 @@
          ],
          "memory": "64g"
       },
-      "type": "smart-watches"
-   },
-   {
-      "id": 11,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
-      "price": 399,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "new-arrival",
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
          "gallery": []
       },
-      "filters": {
-         "brand": "apple",
-         "battery": "3mah",
-         "screenType": "retina",
-         "screenSize": "59",
-         "protection": [
-            "waterresistant"
-         ],
-         "memory": "64g"
+      "specifications": {
+         "screen": {
+            "diagonal": "1.9″",
+            "resolution": "396×484",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "326 ppi",
+            "type": "Always-On Retina LTPO OLED",
+            "additionalFeatures": [
+               "Edge-to-edge display"
+            ]
+         },
+         "system": {
+            "os": "watchOS 10",
+            "processor": "Apple S9 SiP",
+            "cores": 2,
+            "neuralEngine": "4-core",
+            "ram": "1 GB"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "308 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "Magnetic",
+            "videoPlayback": "N/A",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 4",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Magnetic to USB-C"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Aluminium",
+            "frontPanel": "Ion-X glass",
+            "backMaterial": "Ceramic back",
+            "protection": "WR50, IP6X"
+         },
+         "dimensions": {
+            "height": "45 mm",
+            "width": "38 mm",
+            "thickness": "10.7 mm",
+            "weight": "38.7 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No",
+            "heartRate": "Yes"
+         },
+         "additionalFeatures": [
+            "Double Tap",
+            "Temperature sensing"
+         ]
       },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 11,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
-      "price": 399,
-      "oldPrice": null,
+      "title": "Apple Watch Series 9 GPS + Cellular 45mm Graphite",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-cellular-45mm-graphite",
+      "price": 529,
+      "oldPrice": 559,
       "discount": true,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 19,
+      "reviewsSummary": {
+         "excellent": 16,
+         "good": 2,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T6",
+      "tags": [
+         "smartwatch",
+         "apple",
+         "watchos",
+         "cellular"
+      ],
+      "description": "Stay connected even without your iPhone nearby. Cellular capabilities give you ultimate freedom on your run or at the beach.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -513,22 +1595,136 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Graphite Stainless Steel",
+            "value": "#4E4E4E"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.9″",
+            "resolution": "396×484",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "pixelDensity": "326 ppi",
+            "type": "Always-On Retina LTPO OLED",
+            "additionalFeatures": [
+               "Sapphire crystal display"
+            ]
+         },
+         "system": {
+            "os": "watchOS 10",
+            "processor": "Apple S9 SiP",
+            "cores": 2,
+            "neuralEngine": "4-core",
+            "ram": "1 GB"
+         },
+         "camera": {
+            "main": "N/A",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "N/A",
+            "opticalZoom": "No",
+            "videoRecording": "No",
+            "slowMotion": "No",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "No"
+         },
+         "battery": {
+            "capacity": "308 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "Magnetic",
+            "videoPlayback": "N/A",
+            "audioPlayback": "N/A"
+         },
+         "connectivity": {
+            "simFormat": "eSIM",
+            "mobileNetwork": "4G LTE / UMTS",
+            "wifi": "Wi-Fi 4",
+            "bluetooth": "5.3",
+            "nfc": "Yes",
+            "gps": "Yes",
+            "connector": "Magnetic to USB-C"
+         },
+         "security": {
+            "faceId": "No",
+            "emergencySOS": "Yes",
+            "crashDetection": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Stainless Steel",
+            "frontPanel": "Sapphire Crystal",
+            "backMaterial": "Ceramic",
+            "protection": "WR50, IP6X"
+         },
+         "dimensions": {
+            "height": "45 mm",
+            "width": "38 mm",
+            "thickness": "10.7 mm",
+            "weight": "51.5 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No",
+            "heartRate": "Yes"
+         },
+         "additionalFeatures": [
+            "Cellular connectivity",
+            "Always-On Altmeter"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 12,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "title": "Apple iPad 9 10.2 Wi-Fi Space Gray 2021",
+      "brand": "Apple",
+      "slug": "apple-ipad-9-10-2-wi-fi-space-gray-2021",
       "price": 398,
       "oldPrice": 450,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 112,
+      "reviewsSummary": {
+         "excellent": 90,
+         "good": 12,
+         "average": 5,
+         "belowAverage": 3,
+         "poor": 2
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MK2K3",
+      "tags": [
+         "tablet",
+         "apple",
+         "ipad",
+         "spacegray"
+      ],
+      "description": "Everything you need in an entry-level iPad. Sleek space gray finish, fast A13 Bionic chip, and reliable hardware architecture.",
       "filters": {
          "brand": "apple",
          "battery": "5mah",
@@ -537,22 +1733,135 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Space Gray",
+            "value": "#3C3D3A"
+         }
+      ],
+      "memoryOptions": [
+         "64GB",
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "10.2″",
+            "resolution": "2160×1620",
+            "refreshRate": "60Hz",
+            "brightness": "500 nits",
+            "pixelDensity": "264 ppi",
+            "type": "Retina IPS LCD",
+            "additionalFeatures": [
+               "True Tone display"
+            ]
+         },
+         "system": {
+            "os": "iPadOS 15",
+            "processor": "Apple A13 Bionic",
+            "cores": 6,
+            "neuralEngine": "8-core",
+            "ram": "3 GB"
+         },
+         "camera": {
+            "main": "8 MP",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "12 MP",
+            "opticalZoom": "No",
+            "videoRecording": "1080p",
+            "slowMotion": "Yes",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "Yes"
+         },
+         "battery": {
+            "capacity": "8557 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "No",
+            "videoPlayback": "Up to 10 hours",
+            "audioPlayback": "Up to 10 hours"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "mobileNetwork": "None",
+            "wifi": "Wi-Fi 5",
+            "bluetooth": "4.2",
+            "nfc": "No",
+            "gps": "No",
+            "connector": "Lightning"
+         },
+         "security": {
+            "faceId": "No (Touch ID)",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Aluminum",
+            "frontPanel": "Glass",
+            "backMaterial": "Aluminum",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "250.6 mm",
+            "width": "174.1 mm",
+            "thickness": "7.5 mm",
+            "weight": "487 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No"
+         },
+         "additionalFeatures": [
+            "Center Stage"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "computers"
    },
    {
       "id": 13,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
-      "price": 398,
-      "oldPrice": 450,
+      "title": "Apple iPad 9 10.2 Wi-Fi + Cellular 64GB Silver",
+      "brand": "Apple",
+      "slug": "apple-ipad-9-10-2-cellular-64gb-silver",
+      "price": 499,
+      "oldPrice": 520,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 54,
+      "reviewsSummary": {
+         "excellent": 40,
+         "good": 10,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MK493",
+      "tags": [
+         "tablet",
+         "apple",
+         "ipad",
+         "cellular"
+      ],
+      "description": "Cellular version of the beloved iPad 9. Connect to LTE networks anywhere you travel to handle school and business projects efficiently.",
       "filters": {
          "brand": "apple",
          "battery": "5mah",
@@ -561,46 +1870,234 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "10.2″",
+            "resolution": "2160×1620",
+            "refreshRate": "60Hz",
+            "brightness": "500 nits",
+            "pixelDensity": "264 ppi",
+            "type": "Retina IPS LCD",
+            "additionalFeatures": [
+               "True Tone display"
+            ]
+         },
+         "system": {
+            "os": "iPadOS 15",
+            "processor": "Apple A13 Bionic",
+            "cores": 6,
+            "neuralEngine": "8-core",
+            "ram": "3 GB"
+         },
+         "camera": {
+            "main": "8 MP",
+            "ultrawide": "N/A",
+            "telephoto": "N/A",
+            "front": "12 MP",
+            "opticalZoom": "No",
+            "videoRecording": "1080p",
+            "slowMotion": "Yes",
+            "nightMode": "No",
+            "cinematicMode": "No",
+            "smartHDR": "Yes"
+         },
+         "battery": {
+            "capacity": "8557 mAh",
+            "fastCharging": "Yes",
+            "wirelessCharging": "No",
+            "videoPlayback": "Up to 9 hours on mobile data",
+            "audioPlayback": "Up to 9 hours"
+         },
+         "connectivity": {
+            "simFormat": "Nano-SIM / eSIM",
+            "mobileNetwork": "4G LTE",
+            "wifi": "Wi-Fi 5",
+            "bluetooth": "4.2",
+            "nfc": "No",
+            "gps": "Yes",
+            "connector": "Lightning"
+         },
+         "security": {
+            "faceId": "No (Touch ID)",
+            "emergencySOS": "No",
+            "crashDetection": "No"
+         },
+         "design": {
+            "frameMaterial": "Aluminum",
+            "frontPanel": "Glass",
+            "backMaterial": "Aluminum",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "250.6 mm",
+            "width": "174.1 mm",
+            "thickness": "7.5 mm",
+            "weight": "498 g"
+         },
+         "sensors": {
+            "faceIdSensor": "No",
+            "lidarScanner": "No",
+            "barometer": "Yes",
+            "gyroscope": "Yes",
+            "ambientLightSensor": "Yes",
+            "proximitySensor": "No"
+         },
+         "additionalFeatures": [
+            "GPS embedded"
+         ]
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "computers"
    },
    {
       "id": 14,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
-      "price": 398,
-      "oldPrice": 450,
+      "title": "Apple iPad 9 10.2 Wi-Fi 256GB Silver",
+      "brand": "Apple",
+      "slug": "apple-ipad-9-10-2-wi-fi-256gb-silver",
+      "price": 549,
+      "oldPrice": 599,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
+      "rating": 4.9,
+      "reviewsCount": 89,
+      "reviewsSummary": {
+         "excellent": 80,
+         "good": 7,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MK2N3",
+      "tags": [
+         "tablet",
+         "apple",
+         "ipad",
+         "256gb"
+      ],
+      "description": "Expanded 256GB storage layout lets you store offline films, vast app files, and large image galleries directly on the local machine hardware.",
       "filters": {
          "brand": "apple",
          "battery": "5mah",
          "screenType": "retina",
          "screenSize": "7more",
          "protection": [],
-         "memory": "64g"
+         "memory": "256g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         }
+      ],
+      "memoryOptions": [
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "10.2″",
+            "resolution": "2160×1620",
+            "refreshRate": "60Hz",
+            "brightness": "500 nits",
+            "pixelDensity": "264 ppi",
+            "type": "Retina IPS LCD"
+         },
+         "system": {
+            "os": "iPadOS 15",
+            "processor": "Apple A13 Bionic",
+            "cores": 6,
+            "ram": "3 GB"
+         },
+         "camera": {
+            "main": "8 MP",
+            "front": "12 MP"
+         },
+         "battery": {
+            "capacity": "8557 mAh",
+            "videoPlayback": "Up to 10 hours"
+         },
+         "connectivity": {
+            "simFormat": "None",
+            "wifi": "Wi-Fi 5",
+            "bluetooth": "4.2",
+            "connector": "Lightning"
+         },
+         "design": {
+            "frameMaterial": "Aluminum",
+            "protection": "None"
+         },
+         "dimensions": {
+            "height": "250.6 mm",
+            "width": "174.1 mm",
+            "thickness": "7.5 mm",
+            "weight": "487 g"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "computers"
    },
    {
       "id": 15,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
+      "title": "Samsung Galaxy Watch6 Classic 43mm Silver",
+      "brand": "Samsung",
+      "slug": "samsung-galaxy-watch6-classic-43mm-silver",
+      "price": 339,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
+      "rating": 4.5,
+      "reviewsCount": 38,
+      "reviewsSummary": {
+         "excellent": 28,
+         "good": 6,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R950",
+      "tags": [
+         "smartwatch",
+         "samsung",
+         "classic",
+         "silver"
+      ],
+      "description": "A tighter 43mm aesthetic for smaller wrist layouts. Keeps the physical rotating bezel architecture and exquisite steel craftsmanship.",
       "filters": {
          "brand": "samsung",
          "battery": "3mah",
@@ -612,22 +2109,85 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#CCCCCC"
+         }
+      ],
+      "memoryOptions": [
+         "16GB"
+      ],
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.3″",
+            "resolution": "432×432",
+            "refreshRate": "60Hz",
+            "brightness": "2000 nits",
+            "type": "Super AMOLED"
+         },
+         "system": {
+            "os": "Wear OS 4",
+            "processor": "Exynos W930",
+            "ram": "2 GB"
+         },
+         "battery": {
+            "capacity": "300 mAh",
+            "wirelessCharging": "Yes"
+         },
+         "connectivity": {
+            "bluetooth": "5.3",
+            "wifi": "Yes",
+            "nfc": "Yes"
+         },
+         "design": {
+            "frameMaterial": "Stainless Steel",
+            "protection": "IP68, 5ATM"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 16,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
+      "title": "Samsung Galaxy Watch6 Classic 47mm LTE Black",
+      "brand": "Samsung",
+      "slug": "samsung-galaxy-watch6-classic-47mm-lte-black",
+      "price": 419,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 27,
+      "reviewsSummary": {
+         "excellent": 20,
+         "good": 5,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R965",
+      "tags": [
+         "smartwatch",
+         "samsung",
+         "lte",
+         "wearos"
+      ],
+      "description": "Standalone LTE architecture lets you sync calls, message streams, and standalone music streaming without your parent telephone device nearby.",
       "filters": {
          "brand": "samsung",
          "battery": "3mah",
@@ -639,22 +2199,82 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Black",
+            "value": "#212121"
+         }
+      ],
+      "memoryOptions": [
+         "16GB"
+      ],
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.5″",
+            "resolution": "480×480",
+            "type": "Super AMOLED"
+         },
+         "system": {
+            "os": "Wear OS 4",
+            "processor": "Exynos W930",
+            "ram": "2 GB"
+         },
+         "battery": {
+            "capacity": "425 mAh"
+         },
+         "connectivity": {
+            "simFormat": "eSIM",
+            "mobileNetwork": "4G LTE",
+            "bluetooth": "5.3"
+         },
+         "design": {
+            "frameMaterial": "Stainless Steel",
+            "protection": "IP68, 5ATM"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 17,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
+      "title": "Samsung Galaxy Watch6 Classic 43mm LTE Silver",
+      "brand": "Samsung",
+      "slug": "samsung-galaxy-watch6-classic-43mm-lte-silver",
+      "price": 389,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
+      "rating": 4.4,
+      "reviewsCount": 14,
+      "reviewsSummary": {
+         "excellent": 9,
+         "good": 3,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R955",
+      "tags": [
+         "smartwatch",
+         "samsung",
+         "lte",
+         "43mm"
+      ],
+      "description": "Combines standalone eSIM engineering with a compact 43mm footprint, completed beautifully by premium Silver styling indicators.",
       "filters": {
          "brand": "samsung",
          "battery": "3mah",
@@ -666,22 +2286,83 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#CCCCCC"
+         }
+      ],
+      "memoryOptions": [
+         "16GB"
+      ],
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.3″",
+            "resolution": "432×432",
+            "type": "Super AMOLED"
+         },
+         "system": {
+            "os": "Wear OS 4",
+            "processor": "Exynos W930",
+            "ram": "2 GB"
+         },
+         "battery": {
+            "capacity": "300 mAh"
+         },
+         "connectivity": {
+            "simFormat": "eSIM",
+            "mobileNetwork": "4G LTE",
+            "bluetooth": "5.3"
+         },
+         "design": {
+            "frameMaterial": "Stainless Steel",
+            "protection": "IP68, 5ATM"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 18,
       "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-iphone-14-pro-gold",
       "price": 1437,
       "oldPrice": null,
       "discount": true,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 64,
+      "reviewsSummary": {
+         "excellent": 52,
+         "good": 8,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MQ233",
+      "tags": [
+         "smartphone",
+         "apple",
+         "ios",
+         "14pro",
+         "512gb"
+      ],
+      "description": "Pro computational power in a hand-friendly 6.1-inch framework. Powered efficiently by the innovative A16 Bionic computing block and 512GB storage.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -693,22 +2374,105 @@
          ],
          "memory": "512g"
       },
+      "colors": [
+         {
+            "name": "Gold",
+            "value": "#F4D58D"
+         }
+      ],
+      "memoryOptions": [
+         "512GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": [
+            "img/catalog/apple-iphone-14-pro-gold/second.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "2556×1179",
+            "refreshRate": "120Hz",
+            "brightness": "2000 nits",
+            "type": "Super Retina XDR OLED",
+            "additionalFeatures": [
+               "Dynamic Island",
+               "Always-On display"
+            ]
+         },
+         "system": {
+            "os": "iOS 16",
+            "processor": "Apple A16 Bionic",
+            "cores": 6,
+            "ram": "6 GB"
+         },
+         "camera": {
+            "main": "48 MP",
+            "ultrawide": "12 MP",
+            "telephoto": "12 MP",
+            "front": "12 MP",
+            "videoRecording": "4K 60fps"
+         },
+         "battery": {
+            "capacity": "3200 mAh",
+            "wirelessCharging": "MagSafe / Qi"
+         },
+         "connectivity": {
+            "simFormat": "Nano-SIM + eSIM",
+            "mobileNetwork": "5G",
+            "wifi": "Wi-Fi 6"
+         },
+         "design": {
+            "frameMaterial": "Stainless steel",
+            "protection": "IP68"
+         },
+         "dimensions": {
+            "height": "147.5 mm",
+            "width": "71.5 mm",
+            "thickness": "7.85 mm",
+            "weight": "206 g"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 19,
       "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
-      "brand": "apple",
-      "slug": "apple-iphone-14-pro-gold",
+      "brand": "Apple",
+      "slug": "apple-iphone-14-pro-gold-1tb",
       "price": 1499,
       "oldPrice": null,
       "discount": true,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
-         "gallery": []
+      "rating": 4.9,
+      "reviewsCount": 31,
+      "reviewsSummary": {
+         "excellent": 28,
+         "good": 2,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MQ2V3",
+      "tags": [
+         "smartphone",
+         "apple",
+         "1tb",
+         "prores"
+      ],
+      "description": "Massive 1TB structural drive capacity allows unfiltered ProRes 4K movie creation without ever exhausting your device's memory array.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -720,22 +2484,81 @@
          ],
          "memory": "1t"
       },
+      "colors": [
+         {
+            "name": "Gold",
+            "value": "#F4D58D"
+         }
+      ],
+      "memoryOptions": [
+         "1TB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "2556×1179",
+            "type": "Super Retina XDR OLED"
+         },
+         "system": {
+            "os": "iOS 16",
+            "processor": "Apple A16 Bionic",
+            "ram": "6 GB"
+         },
+         "camera": {
+            "main": "48 MP",
+            "videoRecording": "4K ProRes"
+         },
+         "battery": {
+            "capacity": "3200 mAh"
+         },
+         "design": {
+            "frameMaterial": "Stainless steel",
+            "protection": "IP68"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 20,
       "title": "Apple iPhone 11 128GB White (MQ233)",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-iphone-11-white",
       "price": 510,
       "oldPrice": null,
       "discount": true,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 850,
+      "reviewsSummary": {
+         "excellent": 710,
+         "good": 100,
+         "average": 25,
+         "belowAverage": 10,
+         "poor": 5
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MHDE3",
+      "tags": [
+         "smartphone",
+         "apple",
+         "iphone11",
+         "classic"
+      ],
+      "description": "An enduring favorite. Liquid Retina architecture display pairing up flawlessly with the ultra-reliable dual-lens camera engineering scheme.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -747,22 +2570,93 @@
          ],
          "memory": "128g"
       },
+      "colors": [
+         {
+            "name": "White",
+            "value": "#FFFFFF"
+         }
+      ],
+      "memoryOptions": [
+         "128GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "1792×828",
+            "refreshRate": "60Hz",
+            "type": "Liquid Retina HD IPS"
+         },
+         "system": {
+            "os": "iOS 13",
+            "processor": "Apple A13 Bionic",
+            "cores": 6,
+            "ram": "4 GB"
+         },
+         "camera": {
+            "main": "12 MP",
+            "ultrawide": "12 MP",
+            "front": "12 MP"
+         },
+         "battery": {
+            "capacity": "3110 mAh"
+         },
+         "connectivity": {
+            "mobileNetwork": "4G LTE",
+            "connector": "Lightning"
+         },
+         "design": {
+            "frameMaterial": "Aerospace-grade aluminum",
+            "protection": "IP68 (up to 2m for 30 mins)"
+         },
+         "dimensions": {
+            "height": "150.9 mm",
+            "width": "75.7 mm",
+            "thickness": "8.3 mm",
+            "weight": "194 g"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 21,
-      "title": "Apple iPhone 11 128GB White (MQ233)",
-      "brand": "apple",
+      "title": "Apple iPhone 11 128GB White (MQ233) - Pack 2",
+      "brand": "Apple",
       "slug": "apple-iphone-11-white-2",
       "price": 550,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 12,
+      "reviewsSummary": {
+         "excellent": 9,
+         "good": 2,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "Available next week",
+      "sku": "MHDE3-2",
+      "tags": [
+         "smartphone",
+         "apple",
+         "white"
+      ],
+      "description": "Standard iPhone 11 configuration with 128GB storage in immaculate pristine retail presentation boxes.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -774,22 +2668,73 @@
          ],
          "memory": "128g"
       },
+      "colors": [
+         {
+            "name": "White",
+            "value": "#FFFFFF"
+         }
+      ],
+      "memoryOptions": [
+         "128GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "1792×828",
+            "type": "Liquid Retina HD"
+         },
+         "system": {
+            "os": "iOS 13",
+            "processor": "Apple A13 Bionic",
+            "ram": "4 GB"
+         },
+         "camera": {
+            "main": "12 MP"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "3-5 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 22,
       "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-iphone-13-mini-pink",
       "price": 850,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 142,
+      "reviewsSummary": {
+         "excellent": 115,
+         "good": 20,
+         "average": 5,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MLK23",
+      "tags": [
+         "smartphone",
+         "apple",
+         "mini",
+         "pink"
+      ],
+      "description": "Compact design without compromises. Superfast A15 Bionic architecture combined beautifully with an advanced dual-camera system.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -801,22 +2746,88 @@
          ],
          "memory": "128g"
       },
+      "colors": [
+         {
+            "name": "Pink",
+            "value": "#FAE0E4"
+         }
+      ],
+      "memoryOptions": [
+         "128GB",
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
+         "gallery": [
+            "img/catalog/apple-iphone-13-mini-pink/second.webp"
+         ]
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "5.4″",
+            "resolution": "2340×1080",
+            "refreshRate": "60Hz",
+            "type": "Super Retina XDR OLED"
+         },
+         "system": {
+            "os": "iOS 15",
+            "processor": "Apple A15 Bionic",
+            "cores": 6,
+            "ram": "4 GB"
+         },
+         "camera": {
+            "main": "12 MP Wide + 12 MP UltraWide",
+            "front": "12 MP"
+         },
+         "battery": {
+            "capacity": "2438 mAh"
+         },
+         "dimensions": {
+            "height": "131.5 mm",
+            "width": "64.2 mm",
+            "thickness": "7.65 mm",
+            "weight": "141 g"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 23,
       "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-iphone-14-pro-space-black",
       "price": 1399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 98,
+      "reviewsSummary": {
+         "excellent": 80,
+         "good": 12,
+         "average": 4,
+         "belowAverage": 1,
+         "poor": 1
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MQ0T3",
+      "tags": [
+         "smartphone",
+         "apple",
+         "spaceblack",
+         "256gb"
+      ],
+      "description": "Dynamic Island transforms your screen interaction experience. Beautifully stealthy Space Black hue matched with 256GB storage space.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -828,22 +2839,69 @@
          ],
          "memory": "256g"
       },
+      "colors": [
+         {
+            "name": "Space Black",
+            "value": "#1D1D1F"
+         }
+      ],
+      "memoryOptions": [
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "2556×1179",
+            "type": "Super Retina XDR OLED"
+         },
+         "system": {
+            "os": "iOS 16",
+            "processor": "Apple A16 Bionic",
+            "ram": "6 GB"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 24,
       "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
-      "brand": "apple",
+      "brand": "Apple",
       "slug": "apple-iphone-14-pro-silver",
       "price": 1399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 42,
+      "reviewsSummary": {
+         "excellent": 35,
+         "good": 5,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MQ103",
+      "tags": [
+         "smartphone",
+         "apple",
+         "silver"
+      ],
+      "description": "Elegant jewelry-like surgical grade steel borders enclosing high performance A16 micro-circuit blocks and vibrant OLED screens.",
       "filters": {
          "brand": "apple",
          "battery": "4mah",
@@ -855,22 +2913,64 @@
          ],
          "memory": "256g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#F5F5F7"
+         }
+      ],
+      "memoryOptions": [
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "6.1″",
+            "resolution": "2556×1179",
+            "type": "Super Retina XDR OLED"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 25,
-      "title": "Blackmagic Pocket Cinema Camera 6K",
-      "brand": "blackmagic",
-      "slug": "blackmagic-pocket-cinema-camera-6k",
+      "title": "Blackmagic Pocket Cinema Camera 6K (Restock)",
+      "brand": "Blackmagic",
+      "slug": "blackmagic-pocket-cinema-camera-6k-restock",
       "price": 2535,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 11,
+      "reviewsSummary": {
+         "excellent": 9,
+         "good": 1,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "BM-PCC6K-R",
+      "tags": [
+         "camera",
+         "cinema",
+         "6k"
+      ],
+      "description": "Professional 6K studio-grade film capture tool engineered into hand-portable lightweight body panels.",
       "filters": {
          "brand": "blackmagic",
          "battery": "5mah",
@@ -879,22 +2979,62 @@
          "protection": [],
          "memory": "512g"
       },
+      "colors": [
+         {
+            "name": "Carbon Black",
+            "value": "#1C1B1F"
+         }
+      ],
+      "memoryOptions": [
+         "CFast 2.0"
+      ],
+      "images": {
+         "main": "img/catalog/blackmagic-pocket-cinema-camera-6k/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "5.0″",
+            "type": "LCD Touchscreen"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "2-3 days"
+      },
+      "warranty": {
+         "years": 2
+      },
+      "reviews": [],
       "type": "cameras"
    },
    {
       "id": 26,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm Starlight (Duplicate)",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium-2",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 5,
+      "reviewsSummary": {
+         "excellent": 4,
+         "good": 1,
+         "average": 0,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3-D",
+      "tags": [
+         "smartwatch",
+         "apple"
+      ],
+      "description": "Incredible aluminum fitness companion utilizing state of the art blood metrics analysis systems.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -905,22 +3045,63 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "diagonal": "1.7″",
+            "type": "Retina LTPO OLED"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 27,
-      "title": "AirPods Max Silver Starlight Aluminium",
-      "brand": "apple",
-      "slug": "airpods-max-silver-starlight-aluminium",
+      "title": "AirPods Max Silver Starlight (Promo)",
+      "brand": "Apple",
+      "slug": "airpods-max-silver-starlight-aluminium-promo",
       "price": 549,
       "oldPrice": 599,
       "discount": true,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 40,
+      "reviewsSummary": {
+         "excellent": 32,
+         "good": 6,
+         "average": 2,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MGYJ3-P",
+      "tags": [
+         "headphones",
+         "apple",
+         "anc"
+      ],
+      "description": "High fidelity acoustics driven smoothly by customized adaptive digital EQ processing logic circuits.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -929,22 +3110,60 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         }
+      ],
+      "memoryOptions": [],
+      "images": {
+         "main": "img/catalog/airpods-max-silver-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "system": {
+            "processor": "Apple H1 chip"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "headphones"
    },
    {
       "id": 28,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
+      "title": "Samsung Galaxy Watch6 Classic 47mm Black (Promo)",
+      "brand": "Samsung",
+      "slug": "samsung-galaxy-watch6-classic-47mm-black-promo",
       "price": 369,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
+      "rating": 4.5,
+      "reviewsCount": 18,
+      "reviewsSummary": {
+         "excellent": 12,
+         "good": 4,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R960-P",
+      "tags": [
+         "smartwatch",
+         "samsung",
+         "classic"
+      ],
+      "description": "Timeless stainless architecture complete with premium tactile mechanical dials.",
       "filters": {
          "brand": "samsung",
          "battery": "3mah",
@@ -956,22 +3175,62 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Black",
+            "value": "#212121"
+         }
+      ],
+      "memoryOptions": [
+         "16GB"
+      ],
+      "images": {
+         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "type": "Super AMOLED"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 29,
-      "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black",
-      "brand": "samsung",
-      "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black",
+      "title": "Galaxy Z Fold5 Unlocked 256GB Phantom Black (Promo)",
+      "brand": "Samsung",
+      "slug": "galaxy-z-fold5-unlocked-25gb-phantom-black-promo",
       "price": 1799,
       "oldPrice": 1999,
       "discount": false,
       "liked": true,
       "category": "featured-products",
-      "images": {
-         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
-         "gallery": []
+      "rating": 4.7,
+      "reviewsCount": 33,
+      "reviewsSummary": {
+         "excellent": 25,
+         "good": 5,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-F946B-P",
+      "tags": [
+         "smartphone",
+         "samsung",
+         "foldable"
+      ],
+      "description": "Unfolds to reveal a brilliant IMAX-like productivity platform surface powered via custom Snapdragon chips.",
       "filters": {
          "brand": "samsung",
          "battery": "5mah",
@@ -984,48 +3243,126 @@
          ],
          "memory": "256g"
       },
+      "colors": [
+         {
+            "name": "Phantom Black",
+            "value": "#1A1A1A"
+         }
+      ],
+      "memoryOptions": [
+         "256GB"
+      ],
+      "images": {
+         "main": "img/catalog/galaxy-z-fold5-unlocked-25gb-phantom-black/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "type": "Foldable Dynamic AMOLED 2X"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "phones"
    },
    {
       "id": 30,
-      "title": "Galaxy Buds FE Graphite",
-      "brand": "samsung",
-      "slug": "galaxy-buds-fe-graphite",
+      "title": "Galaxy Buds FE Graphite (Promo)",
+      "brand": "Samsung",
+      "slug": "galaxy-buds-fe-graphite-promo",
       "price": 99.99,
       "oldPrice": 129.99,
       "discount": false,
       "liked": false,
       "category": "bestseller",
+      "rating": 4.4,
+      "reviewsCount": 21,
+      "reviewsSummary": {
+         "excellent": 14,
+         "good": 4,
+         "average": 2,
+         "belowAverage": 1,
+         "poor": 0
+      },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "SM-R400N-P",
+      "tags": [
+         "earbuds",
+         "samsung",
+         "anc"
+      ],
+      "description": "Ergonomic deep acoustic seal design elements blending in with crisp smart touch pads.",
+      "filters": {
+         "brand": "samsung",
+         "battery": "3mah",
+         "screenType": "ips",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "colors": [
+         {
+            "name": "Graphite",
+            "value": "#2E2E31"
+         }
+      ],
+      "memoryOptions": [],
       "images": {
          "main": "img/catalog/galaxy-buds-fe-graphite/main.webp",
          "gallery": []
       },
-      "filters": {
-         "brand": "samsung",
-         "battery": "3mah",
-         "screenType": "ips",
-         "screenSize": "59",
-         "protection": [
-            "waterresistant"
-         ],
-         "memory": "64g"
+      "specifications": {
+         "battery": {
+            "audioPlayback": "Up to 8.5 hours"
+         }
       },
+      "delivery": {
+         "free": false,
+         "estimated": "2-3 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "headphones"
    },
    {
       "id": 31,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
+      "title": "Apple iPad 9 10.2 Wi-Fi Silver (Promo Pack)",
+      "brand": "Apple",
+      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021-promo",
       "price": 398,
       "oldPrice": 450,
       "discount": false,
       "liked": false,
       "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
+      "rating": 4.8,
+      "reviewsCount": 41,
+      "reviewsSummary": {
+         "excellent": 35,
+         "good": 4,
+         "average": 1,
+         "belowAverage": 1,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MK2L3-P",
+      "tags": [
+         "tablet",
+         "apple",
+         "ipad"
+      ],
+      "description": "The perfect multimedia and distance learning tool, complete with gorgeous rich Retina panels.",
       "filters": {
          "brand": "apple",
          "battery": "5mah",
@@ -1034,22 +3371,61 @@
          "protection": [],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Silver",
+            "value": "#E3E4E5"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "type": "Retina IPS LCD"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "computers"
    },
    {
       "id": 32,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm (Bulk Item 1)",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-bulk-1",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 8,
+      "reviewsSummary": {
+         "excellent": 6,
+         "good": 1,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3-B1",
+      "tags": [
+         "smartwatch",
+         "apple"
+      ],
+      "description": "State of the art smart health companion displaying vital tracking points effortlessly on a sharp screen panel.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -1060,22 +3436,61 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "system": {
+            "processor": "Apple S9 SiP"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 33,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm (Bulk Item 2)",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-bulk-2",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 3,
+      "reviewsSummary": {
+         "excellent": 2,
+         "good": 1,
+         "average": 0,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3-B2",
+      "tags": [
+         "smartwatch",
+         "apple"
+      ],
+      "description": "High precision integrated multi-sport sensor array logic tracking calorie burning metrics automatically.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -1086,22 +3501,61 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "design": {
+            "frameMaterial": "Aluminium"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 34,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm (Bulk Item 3)",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-bulk-3",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+      "rating": 4.6,
+      "reviewsCount": 14,
+      "reviewsSummary": {
+         "excellent": 11,
+         "good": 2,
+         "average": 1,
+         "belowAverage": 0,
+         "poor": 0
       },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3-B3",
+      "tags": [
+         "smartwatch",
+         "apple"
+      ],
+      "description": "Features the rapid performance S9 SiP chip architecture giving access to swift interface rendering speeds.",
       "filters": {
          "brand": "apple",
          "battery": "3mah",
@@ -1112,400 +3566,113 @@
          ],
          "memory": "64g"
       },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
+      "images": {
+         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
+         "gallery": []
+      },
+      "specifications": {
+         "screen": {
+            "brightness": "2000 nits"
+         }
+      },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
    },
    {
       "id": 35,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
+      "title": "Apple Watch Series 9 GPS 41mm (Final stock Line)",
+      "brand": "Apple",
+      "slug": "apple-watch-series-9-gps-41mm-final-stock-line",
       "price": 399,
       "oldPrice": null,
       "discount": false,
       "liked": false,
       "category": "new-arrival",
+      "rating": 4.6,
+      "reviewsCount": 9,
+      "reviewsSummary": {
+         "excellent": 7,
+         "good": 2,
+         "average": 0,
+         "belowAverage": 0,
+         "poor": 0
+      },
+      "stock": true,
+      "availability": "In stock today",
+      "sku": "MR8T3-F",
+      "tags": [
+         "smartwatch",
+         "apple",
+         "final"
+      ],
+      "description": "The innovative gesture interaction engine allows full access to notification dismissals with simple fingertip clicks.",
+      "filters": {
+         "brand": "apple",
+         "battery": "3mah",
+         "screenType": "retina",
+         "screenSize": "59",
+         "protection": [
+            "waterresistant"
+         ],
+         "memory": "64g"
+      },
+      "colors": [
+         {
+            "name": "Starlight",
+            "value": "#F0EAE1"
+         }
+      ],
+      "memoryOptions": [
+         "64GB"
+      ],
       "images": {
          "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
+         "gallery": [
+            "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/second.webp"
+         ]
       },
-      "filters": {
-         "brand": "apple",
-         "battery": "3mah",
-         "screenType": "retina",
-         "screenSize": "59",
-         "protection": [
-            "waterresistant"
-         ],
-         "memory": "64g"
+      "specifications": {
+         "screen": {
+            "diagonal": "1.7″",
+            "resolution": "352×430",
+            "type": "Always-On Retina LTPO OLED"
+         },
+         "system": {
+            "os": "watchOS 10",
+            "processor": "Apple S9 SiP"
+         },
+         "battery": {
+            "capacity": "282 mAh"
+         },
+         "design": {
+            "frameMaterial": "Aluminium",
+            "protection": "WR50, IP6X"
+         }
       },
+      "delivery": {
+         "free": true,
+         "estimated": "1-2 days"
+      },
+      "warranty": {
+         "years": 1
+      },
+      "reviews": [],
       "type": "smart-watches"
-   },
-   {
-      "id": 36,
-      "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
-      "brand": "apple",
-      "slug": "apple-watch-series-9-gps-41mm-starlight-aluminium",
-      "price": 399,
-      "oldPrice": null,
-      "discount": true,
-      "liked": false,
-      "category": "new-arrival",
-      "images": {
-         "main": "img/catalog/apple-watch-series-9-gps-41mm-starlight-aluminium/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "3mah",
-         "screenType": "retina",
-         "screenSize": "59",
-         "protection": [
-            "waterresistant"
-         ],
-         "memory": "64g"
-      },
-      "type": "smart-watches"
-   },
-   {
-      "id": 37,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
-      "price": 398,
-      "oldPrice": 450,
-      "discount": false,
-      "liked": false,
-      "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "5mah",
-         "screenType": "retina",
-         "screenSize": "7more",
-         "protection": [],
-         "memory": "64g"
-      },
-      "type": "computers"
-   },
-   {
-      "id": 38,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
-      "price": 398,
-      "oldPrice": 450,
-      "discount": false,
-      "liked": false,
-      "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "5mah",
-         "screenType": "retina",
-         "screenSize": "7more",
-         "protection": [],
-         "memory": "64g"
-      },
-      "type": "computers"
-   },
-   {
-      "id": 39,
-      "title": "Apple iPad 9 10.2 Wi-Fi Silver MK2L3 2021",
-      "brand": "apple",
-      "slug": "apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021",
-      "price": 398,
-      "oldPrice": 450,
-      "discount": false,
-      "liked": false,
-      "category": "bestseller",
-      "images": {
-         "main": "img/catalog/apple-ipad-9-10-2-wi-fi-silver-mk2l3-2021/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "5mah",
-         "screenType": "retina",
-         "screenSize": "7more",
-         "protection": [],
-         "memory": "64g"
-      },
-      "type": "computers"
-   },
-   {
-      "id": 40,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "samsung",
-         "battery": "3mah",
-         "screenType": "superamoled",
-         "screenSize": "59",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "64g"
-      },
-      "type": "smart-watches"
-   },
-   {
-      "id": 41,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "samsung",
-         "battery": "3mah",
-         "screenType": "superamoled",
-         "screenSize": "59",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "64g"
-      },
-      "type": "smart-watches"
-   },
-   {
-      "id": 42,
-      "title": "Samsung Galaxy Watch6 Classic 47mm Black",
-      "brand": "samsung",
-      "slug": "samsung-galaxy-watch6-classic-47mm-black",
-      "price": 369,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/samsung-galaxy-watch6-classic-47mm-black/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "samsung",
-         "battery": "3mah",
-         "screenType": "superamoled",
-         "screenSize": "59",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "64g"
-      },
-      "type": "smart-watches"
-   },
-   {
-      "id": 43,
-      "title": "Apple iPhone 14 Pro 512GB Gold (MQ233)",
-      "brand": "apple",
-      "slug": "apple-iphone-14-pro-gold",
-      "price": 1437,
-      "oldPrice": null,
-      "discount": true,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "retina",
-         "screenSize": "69",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "512g"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 44,
-      "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
-      "brand": "apple",
-      "slug": "apple-iphone-14-pro-gold",
-      "price": 1499,
-      "oldPrice": null,
-      "discount": true,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-gold/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "retina",
-         "screenSize": "69",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "1t"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 45,
-      "title": "Apple iPhone 11 128GB White (MQ233)",
-      "brand": "apple",
-      "slug": "apple-iphone-11-white",
-      "price": 510,
-      "oldPrice": null,
-      "discount": true,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "ips",
-         "screenSize": "64",
-         "protection": [
-            "ip67",
-            "waterresistant"
-         ],
-         "memory": "128g"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 46,
-      "title": "Apple iPhone 11 128GB White (MQ233)",
-      "brand": "apple",
-      "slug": "apple-iphone-11-white-2",
-      "price": 550,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-11-white-mq233/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "ips",
-         "screenSize": "64",
-         "protection": [
-            "ip67",
-            "waterresistant"
-         ],
-         "memory": "128g"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 47,
-      "title": "Apple iPhone 13 mini 128GB Pink (MLK23)",
-      "brand": "apple",
-      "slug": "apple-iphone-13-mini-pink",
-      "price": 850,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-13-mini-pink/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "retina",
-         "screenSize": "59",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "128g"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 48,
-      "title": "Apple iPhone 14 Pro 256GB Space Black (MQ0T3)",
-      "brand": "apple",
-      "slug": "apple-iphone-14-pro-space-black",
-      "price": 1399,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone14-pro-space-black/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "retina",
-         "screenSize": "69",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "256g"
-      },
-      "type": "phones"
-   },
-   {
-      "id": 49,
-      "title": "Apple iPhone 14 Pro 256GB Silver (MQ103)",
-      "brand": "apple",
-      "slug": "apple-iphone-14-pro-silver",
-      "price": 1399,
-      "oldPrice": null,
-      "discount": false,
-      "liked": false,
-      "category": "featured-products",
-      "images": {
-         "main": "img/catalog/apple-iphone-14-pro-silver/main.webp",
-         "gallery": []
-      },
-      "filters": {
-         "brand": "apple",
-         "battery": "4mah",
-         "screenType": "retina",
-         "screenSize": "69",
-         "protection": [
-            "ip68",
-            "waterresistant"
-         ],
-         "memory": "256g"
-      },
-      "type": "phones"
    }
 ]
