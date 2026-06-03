@@ -27,3 +27,19 @@ GitHub: https://github.com/MaisonIT
 Email: frontdev.m@gmail.com
 
 LinkedIn: https://www.linkedin.com/in/mike-petrushov-54b326357/
+
+Projects:
+- Cleaing Web: https://dpkliduklid.cz/
+- Cyber (E-commerce): https://maisonit.github.io/portfolio-projects/e_store_cyber/
+- Creative Agency: https://maisonit.github.io/portfolio-projects/creative_agency/
+- Dark Web: https://maisonit.github.io/portfolio-projects/dark_web/
+- Digital Agency: https://maisonit.github.io/portfolio-projects/digital_agency/
+- Vinerouge Web: https://maisonit.github.io/portfolio-projects/vinerouge/
+- Weeb Project: https://maisonit.github.io/portfolio-projects/weeb-project/
+- Furniture Shop: https://maisonit.github.io/portfolio-projects/furniture_website/
+- Over Love Landing: https://maisonit.github.io/portfolio-projects/over_love/
+- Healthy Food Web: https://maisonit.github.io/portfolio-projects/healthy_switcher/
+- Food Delivery: https://maisonit.github.io/portfolio-projects/food_delivery/
+- Neo Fi: https://maisonit.github.io/portfolio-projects/neo_fi/
+- Tech Design: https://maisonit.github.io/portfolio-projects/tech_design/
+- Fitness: https://maisonit.github.io/portfolio-projects/fitness/
