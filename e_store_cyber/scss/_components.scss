@@ -73,6 +73,8 @@
 
    &__actions {
       &.actions {
+         position: relative;
+         z-index: 7;
          display: flex;
       }
    }

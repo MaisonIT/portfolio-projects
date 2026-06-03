@@ -66,6 +66,8 @@
   }
 }
 .header__actions.actions {
+  position: relative;
+  z-index: 7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
