@@ -363,6 +363,11 @@
 
 // portfolio
 .portfolio {
+   // .portfolio__container
+   &__container {
+      @extend .price__container;
+   }
+
    // .portfolio__head
 
    &__head {
@@ -375,6 +380,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(mixins.toRem(350), 100%), 1fr));
       gap: mixins.toRem(24);
+
+      @include mixins.block;
    }
 
    // .portfolio__item
@@ -415,6 +422,17 @@
 
 // price
 .price {
+   // .process__container
+   &__container {
+      margin-block-start: mixins.toRem(40);
+
+      @media (min-width: mixins.toEm(768)) {
+         margin-block-start: mixins.toRem(48);
+      }
+      @media (min-width: mixins.toEm(1170)) {
+         margin-block-start: mixins.toRem(64);
+      }
+   }
    // .price__head
 
    &__head {

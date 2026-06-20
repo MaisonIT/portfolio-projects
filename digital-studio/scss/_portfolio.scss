@@ -6,7 +6,10 @@
    // .portfolio__container
 
    &__container {
-      @include mixins.container;
+      // .portfolio__container--page
+      &--page {
+         @include mixins.container;
+      }
    }
 
    // .portfolio__head

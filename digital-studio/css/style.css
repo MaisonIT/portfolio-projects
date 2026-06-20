@@ -46,7 +46,7 @@
   .header__menu {
     position: fixed;
     inset-inline-start: 0;
-    inset-block-start: -100%;
+    inset-block-start: -1000%;
     z-index: 5;
     inline-size: 100%;
     block-size: 100%;
@@ -57,8 +57,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-padding-before: 17.8125rem;
-            padding-block-start: 17.8125rem;
+    -webkit-padding-before: 5.3125rem;
+            padding-block-start: 5.3125rem;
     font-size: 1.5rem;
   }
   .header__menu.active {
@@ -1946,8 +1946,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(21.875rem, 100%), 1fr));
   gap: 1.5rem;
+  padding-block: 2.5rem;
 }
 
+@media (min-width: 48em) {
+  .portfolio__items {
+    padding-block: 3rem;
+  }
+}
+@media (min-width: 73.125em) {
+  .portfolio__items {
+    padding-block: 4rem;
+  }
+}
 .portfolio__item {
   border-radius: 0.875rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1977,6 +1988,23 @@
     /* Drop shadow cards */
     -webkit-box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
             box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+  }
+}
+.price__container, .portfolio__container {
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
+}
+
+@media (min-width: 48em) {
+  .price__container, .portfolio__container {
+    -webkit-margin-before: 3rem;
+            margin-block-start: 3rem;
+  }
+}
+@media (min-width: 73.125em) {
+  .price__container, .portfolio__container {
+    -webkit-margin-before: 4rem;
+            margin-block-start: 4rem;
   }
 }
 .price__head {
@@ -2209,19 +2237,19 @@
   line-height: 1.6; /* 25.6px */
 }
 
-.portfolio__container {
+.portfolio__container--page {
   -webkit-padding-before: 6.75rem;
           padding-block-start: 6.75rem;
 }
 
 @media (min-width: 48em) {
-  .portfolio__container {
+  .portfolio__container--page {
     -webkit-padding-before: 7.75rem;
             padding-block-start: 7.75rem;
   }
 }
 @media (min-width: 73.125em) {
-  .portfolio__container {
+  .portfolio__container--page {
     -webkit-padding-before: 8.75rem;
             padding-block-start: 8.75rem;
   }

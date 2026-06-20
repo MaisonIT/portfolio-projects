@@ -49,7 +49,7 @@
       @media (max-width: mixins.toEm(855)) {
          position: fixed;
          inset-inline-start: 0;
-         inset-block-start: -100%;
+         inset-block-start: -1000%;
          z-index: 5;
 
          inline-size: 100%;
@@ -60,7 +60,7 @@
          display: flex;
          justify-content: center;
 
-         padding-block-start: mixins.toRem(285);
+         padding-block-start: mixins.toRem(85);
 
          font-size: mixins.toRem(24);
 
