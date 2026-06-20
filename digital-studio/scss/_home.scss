@@ -1,0 +1,516 @@
+@use "mixins";
+@use "variables";
+
+.main {
+   display: flex;
+   flex-direction: column;
+   gap: mixins.toRem(40);
+
+   @media (min-width: mixins.toEm(768)) {
+      gap: mixins.toRem(48);
+   }
+   @media (min-width: mixins.toEm(1170)) {
+      gap: mixins.toRem(64);
+   }
+}
+
+// hero
+.hero {
+   // .hero__container
+
+   &__container {
+      @include mixins.container;
+   }
+
+   // .hero__items
+
+   &__items {
+      display: flex;
+      // align-items: center;
+      gap: mixins.toRem(24);
+
+      padding-block: mixins.toRem(32);
+
+      @media (min-width: mixins.toEm(768)) {
+         padding-block: mixins.toRem(48);
+      }
+      @media (min-width: mixins.toEm(1170)) {
+         padding-block: mixins.toRem(64);
+      }
+   }
+
+   // .hero__text-block
+
+   &__text-block {
+      flex-grow: 1;
+   }
+}
+
+// decor-block
+.decor-block {
+   transform: translateX(1000%);
+   opacity: 0;
+
+   transition:
+      opacity 1.5s ease,
+      transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+   display: none;
+
+   width: mixins.toRem(584);
+   height: mixins.toRem(454);
+   aspect-ratio: 584 / 454;
+
+   // 1. ПЕРЕНОСИМО ТОВСТУ РАМКУ СЮДИ:
+   // Робимо скруглення для зовнішнього контуру
+   border-radius: mixins.toRem(40);
+   // Задаємо товщину нашої рамки через паддінг
+   padding: mixins.toRem(32);
+   // Фарбуємо саму рамку у твій колір $border-accent-subtle
+   background-color: variables.$background-overlay-secondary;
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+
+   @media (min-width: mixins.toEm(1170)) {
+      display: block;
+   }
+
+   &__box {
+      // 2. ВНУТРІШНЄ СКРУГЛЕННЯ:
+      // Воно має бути трохи меншим за зовнішнє, щоб кути візуально виглядали паралельно
+      border-radius: mixins.toRem(40);
+
+      // Твій гарний градієнт фону
+      background: radial-gradient(101.54% 111.45% at 50% 0%, rgba(121, 68, 2, 0.4) 0%, rgba(36, 17, 0, 0.4) 100%);
+
+      // Ефект скла (блюримо те, що під коробкою)
+      backdrop-filter: blur(mixins.toRem(10));
+
+      // Внутрішні відступи для контенту (де Premium Design)
+      padding: mixins.toRem(40);
+
+      padding: mixins.toRem(40);
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // .decor-block__rate
+
+   &__rate {
+      padding: mixins.toRem(16);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-surface;
+      background: variables.$background-surface;
+
+      position: absolute;
+      inset-inline-start: mixins.toRem(-60);
+      inset-block-end: mixins.toRem(-50);
+
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(12);
+
+      animation: transform 2s ease 0.2s infinite;
+   }
+
+   // .decor-block__value
+
+   &__value {
+      font-size: mixins.toRem(30);
+
+      color: variables.$text-accent;
+   }
+
+   // .decor-block__rating-block
+   &__rating-block {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(2);
+   }
+
+   // .decor-block__rating
+
+   &__rating {
+      width: mixins.toRem(70);
+      aspect-ratio: 70 / 14;
+
+      position: relative;
+   }
+
+   // .decor-block__rating-empty
+
+   &__rating-empty {
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-start: 0;
+   }
+
+   // .decor-block__rating-fill
+
+   &__rating-fill {
+      position: absolute;
+      inset-inline-start: 0;
+      inset-block-start: 0;
+   }
+
+   // .decor-block__rating-label
+
+   &__rating-label {
+      font-size: mixins.toRem(12);
+   }
+
+   // .decor-block__project
+
+   &__project {
+      padding: mixins.toRem(16);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-surface;
+      background: variables.$background-surface;
+
+      position: absolute;
+      inset-inline-end: mixins.toRem(-60);
+      inset-block-start: mixins.toRem(-46);
+
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(12);
+
+      animation: transform 2s ease infinite;
+   }
+
+   // .decor-block__project-icon-block
+   &__project-icon-block {
+      width: mixins.toRem(40);
+      aspect-ratio: 1 / 1;
+
+      border-radius: mixins.toRem(14);
+
+      background: linear-gradient(135deg, #05df72 0%, #00bc7d 100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   // .decor-block__project-icon
+
+   &__project-icon {
+      width: mixins.toRem(14);
+      height: mixins.toRem(10);
+   }
+
+   // .decor-block__project-label
+
+   &__project-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      font-size: mixins.toRem(14);
+
+      color: variables.$text-primary;
+   }
+
+   // .decor-block__project-sublabel
+
+   &__project-sublabel {
+      font-size: mixins.toRem(12);
+      line-height: 1.333; /* 133.333% */
+
+      color: variables.$text-secondary;
+   }
+
+   // .decor-block__inner-decor
+
+   &__inner-decor {
+      border-radius: mixins.toRem(40);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: mixins.toRem(24);
+
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &::before {
+         content: "";
+         height: 150%;
+         width: 150%;
+         position: absolute;
+         inset-inline-start: -25%;
+         inset-block-start: -25%;
+         z-index: -1;
+
+         background-color: variables.$background-overlay-primary;
+
+         filter: blur(30px);
+      }
+   }
+
+   // .decor-block__inner-decor-logo
+
+   &__inner-decor-logo {
+      width: mixins.toRem(82);
+      aspect-ratio: 1 / 1;
+   }
+}
+
+// animation
+
+@keyframes transform {
+   0% {
+      transform: translateY(mixins.toRem(-10));
+   }
+   50% {
+      transform: translateY(mixins.toRem(0));
+   }
+   100% {
+      transform: translateY(mixins.toRem(-10));
+   }
+}
+
+// services
+.services {
+   color: variables.$text-primary;
+
+   // .services__head
+
+   &__head {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      text-align: center;
+
+      .title-block__label-block {
+         margin-block-end: mixins.toRem(32);
+      }
+   }
+
+   // .services__items
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(mixins.toRem(350), 100%), 1fr));
+      gap: mixins.toRem(24);
+
+      @include mixins.block;
+
+      @media (min-width: mixins.toEm(768)) {
+         gap: mixins.toRem(20);
+      }
+      @media (min-width: mixins.toEm(1170)) {
+         gap: mixins.toRem(24);
+      }
+   }
+
+   // .services__item
+
+   &__item {
+      border-radius: mixins.toRem(14);
+      outline: 1px solid variables.$border-card;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+      padding: mixins.toRem(24);
+
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(24);
+
+      min-height: mixins.toRem(420);
+
+      transition:
+         transform 0.3s ease,
+         background 0.3s ease,
+         box-shadow 0.3s ease,
+         outline 0.2s ease,
+         opacity 1.5s ease,
+         transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+      @media (any-hover: hover) {
+         &:hover {
+            transform: translateY(mixins.toRem(-2));
+
+            background: variables.$background-card-hover;
+
+            outline: 2px solid variables.$border-input-focus;
+
+            /* Drop shadow cards */
+            box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+         }
+      }
+   }
+}
+
+// portfolio
+.portfolio {
+   // .portfolio__head
+
+   &__head {
+      @extend .services__head;
+   }
+
+   // .portfolio__items
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(min(mixins.toRem(350), 100%), 1fr));
+      gap: mixins.toRem(24);
+   }
+
+   // .portfolio__item
+
+   &__item {
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-card;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(24);
+
+      transition:
+         transform 0.3s ease,
+         background 0.3s ease,
+         box-shadow 0.3s ease,
+         outline 0.2s ease,
+         opacity 1.5s ease,
+         transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+      @media (any-hover: hover) {
+         &:hover {
+            transform: translateY(mixins.toRem(-2));
+
+            background: variables.$background-card-hover;
+
+            outline: 2px solid variables.$border-input-focus;
+
+            /* Drop shadow cards */
+            box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+         }
+      }
+   }
+}
+
+// price
+.price {
+   // .price__head
+
+   &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+   }
+
+   // .price__items
+
+   &__items {
+      @extend .services__items;
+
+      grid-template-columns: repeat(auto-fit, minmax(min(mixins.toRem(250), 100%), 1fr));
+   }
+
+   // .price__item
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(24);
+
+      height: 100%;
+
+      padding: mixins.toRem(24);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-card;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+      transition:
+         transform 0.3s ease,
+         background 0.3s ease,
+         box-shadow 0.3s ease,
+         outline 0.2s ease,
+         opacity 1.5s ease,
+         transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+      @media (any-hover: hover) {
+         &:hover {
+            transform: translateY(mixins.toRem(-2));
+
+            background: variables.$background-card-hover;
+
+            outline: 2px solid variables.$border-input-focus;
+
+            /* Drop shadow cards */
+            box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+         }
+      }
+
+      &.active {
+         box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+         border: 1px solid variables.$border-input-focus;
+      }
+   }
+}
+
+// contact
+.contacts {
+   // .contacts__container
+
+   &__container {
+      @include mixins.block;
+   }
+
+   // .contacts__head
+
+   &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      .title-block__about {
+         max-width: 100%;
+      }
+   }
+
+   // .contacts__button
+
+   &__button {
+      padding-block: mixins.toRem(40) mixins.toRem(72);
+
+      display: flex;
+      justify-content: center;
+
+      @media (min-width: mixins.toEm(768)) {
+         padding-block: mixins.toRem(48) mixins.toRem(96);
+      }
+      @media (min-width: mixins.toEm(1170)) {
+         padding-block: mixins.toRem(64) mixins.toRem(128);
+      }
+   }
+}

@@ -1,0 +1,1572 @@
+@use "mixins";
+@use "variables";
+
+// header
+.header {
+   font-size: mixins.toRem(18);
+   position: fixed;
+   inline-size: 100%;
+   inset-inline-start: 0;
+   z-index: 99999;
+
+   background-color: variables.$background-overlay;
+
+   // .header__items
+
+   &__items {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: mixins.toRem(30);
+
+      padding-block: mixins.toRem(15);
+
+      @media (min-width: mixins.toEm(1065)) {
+         grid-template-columns: 1fr auto 1fr;
+      }
+   }
+
+   // .header__logo
+
+   &__logo {
+      position: relative;
+      z-index: 6;
+   }
+
+   // .header__menu
+
+   &__menu {
+      line-height: 1.5; /* 27px */
+
+      color: variables.$button-button-text-link;
+
+      display: inline-block;
+
+      justify-self: end;
+
+      transition: inset-block-start 0.2s ease;
+
+      @media (max-width: mixins.toEm(855)) {
+         position: fixed;
+         inset-inline-start: 0;
+         inset-block-start: -100%;
+         z-index: 5;
+
+         inline-size: 100%;
+         block-size: 100%;
+
+         background-color: variables.$background-page;
+
+         display: flex;
+         justify-content: center;
+
+         padding-block-start: mixins.toRem(285);
+
+         font-size: mixins.toRem(24);
+
+         &.active {
+            inset-block-start: 0;
+         }
+      }
+   }
+
+   // .header__button
+
+   &__button {
+      justify-self: end;
+
+      display: none;
+
+      @media (min-width: mixins.toEm(1065)) {
+         display: block;
+      }
+   }
+
+   // .header__item
+   &__item {
+      display: flex;
+      justify-content: center;
+
+      position: relative;
+      justify-self: end;
+      align-self: center;
+      z-index: 6;
+
+      @media (min-width: mixins.toEm(855)) {
+         display: none;
+      }
+   }
+}
+
+// nav-menu
+.nav-menu {
+   // .nav-menu__list
+
+   &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: mixins.toRem(32);
+
+      @media (min-width: mixins.toEm(855)) {
+         flex-direction: row;
+      }
+   }
+
+   // .nav-menu__list-item
+
+   &__list-item {
+      position: relative;
+
+      padding-block: mixins.toRem(10);
+   }
+
+   // .nav-menu__list-link
+
+   &__list-link {
+      display: block;
+      text-decoration: none;
+
+      &.active {
+         color: #fe9a00;
+      }
+
+      @media (hover: hover) {
+         &:hover {
+            color: variables.$button-button-text-link-active;
+         }
+      }
+
+      &.active::after {
+         content: "";
+         position: absolute;
+         inset-block-end: 0;
+         inset-inline-start: 0;
+         width: 100%;
+         height: mixins.toRem(2);
+         background-color: variables.$button-button-text-link-active;
+         border-radius: mixins.toRem(2);
+      }
+   }
+}
+
+// logo
+.logo {
+   display: flex;
+   align-items: center;
+   gap: mixins.toRem(8);
+
+   // .logo__img
+
+   &__img {
+      max-width: mixins.toRem(41);
+      aspect-ratio: 40 / 41;
+   }
+
+   // .logo__name
+
+   &__name {
+      font-size: mixins.toRem(20);
+
+      color: variables.$text-primary;
+   }
+}
+
+// buttons
+.buttons {
+   color: variables.$button-button-text-primary;
+   // .buttons__button
+
+   &__button {
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(8);
+
+      justify-content: center;
+
+      padding: mixins.toRem(14) mixins.toRem(24);
+
+      border-radius: mixins.toRem(14);
+
+      // 1. Задаємо початковий градієнт
+      background: linear-gradient(90deg, #fe9a00 0%, #f0b100 50%, #e17100 100%);
+
+      // 2. Розтягуємо фон по ширині, щоб сховати його другу половину
+      background-size: 200% auto;
+
+      // 3. Ставимо початкову позицію (лівий край)
+      background-position: left center;
+
+      // 4. Додаємо плавність для зміщення фону
+      transition:
+         background-position 0.4s ease-in-out,
+         transform 0.2s ease,
+         border-color 0.3s ease;
+
+      @media (any-hover: hover) {
+         &:hover {
+            // 5. При ховері соваємо фон на правий край — градієнт плавно "перетече"
+            background-position: right center;
+         }
+      }
+
+      // Можна додати легке збільшення для більшого інтерактиву
+      transform: translateY(-1px);
+
+      &:active {
+         transform: translateY(1px); // ефект натискання
+      }
+
+      @media (max-width: mixins.toEm(768)) {
+         width: 100%;
+      }
+
+      // .buttons__button--transparent
+      &--transparent {
+         border: 1px solid variables.$button-button-border-secondary;
+         background: variables.$button-button-bg-secondary;
+
+         color: variables.$button-button-text-secondary;
+
+         @media (any-hover: hover) {
+            &:hover {
+               color: variables.$button-button-text-tertiary;
+               border-color: variables.$button-button-text-tertiary-hover;
+            }
+         }
+      }
+   }
+}
+
+// burger menu
+.burger-menu {
+   inline-size: mixins.toRem(24);
+   block-size: mixins.toRem(24);
+
+   display: flex;
+   flex-direction: column;
+   gap: mixins.toRem(6);
+
+   align-self: center;
+
+   &.active {
+      gap: 0;
+   }
+
+   @media (min-width: mixins.toEm(855)) {
+      display: none;
+   }
+
+   &::after {
+      content: "";
+      inline-size: 100%;
+      block-size: mixins.toRem(2);
+      background-color: variables.$icon-inverse;
+
+      transition: transform 0.2s ease;
+   }
+
+   &::before {
+      content: "";
+      inline-size: 100%;
+      block-size: mixins.toRem(2);
+      background-color: variables.$icon-inverse;
+
+      transition: transform 0.2s ease;
+   }
+
+   span {
+      display: inline-block;
+      inline-size: 100%;
+      block-size: mixins.toRem(2);
+      background-color: variables.$icon-inverse;
+
+      transition: opacity 0.2s ease;
+   }
+}
+
+.burger-menu.active span {
+   display: none;
+   opacity: 1;
+}
+.burger-menu.active::after {
+   transform: translateY(mixins.toRem(-1)) rotate(45deg);
+}
+.burger-menu.active::before {
+   transform: translateY(mixins.toRem(1)) rotate(-45deg);
+}
+
+// modal rights and terms
+.modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 150;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: mixins.toRem(20);
+
+   // Ховаємо плавно, без використання display: none
+   opacity: 0;
+   visibility: hidden;
+   will-change: opacity, visibility;
+   transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+   // Клас активності, який додає твій JS
+   &.is-open,
+   &.active {
+      opacity: 1;
+      visibility: visible;
+
+      .modal__content {
+         transform: scale(1);
+         opacity: 1;
+      }
+   }
+
+   // Темний фон навколо (Оверлей з розмиттям)
+   &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+   }
+
+   // 🌟 ВІКНО КОНТЕНТУ (Повертаємо темний Glassmorphism стиль)
+   &__content {
+      position: relative;
+      background: rgba(26, 26, 26, 0.85); // глибокий темний напівпрозорий фон
+      backdrop-filter: blur(16px); // матове скло
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08); // тонка світла рамка
+      border-radius: mixins.toRem(24);
+      padding: mixins.toRem(40) mixins.toRem(32);
+      width: 100%;
+      max-width: mixins.toRem(540);
+      z-index: 2;
+      text-align: left;
+
+      // Початковий стан для анімації вильоту
+      opacity: 0;
+      transform: scale(0.95);
+      will-change: transform, opacity;
+      transition:
+         transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+         opacity 0.3s ease;
+   }
+
+   // Кнопка закриття (хрестик)
+   &__close {
+      position: absolute;
+      top: mixins.toRem(20);
+      right: mixins.toRem(20);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: mixins.toRem(4);
+      color: rgba(255, 255, 255, 0.7);
+      transition:
+         transform 0.2s ease,
+         color 0.2s ease;
+
+      &:hover {
+         transform: scale(1.1);
+         color: #ffb900; // підсвічуємо помаранчевим при наведенні
+      }
+   }
+
+   // Стилізація заголовка всередині модалки правил
+   &__title,
+   #modal-title {
+      font-size: mixins.toRem(20);
+      font-weight: 600;
+      color: #ffffff; // чисто білий заголовок
+      margin-bottom: mixins.toRem(16);
+      line-height: 1.4;
+
+      // Якщо хочеш фірмову лінію під заголовком, як у макеті:
+      &::after {
+         content: "";
+         display: block;
+         width: mixins.toRem(60);
+         height: 2px;
+         background: #ffb900;
+         margin-top: mixins.toRem(12);
+      }
+   }
+
+   // Блок із текстом правил (Політики/Умов)
+   &__text,
+   #modal-text {
+      font-size: mixins.toRem(15);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75); // гарний читабельний світло-сірий текст
+      line-height: 1.6;
+      max-height: 60vh; // щоб довгий текст не вилазив за екран, а скролився
+      overflow-y: auto;
+      padding-right: mixins.toRem(8);
+
+      p {
+         margin-bottom: mixins.toRem(12);
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+      strong {
+         color: #ffffff;
+         font-weight: 600;
+      }
+
+      // Кастомізація скроллбару, якщо текст задовгий
+      &::-webkit-scrollbar {
+         width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+         background: rgba(255, 255, 255, 0.2);
+         border-radius: 2px;
+      }
+   }
+}
+
+// modal success sent
+.modal-success {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 150;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: mixins.toRem(20);
+
+   // Плавне керування видимістю без display: none
+   opacity: 0;
+   visibility: hidden;
+   will-change: opacity, visibility;
+   transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+   &.is-open {
+      opacity: 1;
+      visibility: visible;
+
+      .modal-success__content {
+         transform: scale(1);
+         opacity: 1;
+      }
+   }
+
+   // Напівпрозорий задній фон (оверлей)
+   &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px); // легке розмиття заднього плану
+   }
+
+   // Головне вікно (Glassmorphism стиль)
+   &__content {
+      position: relative;
+      background: rgba(26, 26, 26, 0.85); // глибокий темний напівпрозорий фон
+      backdrop-filter: blur(16px); // ефект матового скла
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08); // тонка світла рамка
+      border-radius: mixins.toRem(24);
+      padding: mixins.toRem(40) mixins.toRem(32);
+      width: 100%;
+      max-width: mixins.toRem(500);
+      z-index: 2;
+
+      // Початковий стан для красивої анімації вильоту
+      opacity: 0;
+      transform: scale(0.95);
+      will-change: transform, opacity;
+      transition:
+         transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+         opacity 0.3s ease;
+   }
+
+   // Хрестик закриття
+   &__close-btn {
+      position: absolute;
+      top: mixins.toRem(20);
+      right: mixins.toRem(20);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: mixins.toRem(4);
+      transition:
+         transform 0.2s ease,
+         opacity 0.2s ease;
+
+      &:hover {
+         transform: scale(1.1);
+         opacity: 1;
+         svg path {
+            stroke: #ffb900;
+         } // підсвічуємо фірмовим помаранчевим при ховері
+      }
+   }
+
+   &__body {
+      text-align: left; // вирівнювання по лівому краю, як у твоїй політиці
+   }
+
+   // Заголовок модалки
+   &__title {
+      font-size: mixins.toRem(20);
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.4;
+   }
+
+   // Помаранчевий роздільник (фірмовий штрих)
+   &__divider {
+      width: mixins.toRem(60);
+      height: 2px;
+      background: #ffb900; // твій фірмовий колір
+      margin-top: mixins.toRem(12);
+      margin-bottom: mixins.toRem(20);
+   }
+
+   // Блок із текстом
+   &__text-block {
+      font-size: mixins.toRem(15);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75); // злегка приглушений білий, приємний для очей
+      line-height: 1.6;
+
+      p {
+         margin-bottom: mixins.toRem(12);
+
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+
+      strong {
+         color: #ffffff;
+         font-weight: 600;
+      }
+   }
+}
+
+// Згода на обробку даних
+.cookie-consent {
+   position: fixed;
+   bottom: mixins.toRem(24);
+   left: mixins.toRem(24);
+   right: mixins.toRem(24);
+   z-index: 200;
+
+   // Ховаємо за замовчуванням
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(mixins.toRem(40));
+   will-change: transform, opacity;
+   transition:
+      transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+      opacity 0.4s ease,
+      visibility 0.4s ease;
+
+   // Клас для показу через JS
+   &.is-show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+   }
+
+   // Контейнер (Темний Glassmorphism)
+   &__content {
+      max-width: mixins.toRem(1140); // або ширина твого контейнера сайту
+      margin: 0 auto;
+      background: rgba(26, 26, 26, 0.9);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: mixins.toRem(16);
+      padding: mixins.toRem(16) mixins.toRem(24);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: mixins.toRem(24);
+
+      // Адаптив для мобілок
+      @media (max-width: mixins.toEm(768)) {
+         flex-direction: column;
+         text-align: center;
+         padding: mixins.toRem(20);
+         gap: mixins.toRem(16);
+      }
+   }
+
+   // Текст
+   &__text {
+      font-size: mixins.toRem(14);
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+   }
+
+   // Посилання на політику
+   &__link {
+      color: #ffb900; // Твій фірмовий помаранчевий
+      text-decoration: underline;
+      transition: color 0.2s ease;
+
+      &:hover {
+         color: #ffffff;
+         text-decoration: none;
+      }
+   }
+
+   // Помаранчева кнопка згоди
+   &__btn {
+      background: #ffb900;
+      color: #000000;
+      font-weight: 600;
+      font-size: mixins.toRem(14);
+      padding: mixins.toRem(10) mixins.toRem(28);
+      border-radius: mixins.toRem(8);
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition:
+         background-color 0.2s ease,
+         transform 0.1s ease;
+
+      &:hover {
+         background: #e0a300;
+      }
+
+      &:active {
+         transform: scale(0.96);
+      }
+
+      @media (max-width: mixins.toEm(768)) {
+         width: 100%; // На мобілках кнопка на всю ширину
+      }
+   }
+}
+
+// icons
+.icon {
+   display: inline-block;
+   width: mixins.toRem(15);
+   height: mixins.toRem(15);
+
+   // НАЙВАЖЛИВІШЕ:
+   // fill відповідає за колір заливки іконок
+   // stroke відповідає за колір ліній у контурних іконок
+   fill: currentColor;
+   stroke: currentColor;
+
+   transition:
+      fill 0.3s ease,
+      stroke 0.3s ease; // Плавна зміна кольору
+}
+.icon-arrow-2 {
+   width: mixins.toRem(20);
+   height: mixins.toRem(20);
+}
+.icon-required {
+   width: mixins.toRem(8);
+}
+
+// title-block
+.title-block {
+   opacity: 0;
+   transform: translateX(-100%);
+
+   transition:
+      opacity 0.5s ease,
+      transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+   // .title-block__label-block
+   &__label-block {
+      color: variables.$text-accent;
+
+      padding: mixins.toRem(12) mixins.toRem(16);
+
+      background: linear-gradient(90deg, rgba(254, 154, 0, 0.1) 0%, rgba(208, 135, 0, 0.1) 100%);
+
+      border: 1px solid variables.$border-tag-primary;
+      border-radius: mixins.toRem(24);
+
+      margin-block-end: mixins.toRem(16);
+
+      display: inline-flex;
+      align-items: center;
+      gap: mixins.toRem(9);
+
+      // .title-block__label-block--style
+      &--style {
+         .title-block__label {
+            &::before {
+               display: none;
+            }
+         }
+      }
+   }
+
+   // .title-block__label-icon
+   &__label-icon {
+      width: mixins.toRem(16);
+      height: mixins.toRem(15);
+   }
+
+   // .title-block__label
+
+   &__label {
+      font-size: mixins.toRem(14);
+
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(8);
+
+      &::before {
+         content: "";
+         width: mixins.toRem(8);
+         height: mixins.toRem(8);
+
+         border-radius: 50%;
+
+         background-color: variables.$bullet-accent;
+
+         padding: mixins.toRem(4);
+      }
+   }
+
+   // .title-block__icon-block
+
+   &__icon-block {
+      width: mixins.toRem(64);
+      height: mixins.toRem(64);
+
+      margin-block-end: mixins.toRem(32);
+   }
+
+   // .title-block__title
+
+   &__title {
+      font-size: mixins.toRem(60);
+      font-weight: 500;
+      letter-spacing: -3px;
+
+      color: variables.$text-primary;
+
+      max-width: mixins.toRem(533);
+
+      &:not(:last-child) {
+         margin-block-end: mixins.toRem(24);
+      }
+
+      @media (min-width: mixins.toEm(768)) {
+         font-size: mixins.toRem(96);
+      }
+   }
+
+   // .title-block__subtitle
+   &__subtitle {
+      font-size: mixins.toRem(48);
+      font-weight: 500;
+      letter-spacing: -1px;
+
+      color: variables.$text-primary;
+
+      @media (min-width: mixins.toEm(768)) {
+         font-size: mixins.toRem(60);
+      }
+
+      // .title-block__subtitle--fz
+      &--fz {
+         font-size: mixins.toRem(46);
+
+         @media (min-width: mixins.toEm(768)) {
+            font-size: mixins.toRem(48);
+         }
+      }
+
+      &:not(:last-child) {
+         margin-block-end: mixins.toRem(16);
+
+         @media (min-width: mixins.toEm(1170)) {
+            margin-block-end: mixins.toRem(24);
+         }
+      }
+   }
+
+   // .title-block__title-color
+   &__title-color {
+      background: linear-gradient(90deg, #fe9a00 0%, #f0b100 50%, #e17100 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+   }
+
+   // .title-block__about
+
+   &__about {
+      font-size: mixins.toRem(18);
+      letter-spacing: -1px;
+
+      max-width: mixins.toRem(576);
+
+      color: variables.$text-secondary;
+
+      &:not(:last-child) {
+         margin-block-end: mixins.toRem(32);
+      }
+
+      @media (min-width: mixins.toEm(768)) {
+         font-size: mixins.toRem(20);
+      }
+   }
+
+   // .title-block__buttons
+
+   &__buttons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: mixins.toRem(24);
+
+      @media (min-width: mixins.toEm(768)) {
+         gap: mixins.toRem(26);
+      }
+
+      &:not(:last-child) {
+         margin-block-end: mixins.toRem(32);
+
+         @media (min-width: mixins.toEm(768)) {
+            margin-block-end: mixins.toRem(48);
+         }
+      }
+   }
+
+   // .title-block__rate
+
+   &__rate {
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(24);
+   }
+
+   // .title-block__rate-item
+
+   &__rate-item {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(12);
+
+      padding: mixins.toRem(16);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-card;
+      background: variables.$background-card;
+
+      // flex-basis: toRem(108);
+
+      max-width: mixins.toRem(108);
+      min-height: mixins.toRem(129);
+
+      flex-grow: 1;
+
+      @media (min-width: mixins.toEm(768)) {
+         flex-basis: mixins.toRem(198);
+
+         max-width: mixins.toRem(198);
+         aspect-ratio: 198 / 117;
+      }
+   }
+
+   // .title-block__rate-icon
+
+   &__rate-icon {
+      max-width: mixins.toRem(16);
+      aspect-ratio: 1 / 1;
+
+      flex-shrink: 0;
+   }
+
+   // .title-block__rate-value
+
+   &__rate-value {
+      font-size: mixins.toRem(24);
+      font-weight: 500;
+      line-height: 1.2; /* 28.8px */
+
+      color: variables.$text-primary;
+   }
+
+   // .title-block__rate-label
+
+   &__rate-label {
+      font-size: mixins.toRem(12);
+
+      flex-grow: 1;
+
+      // Якщо захочеш, щоб короткий текст центрувався по вертикалі відносно сусідньої довгої картки:
+      display: flex;
+      align-items: center;
+   }
+}
+
+// services cards
+.item-services {
+   opacity: 0;
+   transform: translateX(-160);
+
+   transition:
+      opacity 1.5s ease,
+      transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+   // .item-services__head
+
+   &__head {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(16);
+
+      flex-grow: 1;
+   }
+
+   // .item-services__icon-block
+
+   &__icon-block {
+      border-radius: mixins.toRem(16);
+      border: 1px solid variables.$border-icon-default;
+      background: linear-gradient(135deg, rgba(254, 154, 0, 0.2) 0%, rgba(225, 113, 0, 0.1) 100%);
+
+      padding: mixins.toRem(17);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      max-width: mixins.toRem(66);
+   }
+
+   // .item-services__icon
+
+   &__icon {
+      width: mixins.toRem(24);
+      height: mixins.toRem(26);
+   }
+
+   // .item-services__title
+
+   &__title {
+      font-size: mixins.toRem(30);
+      font-weight: 500;
+   }
+
+   // .item-services__about
+
+   &__about {
+      line-height: 1.6; /* 25.6px */
+
+      color: variables.$text-secondary;
+
+      flex-grow: 1;
+   }
+
+   // .item-services__list
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(12);
+
+      margin-block-end: mixins.toRem(24);
+   }
+
+   // .item-services__list-item
+
+   &__list-item {
+      font-size: mixins.toRem(14);
+
+      color: variables.$text-body;
+
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(6);
+
+      &::before {
+         content: "";
+         width: mixins.toRem(8);
+         height: mixins.toRem(8);
+
+         border-radius: 50%;
+
+         background-color: variables.$bullet-accent;
+      }
+   }
+
+   // .item-services__link
+   &__link {
+      font-weight: 500;
+
+      color: variables.$button-button-text-tertiary;
+
+      display: inline-flex;
+      align-items: center;
+      gap: mixins.toRem(8);
+
+      @media (any-hover: hover) {
+         &:hover {
+            color: variables.$button-button-text-tertiary-hover;
+         }
+      }
+   }
+}
+
+// link to
+.link {
+   display: flex;
+   justify-content: center;
+   // .link__button
+
+   &__button {
+      color: variables.$text-primary;
+
+      font-weight: 500;
+
+      padding: mixins.toRem(16) mixins.toRem(24);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$button-button-border-secondary;
+      background: variables.$button-button-bg-secondary;
+
+      @media (any-hover: hover) {
+         &:hover {
+            border-color: variables.$border-input-focus;
+         }
+      }
+   }
+}
+
+// portfolio cards
+.item-portfolio {
+   opacity: 0;
+   transform: translateX(mixins.toRem(-160));
+
+   transition:
+      opacity 0.4s ease,
+      transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+      max-height 0.4s ease,
+      // для м'якого схлопування сітки
+      margin 0.4s ease,
+      padding 0.4s ease;
+
+   &.is-hidden {
+      opacity: 0 !important;
+      transform: scale(0.9) !important;
+
+      // Повністю виключаємо з потоку і сітки, щоб блоки поруч не стрибали
+      position: absolute;
+      width: 0;
+      height: 0;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      border: none;
+      pointer-events: none;
+   }
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+   // .item-portfolio__img
+
+   &__img {
+      // max-width: toRem(421);
+      // aspect-ratio: 421 / 243;
+
+      border-radius: 14px 14px 0 0;
+      overflow: hidden;
+   }
+
+   // .item-portfolio__body-block
+   &__body-block {
+      padding: mixins.toRem(24);
+
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(24);
+
+      flex-grow: 1;
+
+      @media (min-width: mixins.toEm(1170)) {
+         padding: mixins.toRem(24) mixins.toRem(42);
+      }
+   }
+
+   // .item-portfolio__head
+
+   &__head {
+      font-size: mixins.toRem(12);
+
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(12);
+   }
+
+   // .item-portfolio__type
+
+   &__type {
+      color: variables.$text-accent;
+   }
+
+   // .item-portfolio__decor
+
+   &__decor {
+      width: mixins.toRem(4);
+      height: mixins.toRem(4);
+
+      border-radius: 50%;
+
+      background-color: variables.$bullet-accent;
+   }
+
+   // .item-portfolio__label
+
+   &__label {
+      color: variables.$text-tag;
+   }
+
+   // .item-portfolio__body
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(16);
+
+      height: 100%;
+   }
+
+   // .item-portfolio__title
+
+   &__title {
+      font-size: mixins.toRem(24);
+      font-weight: 500;
+      line-height: 1.2; /* 28.8px */
+
+      color: variables.$text-primary;
+
+      flex-grow: 1;
+   }
+
+   // .item-portfolio__about
+
+   &__about {
+      font-size: mixins.toRem(14);
+      line-height: 1.6; /* 22.4px */
+   }
+
+   // .item-portfolio__tech
+
+   &__tech {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: mixins.toRem(8);
+   }
+
+   // .item-portfolio__tech-item
+
+   &__tech-item {
+      font-size: mixins.toRem(12);
+
+      border-radius: mixins.toRem(24);
+      border: 1px solid variables.$border-tag-secondary;
+      background: variables.$background-tag-secondary;
+
+      padding: mixins.toRem(12) mixins.toRem(14);
+   }
+}
+
+// price cards
+.item-price {
+   opacity: 0;
+   transform: translateX(-160);
+
+   transition:
+      opacity 1.5s ease,
+      transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+
+   // .item-price__icon-block
+
+   &__icon-block {
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-icon-default;
+      background: linear-gradient(135deg, rgba(254, 154, 0, 0.2) 0%, rgba(225, 113, 0, 0.1) 100%);
+
+      width: mixins.toRem(50);
+      height: mixins.toRem(50);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   // .item-price__icon
+
+   &__icon {
+      width: mixins.toRem(18);
+      height: mixins.toRem(18);
+   }
+
+   // .item-price__title
+
+   &__title {
+      font-size: mixins.toRem(24);
+      font-weight: 500;
+      line-height: 1.2; /* 28.8px */
+
+      color: variables.$text-primary;
+   }
+
+   // .item-price__about
+
+   &__about {
+      line-height: 1.6; /* 25.6px */
+
+      flex-grow: 1;
+   }
+
+   // .item-price__deadlines
+
+   &__deadlines {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(8);
+   }
+
+   // .item-price__deadlines-price
+
+   &__deadlines-price {
+      // line-height: 1;
+
+      font-size: mixins.toRem(30);
+      font-weight: 500;
+
+      color: variables.$text-primary;
+   }
+
+   // .item-price__deadlines-time
+
+   &__deadlines-time {
+      display: flex;
+      align-items: center;
+      gap: mixins.toRem(8);
+
+      color: variables.$text-accent;
+
+      line-height: 1.5; /* 21px */
+      font-size: mixins.toRem(14);
+   }
+
+   // .item-price__deadlines-icon
+
+   &__deadlines-icon {
+      width: mixins.toRem(13);
+      height: mixins.toRem(13);
+   }
+
+   // .item-price__line
+
+   &__line {
+      height: mixins.toRem(3);
+
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+   }
+
+   // .item-price__head-block
+
+   &__head-block {
+      display: flex;
+      gap: mixins.toRem(30);
+      justify-content: space-between;
+   }
+
+   // .item-price__head-block-statistic
+
+   &__head-block-statistic {
+      font-size: mixins.toRem(14);
+
+      border-radius: mixins.toRem(24);
+      border: 1px solid variables.$border-tag-primary;
+      background: linear-gradient(90deg, rgba(254, 154, 0, 0.1) 0%, rgba(208, 135, 0, 0.1) 100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: mixins.toRem(12) mixins.toRem(16);
+
+      color: variables.$text-accent;
+   }
+}
+
+// scroll top button
+.scroll-top {
+   width: mixins.toRem(52);
+   height: mixins.toRem(52);
+
+   border-radius: 14px;
+   background: linear-gradient(90deg, #fe9a00 0%, #f0b100 50%, #e17100 100%);
+
+   color: variables.$icon-on-primary;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: fixed;
+   inset-inline-end: 5%;
+   inset-block-end: 40%;
+
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease,
+      transform 0.3s ease;
+
+   transform: translateY(20px); // легкий ефект випливання знизу
+
+   // Стан, коли користувач прокрутив сторінку вниз
+   &.is-visible {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+   }
+
+   // Ефект при наведенні (за бажанням, для преміального UI)
+
+   @media (any-hover: hover) {
+      &:hover {
+         transform: translateY(-5px);
+      }
+   }
+
+   svg {
+      transform: rotate(-90deg);
+   }
+}
+
+// для тих хто не хоче анімацій (доступність)
+@media (prefers-reduced-motion: reduce) {
+   .animate {
+      opacity: 1;
+      transform: none;
+      transition: none;
+   }
+}
+
+// footer
+.footer {
+   color: variables.$text-secondary;
+
+   border-top: 1px solid variables.$border-cards-line;
+
+   // .footer__container
+
+   &__container {
+      padding-block: mixins.toRem(64);
+   }
+
+   // .footer__items
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(mixins.toRem(200), 100%), 1fr));
+      gap: mixins.toRem(48);
+
+      border-bottom: 1px solid variables.$border-cards-line;
+
+      padding-block-end: mixins.toRem(64);
+   }
+
+   // .footer__logo-block
+
+   &__logo-block {
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(24);
+   }
+
+   // .footer__text
+
+   &__text {
+      font-size: mixins.toRem(14);
+      line-height: 1.5; /* 21px */
+
+      max-width: mixins.toRem(273);
+   }
+
+   // .footer__item
+
+   &__item {
+      @media (min-width: mixins.toEm(768)) {
+         justify-self: end;
+      }
+   }
+
+   // .footer__title
+
+   &__title {
+      font-weight: 500;
+
+      color: variables.$text-primary;
+
+      margin-block-end: mixins.toRem(16);
+   }
+
+   // .footer__list
+
+   &__list {
+      font-size: clamp(0.875rem, 0.374vw + 0.789rem, 1.125rem);
+      line-height: 1.5; /* 27px */
+
+      display: flex;
+      flex-direction: column;
+      gap: mixins.toRem(4);
+   }
+
+   // .footer__list-item
+
+   &__list-item {
+      padding-block: mixins.toRem(10);
+
+      display: flex;
+      gap: mixins.toRem(8);
+      align-items: center;
+
+      transition: color 0.3s ease;
+
+      @media (any-hover: hover) {
+         &:hover {
+            color: variables.$button-button-text-link-burger-pressed;
+         }
+      }
+   }
+
+   // .footer__list-link
+
+   &__list-link {
+      @media (any-hover: hover) {
+         &:hover {
+            color: variables.$button-button-text-link-burger-pressed;
+         }
+      }
+   }
+
+   // .footer__rights
+
+   &__rights {
+      padding-block-start: mixins.toRem(24);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: mixins.toRem(12);
+      text-align: center;
+   }
+
+   // .footer__rights-text
+
+   &__rights-text {
+      font-size: mixins.toRem(14);
+      line-height: 1.5; /* 21px */
+
+      padding-block: mixins.toRem(10);
+   }
+
+   // .footer__rights-block
+
+   &__rights-block {
+      display: flex;
+      gap: mixins.toRem(24);
+   }
+
+   // .footer__rights-link
+
+   &__rights-link {
+      font-size: clamp(0.875rem, 0.374vw + 0.789rem, 1.125rem);
+
+      padding-block: mixins.toRem(10);
+   }
+}
+
+// socials block
+.socials {
+   display: flex;
+   align-items: center;
+   gap: mixins.toRem(8);
+
+   // .socials__socials-item-link
+   &__socials-item-link {
+      padding: mixins.toRem(11);
+
+      border-radius: mixins.toRem(14);
+      outline: 1px solid variables.$button-button-border-icon-button;
+
+      background-color: variables.$button-button-bg-icon-button;
+
+      color: variables.$icon-secondary;
+
+      transition:
+         outline 0.3s ease,
+         background-color 0.3s ease,
+         box-shadow 0.3s ease;
+
+      @media (hover: hover) {
+         &:hover {
+            color: variables.$icon-secondary-hover;
+
+            outline: 2px solid variables.$button-button-border-arrow-hover;
+
+            background-color: variables.$button-button-bg-arrow-hover;
+
+            box-shadow: 0 0 50px -12px rgba(217, 119, 6, 0.3);
+         }
+      }
+   }
+}

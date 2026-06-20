@@ -1,0 +1,13 @@
+{
+   "name": "digital_studio",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.html",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build-tokens": "style-dictionary build"
+   },
+   "devDependencies": {
+      "style-dictionary": "^5.4.3"
+   }
+}

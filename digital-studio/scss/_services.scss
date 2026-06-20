@@ -1,0 +1,106 @@
+@use "mixins";
+@use "variables";
+
+// services page
+.services-page {
+   @include mixins.container;
+
+   .title-block__title {
+      max-width: 100%;
+   }
+}
+
+// develop
+.develop {
+   // .develop__container
+
+   &__container {
+      @include mixins.block;
+   }
+
+   // .develop__head
+
+   &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+   }
+
+   // .develop__items
+
+   &__items {
+      padding-block-start: mixins.toRem(64);
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(mixins.toRem(300), 100%), 1fr));
+      gap: mixins.toRem(24);
+
+      @media (min-width: mixins.toEm(1170)) {
+         gap: mixins.toRem(78);
+
+         padding-inline: mixins.toRem(104);
+      }
+   }
+
+   // .develop__item
+
+   &__item {
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$border-card;
+      background: variables.$background-card;
+
+      padding: mixins.toRem(24);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: mixins.toRem(24);
+
+      text-align: center;
+   }
+}
+
+// item-develop cards
+.item-develop {
+   opacity: 0;
+   transform: translateX(-160);
+
+   transition:
+      opacity 1.5s ease,
+      transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+
+   .is-visible & {
+      transform: translate(0, 0);
+      opacity: 1;
+   }
+   // .item-develop__number
+
+   &__number {
+      background: linear-gradient(90deg, rgba(255, 185, 0, 0.5) 0%, rgba(208, 135, 0, 0.5) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-size: mixins.toRem(60);
+      font-weight: 500;
+      letter-spacing: -1px;
+   }
+
+   // .item-develop__title
+
+   &__title {
+      font-size: mixins.toRem(24);
+      font-weight: 500;
+      line-height: 1.2; /* 28.8px */
+
+      color: variables.$text-primary;
+   }
+
+   // .item-develop__about
+
+   &__about {
+      line-height: 1.6; /* 25.6px */
+   }
+}

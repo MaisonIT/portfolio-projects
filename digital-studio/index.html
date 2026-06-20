@@ -1,0 +1,576 @@
+<!doctype html>
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+
+<head>
+   <!-- Кодування тексту -->
+   <meta charset="UTF-8">
+   <!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Підключення окремого файлу стилів -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Іконка -->
+   <!-- <link
+      rel="shortcut icon"
+      href="/img/icons/favicon.ico"
+      type="image/x-icon"
+      /> -->
+   <!-- Заголовок сторінки в браузері -->
+   <title>Digital Agency</title>
+   <!-- Відкрити усі вкладки в новій вкладці -->
+   <!-- <base target="_blank" href> -->
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <div class="header__items">
+               <div class="header__logo logo">
+                  <div class="logo__img">
+                     <img src="img/logo.webp" alt="Main Logo">
+                  </div>
+                  <strong class="logo__name">Digital Studio</strong>
+               </div>
+               <nav class="header__menu nav-menu">
+                  <ul class="nav-menu__list">
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="index.html">Головна</a>
+                     </li>
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="services.html">Послуги</a>
+                     </li>
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="portfolio.html">Портфоліо</a>
+                     </li>
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="about.html">Про нас</a>
+                     </li>
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="process.html">Процес</a>
+                     </li>
+                     <li class="nav-menu__list-item">
+                        <a class="nav-menu__list-link" href="contacts.html">Контакти</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__button buttons">
+                  <button class="buttons__button">Почати проєкт</button>
+               </div>
+               <button class="header__item burger-menu">
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main id="home" class="main">
+         <section class="hero anim">
+            <div class="hero__container">
+               <div class="hero__items">
+                  <div class="hero__text-block title-block">
+                     <div class="title-block__label-block">
+                        <strong class="title-block__label">Premium Web
+                           Development</strong>
+                     </div>
+                     <h1 class="title-block__title">Створюємо <span class="title-block__title-color">преміум
+                           сайти</span></h1>
+                     <p class="title-block__about">Розробляємо сучасні веб-рішення для бізнесу з унікальним дизайном та
+                        технологіями світового рівня</p>
+                     <div class="title-block__buttons buttons">
+                        <a href="contacts.html" class="buttons__button">Почати проєкт
+                           <svg class="icon icon-arrow">
+                              <use href="img/icons/symbol-defs.svg#icon-arrow-2"></use>
+                           </svg>
+                        </a>
+                        <a href="portfolio.html" class="buttons__button buttons__button--transparent">Переглянути
+                           роботи</a>
+                     </div>
+                     <div class="title-block__rate">
+                        <div class="title-block__rate-item">
+                           <div class="title-block__rate-icon">
+                              <img src="img/icons/star.svg" alt="Star Icon">
+                           </div>
+                           <div class="title-block__rate-value">150+</div>
+                           <div class="title-block__rate-label">Проєктів</div>
+                        </div>
+                        <div class="title-block__rate-item">
+                           <div class="title-block__rate-icon">
+                              <img src="img/icons/like.svg" alt="Like Icon">
+                           </div>
+                           <div class="title-block__rate-value">98%</div>
+                           <div class="title-block__rate-label">Задоволених клієнтів</div>
+                        </div>
+                        <div class="title-block__rate-item">
+                           <div class="title-block__rate-icon">
+                              <img src="img/icons/rating.svg" alt="Rating Icon">
+                           </div>
+                           <div class="title-block__rate-value">4.9</div>
+                           <div class="title-block__rate-label">Проєктів</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="hero__decor decor-block">
+                     <div class="decor-block__box">
+                        <div class="decor-block__rate">
+                           <div class="decor-block__value">4.9</div>
+                           <div class="decor-block__rating-block">
+                              <div class="decor-block__rating">
+                                 <div class="decor-block__rating-empty">
+                                    <img src="img/icons/rate-empty.svg" alt="Rating stars empty">
+                                 </div>
+                                 <div class="decor-block__rating-fill">
+                                    <img src="img/icons/rate-fill.svg" alt="Rating stars fill">
+                                 </div>
+                              </div>
+                              <p class="decor-block__rating-label">Рейтинг клієнтів</p>
+                           </div>
+                        </div>
+                        <div class="decor-block__project">
+                           <div class="decor-block__project-icon-block">
+                              <div class="decor-block__project-icon">
+                                 <img src="img/icons/check.svg" alt="Check icon">
+                              </div>
+                           </div>
+                           <p class="decor-block__project-label">Проєкт завершено <span
+                                 class="decor-block__project-sublabel">2 години тому</span></p>
+                        </div>
+                        <div class="decor-block__inner-decor">
+                           <div class="decor-block__inner-decor-logo">
+                              <img src="img/logo.webp" alt="Logo">
+                           </div>
+                           <p class="decor-block__inner-decor-label">Premium Design</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="services anim">
+            <div class="services__container">
+               <div class="services__head title-block">
+                  <div class="title-block__label-block title-block__label-block--style">
+                     <div class="title-block__label-icon">
+                        <img src="img/icons/palette.svg" alt="Pallete Icon">
+                     </div>
+                     <strong class="title-block__label title-block__label--style">
+                        Наші послуги</strong>
+                  </div>
+                  <h2 class="title-block__subtitle">Що ми створюємо</h2>
+                  <p class="title-block__about">Повний цикл розробки від ідеї до запуску</p>
+               </div>
+               <div class="services__items">
+                  <div class="services__item item-services">
+                     <div class="item-services__head">
+                        <div class="item-services__icon-block">
+                           <div class="item-services__icon">
+                              <img src="img/icons/lightning.svg" alt="lightning Icon">
+                           </div>
+                        </div>
+                        <h3 class="item-services__title">Лендінги</h3>
+                        <p class="item-services__about">Сучасні односторінкові сайти для максимальної конверсії вашого
+                           бізнесу
+                        </p>
+                        <ul class="item-services__list">
+                           <li class="item-services__list-item">Швидка розробка</li>
+                           <li class="item-services__list-item">Адаптивний дизайн</li>
+                           <li class="item-services__list-item">SEO-оптимізація</li>
+                        </ul>
+                     </div>
+                     <div class="item-services__link-body">
+                        <a class="item-services__link" href="services.html">Дізнатись більше
+                           <svg class="icon icon-arrow-2">
+                              <use href="img/icons/symbol-defs.svg#icon-arrow-2"></use>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="services__item item-services">
+                     <div class="item-services__head">
+                        <div class="item-services__icon-block">
+                           <div class="item-services__icon">
+                              <img src="img/icons/corporate-website.svg" alt="Lightning Icon">
+                           </div>
+                        </div>
+                        <h3 class="item-services__title">Корпоративні сайти</h3>
+                        <p class="item-services__about">Професійна презентація вашої компанії з повним функціоналом
+                        </p>
+                        <ul class="item-services__list">
+                           <li class="item-services__list-item">Багатосторінкова структура</li>
+                           <li class="item-services__list-item">CMS інтеграція</li>
+                           <li class="item-services__list-item">Аналітика</li>
+                        </ul>
+                     </div>
+                     <div class="item-services__link-body">
+                        <a class="item-services__link" href="services.html">Дізнатись більше
+                           <svg class="icon icon-arrow-2">
+                              <use href="img/icons/symbol-defs.svg#icon-arrow-2"></use>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="services__item item-services">
+                     <div class="item-services__head">
+                        <div class="item-services__icon-block">
+                           <div class="item-services__icon">
+                              <img src="img/icons/shop.svg" alt="lightning Icon">
+                           </div>
+                        </div>
+                        <h3 class="item-services__title">E-commerce</h3>
+                        <p class="item-services__about">Інтернет-магазини з інтуїтивним UX та потужним функціоналом
+                        </p>
+                        <ul class="item-services__list">
+                           <li class="item-services__list-item">Онлайн-оплата</li>
+                           <li class="item-services__list-item">Управління товарами</li>
+                           <li class="item-services__list-item">Інтеграція з CRM</li>
+                        </ul>
+                     </div>
+                     <div class="item-services__link-body">
+                        <a class="item-services__link" href="services.html">Дізнатись більше
+                           <svg class="icon icon-arrow-2">
+                              <use href="img/icons/symbol-defs.svg#icon-arrow-2"></use>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="link"><a class="link__button" href="services.html">Всі послуги</a></div>
+            </div>
+         </section>
+         <section class="portfolio anim">
+            <div class="portfolio__container">
+               <div class="portfolio__head title-block">
+                  <div class="title-block__label-block title-block__label-block--style">
+                     <div class="title-block__label-icon">
+                        <img src="img/icons/plane.svg" alt="Plane Icon">
+                     </div>
+                     <strong class="title-block__label">Наші роботи</strong>
+                  </div>
+                  <h2 class="title-block__subtitle">Останні проєкти</h2>
+                  <p class="title-block__about">Обрані кейси з нашого портфоліо</p>
+               </div>
+               <div class="portfolio__items">
+                  <div class="portfolio__item item-portfolio">
+                     <div class="item-portfolio__img">
+                        <img src="img/portfolio/cyber.webp" alt="Cyber Portfolio Image">
+                     </div>
+                     <div class="item-portfolio__body-block">
+                        <div class="item-portfolio__head">
+                           <strong class="item-portfolio__type">E-commerce</strong>
+                           <div class="item-portfolio__decor"></div>
+                           <p class="item-portfolio__label">Case Study</p>
+                        </div>
+                        <div class="item-portfolio__body">
+                           <h3 class="item-portfolio__title">Modern E-commerce Website</h3>
+                           <p class="item-portfolio__about">Адаптивний інтернет-магазин зі зручним UI та швидким
+                              оформленням замовлення.<br>
+                              Покращує досвід покупок і підвищує конверсію.
+                           </p>
+                        </div>
+                        <ul class="item-portfolio__tech">
+                           <li class="item-portfolio__tech-item">HTML</li>
+                           <li class="item-portfolio__tech-item">CSS</li>
+                           <li class="item-portfolio__tech-item">JavaScript</li>
+                           <li class="item-portfolio__tech-item">BEM</li>
+                           <li class="item-portfolio__tech-item">SCSS</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="portfolio__item item-portfolio">
+                     <div class="item-portfolio__img">
+                        <img src="img/portfolio/digital.webp" alt="Digital Portfolio Image">
+                     </div>
+                     <div class="item-portfolio__body-block">
+                        <div class="item-portfolio__head">
+                           <strong class="item-portfolio__type">Portfolio</strong>
+                           <div class="item-portfolio__decor"></div>
+                           <p class="item-portfolio__label">Case Study</p>
+                        </div>
+                        <div class="item-portfolio__body">
+                           <h3 class="item-portfolio__title">Multi-Page Website</h3>
+                           <p class="item-portfolio__about">Адаптивний сайт зі швидкою роботою та високою
+                              конверсією.<br>
+                              Зручний UI допомагає залучати клієнтів.
+                           </p>
+                        </div>
+                        <ul class="item-portfolio__tech">
+                           <li class="item-portfolio__tech-item">HTML</li>
+                           <li class="item-portfolio__tech-item">CSS</li>
+                           <li class="item-portfolio__tech-item">JavaScript</li>
+                           <li class="item-portfolio__tech-item">BEM</li>
+                           <li class="item-portfolio__tech-item">SCSS</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="portfolio__item item-portfolio">
+                     <div class="item-portfolio__img">
+                        <img src="img/portfolio/weeb.webp" alt="Weeb Portfolio Image">
+                     </div>
+                     <div class="item-portfolio__body-block">
+                        <div class="item-portfolio__head">
+                           <strong class="item-portfolio__type">Portfolio</strong>
+                           <div class="item-portfolio__decor"></div>
+                           <p class="item-portfolio__label">Case Study</p>
+                        </div>
+                        <div class="item-portfolio__body">
+                           <h3 class="item-portfolio__title">Weeb project
+                           </h3>
+                           <p class="item-portfolio__about">Адаптивний маркетинговий лендинг з інтерактивним UI,
+                              анімаціями
+                              та popup авторизації.
+                           </p>
+                        </div>
+                        <ul class="item-portfolio__tech">
+                           <li class="item-portfolio__tech-item">HTML</li>
+                           <li class="item-portfolio__tech-item">CSS</li>
+                           <li class="item-portfolio__tech-item">JavaScript</li>
+                           <li class="item-portfolio__tech-item">BEM</li>
+                           <li class="item-portfolio__tech-item">SCSS</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="link">
+                  <a class="link__button" href="portfolio.html">Переглянути всі проєкти</a>
+               </div>
+            </div>
+         </section>
+         <section class="price anim">
+            <div class="price__container">
+               <div class="price__head title-block">
+                  <div class="title-block__label-block">
+                     <strong class="title-block__label">Прозорі ціни</strong>
+                  </div>
+                  <h2 class="title-block__subtitle">Вартість розробки сайтів</h2>
+                  <p class="title-block__about">Підбираємо оптимальне рішення під ваш бізнес та цілі</p>
+               </div>
+               <div class="price__items">
+                  <div class="price__item item-price">
+                     <div class="item-price__icon-block">
+                        <div class="item-price__icon">
+                           <img src="img/icons/lightning.svg" alt="Lightning Icon">
+                        </div>
+                     </div>
+                     <h3 class="item-price__title">Лендінг</h3>
+                     <p class="item-price__about">Односторінковий сайт для презентації послуги або продукту та швидкого
+                        залучення клієнтів</p>
+                     <div class="item-price__deadlines">
+                        <p class="item-price__deadlines-price">від 4 000 грн</p>
+                        <div class="item-price__deadlines-time">
+                           <div class="item-price__deadlines-icon">
+                              <img src="img/icons/time.svg" alt="Time Icon">
+                           </div>
+                           3–5 днів
+                        </div>
+                     </div>
+                     <div class="item-price__line"></div>
+                     <div class="item-price__button buttons">
+                        <a class="buttons__button" href="contacts.html">Обговорити проєкт</a>
+                     </div>
+                  </div>
+                  <div class="price__item item-price">
+                     <div class="item-price__icon-block">
+                        <div class="item-price__icon">
+                           <img src="img/icons/website.svg" alt="Website Icon">
+                        </div>
+                     </div>
+                     <h3 class="item-price__title">Сайт-візитка</h3>
+                     <p class="item-price__about">Компактний сайт для презентації компанії, бренду або спеціаліста в
+                        інтернеті
+                     </p>
+                     <div class="item-price__deadlines">
+                        <p class="item-price__deadlines-price">від 8 000 грн</p>
+                        <div class="item-price__deadlines-time">
+                           <div class="item-price__deadlines-icon">
+                              <img src="img/icons/time.svg" alt="Time Icon">
+                           </div>
+                           4–6 днів
+                        </div>
+                     </div>
+                     <div class="item-price__line"></div>
+                     <div class="item-price__button buttons">
+                        <a class="buttons__button" href="contacts.html">Обговорити проєкт</a>
+                     </div>
+                  </div>
+                  <div class="price__item item-price">
+                     <div class="item-price__icon-block">
+                        <div class="item-price__icon">
+                           <img src="img/icons/corporate-website.svg" alt="Corporate-website Icon">
+                        </div>
+                     </div>
+                     <h3 class="item-price__title">Корпоративний сайт</h3>
+                     <p class="item-price__about">Багатосторінковий сайт для компанії з детальною структурою та
+                        презентацією послуг</p>
+                     <div class="item-price__deadlines">
+                        <p class="item-price__deadlines-price">від 10 000 грн</p>
+                        <div class="item-price__deadlines-time">
+                           <div class="item-price__deadlines-icon">
+                              <img src="img/icons/time.svg" alt="Time Icon">
+                           </div>
+                           5–7 днів
+                        </div>
+                     </div>
+                     <div class="item-price__line"></div>
+                     <div class="item-price__button buttons">
+                        <a class="buttons__button" href="contacts.html">Обговорити проєкт</a>
+                     </div>
+                  </div>
+                  <div class="price__item item-price active">
+                     <div class="item-price__head-block">
+                        <div class="item-price__icon-block">
+                           <div class="item-price__icon">
+                              <img src="img/icons/shop-2.svg" alt="Shop Icon">
+                           </div>
+                        </div>
+                        <strong class="item-price__head-block-statistic">Популярно</strong>
+                     </div>
+                     <h3 class="item-price__title">Інтернет-магазин</h3>
+                     <p class="item-price__about">Повноцінний e-commerce сайт з каталогом товарів, кошиком та
+                        онлайн-оплатою</p>
+                     <div class="item-price__deadlines">
+                        <p class="item-price__deadlines-price">від 16 000 грн</p>
+                        <div class="item-price__deadlines-time">
+                           <div class="item-price__deadlines-icon">
+                              <img src="img/icons/time.svg" alt="Time Icon">
+                           </div>
+                           10–14 днів
+                        </div>
+                     </div>
+                     <div class="item-price__line"></div>
+                     <div class="item-price__button buttons">
+                        <a class="buttons__button" href="contacts.html">Обговорити проєкт</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="contacts anim">
+            <div class="contacts__container">
+               <div class="contacts__head title-block">
+                  <div class="title-block__icon-block">
+                     <img src="img/icons/people.svg" alt="People Icon">
+                  </div>
+                  <h2 class="title-block__subtitle">Готові розпочати проєкт?</h2>
+                  <p class="title-block__about">Зв'яжіться з нами та отримайте безкоштовну консультацію від наших
+                     експертів</p>
+               </div>
+               <div class="contacts__button buttons">
+                  <a class="buttons__button" href="contacts.html">Почати співпрацю</a>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <div class="footer__items">
+               <div class="footer__logo-block">
+                  <div class="footer__logo logo">
+                     <a href="#home" class="logo__img">
+                        <img src="img/logo.webp" alt="Main Logo">
+                     </a>
+                     <strong class="logo__name">Digital Studio</strong>
+                  </div>
+                  <p class="footer__text">Створюємо преміум веб-рішення для бізнесу з унікальним дизайном <br>
+                     та технологіями світового рівня</p>
+                  <ul class="footer__socials socials">
+                     <li class="socials__socials-item"><a class="socials__socials-item-link"
+                           href="https://www.instagram.com/petrushov.dev">
+                           <svg class="icon icon-instagram">
+                              <use href="img/icons/symbol-defs.svg#icon-instagram"></use>
+                           </svg></a>
+                     </li>
+                     <li class="socials__socials-item"><a class="socials__socials-item-link"
+                           href="www.linkedin.com/in/mfrontdev">
+                           <svg class="icon icon-linkedin">
+                              <use href="img/icons/symbol-defs.svg#icon-linkedin"></use>
+                           </svg></a>
+                     </li>
+                     <li class="socials__socials-item"><a class="socials__socials-item-link"
+                           href="https://github.com/MaisonIT/portfolio-projects">
+                           <svg class="icon icon-github">
+                              <use href="img/icons/symbol-defs.svg#icon-github"></use>
+                           </svg></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h4 class="footer__title">Компанія</h4>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a class="footer__list-link" href="about.html">Про нас</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="portfolio.html">Портфоліо</a></li>
+                     <li class="footer__list-item"><a class="footer__list-link" href="portfolio.html">Процес роботи</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h4 class="footer__title">Послуги</h4>
+                  <ul class="footer__list">
+                     <li class="footer__list-item"><a href="portfolio.html">Лендінги</a></li>
+                     <li class="footer__list-item"><a href="portfolio.html">Інтернет-магазин</a></li>
+                     <li class="footer__list-item"><a href="portfolio.html">Корпоративні сайти</a></li>
+                     <li class="footer__list-item"><a href="portfolio.html">Сайт-візитка</a></li>
+                     <li class="footer__list-item"><a href="portfolio.html">UI/UX Дизайн</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <h4 class="footer__title">Контакти</h4>
+                  <ul class="footer__list">
+                     <li class="footer__list-item">
+                        <svg class="icon icon-mail">
+                           <use href="img/icons/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        <a class="footer__list-link" href="mailto:frontdev.m@gmail.com">frontdev.m@gmail.com</a>
+                     </li>
+                     <li class="footer__list-item">
+                        <svg class="icon icon-tel">
+                           <use href="img/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                        <a class="footer__list-link" href="tel:+380 95 667 17 72">frontdev.m@gmail.com</a>
+                     </li>
+                     <li class="footer__list-item">
+                        <svg class="icon icon-location">
+                           <use href="img/icons/symbol-defs.svg#icon-location"></use>
+                        </svg>
+                        <a class="footer__list-link" href="https://maps.app.goo.gl/S8W62uXQhoEamWqQ8">Київ, Україна</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footer__rights">
+               <p class="footer__rights-text">© 2026 Київ, Україна Petrushov Digital Studio. Всі права захищені.</p>
+               <div class="footer__rights-block">
+                  <a class="footer__rights-link" id="link-privacy" href="#">Політика конфіденційності</a>
+                  <a class="footer__rights-link" id="link-terms" href="#">Умови використання</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- Підключення JS-файлу з кодом -->
+   <script src="js/script.js"></script>
+   <!-- Кнопка на гору -->
+   <button class="scroll-top"><svg class="icon icon-arrow-2">
+         <use href="img/icons/symbol-defs.svg#icon-arrow-2"></use>
+      </svg></button>
+   <!-- Модальне вікно прав і користування -->
+   <div id="info-modal" class="modal">
+      <div class="modal__content">
+         <button class="modal__close" aria-label="Закрити">&times;</button>
+         <h2 id="modal-title" class="modal__title">Назва документа</h2>
+         <div id="modal-text" class="modal__text">
+         </div>
+      </div>
+   </div>
+   <!-- Згода на обробку даних -->
+   <div class="cookie-consent" id="cookie-consent">
+      <div class="cookie-consent__content">
+         <p class="cookie-consent__text">
+            Цей сайт використовує файли cookie та обробляє персональні дані для покращення вашого досвіду.
+            Натискаючи «Прийняти», ви погоджуєтесь з нашою
+            <a href="#" id="link-privacy-cookie" class="cookie-consent__link">Політикою конфіденційності</a>.
+         </p>
+         <button type="button" class="cookie-consent__btn" id="cookie-accept-btn">Прийняти</button>
+      </div>
+   </div>
+</body>
+
+</html>

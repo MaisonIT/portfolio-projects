@@ -1,0 +1,64 @@
+@use "mixins";
+@use "variables";
+
+// portfolio
+.portfolio {
+   // .portfolio__container
+
+   &__container {
+      @include mixins.container;
+   }
+
+   // .portfolio__head
+
+   &__head {
+      &.title-block {
+         .title-block__title {
+            max-width: 100%;
+         }
+      }
+   }
+
+   // .portfolio__filters
+
+   &__filters {
+      @include mixins.block;
+   }
+
+   // .portfolio__list
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: mixins.toRem(16);
+   }
+
+   // .portfolio__list-item
+
+   &__list-item {
+      font-weight: 500;
+      color: variables.$text-primary;
+   }
+
+   // .portfolio__list-button
+
+   &__list-button {
+      padding: mixins.toRem(16) mixins.toRem(24);
+
+      border-radius: mixins.toRem(14);
+      border: 1px solid variables.$button-button-border-secondary;
+
+      background: variables.$button-button-bg-secondary;
+
+      @media (any-hover: hover) {
+         &:hover {
+            border-color: variables.$button-button-text-tertiary-hover;
+         }
+      }
+      .active & {
+         background: linear-gradient(90deg, #fe9a00 0%, #f0b100 50%, #e17100 100%);
+         color: variables.$button-button-text-primary;
+      }
+   }
+}
