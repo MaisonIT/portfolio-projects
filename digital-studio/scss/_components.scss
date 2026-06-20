@@ -937,7 +937,7 @@
 // services cards
 .item-services {
    opacity: 0;
-   transform: translateX(-160);
+   transform: translateX(mixins.toRem(-160));
 
    transition:
       opacity 1.5s ease,
@@ -1216,7 +1216,7 @@
 // price cards
 .item-price {
    opacity: 0;
-   transform: translateX(-160);
+   transform: translateX(mixins.toRem(-160));
 
    transition:
       opacity 1.5s ease,
