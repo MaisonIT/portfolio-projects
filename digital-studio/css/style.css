@@ -948,9 +948,9 @@
 
 .item-services {
   opacity: 0;
-  -webkit-transform: translateX(-160);
-      -ms-transform: translateX(-160);
-          transform: translateX(-160);
+  -webkit-transform: translateX(-10rem);
+      -ms-transform: translateX(-10rem);
+          transform: translateX(-10rem);
   -webkit-transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
@@ -1219,9 +1219,9 @@
 
 .item-price {
   opacity: 0;
-  -webkit-transform: translateX(-160);
-      -ms-transform: translateX(-160);
-          transform: translateX(-160);
+  -webkit-transform: translateX(-10rem);
+      -ms-transform: translateX(-10rem);
+          transform: translateX(-10rem);
   -webkit-transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
@@ -2171,9 +2171,9 @@
 
 .item-develop {
   opacity: 0;
-  -webkit-transform: translateX(-160);
-      -ms-transform: translateX(-160);
-          transform: translateX(-160);
+  -webkit-transform: translateX(-10rem);
+      -ms-transform: translateX(-10rem);
+          transform: translateX(-10rem);
   -webkit-transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
   transition: opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
