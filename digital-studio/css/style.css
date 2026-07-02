@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Локальне підключення шрифтів */
-@import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:300,regular,500&display=swap");
 @import url("../css/iconsprite.css");
 /* Скидання стилів */
 @import url("reset.css");
@@ -706,6 +706,13 @@
   width: 0.5rem;
 }
 
+.icon-instagram,
+.icon-linkedin,
+.icon-github {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
 .title-block {
   opacity: 0;
   -webkit-transform: translateX(-100%);
@@ -839,6 +846,7 @@
 .title-block__about {
   font-size: 1.125rem;
   letter-spacing: -1px;
+  line-height: 1.5;
   max-width: 36rem;
   color: #99a1af;
 }
@@ -1359,7 +1367,7 @@
           align-items: center;
   position: fixed;
   inset-inline-end: 5%;
-  inset-block-end: 40%;
+  inset-block-start: 15%;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1493,9 +1501,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1505,6 +1513,13 @@
   text-align: center;
 }
 
+@media (min-width: 48em) {
+  .footer__rights {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .footer__rights-text {
   font-size: 0.875rem;
   line-height: 1.5; /* 21px */
@@ -1538,7 +1553,7 @@
   border-radius: 0.875rem;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.05);
-  color: #99a1af;
+  color: #d1d5dc;
   -webkit-transition: outline 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
   transition: outline 0.3s ease, background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
   transition: outline 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
@@ -1972,10 +1987,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
-  -webkit-transition: background 0.3s ease, outline 0.2s ease, opacity 1.5s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
-  transition: background 0.3s ease, outline 0.2s ease, opacity 1.5s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, outline 0.2s ease, opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
-  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease, outline 0.2s ease, opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  -webkit-transition: background 0.2s ease, outline 0.2s ease, opacity 1.5s ease, -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: background 0.2s ease, outline 0.2s ease, opacity 1.5s ease, -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, outline 0.2s ease, opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, outline 0.2s ease, opacity 1.5s ease, transform 1s cubic-bezier(0.25, 1, 0.5, 1), -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 1s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (any-hover: hover) {
@@ -3227,7 +3242,7 @@
 
 .form__input-clear-btn {
   position: absolute;
-  inset-inline-end: 0;
+  inset-inline-end: 1%;
   inset-block-start: 15%;
   display: none;
 }
@@ -3238,7 +3253,7 @@
 
 .form__input-chek-icon {
   position: absolute;
-  inset-inline-end: 7%;
+  inset-inline-end: 1%;
   inset-block-start: 15%;
   display: none;
 }
@@ -3342,6 +3357,7 @@
 }
 
 .contact-item__contacts-adress {
+  font-style: normal;
   line-height: 1.6; /* 25.6px */
   color: #ffffff;
 }
@@ -3406,6 +3422,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.9375rem;
 }
 
@@ -3424,6 +3443,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   line-height: 1; /* 30px */
+  font-weight: 300;
   background-color: #000000;
   color: #99a1af;
 }

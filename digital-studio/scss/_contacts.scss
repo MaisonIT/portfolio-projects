@@ -153,7 +153,7 @@
    // .form__input-clear-btn
    &__input-clear-btn {
       position: absolute;
-      inset-inline-end: 0;
+      inset-inline-end: 1%;
       inset-block-start: 15%;
 
       display: none;
@@ -166,7 +166,7 @@
    // .form__input-chek-icon
    &__input-chek-icon {
       position: absolute;
-      inset-inline-end: 7%;
+      inset-inline-end: 1%;
       inset-block-start: 15%;
 
       display: none;
@@ -292,6 +292,8 @@
    // .contact-item__contacts-adress
 
    &__contacts-adress {
+      font-style: normal;
+
       line-height: 1.6; /* 25.6px */
 
       color: variables.$text-primary;
@@ -357,6 +359,8 @@
    &__date-block {
       display: flex;
       justify-content: space-between;
+
+      align-items: center;
       gap: mixins.toRem(15);
    }
 

@@ -690,6 +690,12 @@
 .icon-required {
    width: mixins.toRem(8);
 }
+.icon-instagram,
+.icon-linkedin,
+.icon-github {
+   width: mixins.toRem(18);
+   height: mixins.toRem(18);
+}
 
 // title-block
 .title-block {
@@ -831,6 +837,8 @@
    &__about {
       font-size: mixins.toRem(18);
       letter-spacing: -1px;
+
+      line-height: 1.5;
 
       max-width: mixins.toRem(576);
 
@@ -1357,7 +1365,7 @@
 
    position: fixed;
    inset-inline-end: 5%;
-   inset-block-end: 40%;
+   inset-block-start: 15%;
 
    opacity: 0;
    visibility: hidden;
@@ -1503,11 +1511,15 @@
       padding-block-start: mixins.toRem(24);
 
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       gap: mixins.toRem(12);
       text-align: center;
+
+      @media (min-width: mixins.toEm(768)) {
+         justify-content: space-between;
+      }
    }
 
    // .footer__rights-text
